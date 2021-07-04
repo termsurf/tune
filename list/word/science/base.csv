@@ -1,0 +1,568 @@
+tune,english
+,light
+,preon
+,alanine
+,arginine
+,asparagine
+,aspartate
+,cysteine
+,glutamine
+,glutamate
+,glycine
+,histidine
+,neutral
+,isoleucine
+,leucine
+,lysine
+,methionine
+,phenylalanine
+,proline
+,serine
+,threonine
+,tryptophan
+,tyrosine
+,valine
+,selenocysteine
+,pyrrolysine
+,thiamine
+,riboflavin
+,niacin
+,pantothenic acid
+,pyridoxine
+,pyrimidine
+,purine
+,biotin
+,folate
+,cobalamin
+,choline
+,inositol
+,taurine
+,ethanol
+,glucose
+,sucrose
+,ribose
+,amylose
+,amylopectin
+,maltose
+,galactose
+,fructose
+,lactose
+,butyric acid
+,caproic acid
+,caprylic acid
+,capric acid
+,lauric acid
+,myristic acid
+,pentadecanoic acid
+,palmitic acid
+,margaric acid
+,stearic acid
+,arachidic acid
+,behenic acid
+,lignoceric acid
+,cerotic acid
+,myristoleic acid
+,oleic acid
+,eicosenoic acid
+,erucic acid
+,nervonic acid
+,linoleic acid
+,α-linolenic acid
+,stearidonic acid
+,arachidonic acid
+,timnodonic acid
+,clupanodonic acid
+,cervonic acid
+,cellulose
+,methyl cellulose
+,hemicellulose
+,lignan
+,resistant starche
+,beta-glucan
+,pectin
+,natural gum
+,inulin
+,oligosaccharide
+,caffeine
+,adenosine
+,guanine
+,cytosine
+,thymidine
+,uracil
+,isovalerate
+,alpha-carotene
+,astaxanthin
+,beta-carotene
+,canthaxanthin
+,cryptoxanthin
+,lutein
+,lycopene
+,zeaxanthin
+,cyanidin
+,delphinidin
+,malvidin
+,pelargonidin
+,peonidin
+,petunidin
+,flavone
+,apigenin
+,luteolin
+,tangeritin
+,flavonol
+,isorhamnetin
+,kaempferol
+,myricetin
+,proanthocyanidin
+,quercetin
+,flavanone
+,eriodictyol
+,hesperetin
+,naringenin
+,catechin
+,epicatechin
+,theaflavin
+,thearubigin
+,isoflavone phytoestrogen
+,daidzein
+,genistein
+,glycitein
+,stilbenoid
+,resveratrol
+,pterostilbene
+,anthocyanin
+,melatonin
+,histamine
+,a23187
+,abamectine
+,abietic acid
+,acetic acid
+,acetylcholine
+,actin
+,actinomycin d
+,adenine
+,adenosmeme
+,adenosine diphosphate
+,adenosine monophosphate
+,adenosine triphosphate
+,adenylate cyclase
+,adiponectin
+,adonitol
+,adrenaline
+,epinephrine
+,adrenocorticotropic hormone
+,aequorin
+,aflatoxin
+,agar
+,alamethicin
+,albumin
+,aldosterone
+,aleurone
+,alpha-amanitin
+,alpha-msh
+,allantoin
+,allethrin
+,α-amanatin
+,see alpha-amanitin
+,amino acid
+,amylase
+,anabolic steroid
+,anandamide
+,androgen
+,anethole
+,angiotensinogen
+,anisomycin
+,antidiuretic hormone
+,anti-müllerian hormone
+,arabinose
+,argonaute
+,ascomycin
+,ascorbic acid
+,aspartic acid
+,asymmetric dimethylarginine
+,atp synthase
+,atrial-natriuretic peptide
+,auxin
+,avidin
+,azadirachtin a
+,bacteriocin
+,beauvericin
+,beta-hydroxy beta-methylbutyric acid
+,beta-hydroxybutyric acid
+,bicuculline
+,bilirubin
+,biopolymer
+,brefeldin a
+,brassinolide
+,brucine
+,cadaverine
+,calciferol
+,calcitonin
+,calmodulin
+,calreticulin
+,camphor
+,cannabinol
+,capsaicin
+,carbohydrase
+,carbohydrate
+,carnitine
+,carrageenan
+,carotinoid
+,casein
+,caspase
+,catecholamine
+,cellulase
+,cerulenin
+,cetrimonium bromide
+,chelerythrine
+,chromomycin a3
+,chaparonin
+,chitin
+,α-chloralose
+,chlorophyll
+,cholecystokinin
+,cholesterol
+,chondroitin sulfate
+,cinnamaldehyde
+,citral
+,citric acid
+,citrinin
+,citronellal
+,citronellol
+,citrulline
+,coenzyme
+,coenzyme q
+,colchicine
+,collagen
+,coniine
+,corticosteroid
+,corticosterone
+,corticotropin-releasing hormone
+,cortisol
+,creatine
+,creatine kinase
+,crystallin
+,cyclic adenosine monophosphate
+,α-cyclodextrin
+,cyclodextrin glycosyltransferase
+,cyclooxygenase
+,cyclopamine
+,cyclopiazonic acid
+,cystine
+,cytidine
+,cytochalasin
+,cytochalasin e
+,cytochrome
+,cytochrome c
+,cytochrome c oxidase
+,cytochrome c peroxidase
+,cytokine
+,dehydroepiandrosterone
+,deoxycholic acid
+,don
+,deoxyribofuranose
+,deoxyribose
+,deoxyribonucleic acid
+,dextran
+,dextrin
+,dicer
+,dihydrotestosterone
+,dna
+,dna polymerase
+,dna ligase
+,dopamine
+,endonuclease
+,enzyme
+,ephedrine
+,erythritol
+,erythropoietin
+,estradiol
+,estriol
+,estrogen
+,estrone
+,eugenol
+,exonuclease
+,fatty acid
+,ferredoxin
+,fibrin
+,fibronectin
+,flavin adenine dinucleotide
+,folic acid
+,follicle stimulating hormone
+,formaldehyde
+,formic acid
+,formnoci
+,fumonisin b1
+,gangalioside
+,gamma globulin
+,gamma-aminobutyric acid
+,gamma-butyrolactone
+,gamma-hydroxybutyrate
+,gastrin
+,gelatin
+,geraniol
+,ghrelin
+,globulin
+,glucagon
+,glucagon-like peptide 1
+,glucagon-like peptide 2
+,glucosamine
+,glucose oxidase
+,glutamic acid
+,glutathione
+,gluten
+,glycan
+,glycerin
+,glycogen
+,glycogenin
+,glycogen synthase
+,glycogen phosphorylase
+,glycolic acid
+,glycolipid
+,glycoprotein
+,gonadotropin-releasing hormone
+,granzyme
+,green fluorescent protein
+,growth factor
+,growth hormone
+,growth hormone-releasing hormone
+,gtpase
+,guanosine
+,guanosine triphosphate
+,gurungase
+,haptoglobin
+,helicase
+,hematoxylin
+,heme
+,hemerythrin
+,hemocyanin
+,hemoglobin
+,hemoprotein
+,heparan sulfate
+,high density lipoprotein
+,hdl
+,histone
+,histone methyltransferase
+,hla antigen
+,homocysteine
+,hormone
+,human chorionic gonadotropin
+,human growth hormone
+,hyaluronate
+,hyaluronic acid
+,hyaluronidase
+,hydrogen peroxide
+,5-hydroxymethylcytosine
+,hydroxyproline
+,5-hydroxytryptamine
+,indigo dye
+,indole
+,inosine
+,insulin
+,insulin-like growth factor
+,integral membrane protein
+,integrase
+,integrin
+,intein
+,interferon
+,interleukin
+,ionomycin
+,ionone
+,isomerase
+,isoprene
+,iron-sulfur cluster
+,jipitol
+,k252a
+,k252b
+,kt5720
+,kt5823
+,keratin
+,kinase
+,kisspeptin
+,kouhestanimine
+,lactase
+,lactic acid
+,lanolin
+,lectin
+,leptin
+,leptomycin b
+,leukotriene
+,ligase
+,lignin
+,limonene
+,linalool
+,linolenic acid
+,lipase
+,lipid
+,lipid anchored protein
+,lipoamide
+,lipoprotein
+,low density lipoprotein
+,ldl
+,luteinizing hormone
+,lysozyme
+,malic acid
+,melanocyte- stimulating hormone
+,membrane protein
+,messenger rna
+,metalloprotein
+,metallothionein
+,mimosine
+,mithramycin a
+,mitomycin c
+,monomer
+,morphine
+,mycophenolic acid
+,myoglobin
+,myosin
+,mersalase
+,milnolate
+,natural phenol
+,neurotransmitter
+,neuropeptide y
+,nicotinamide adenine dinucleotide
+,norepinephrine
+,nucleic acid
+,nucleosome
+,nucleoside
+,nucleotide
+,ochratoxin a
+,oestrogen
+,oligopeptide
+,oligomycin
+,orcin
+,orexin
+,ornithine
+,oxalic acid
+,oxidase
+,oxytocin
+,p53
+,paba
+,paclitaxel
+,parathyroid hormone
+,paraprotein
+,pardaxin
+,parthenolide
+,patulin
+,paxilline
+,penicillic acid
+,penicillin
+,penitrem a
+,peptidase
+,peptide yy
+,pepsin
+,peptide
+,perimycin
+,peripheral membrane protein
+,perosamine
+,phenethylamine
+,phosphagen
+,phosphatase
+,phosphatidyl choline
+,phospholipid
+,phytic acid
+,plasma protein
+,plastocyanin
+,polypeptide
+,polyphenol
+,polysaccharide
+,porphyrin
+,pranavylate kinase kinase
+,prion
+,progesterone
+,prolactin
+,propionic acid
+,prostaglandin
+,protamine
+,protease
+,proteasome
+,protein
+,proteinoid
+,putrescine
+,pyrethrin
+,pyridoxamine
+,pyruvic acid
+,quinidine
+,quinine
+,quinone
+,radicicol
+,raffinose
+,relaxin
+,renin
+,retinene
+,retinol
+,reverse transcriptase
+,rhodopsin
+,ribofuranose
+,ribozyme
+,ricin
+,rna
+,rna polymerase
+,rubisco
+,ribosomal rna
+,safrole
+,salicylaldehyde
+,salicylic acid
+,salvinorin-a
+,saponin
+,secretin
+,selenomethionine
+,selenoprotein
+,serine kinase
+,serotonin
+,skatole
+,signal recognition particle
+,somatostatin
+,sorbic acid
+,sphingolipid
+,sphingosine
+,squalene
+,staurosporin
+,sterigmatocystin
+,sterol
+,strychnine
+,sugar
+,superoxide
+,t2 toxin
+,tannic acid
+,tannin
+,tartaric acid
+,tetrodotoxin
+,telomerase
+,thaumatin
+,topoisomerase
+,tyrosine kinase
+,testosterone
+,tetrahydrocannabinol
+,tetracycline
+,thapsigargin
+,thrombopoietin
+,thromboxane
+,thymine
+,transfer rna
+,triacsin c
+,thyroid-stimulating hormone
+,thyrotropin-releasing hormone
+,thyroxine
+,tocopherol
+,triiodothyronine
+,transmembrane receptor
+,trichostatin a
+,trophic hormone
+,trypsin
+,tubulin
+,tunicamycin
+,ubiquitin
+,urea
+,urease
+,uric acid
+,uridine
+,valinomycin
+,vanabin
+,vasopressin
+,verruculogen
+,water
+,wortmannin
+,xanthophyll
+,xylose
+,yellow fluorescent protein
+,zearalenone

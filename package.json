@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@drumwork/tone": "^1.0.0",
+    "greek-utils": "^1.3.0"
+  }
+}

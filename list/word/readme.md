@@ -1,0 +1,55 @@
+
+- young
+- youngster
+- wood
+- wooden (made of wood)
+- woman
+- womanly (presents like woman)
+- women (woman group)
+- accusation (creation of accuse)
+- accuse
+- accuracy (accurate skill level)
+- accurate
+- achievable (possible to achieve)
+- achieve
+- achievement (achieve "effect")
+- achiever (achieve agent)
+- acid
+- acidic (has acid feature)
+- acidify (transform into having acid feature)
+- act
+- actor (act doer)
+- acted
+- action (creation of act)
+- activate (create regular acts)
+- activation (create regular acts effect)
+- active (regularly acts)
+- activist (doer of regularly acts)
+- activity ()
+- actual (has act feature)
+- actualize (make have act feature)
+- actually
+- actuate
+- saliva
+- salivate (create saliva)
+- adapt
+- adaptable (capable to adapt)
+- adaptation (adapt effect)
+- adapter (adapt agent)
+- adaptive (regularly adapts)
+- adult
+- adulterate,(make adult like, "adult liken")
+- adulthood,(state of being adult, "adult state")
+- advance
+- advanced (has performed advance)
+- advancement (effect of performing an advance)
+- advantage (advancement you can use)
+- advantageous ()
+- advise
+- adviser (advise provider)
+- advisory (advice provider result)
+- advocacy (performing the advocate action)
+- advocate
+- deep
+- deeper (more deep)
+- deepest (most deep)
