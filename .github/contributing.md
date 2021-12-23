@@ -143,6 +143,29 @@ Oh, one more common case to note. The past tense is marked by `-ho` ("created" i
 
 There are no other sorts of word "inflections" or "conjugations" like you find in Latin or Spanish or Finnish or other languages, Tune tries to be as atomic as possible, by keeping everything as separate words. However, it is nice how we are able to form longer words from Latin/Greek in English (like "hydrogen" is really "hydro" + "gen", meaning "water generating"), so Tune makes it possible to construct longer words from parts. For example, the word for "kilometer" (which is "kilo" or "thousand" plus "meter") is `kil` + `mirt` or `kilomirta`.
 
+In the end, there are these "base" word forms:
+
+| pattern | sounds | syllables | example |
+|--------:|:--------|:----------|:--------|
+| `cv` | 2 | 1 | bo |
+| `cvc` | 3 | 1 | dip |
+| `ccvc` | 4 | 1 | blap |
+| `cvcc` | 4 | 1 | hold |
+| `ccvcc` | 5 | 1 | grasp |
+| `cccvc` | 5 | 1 | strik |
+| `cvccc` | 5 | 1 | kartx |
+| `ccvccc` | 6 | 1 |  klartx |
+| `cccvcc` | 6 | 1 | skritx |
+| `cccvccc` | 7 | 1 | sklartx |
+| `cvcvc` | 5 | 2 | tikan |
+| `ccvcvc` | 6 | 2 | trikan |
+| `cvccvc` | 6 | 2 | kitxen |
+| `cvcvcc` | 6 | 2 | tikatx |
+
+The most common are `cv`, `cvc`, `ccvc`, `cvcc`, and `cvcvc`. The rest hold very few words matching that pattern, but they are there for completeness. In total this gives around 150,000 possible words. Then these word "bases" can be combined to form more complex concepts, like the Latin/Greek names used in the biological naming conventions, or as described earlier. So we have 150k foundational concepts, which can be combined in a seemingly endless combination to give many more words. Then those words can be combined into sentences, to give unlimited meaning like regular natural languages.
+
+Out of the 150k foundational concepts, only an estimated 25k should be necessary to ultimately use, while realistically only 5k should be necessary for everyone to understand to have a good reach and rich understanding of things. The remaining 125k shouldn't really even be necessary to use. Instead, these base words should be combined to make compound words. Then you can understand the compound words in part by understanding their components, at least to start, before thinking of them as a whole. To give you a sense, 150k^2 is 22.5 billion possible words, while 5k^2 is 25 million words, that is a huge set of possible words! If we do 5k^3 (3-word compounds), that is 125 billion words! Plenty to capture knowledge in a concise way.
+
 ## Summary
 
 So to summarize, if how the words are structured/made makes sense to you, then please, it would be of great help to write translations of words into Tune from English, using the above rules. If anything doesn't make sense to you, like it's unclear how to translate some specific case, or you have found a new case or suite of cases (phew!), please reach out so we can figure out how they should be represented in the Tune language and we can get that solved for you so you can continue on.

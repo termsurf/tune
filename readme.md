@@ -35,13 +35,6 @@ All things are actually a `xix` under the hood (pronounced "sheesh", see [call s
 
 Can call a "fox" a "small wild canine". Can call a "canine" a "carnivorous animal". Can call an animal a "living structure". So a "fox" becomes a "small wild carnivorous living structure". But that is too long of a name, so for common stuff you give it a short name, in our case a 5-letter c-v-c-v-c word. The question is, what do you pick to give a common name to?
 
-### Base Word Structure
-
-- 3 letter words, which begin and end with a consonant, are reserved for base abstract concepts used in programming.
-- 5 letter words, in the pattern of c-v-c-v-c, are reserved for base earth concepts such as the sun and moon.
-- The combination of 3-3 or 3-5 or 5-3 words are reserved for complex objects, actions, and features, but ideally should be based upon or learnable from the word parts.
-- Larger words are for yet more complex things.
-
 ### Parts of Speech
 
 All words are `xix` in their base form. They manifest into actions and objects and modifiers/features by suffixing the words with singular vowels.
