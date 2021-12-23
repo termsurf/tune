@@ -27,7 +27,7 @@ One goal of tune is to create a language which can be used for programming (usin
 
 First we will outline the phonology in more detail so you know what to expect and how to write the words on a typical keyboard in ASCII. Next, we will go into some of the basic word forms and show you how to construct some basic words. Finally, we will show how we can build up the lexicon to eventually include all of the millions of English words in existence, from molecules to life forms to locations, etc..
 
-See the [contributing guide](https://github.com/drumworkteam/tune/blob/make/contributing.md) for the intricate details on how things work, and how to contribute.
+See the [contributing guide](https://github.com/drumworkteam/tune/blob/make/.github/contributing.md) for the intricate details on how things work, and how to contribute.
 
 ### Knowledge Representation
 

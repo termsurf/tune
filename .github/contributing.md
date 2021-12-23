@@ -90,7 +90,7 @@ In the end, we have 19 consonants and 5 vowels, for a total of 24 sounds.
 Next we will describe the key word formation rules. First, some major things we can get out of the way up front.
 
 - All base word forms start and end with a consonant. They are turned into nouns, verbs, adjectives, etc. by adding vowels to the end.
-- Words can't end in `el` or `il` because it adds an extra syllable depending on pronunciatio style.
+- Words can't end in `el` or `il` because it adds an extra syllable depending on pronunciation style.
 - Words can't end in `h`, `y`, or `w`, as these don't really make a clear audible sound to a non-native speaker.
 - You can have "consonant clusters", like `str` in "string", or `pl` in "plan".
 - There can only be one vowel between consonants. That is, there are not sounds like `oi` and `ao`.
