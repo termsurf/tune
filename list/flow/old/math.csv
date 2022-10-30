@@ -1,0 +1,85 @@
+tune,english
+,integer number
+,natural number (n)
+,rational number (q)
+,real number (possible number)
+,irrational number
+,imaginary number
+,complex number
+,split-complex number
+gutxux,quaternion number
+,octonion number
+,sedenion number
+,alternative algebra
+,torsor
+,cyclic group
+,symmetric group
+,dihedral group
+,trivial group
+,klein four-group
+,abelian group
+,alternating group
+,group of lie type
+,simple group
+,sporadic group
+,transitive
+,trichotomous
+,a partial order
+,total order
+,strict weak order
+,total preorder (weak order)
+,equivalence relation
+,connected
+,strongly connected
+,reflexive closure
+,equivalence closure
+,transitive closure
+,heterogeneous relation
+,serial relation
+,surjective relation
+,difunctional
+,involutivity
+,unit (one form)
+,anticommutativity
+,space (math)
+,banach space (vector space)
+,besov space (vector space)
+,bochner space (vector space)
+,dual space (vector space)
+,euclidean space (vector space)
+,fock space (vector space)
+,fréchet space (vector space)
+,hardy space (vector space)
+,hilbert space (vector space)
+,hölder space (vector space)
+,lf-space (vector space)
+,lp space (vector space)
+,minkowski space (vector space)
+,montel space (vector space)
+,morrey–campanato space (vector space)
+,orlicz space (vector space)
+,riesz space (vector space)
+,schwartz space (vector space)
+,sobolev space (vector space)
+,tsirelson space (vector space)
+,open set
+,bijection
+,homeomorphism
+,homomorphism
+,isomorphism
+,enthalpy
+,holomorphic
+,differentiable
+,derivative
+,conjugate
+,polynomial
+,integral
+,automorphism
+,epimorphism
+,above (beyond the top of)
+,below (beyond the bottom of)
+,before (at time previous to now)
+,after
+,inertia
+,frame
+,polarize

@@ -1,0 +1,1512 @@
+## Summary
+
+_Note: Tune is just in the prototype phases right now. [Here](https://docs.google.com/spreadsheets/d/1GxKYr8wTVQyGuotdQTrG1DJh92KBSqvxF-zC-3kISBs/edit?usp=sharing) is a spreadsheet with some words/sentences currently being worked on._
+
+Tune is a [#conlang](https://en.wikipedia.org/wiki/Constructed_language) ("constructed language") that takes influence from English, Chinese, Sanskrit, Vietnamese, Hebrew, and Arabic. Its phonology (i.e. the sounds it uses) consist of 22 consonant sounds and 5 vowel sounds. It is a mostly "analytic" language, meaning that pretty much everything is divided into words instead of having word inflections or word morphology changes. There are no tones (like in Chinese), or clicks, like in some African languages. It is a subject-verb-object language (SVO), so verbs come second generally speaking. There are only nouns and verbs, no adjectives or other word forms. All nouns and verbs can be used as modifiers for other nouns and verbs as well.
+
+## The Knowledge Framework
+
+While we don't have a fully-developed framework for reasoning about the world, and building our language around, we have a somewhat developed framework based on years spent building a compiler for a [typed imperative programming language](https://github.com/teamtreesurf#open-source-software) (far far from done or even working yet). In studying how to build an optimized typed imperative programming language _compiler_, and how to write the actual code, it appears that all things can be modelled through the use of actions and objects.
+
+There is only information `xaq` and computation `xiq`. These appear as objects `saq` and actions `siq`, typed as `kaq` and `kiq`. This means there are only nouns and verbs in this language, no adjectives or adverbs, or conjunctions even. Conjunctions are operations between two or more things, so they are actions, granted a special type of action which acts on the structure of the sentence. Adjectives like "big" are really _patterns of action_, patterns of _being_. As such, they are objects. By saying "x is big", we are really saying "x has bigness", that it matches a pattern, even saying "x matches big-things". So all adjectives are thus turned into objects. What about prepositions? Prepositions are objects, like "to", an arrive-motion. Or "around", it signifies a boundary, so it's like "I go around the tree" becomes "I boundary go the tree."
+
+The `x` seems meaningful from an experiential standpoint because it is like the sound of flowing water. So the universe is called `wax`, after that flow and wash because perhaps that's what the universe does! Now is called `xom` after the East `om` and the flow. All things are part of this flow. The `k` is important because it could be an early beatboxing sound from the stone-tool-making Homo Habilis, `tul hadam`. The `i` is a smile/hot/sunny sound and the `a` is a relaxation/warm sound, while the `u` is a cold/dark sound. These 3 together form the triad of good, neutral, bad. Peace, activity, pain. There is something special about these 3 sounds and that number. So we made [Tone](https://github.com/teamtreesurf/tone), the writing system, reflect that. And we made Tune reflect that in the 2 main things (objects and actions), and the 3rd thing, the aspects or manners which is a way of perceiving things. The 22 consonants start out like a snake and weave their way down to the rattle at the end.
+
+Actions, coming from programming, are things like functions, pure or impure. They take input and produce output (and in the impure case, side effects). In the grand general scheme of things, the universe can be considered a great evolving bundle of information and computation, stored in some sort of memory, like an aggregation, in one sort of realization. Actions, then, are the computation, and objects, are the observable artifacts in the realization in the memory. These can be physical objects like light and matter, or mental objects like thoughts and abstractions. In the end, the brain is like an antenna that is streaming through experiences, and thoughts are just models or reflections of reality. Anything that you think and can imagine is just one permutation of the possibilities of the realization.
+
+So what are our biases? Our main bias is that we were born and raised English speakers, with minor secondary Indo-European language learning in school. We are doing our best to study Chinese, and dabble in various other languages covering the full spectrum of possibilities. We also believe that the universe can be fundamentally understood, that it's not a black box. So we may be called reductionist at times but we are only to the extent of trying to figure out a base model for reality that is computable.
+
+As such, we try and develop out of this mental model a language which can both be used to write code (the key words use in the data model, like seen in [Link Text](https://github.com/teamtreesurf/link) and [here](https://github.com/teamtreesurf/base/blob/a0d9c06ebf5f2aaae51627fb8383aa48923487ba/book/tree/code-tree/base.link)), and also speak to some degree. Because we are trying to make this relatively straightforward to parse and understand by a computer, we are doing all that we can to cut down on the complexity you find in natural languages. In an ideal world, you could learn to think about the base structure of the universe, and write code about the universe, and even communicate about your code, to someone else.
+
+With all that said, now we will outline the phonology in more detail so you know what to expect and how to write the words on a typical keyboard in ASCII. Then we will go into some of the standard concepts in the form of words. Finally, we will show some fundamental sentence structures.
+
+## Sounds (and Writing System)
+
+First, we need to know how to actually write the words in Tune, and what sounds we can even use to make words in the first place! That is the writing system and "phonology" (sound study).
+
+All sounds and pronunciations are written in simple ASCII using [Call Text](https://github.com/teamtreesurf/call), but the Call Text letters are introduced next to IPA letters, in case you are already familiar with IPA. Call Text is a system we have devised for writing the _pronunciation_ of words using only letters you have on your traditional laptop keyboard. We use only a small subset of the aspectes of Call Text in Tune, because Tune is designed as a language to only use the "fundamental" sounds, and it turns out to map nicely to the lettering system of Call Text. Take a look at that Call Text link, it describes in much more detail what call script is all about and how it works, if you are interested. However, we will give you just the pieces of it you need to know about right here as well.
+
+Here, we will write the consonants and vowels we use in Tune, which is using Call Text, and will write a word next to each letter to show the key sound that the letter represents. After reading through these, you should know how to write a pronunciation using your keyboard. That is, you can write a word in Tune, which inherently includes how to pronounce it! Then you can use the ToneEtch font to render it using Tone Text, if desired.
+
+### Consonants
+
+In Tune, there are 22 **consonants** used. They are:
+
+| letter/sound | ipa | glyph | the way it sounds                                 |
+| :----------- | :-: | :---: | :------------------------------------------------ |
+| `m`          |  m  |       | "mark"                                            |
+| `n`          |  n  |       | "note"                                            |
+| `q`          |  ŋ  |       | "sing", the `-ng` sound                           |
+| `g`          |  ɡ  |       | "gift"                                            |
+| `d`          |  d  |       | "deed"                                            |
+| `b`          |  b  |       | "band"                                            |
+| `p`          |  p  |       | "play"                                            |
+| `t`          |  t  |       | "time"                                            |
+| `k`          |  k  |       | "king"                                            |
+| `h`          |  h  |       | "heal"                                            |
+| `s`          |  s  |       | "soul"                                            |
+| `f`          |  f  |       | "fire"                                            |
+| `v`          |  v  |       | "vibe"                                            |
+| `z`          |  z  |       | "zone"                                            |
+| `j`          |  ʒ  |       | "measure", the "s" sound here                     |
+| `x`          |  ʃ  |       | "ship", the "sh" sound                            |
+| `c`          |  θ  |       | "thor", the voiceless "th" sound                  |
+| `C`          |  ð  |       | "this", the voiced "th" sound                     |
+| `w`          |  w  |       | "wave"                                            |
+| `y`          |  j  |       | "yard"                                            |
+| `l`          |  l  |       | "love"                                            |
+| `r`          |  r  |       | "rise" but with spanish, arabic, or indian accent |
+
+The consonants that are missing (i.e. that Tune does not use) are things like the Hebrew/Arabic harsh "h" sound, the ejective (hard) consonants like in Georgian, the stop consonants like in Korean, the French guttural "r", or the click sounds like in some African languages.
+
+Tune also doesn't have the idea of modified sounds (such as with aspiration, glottalization, or palatalization), or "long consonants".
+
+### Vowels
+
+Then we have the **vowels**. There are 5 vowels used in Tune. They are:
+
+| letter/sound | ipa | glyph | the way it sounds |
+| :----------- | :-: | :---: | :---------------- |
+| `i`          |  i  |       | "seat"            |
+| `e`          |  e  |       | "make"            |
+| `a`          |  a  |       | "call"            |
+| `o`          |  o  |       | "hold"            |
+| `u`          |  u  |       | "tool"            |
+
+We have left out as many as 10 or more vowel sounds used by various other languages, focusing only on these extremely distinct vowel sounds. You can find those left out sounds by looking at [Tone](https://tone.land).
+
+### Gematria
+
+In the end, we have 22 consonants and 5 vowels, for a total of 27 sounds. Here is the alphabetical order.
+
+| letter/sound | gematria |
+| :----------- | :------- |
+| `i`          | 1        |
+| `e`          | 2        |
+| `a`          | 3        |
+| `o`          | 4        |
+| `u`          | 5        |
+| `m`          | 6        |
+| `n`          | 7        |
+| `q`          | 8        |
+| `g`          | 9        |
+| `d`          | 10       |
+| `b`          | 20       |
+| `p`          | 30       |
+| `t`          | 40       |
+| `k`          | 50       |
+| `h`          | 60       |
+| `s`          | 70       |
+| `f`          | 80       |
+| `v`          | 90       |
+| `z`          | 100      |
+| `j`          | 200      |
+| `x`          | 300      |
+| `c`          | 400      |
+| `C`          | 500      |
+| `w`          | 600      |
+| `y`          | 700      |
+| `l`          | 800      |
+| `r`          | 900      |
+
+## Word Formation Rules
+
+Next we will describe the key word formation rules. First, some major things we can get out of the way up front.
+
+- All base word forms start and end with a consonant. They are turned into nouns and verbs by adding vowels to the end.
+- Words components can't end in `h`, `y`, or `w`, as these don't really make a clear audible sound to a non-native speaker.
+- Words components can't start in q (-ng sound).
+- Word components can't start with `xr`, `xl`, or `xn` because they are too hard to pronounce.
+- Words can't have `r*r` in them because it's also too hard to pronounce.
+- There can only be one vowel between consonants. That is, there are not sounds like `oi` and `ao`.
+- The stress falls on the last syllable of the base word. So if vowels are added the placement of the stress stays the same relative to the base.
+
+Many of the words are imported and modified from the following languages, which roughly fit the mold/pattern of words in Tune:
+
+- English
+- Hebrew
+- Sanskrit
+- Chinese
+- Arabic
+- A few words from arbitrary other languages:
+  - Icelandic
+  - Inuktitut
+  - French
+  - etc.
+- A few words (especially the 3 letter words) are just made up to be what we liked.
+
+We will do the best we can to show the derivation of each word. As it turns out, the languages from which we derived most of the words turn out to be the languages with signficant/important ancient texts.
+
+When a word is based on a trait or adjective, then you can make it a noun as if you were saying "[trait] thing", like "great thing", by appending the `-a`.
+
+When a word is based on an action or verb, then you can make it into a noun by thinking "[verb] thing", like "stumble thing" is "a stumble", for the action "to stumble". Sometimes also "[verb] result".
+
+When a word is based in an object or noun, there is no need to make it into a trait, you can just use it without the suffix to mean a trait.
+
+When a word is based in an object or noun, you can make it into a verb by thinking "make [noun]" a lot of the time, as in "cube", to "make cube" is the verb "to cube". Or to "be [noun]".
+
+Words have a single _main_ form, either being an action (verb) or object (noun). However, it can also be used as a _modifier_ on a noun or a verb, that is using it in its _base_ form.
+
+## Parts of Speech
+
+All words are `xix` in their base form. They manifest into actions and objects and manners by suffixing the words with singular vowels.
+
+| suffix | type   |
+| :----- | :----- |
+| `-i`   | action |
+| `-a`   | object |
+
+## Actions
+
+These are verbs. Here are a few basic ones.
+
+| word  | writing | meaning   |
+| :---- | :------ | :-------- |
+| `faq` |         | imitate   |
+| `bam` |         | be        |
+| `mek` |         | make      |
+| `jor` |         | measure   |
+| `gom` |         | go        |
+| `get` |         | get       |
+| `kon` |         | intersect |
+| `dor` |         | unite     |
+| `vik` |         | test      |
+| `hin` |         | conclude  |
+
+Many actions fall into these forms:
+
+| phrase    | example           |
+| :-------- | :---------------- |
+| make x    | make popular      |
+| be x      | be merged         |
+| imitate x | imitate chameleon |
+| add x     | add member        |
+
+Here are some actions and how they can be derived from adjectives or nouns.
+
+| action     | derivation          |
+| :--------- | :------------------ |
+| clear      | make clear featured |
+| clarify    | create clarity      |
+| gear       | wire up             |
+| strategize | explore strategy    |
+| formulate  | make formula        |
+| generalize | make general        |
+| neatify    | make neat           |
+
+## Fusions
+
+Fusions are actions which come from prepositions in English. They are typically used as serial-verbs, relational nouns, or coverbs.
+
+The following is a list of some basic common prepositions.
+
+| term      | writing | english    | action        | object         |
+| :-------- | :------ | :--------- | :------------ | :------------- |
+| `yak`     |         | with       | join          | member         |
+| `boc`     |         | together   | bind          | bond           |
+| `nev`     |         | on         | touch         | surface        |
+| `vun`     |         | off        | not touch     | void           |
+| `ras`     |         | in         | enter         | inside         |
+| `sur`     |         | out        | exit          | outside        |
+| `ras yak` |         | within     | enter join    | inside member  |
+| `sur yak` |         | without    | exit join     | outside member |
+| `sok`     |         | around     | surround      | boundary       |
+| `maq`     |         | among      | mix           | mix            |
+| `dud`     |         | during     | parallel      | parallel       |
+| `sag`     |         | beyond     | pass          | pass           |
+| `bis`     |         | across     | cross         | cross          |
+| `pes`     |         | despite    | regard less   |                |
+| `zix`     |         | as         | compose       | composition    |
+| `lik`     |         | as         | like          | role           |
+| `kim`     |         | behind     | before        | before         |
+| `mak`     |         | forward    | front         | front          |
+| `hum`     |         | against    | oppose        | opposition     |
+| `bur`     |         | about      | concern       |                |
+| `mat`     |         | about      | close to      |                |
+| `zed`     |         | beside     | side          | side           |
+| `nos`     |         | almost     | very near     |                |
+| `pal`     |         | to         | arrive        | arrival        |
+| `lop`     |         | from       | depart        | departure      |
+| `for`     |         | for        | supply        | supply         |
+| `tub`     |         | over       | bridge        | bridge         |
+| `sup`     |         | above      | up            | up             |
+| `pas`     |         | below      | down          | down           |
+| `nul`     |         | toward     | face          |                |
+| `lan`     |         | away       | back          |                |
+| `kov pas` |         | underneath | cover foot    |                |
+| `xul`     |         | except     | subtract      |                |
+| `fab`     |         | including  | include       |                |
+| `buf`     |         | excluding  | exclude       |                |
+| `bit`     |         | under      | vault         |                |
+| `cum`     |         | through    | tunnel        |                |
+| `cum ped` |         | throughout | tunnel spread |                |
+| `ban`     |         | by         | extra near    |                |
+| `rif`     |         | near       | vicinity      |                |
+| `far`     |         | far        | distance      |                |
+| `los`     |         | apart      | separate      | separation     |
+| `nun`     |         | not        | negate        | negation       |
+| `Cog`     |         | though     | regard        |                |
+| `wax Cog` |         | although   | all regard    |                |
+| `tux`     |         | until      | progress      |                |
+| `Can`     |         | than       | compare       |                |
+| `cin`     |         | then       | conclude      |                |
+| `ruC`     |         | rather     | prefer        |                |
+| `nep`     |         | instead    | replace       |                |
+| `voz`     |         | versus     | contrast      |                |
+| `hat`     |         | at         | locate        |                |
+
+Then some sentences:
+
+| english                                     | tune                                            |
+| :------------------------------------------ | :---------------------------------------------- |
+| We run across the cross.                    | wit bis jari dan bisa.                          |
+| We cross across the cross.                  | wit bis bisi dan bisa.                          |
+| We compose as code poets.                   | wit muz zixi kod xiran zeka.                    |
+| Our role is as poets.                       | wit poz muza muz bami xiran zeka.               |
+| We went so we could see the transition.     | wit ded gomi son wit kud visi dan sona.         |
+| We went though we did not want to.          | wit ded gomi Cog wit nun pal wanti.             |
+| We looked at the cloud.                     | wit ded hat luki dan gadira.                    |
+| We looked just at the cloud.                | wit ded djast hat luki dan gadira.              |
+| We looked over at the big white cloud.      | wit ded tub hat luki dan larg loven gadira.     |
+| We walked behind the tree.                  | wit ded kim waki dan dipa.                      |
+| We walked over behind the tree.             | wit ded tub kim waki dan dipa.                  |
+| We walked over to the tree near the rock.   | wit ded tub pal waki dan dipa rifi dan gravana. |
+| We walked beyond the tree over to the rock. | wit ded sag waki dan dipa tub pali dan gravana. |
+
+These show how the same base can be used in different notions.
+
+## Objects
+
+These are nouns, called `kaq`. If it's derived from a verb or adjective, it's the thing itself.
+
+| action        | derivation                       |
+| :------------ | :------------------------------- |
+| chat          | the chat object, the chat itself |
+| count         | the count result                 |
+| security      | secure system/framework          |
+| diagnosis     | diagnose result, itself          |
+| invocation    | invoke event                     |
+| turn          | turn event                       |
+| sneak         | sneak event                      |
+| opposition    | oppose force                     |
+| repentance    | repent process                   |
+| ignorance     | ignore state                     |
+| membership    | member state                     |
+| jiggle        | jiggle action                    |
+| clarity       | clear feature state              |
+| frivolity     | frivolous essence                |
+| innocence     | innocent nature                  |
+| diligence     | diligent essence                 |
+| gallop        | gallop event                     |
+| marvel        | marvelled thing                  |
+| revocation    | revoke result                    |
+| undulation    | undulate event                   |
+| slit          | slit result                      |
+| commit        | commit object                    |
+| deficiency    | deficient object                 |
+| determination | determine result                 |
+| thoroughness  | thorough nature                  |
+| reassurance   | reassure state                   |
+| admittance    | admit result                     |
+| study         | study result                     |
+| gasp          | gasp event                       |
+| confession    | confess result                   |
+| puncture      | puncture result                  |
+| huddle        | huddle activity                  |
+| glitter       | glitter items/creators           |
+| aggregation   | aggregate result                 |
+| walk          | walk activity, the walk itself   |
+
+### Representing Self and Other
+
+| word  | writing | meaning |
+| :---- | :------ | :------ |
+| `biq` |         | other   |
+| `baq` |         | self    |
+
+### I, you, it
+
+| word  | writing | meaning |
+| :---- | :------ | :------ |
+| `suq` |         | I       |
+| `riq` |         | you     |
+| `vaq` |         | it      |
+| `wit` |         | we      |
+| `pet` |         | they    |
+
+There are no special "grammatical cases" like in English where the subject of a phrase is "I" but the object is "me". It is all the same no matter what part of speech it is.
+
+### Generic types
+
+Generic types are `kix` and are divided into action types `kiq`, object types `kaq`, and manner types `kuq`. This is used to describe the abstract things, especially used in modeling and representation like used in code.
+
+### Personal Names
+
+Personal names begin with basically a word meaning like "soul", gender agnostic. So it is `sol x`.
+
+    Hi       John    Smith.
+    heno sol djohan  smicane.
+
+Commands end in `-o` like "hi", and the personal name ends in `-e`, so it gives us a sharper clue that it is a meaningless name not the actual thing (like an actual smith).
+
+There is over a hundred thousand possible names which can be had, but reusing/picking a common name would be ideal so as to keep vocabulary small. Some of the words might grow to gain some meaning, so a name could mean something in the future, though we will try and reserve some names for names sake up front, kind of like we have in English.
+
+### Other Formal Names
+
+Other formal names include place names and species names, amongst other things. You just say the equivalent of "formal" (`haq`) next to the noun phrase, also possible by prefixing with `a-`.
+
+> The Big Owl-Eyed Night Walker.
+
+So it would be broken down as:
+
+```
+Big   Owl    -Eyed     Night -Walk  -er.
+abrat yanxuf leg nayan nit   txalat zekwa
+```
+
+So it can get arbitrarily complex that way.
+
+So a "gorilla" is a "large monkey" (`brat markat`). To know we aren't just talking about generic large monkeys, we can prefix the noun phrase with `a-` or `haq` and end in `-wa`.
+
+    abrat markatwa
+
+This gives us a small space to make compact words without having to state and write the longer `haq`.
+
+```
+The beautiful gorilla        is   a   large monkey.
+dan byut fal  abrat markatwa bami nif brat  markata.
+```
+
+Here are some example more complex multi-word terms. The surrounding `a-` ... `-wa` are not included, they are left off in definitions.
+
+| term                    | literal                  | meaning         |
+| :---------------------- | :----------------------- | :-------------- |
+| `bad yanxip`            | body maneuver            | gymnastics      |
+| `blabak kox`            | blob cell                | amorphea        |
+| `boc kemar zoyon`       | together arch animal     | synapsida       |
+| `brat kalim korvid`     | large black corvid       | raven           |
+| `brat markat`           | large monkey             | gorilla         |
+| `brat pakxin`           | big bird                 | ostrich         |
+| `brat savik`            | large knife              | sword           |
+| `dihag kilat`           | concern lack             | apathy          |
+| `dirman saruk zoyon`    | skin wing animal         | dermoptera      |
+| `djiv djataq zoyon`     | live birth animal        | theria          |
+| `djiv ved`              | life science             | biology         |
+| `dob xak lan yan`       | two wheeled line vehicle | bike            |
+| `dob pot kanik zoyon`   | second mouthed animal    | deuterostoma    |
+| `dragan flam`           | dragon fly               | dragonfly       |
+| `faked dik`             | command maker            | commander       |
+| `fitas bomon zoyon`     | fetus membrane animal    | amniota         |
+| `flam veC zek`          | fly catcher              | gnatcatcher     |
+| `hadam gas`             | human gas                | fart            |
+| `hadarx simet zoyon`    | mirror symmetry animal   | bilateria       |
+| `hadic dik`             | news maker               | journalist      |
+| `har djiv`              | early life               | archaea         |
+| `har yum`               | early day                | morning         |
+| `hed kordat zoyon`      | head cord animal         | cephalochordate |
+| `huprat hadam`          | upright human            | homo erectus    |
+| `kadan zek`             | tooth agent              | dentist         |
+| `kalim korvid`          | black corvid             | crow            |
+| `kalim markat`          | black monkey             | chimpanzee      |
+| `kal tul`               | time tool                | clock           |
+| `kapal sirpent`         | poisonous snake          | viper           |
+| `klakin swapar minxak`  | ice swipe game           | hockey          |
+| `klakin gexim`          | ice rain                 | hail            |
+| `kordat zoyon`          | chord animal             | chordata        |
+| `kwek slip`             | quick sleep              | nap             |
+| `laf hakron zoyon`      | four limb animal         | tetrapoda       |
+| `lanak nic bizik zoyon` | wool long nose animal    | mammoth         |
+| `larot zoyon`           | pregnant animal          | eutheria        |
+| `laxon rul wux`         | language rules           | grammar         |
+| `leCyat djaraq pakxin`  | mud runner bird          | curlew          |
+| `let yum`               | late day                 | evening         |
+| `loven fraktal xutxal`  | white fractal vegetable  | cauliflower     |
+| `malak samak zek`       | king fisher              | kingfisher      |
+| `mamol kemar zoyon`     | mammal arch animal       | therapsida      |
+| `mamol zoyon`           | mammal animal            | mammalia        |
+| `manstor lizard`        | monster lizard           | gila monster    |
+| `mayim kadur`           | water ball               | waterpolo       |
+| `mehur kadur`           | hole ball                | golf            |
+| `menat lizard`          | mane lizard              | iguana          |
+| `mil zoyon`             | smell animal             | olfactores      |
+| `mis tov`               | most good                | best            |
+| `yixum hadam`           | art human                | homo sapiens    |
+| `mol nic`               | high long                | tall            |
+| `mor tov`               | more good                | better          |
+| `murkam pakxin`         | stupid bird              | booby           |
+| `nacos kanik zoyon`     | jaw mouth animal         | gnathostomata   |
+| `nanuk wizal`           | bear weasel              | marten          |
+| `nar katal`             | person kill              | murder          |
+| `nefros zoyon`          | kidney animal            | nephrozoa       |
+| `nikil hastok zoyon`    | complete bone animal     | euteleostei     |
+| `nohut kan`             | comfort able             | comfortable     |
+| `not tek zek`           | note taker               | secretary       |
+| `ponen markat`          | lazy monkey              | loris           |
+| `radjal zoyon`          | comb animal              | ctenophora      |
+| `regal kadur`           | foot ball                | soccer          |
+| `riport dik`            | report maker             | reporter        |
+| `rit zoyon`             | after animal             | eumetazoa       |
+| `samik wurk`            | fight work               | strike          |
+| `sarksat teridj zoyon`  | flesh fin animal         | sarcopterygii   |
+| `smal kalim markat`     | small black monkey       | bonobo          |
+| `smal hayit`            | small eagle              | hawk            |
+| `spandjen zoyon`        | sponge animal            | porifera        |
+| `spinak hastok zoyon`   | spine bone animal        | vertebrata      |
+
+### Time
+
+Telling time uses a 12 hour clock with rise and fall. It uses the Gregorian calendar (standard western calendar).
+
+| term   | writing | meaning |
+| :----- | :------ | :------ |
+| `sitx` |         | second  |
+| `dak`  |         | minute  |
+| `hit`  |         | hour    |
+| `yom`  |         | day     |
+| `wik`  |         | week    |
+| `mas`  |         | month   |
+| `xan`  |         | year    |
+| `riz`  |         | rise    |
+| `zar`  |         | fall    |
+
+To say it is 6:37am, you would say:
+
+    vivo san xab riza
+
+Or 11:16pm:
+
+    cuko zen viv zara
+
+The date format is like this:
+
+    /year/month/day hours:minutes:seconds
+
+## Random Things
+
+| term      | writing | meaning   |
+| :-------- | :------ | :-------- |
+| `tat`     |         | sibling   |
+| `sas`     |         | parent    |
+| `gag`     |         | child     |
+| `patram`  |         | leaf      |
+| `mixpak`  |         | family    |
+| `camar`   |         | fruit     |
+| `gravan`  |         | rock      |
+| `refix`   |         | dirt      |
+| `natar`   |         | jump      |
+| `kanan`   |         | dig       |
+| `klor`    |         | color     |
+| `miqxiq`  |         | star      |
+| `hindran` |         | sky       |
+| `navan`   |         | boat      |
+| `basit`   |         | talk      |
+| `suryan`  |         | sun       |
+| `varun`   |         | sea/ocean |
+| `mayim`   |         | water     |
+| `xabat`   |         | rest      |
+| `nic`     |         | long      |
+| `txalat`  |         | walk      |
+| `yahar`   |         | forest    |
+| `talak`   |         | tall      |
+| `nahar`   |         | river     |
+| `pavak`   |         | fire      |
+
+### Sounds
+
+These sounds are all defined on the [Tone site](https://tone.land/).
+
+| term   | writing | meaning               |
+| :----- | :------ | :-------------------- |
+| `ratx` |         | a sound               |
+| `warp` |         | A sound               |
+| `gemz` |         | e sound               |
+| `bred` |         | E sound               |
+| `trid` |         | i sound               |
+| `yild` |         | I sound               |
+| `vorx` |         | o sound               |
+| `molt` |         | O sound               |
+| `hudj` |         | u sound               |
+| `nurf` |         | U sound               |
+| `reqk` |         | english r vowel sound |
+| `corn` |         | british o vowel sound |
+| `gatx` |         | german i vowel sound  |
+| `klap` |         | danish a vowel sound  |
+| `fren` |         | danish e vowel sound  |
+| `morn` |         | m sound               |
+| `natx` |         | n sound               |
+| `txeq` |         | q sound               |
+| `gard` |         | g sound               |
+| `drup` |         | d sound               |
+| `bard` |         | b sound               |
+| `pars` |         | p sound               |
+| `tred` |         | t sound               |
+| `kliq` |         | k sound               |
+| `hold` |         | h sound               |
+| `snor` |         | s sound               |
+| `flem` |         | f sound               |
+| `vast` |         | v sound               |
+| `zuqk` |         | z sound               |
+| `jalf` |         | j sound               |
+| `xarp` |         | x sound               |
+| `crot` |         | c sound               |
+| `Cork` |         | C sound               |
+| `witx` |         | w sound               |
+| `yarn` |         | y sound               |
+| `ladj` |         | l sound               |
+| `ramp` |         | r sound               |
+| `rend` |         | french r sound        |
+| `plap` |         | glottal stop          |
+
+### Diacritics
+
+| term             | meaning           |
+| :--------------- | :---------------- |
+| `tak haspir`     | aspiration        |
+| `yuz tak velam`  | velarization      |
+| `yuz tak palat`  | palatalization    |
+| `yuz tak feran`  | pharyngealization |
+| `yuz tak glatol` | glottalization    |
+| `yuz tak lebyal` | labialization     |
+| `lis xeqyin`     | voiceless         |
+| `nak haflit`     | ejective          |
+| `nak nebal`      | implosive         |
+| `didak`          | click             |
+| `viram`          | stop              |
+| `metak`          | tense             |
+| `bizik`          | nasal             |
+| `nuc`            | long              |
+
+## Punctuation
+
+You have () parentheses and \<\>, quotes ' and ", and the slash / for how you would use them in English.
+
+| term            | writing | symbols | meaning          |
+| :-------------- | :------ | :------ | ---------------- |
+| `mandal brakit` |         | `(` `)` | round bracket    |
+| `taltal brakit` |         | `{` `}` | curl bracket     |
+| `zavit brakit`  |         | `<` `>` | angle bracket    |
+| `zatit`         |         | `'` `"` | quote            |
+| `xedjan`        |         | `\` `/` | slash            |
+| `pasuk`         |         | `.`     | period           |
+| `dohal`         |         | `,`     | comma            |
+| `makaf`         |         | `-`     | hyphen           |
+| `xelak samen`   |         | `?`     | question mark    |
+| `tadjab samen`  |         | `!`     | exclamation mark |
+| `lax samen`     |         | `+`     | add mark         |
+| `vak samen`     |         | `*`     | multiply mark    |
+| `hat samen`     |         | `@`     | at mark          |
+| `malal`         |         | `:`     | colon            |
+| `konbal`        |         | ` `     | space            |
+
+## Manners
+
+These are the way in which something is. A state or status. These are typically adjectives, determiners, or pronouns. They are objects in Tune.
+
+Here are a list of some determiners and pronouns and their conversion.
+
+| term      | writing | english              | conversion           |
+| :-------- | :------ | :------------------- | :------------------- |
+| `dan`     |         | the                  | focus                |
+| `nif`     |         | a                    | select               |
+| `sax`     |         | such                 |                      |
+| `hic`     |         | either               | choose               |
+| `tan`     |         | so                   | great extent         |
+| `soz`     |         | also                 |                      |
+| `lig`     |         | this                 | near thing           |
+| `huz`     |         | that                 | far thing            |
+| `kip lig` |         | these                | near things          |
+| `kip huz` |         | those                | far things           |
+| `war`     |         | whether              | inquire              |
+| `lek vol` |         | everyone             | every individual     |
+| `fid`     |         | next                 | next                 |
+| `daf`     |         | previous             | next reverse         |
+| `lam`     |         | low                  | floor                |
+| `mol`     |         | high                 | roof                 |
+| `tev`     |         | however              | contradict           |
+| `ven`     |         | even                 | emphasize            |
+| `sin`     |         | soon                 | short time           |
+| `jas`     |         | just                 | close focus          |
+| `miC`     |         | quite                | absolute             |
+| `tep`     |         | still (time)         | up to now            |
+| `sus`     |         | since (time)         | between then and now |
+| `rac`     |         | straight             | straight             |
+| `wos`     |         | queer                |                      |
+| `baf`     |         | lack (like a-sexual) |                      |
+| `cid`     |         | cisgender            |                      |
+| `dar`     |         | binary               |                      |
+
+Here are some manners (adjectives) and their derivation from nouns and verbs.
+
+| manner     | derivation        |
+| :--------- | :---------------- |
+| sneaky     | sneak like        |
+| snappy     | snap like         |
+| ignorant   | ignore emanating  |
+| marvelous  | marvel inducing   |
+| geary      | gear oriented     |
+| occasional | occasion oriented |
+| residual   | residue oriented  |
+| edgy       | edge like         |
+
+### Conjunctions
+
+| term  | writing | english   | action        | object      |
+| :---- | :------ | :-------- | :------------ | :---------- |
+| `jon` |         | and       | intersect     |             |
+| `cor` |         | or        | unite         |             |
+| `kik` |         | if        | test          |             |
+| `din` |         | then      | conclude      |             |
+| `bok` |         | otherwise | default       |             |
+| `wif` |         | iff       | together test |             |
+| `son` |         | so        | transition    |             |
+| `kok` |         | else      | next          |             |
+| `riz` |         | because   | reason        |             |
+| `cis` |         | unless    | include       |             |
+| `Coz` |         | except    | subtract      | subtraction |
+| `wal` |         | while     | span time     | period      |
+| `yat` |         | yet       | until present |             |
+| `hid` |         | but       | contrast      |             |
+
+### Quantifiers
+
+| term  | writing | english    | conversion        |
+| :---- | :------ | :--------- | :---------------- |
+| `nuf` |         | enough     | require           |
+| `taz` |         | very       | high degree       |
+| `wax` |         | all        | universe          |
+| `sam` |         | some       | part              |
+| `mis` |         | most       | large part        |
+| `kaf` |         | much       | significant part  |
+| `fuk` |         | little/few | small part        |
+| `sul` |         | more       | relatively higher |
+| `lis` |         | less       | relatively lower  |
+| `xiz` |         | each       | iterate           |
+| `lek` |         | every      | collect           |
+| `kip` |         | many       | group             |
+
+### Colors
+
+| term     | writing | meaning   |
+| :------- | :------ | :-------- |
+| `klor`   |         | color     |
+| `hodem`  |         | red       |
+| `tapuz`  |         | orange    |
+| `sahov`  |         | yellow    |
+| `yarok`  |         | green     |
+| `kahol`  |         | blue      |
+| `mofik`  |         | purple    |
+| `kalim`  |         | black     |
+| `loven`  |         | white     |
+| `hafor`  |         | gray      |
+| `kapix`  |         | brown     |
+| `varod`  |         | pink      |
+| `tukiz`  |         | turquoise |
+| `marun`  |         | maroon    |
+| `bejan`  |         | beige     |
+| `xazuf`  |         | tan       |
+| `farsek` |         | peach     |
+
+### Directions
+
+The relative directions are:
+
+| term  | writing | meaning |
+| :---- | :------ | :------ |
+| `fak` |         | up      |
+| `fit` |         | right   |
+| `kuf` |         | down    |
+| `taf` |         | left    |
+| `sil` |         | front   |
+| `las` |         | back    |
+| `ras` |         | in      |
+| `sur` |         | out     |
+| `nod` |         | center  |
+| `mid` |         | middle  |
+
+The temporal directions:
+
+| term  | writing | meaning |
+| :---- | :------ | :------ |
+| `tur` |         | before  |
+| `log` |         | start   |
+| `dud` |         | during  |
+| `gol` |         | end     |
+| `rit` |         | after   |
+
+The cardinal directions are:
+
+| term   | writing | meaning |
+| :----- | :------ | :------ |
+| `norc` |         | north   |
+| `dart` |         | east    |
+| `cron` |         | south   |
+| `trad` |         | west    |
+
+### Interrogative words
+
+|  word | writing | meaning | conversion      |
+| ----: | :------ | :------ | :-------------- |
+| `miq` |         | who     | identify person |
+| `suk` |         | what    | identify        |
+| `win` |         | when    | time bound      |
+| `zuk` |         | where   | location bound  |
+| `rob` |         | why     | query bound     |
+| `tam` |         | how     | illumine        |
+
+These are not suffixed when used, they are actions in base form.
+
+## Common Modifiers
+
+Tune sometimes/often uses several different single words when English uses one single affix. For example, the `-y` suffix in English could mean to be "x like", "x oriented", "x emanating", or other things. So we have words for each of those, so each piece has a distinct meaning. Same with `-tion`, which often means a "result of x", but also "x process", or "x event".
+
+Here are English-like suffixes and how they may be mapped to Tune. Most of these words are short because they are so commonly used and added as modifiers. They are usually added before the main action, object, or manner.
+
+| prefix    | writing | meaning                                                 |
+| :-------- | :------ | :------------------------------------------------------ |
+| `ded`     |         | past tense "-ed" like "created"                         |
+| `kor`     |         | present active tense "-ing" like "creating"             |
+| `poz`     |         | possesive ("the bird's food")                           |
+| `poz kip` |         | possesive plural ("the birds' food")                    |
+| `tak`     |         | result (-tion)                                          |
+| `dax`     |         | the state of being x (-acy, -ness, -ship)               |
+| `nal`     |         | period of x (-hood)                                     |
+| `zek`     |         | one who does x                                          |
+| `lik`     |         | x like                                                  |
+| `net`     |         | emanating x                                             |
+| `yog`     |         | practice of focusing on x (-ism)                        |
+| `van`     |         | having the nature of (-ivity, -ity, -ance)              |
+| `fin`     |         | belief in x                                             |
+| `zir`     |         | pertaining to x (pleasantry)                            |
+| `dom`     |         | area or state of being (-dom)                           |
+| `ved`     |         | study or science of (-ology)                            |
+| `tul`     |         | it's a tool (zipper)                                    |
+| `bed`     |         | x process                                               |
+| `gin`     |         | the nature of doing x (-ence)                           |
+| `mon`     |         | featuring x                                             |
+| `yum`     |         | x oriented                                              |
+| `fom`     |         | formal x                                                |
+| `mox`     |         | the model of the action ("the transform", "the create") |
+| `kos`     |         | disease (-osis)                                         |
+| `ciq`     |         | thing (hatchling)                                       |
+| `kan`     |         | ability (-ability)                                      |
+| `sox`     |         | x society                                               |
+| `kun`     |         | -ableness                                               |
+| `xit`     |         | shaped                                                  |
+| `gar`     |         | language (-ese)                                         |
+| `kan`     |         | capable of being (-able)                                |
+| `nad`     |         | having some aspects of (-ish)                           |
+| `fol`     |         | full of (-full)                                         |
+| `lis`     |         | less of (-less)                                         |
+| `taz`     |         | very much of (-some)                                    |
+| `rav`     |         | reminiscent of (-esque)                                 |
+| `mor`     |         | more (-er)                                              |
+| `mis`     |         | most (-est)                                             |
+| `tub`     |         | over (overburden)                                       |
+| `yip`     |         | resembling (-istic)                                     |
+| `tof`     |         | relates to (affectional)                                |
+| `zul`     |         | -wise                                                   |
+| `mav`     |         | loving (-phile)                                         |
+| `fir`     |         | hating/fearing/resisting (-phobia)                      |
+| `leg`     |         | containing                                              |
+| `kif`     |         | future tense like "will create"                         |
+| `mis`     |         | different                                               |
+| `bat`     |         | opposite (anti)                                         |
+| `baq`     |         | self (auto-)                                            |
+| `pak`     |         | undo                                                    |
+| `sup`     |         | exceed (super)                                          |
+| `mex`     |         | mesh (inter-)                                           |
+| `sem`     |         | same (sym-)                                             |
+| `zuz`     |         | repeat                                                  |
+| `zig`     |         | equal (iso-)                                            |
+| `dit`     |         | distance (tele-)                                        |
+| `gen`     |         | again (re-)                                             |
+| `rup`     |         | partial (semi-)                                         |
+| `sud`     |         | somewhat (pseudo-)                                      |
+| `mad`     |         | thing about the thing (meta-)                           |
+| `jen`     |         | x generating                                            |
+| `jul`     |         | general (infinitive "to")                               |
+| `fut`     |         | there                                                   |
+| `dav`     |         | here                                                    |
+| `vak`     |         | ever                                                    |
+| `ples`    |         | place x                                                 |
+| `land`    |         | land x                                                  |
+| `smal`    |         | small                                                   |
+| `brat`    |         | large                                                   |
+| `prab`    |         | probable                                                |
+| `drit`    |         | right (now)                                             |
+| `fit`     |         | right (correct)                                         |
+| `yov`     |         | consequence                                             |
+| `did`     |         | indeed                                                  |
+
+So we have a few examples:
+
+| phrase                   | meaning         |
+| :----------------------- | :-------------- |
+| `braman`                 | creation        |
+| `yog braman`             | creationism     |
+| `ded braman`             | created (past)  |
+| `pot braman`             | created (state) |
+| `reC braman`             | creating        |
+| `kif braman`             | will create     |
+| `zek yog braman`         | creationist     |
+| `kip zek yog braman`     | creationists    |
+| `poz zek yog braman`     | creationist's   |
+| `kip poz zek yog braman` | creationists':  |
+
+And some example sentences.
+
+| english                                       | tune                                             |
+| :-------------------------------------------- | :----------------------------------------------- |
+| We wanted to walk to the tree.                | wit ded wanti jul pal waki dan dipa.             |
+| We wanted to go do something.                 | wit ded wanti jul gomi pal kari sam ciqa.        |
+| We would try to go there and study.           | wit wud zoki jul fut gomi jon txanyani.          |
+| That was a disinformation campaign.           | huz ded bami nif bat kox yundoqa.                |
+| It boils down to information and computation. | vaq kuf pal dumili koxa jon xika.                |
+| I wonder if it's better or best.              | suq peleki kik vaq bami mor tov cor mis tov.     |
+| You never know what you're going to get.      | riq nun vak bodi suk riq bami reC gomi jul geti. |
+| The land before time.                         | dan landa turi kala.                             |
+
+## Numbers
+
+Numbers are written using the consonant symbols prefixed by a "a" for decimal and "i" for hexadecimal. Instead of infix notation for addition and the rest, you use function notation like with programming languages.
+
+| number | term  | writing | symbol | glyph |
+| -----: | :---- | :------ | :----- | :---- |
+|      0 | `han` |         |
+|      1 | `zen` |         |
+|      2 | `dob` |         |
+|      3 | `suC` |         |
+|      4 | `laf` |         |
+|      5 | `kam` |         |
+|      6 | `viv` |         |
+|      7 | `xab` |         |
+|      8 | `fit` |         |
+|      9 | `nas` |         |
+|     10 | `bid` |         |
+|     11 | `cuk` |         |
+|     12 | `mod` |         |
+|     13 | `ruf` |         |
+|     14 | `tic` |         |
+|     15 | `wez` |         |
+
+So the number 102 in decimal is `azhd`, and 24 in hexademical is `izf` (0x18). Some other examples:
+
+| value | type        | number      | ascii      | writing |
+| :---- | :---------- | :---------- | :--------- | :------ |
+| 256   | decimal     | 256         | adkv       |         |
+| 256   | hexadecimal | 0x100       | izhh       |         |
+| 256   | binary      | 0b100000000 | uzhhhhhhhh |         |
+
+### Cardinal Numbers
+
+Numbers like "first", "second", etc. are represented as _manners_ of numbers. So you simply suffix the final number with an `-o` or leave it off altogether.
+
+### Count Numbers
+
+| term  | writing | meaning          |
+| :---- | :------ | :--------------- |
+| `pum` |         | time (iteration) |
+| `jak` |         | count            |
+
+Numbers like "once", "twice", etc. is basically like "three times".
+
+Words like "single", "double", and "triple", are counts.
+
+| phrase        | meaning  |
+| :------------ | :------- |
+| `zen pum`     | once     |
+| `xab pum`     | 7 times  |
+| `suC jak`     | triple   |
+| `dub fet jak` | 28-tuple |
+
+### Orders of Magnitude
+
+There are many orders of magnitude, starting with 100, then 1000, then going up by powers of 3 up to 10^42. Likewise, it goes down by powers of 3 down to 10^-42.
+
+Here are the positive values.
+
+| term   | writing | power |
+| :----- | :------ | ----: |
+| `york` |         |  10^2 |
+| `larx` |         |  10^3 |
+| `drib` |         |  10^6 |
+| `swat` |         |  10^9 |
+| `kiqk` |         | 10^12 |
+| `vrum` |         | 10^15 |
+| `xarm` |         | 10^18 |
+| `farv` |         | 10^21 |
+| `neks` |         | 10^24 |
+| `bold` |         | 10^27 |
+| `crak` |         | 10^30 |
+| `morp` |         | 10^33 |
+| `rupz` |         | 10^36 |
+| `tarn` |         | 10^39 |
+| `widj` |         | 10^42 |
+
+So to say out loud "3 million 686 thousand two hundred and 21", you would say:
+
+    san dribo viv yorko fit viv larxo dob yorko dobo zena
+
+You put the `-o` on the power multipliers, to give some context and help with fluidity, and end in `-a`.
+
+You can specify the inverse with `his x`. So 10^12 is `his kiqk`.
+
+### Musical Notes
+
+The musical notes start at 1 and go to 12.
+
+| number | note | symbol | glyph |
+| :----- | :--- | :----- | :---: |
+| 1      | A    | `z`    |       |
+| 2      | A#   | `d`    |       |
+| 3      | B    | `s`    |       |
+| 4      | C    | `l`    |       |
+| 5      | C#   | `k`    |       |
+| 6      | D    | `v`    |       |
+| 7      | D#   | `x`    |       |
+| 8      | E    | `f`    |       |
+| 9      | F    | `n`    |       |
+| 10     | F#   | `b`    |       |
+| 11     | G    | `c`    |       |
+| 12     | G#   | `m`    |       |
+
+## Greetings and Interjections
+
+Some basic greetings.
+
+| term           | writing | meaning      |
+| :------------- | :------ | :----------- |
+| `tov yomo!`    |         | good day!    |
+| `tov nito!`    |         | good night!  |
+| `barak riqo!`  |         | bless you!   |
+| `leto!`        |         | bye (later)! |
+| `heno!`        |         | hi!          |
+| `plizo!`       |         | please!      |
+| `ceqk riqo!`   |         | thank you!   |
+| `sariqo!`      |         | sorry!       |
+| `djekol suqo!` |         | excuse me!   |
+| `hoko!`        |         | okay!        |
+| `walo!`        |         | wow!         |
+| `kulo!`        |         | cool!        |
+| `niso!`        |         | nice!        |
+| `xenyin tovo!` |         | sounds good! |
+
+Greetings end in an `-e`.
+
+## Measurements
+
+Tune supports both the American metric system and the British / scientific metric system.
+
+American metric system:
+
+| term      | writing | meaning   |
+| :-------- | :------ | :-------- |
+| `hintxan` |         | inch      |
+| `futan`   |         | foot      |
+| `yardan`  |         | yard      |
+| `milan`   |         | mile      |
+| `faran`   |         | farenheit |
+| `pondan`  |         | pound     |
+| `hontzan` |         | ounce     |
+
+Scientific metric system:
+
+| term     | writing | meaning |
+| :------- | :------ | :------ |
+| `sitx`   |         | second  |
+| `gram`   |         | gram    |
+| `mirt`   |         | meter   |
+| `cets`   |         | mole    |
+| `drav`   |         | candela |
+| `hamp`   |         | ampere  |
+| `kalv`   |         | kelvin  |
+| `sals`   |         | celsius |
+| `teslan` |         | tesla   |
+| `webar`  |         | weber   |
+| `farad`  |         | farad   |
+| `henrik` |         | henry   |
+| `homan`  |         | ohm     |
+| `luman`  |         | lumen   |
+| `nilaks` |         | lux     |
+| `paskal` |         | pascal  |
+| `redyan` |         | radian  |
+| `litar`  |         | liter   |
+
+## Basic Geometry
+
+| term            | writing | meaning          |
+| :-------------- | :------ | :--------------- |
+| `magal`         |         | circle           |
+| `gwantxaq`      |         | square           |
+| `kadur`         |         | sphere           |
+| `makab`         |         | cube             |
+| `towan`         |         | ellipse          |
+| `ganam`         |         | polygon (2D)     |
+| `hidran`        |         | polyhedron (3D)  |
+| `topan`         |         | polytope (nD)    |
+| `san ganam`     |         | triangle         |
+| `gul`           |         | regular          |
+| `gul kam ganam` |         | regular pentagon |
+| `lan`           |         | line             |
+| `prabol`        |         | parabola         |
+| `hibol`         |         | hyperbola        |
+| `dag`           |         | sine             |
+| `bid`           |         | cosine           |
+| `gub`           |         | tangent          |
+| `fanwek`        |         | radius           |
+| `zavit`         |         | angle            |
+| `malot`         |         | degree           |
+
+## Basic Math
+
+| term     | writing | meaning             |
+| :------- | :------ | :------------------ |
+| `dis`    |         | number              |
+| `dat`    |         | decimal             |
+| `jit`    |         | digit               |
+| `lax`    |         | add                 |
+| `xul`    |         | subtract            |
+| `vak`    |         | multiply            |
+| `kuv`    |         | divide              |
+| `gal`    |         | exponentiate        |
+| `lug`    |         | logarithm           |
+| `skarup` |         | square root         |
+| `bilik`  |         | ratio               |
+| `xikul`  |         | mean (average)      |
+| `xifal`  |         | minimum             |
+| `tikran` |         | maximum             |
+| `hub`    |         | x-axis / horizontal |
+| `lal`    |         | y-axis / vertical   |
+| `noz`    |         | z-axis / depth      |
+
+## Foundational Math
+
+| term     | meaning      |
+| :------- | :----------- |
+| `setan`  | set          |
+| `grupan` | group        |
+| `riqan`  | ring         |
+| `matun`  | union        |
+| `hatzot` | intersection |
+
+## Data Structures
+
+| term  | writing | meaning     |
+| :---- | :------ | :---------- |
+| `kip` |         | group       |
+| `dip` |         | tree        |
+| `lip` |         | list        |
+| `zip` |         | graph       |
+| `liC` |         | point       |
+| `bon` |         | link        |
+| `lux` |         | string      |
+| `run` |         | character   |
+| `bip` |         | bit         |
+| `sal` |         | bit on      |
+| `lus` |         | bit off     |
+| `taq` |         | boolean     |
+| `tiq` |         | true        |
+| `tuq` |         | false       |
+| `det` |         | date        |
+| `vil` |         | file        |
+| `rim` |         | stream      |
+| `not` |         | note        |
+| `mem` |         | memory      |
+| `kux` |         | type        |
+| `kiq` |         | action type |
+| `kaq` |         | object type |
+| `baq` |         | self        |
+| `biq` |         | else        |
+| `dar` |         | required    |
+| `muv` |         | move        |
+| `lon` |         | loan        |
+| `sev` |         | save        |
+| `kap` |         | clone       |
+| `mix` |         | immutable   |
+| `lup` |         | loop        |
+| `pav` |         | input       |
+| `vip` |         | output      |
+| `zok` |         | try         |
+| `veC` |         | catch       |
+| `kaz` |         | cause       |
+| `bin` |         | bind        |
+| `wil` |         | default     |
+| `cat` |         | hook        |
+| `vep` |         | interface   |
+
+## Animals
+
+| term      | writing | meaning     |
+| :-------- | :------ | :---------- |
+| `pakxin`  |         | bird        |
+| `yanxuf`  |         | owl         |
+| `hayit`   |         | eagle       |
+| `korvid`  |         | corvid      |
+| `kormant` |         | cormorant   |
+| `milvin`  |         | kite (bird) |
+| `larus`   |         | gull        |
+| `tortug`  |         | turtle      |
+| `servus`  |         | elk         |
+| `harin`   |         | deer        |
+| `nanuk`   |         | bear        |
+| `maruk`   |         | wolf        |
+| `wizal`   |         | weasel      |
+| `wonuk`   |         | snail       |
+| `karix`   |         | shark       |
+
+## Buildings and Structures
+
+| term          | derivative     | meaning  |
+| :------------ | :------------- | :------- |
+| `fraCam ples` | teach place    | school   |
+| `yixeq ples`  | doctor place   | hospital |
+| `hovex ples`  | medicine place | pharmacy |
+
+## Atoms
+
+| term           | derivative       | meaning       |
+| :------------- | :--------------- | :------------ |
+| `mayim tom`    | water            | hydrogen      |
+| `suryan tom`   | sun              | helium        |
+| `gravan tom`   | rock             | lithium       |
+| `makmad tom`   | precious         | beryllium     |
+| `hastok tom`   | bone             | boron         |
+| `hayim tom`    | life             | carbon        |
+| `plant tom`    | plant            | nitrogen      |
+| `nexim tom`    | breath           | oxygen        |
+| `kadan tom`    | tooth            | fluorine      |
+| `kastal tom`   | tube             | neon          |
+| `lavan tom`    | salt             | sodium        |
+| `kadim tom`    | ancient          | magnesium     |
+| `zarak tom`    | shine            | aluminum      |
+| `ramil tom`    | sand             | silicon       |
+| `mar tom`      | light            | phosphorous   |
+| `stiqkan tom`  | stink            | sulfur        |
+| `yarok tom`    | green            | chlorine      |
+| `mandar tom`   | slow             | argon         |
+| `basman tom`   | ash              | potassium     |
+| `hatzav tom`   | nerve            | calcium       |
+| `saft tom`     | soft             | scandium      |
+| `hozak tom`    | strength         | titanium      |
+| `byut tom`     | beauty           | vanadium      |
+| `klor tom`     | color            | chromium      |
+| `gaCim tom`    | magnificent      | manganese     |
+| `djinxul tom`  | metal            | iron          |
+| `tabat tom`    | ring             | cobalt        |
+| `loven tom`    | white            | nickel        |
+| `mes tom`      | message          | copper        |
+| `bretal tom`   | brittle          | zinc          |
+| `pakxin tom`   | bird             | gallium       |
+| `valam tom`    | cave             | germanium     |
+| `kapal tom`    | poison           | arsenic       |
+| `txandran tom` | moon             | selenium      |
+| `varun tom`    | ocean            | bromine       |
+| `xatit tom`    | hidden           | krypton       |
+| `hodem tom`    | red              | rubidium      |
+| `balen tom`    | burst            | strontium     |
+| `deqpal tom`   | bulb             | yttrium       |
+| `hopek tom`    | opaque           | zirconium     |
+| `haput tom`    | snow             | niobium       |
+| `ram tom`      | dark             | molybdenum    |
+| `hetxeq tom`   | synthetic        | technetium    |
+| `stil tom`     | still            | ruthenium     |
+| `floran tom`   | flower           | rhodium       |
+| `txakman tom`  | wisdom           | palladium     |
+| `hadarx tom`   | mirror           | silver        |
+| `mam tom`      | source           | cadmium       |
+| `liqun tom`    | ghost            | indium        |
+| `dolpeq tom`   | cloak            | tin           |
+| `rasam tom`    | paint            | antimony      |
+| `max tom`      | earth            | tellurium     |
+|                | cerium           | iodine        |
+| `paraq tom`    | alien            | xenon         |
+| `xum tom`      | sky              | caesium       |
+| `barik tom`    | heavy            | barium        |
+| `vayun tom`    | air              | lanthanum     |
+| `fud tom`      | food             | cerium        |
+| `tanun tom`    | wind (air)       | praseodymium  |
+| `txitek tom`   | magnet           | neodymium     |
+| `pavak tom`    | fire             | promethium    |
+| `par tom`      | power            | samarium      |
+| `masak tom`    | screen (display) | europium      |
+| `sik tom`      | seek             | gadolinium    |
+| `vuhok tom`    | glow             | terbium       |
+|                |                  | dysprosium    |
+| `halkal tom`   | permeate         | holmium       |
+| `katxam tom`   | glass            | erbium        |
+| `yund tom`     | beyond           | thulium       |
+| `mem tom`      | memory           | ytterbium     |
+| `mustaqk tom`  | swamp            | lutetium      |
+| `tul tom`      | tool             | hafnium       |
+| `vidyut tom`   | electricity      | tantalum      |
+| `maruk tom`    | wolf             | tungsten      |
+| `nahar tom`    | river            | rhenium       |
+| `saruk tom`    | wing             | osmium        |
+| `kemar tom`    | arch             | iridium       |
+| `vebrant tom`  | vibrant          | platinum      |
+| `kitir tom`    | crown            | gold          |
+| `lak tom`      | liquid           | mercury       |
+| `makel tom`    | stick (plant)    | thallium      |
+| `mavat tom`    | death            | lead          |
+| `tizal tom`    | shadow           | bismuth       |
+| `taltil tom`   | shake            | polonium      |
+| `kwek tom`     | quick            | astatine      |
+| `ganzoq tom`   | trace            | radon         |
+| `murtak tom`   | loose            | francium      |
+| `kuron tom`    | beam             | radium        |
+| `wowak tom`    | sparkle          | actinium      |
+| `rudran tom`   | roar             | thorium       |
+| `hatom tom`    | seal             | protactinium  |
+| `hafug tom`    | break            | uranium       |
+| `rakats tom`   | wash             | neptunium     |
+| `far tom`      | far              | plutonium     |
+| `smok tom`     | smoke            | americium     |
+| `surar tom`    | cheer            | curium        |
+| `britan tom`   | bright           | berkelium     |
+| `nagnat tom`   | naked            | californium   |
+| `kakam tom`    | smart            | einsteinium   |
+| `rar tom`      | rare             | fermium       |
+| `halutz tom`   | pioneer          | mendelevium   |
+| `djayiz tom`   | prize            | nobelium      |
+| `hag tom`      | open             | lawrencium    |
+| `strak tom`    | structure        | rutherfordium |
+| `marutz tom`   | race (event)     | dubnium       |
+| `vas tom`      | force            | seaborgium    |
+| `mitzul tom`   | depth            | bohrium       |
+| `xinxan tom`   | fresh            | hassium       |
+| `rom tom`      | merge            | meitnerium    |
+| `djataq tom`   | birth            | darmstadtium  |
+| `mabat tom`    | sight            | roentgenium   |
+| `nod tom`      | center           | copernicium   |
+| `hatar tom`    | danger           | nihonium      |
+| `gadir tom`    | cloud            | flerovium     |
+| `xinzaq tom`   | heart (body)     | moscovium     |
+| `zudjik tom`   | host             | livermorium   |
+| `mahat tom`    | great            | tennessine    |
+| `xuq tom`      | fusion           | oganesson     |
+
+## Importing Words
+
+Often times it is not possible to seamlessly translate a term into Tune from another language, so we must just phonetically modify the term to fit the Tune phonology, and copy it like that. This is common with place names or people names, which often derive from past meaningless names, so there is no simple meaningful base definition for the word. Words like "Algeria" mean "land of the algerians", but no one knows what "algerian" means, it means the people of that region. So we can copy that word over as best as we can, similar to how Chinese does it. Alternatively, as time passes, we can come up with nice sounding names for foreign words, so they have richer meaning in Tune.
+
+## Verb Constructs
+
+Here are most of the verb aspects and tenses you might need.
+
+| tense   | type                       | phrase                    | example                           | note                                                                                             |
+| :------ | :------------------------- | :------------------------ | :-------------------------------- | :----------------------------------------------------------------------------------------------- |
+| past    | simple past                | `ded x`                   | I ate an apple.                   | the action has already happened or has been completed                                            |
+| past    | past continuous            | `ded bami reC x`          | I was eating an apple.            | refers to something in the past that has already happened, but as though it were still happening |
+| past    | past perfect               | `ded luti pot x`          | I had eaten an apple.             | talk about events that have already been completed before a specified time                       |
+| past    | past perfect continuous    | `ded luti pot bami reC x` | I had been eating an apple.       | refers to an action that was still happening until another event occurred                        |
+| past    | past regular               | `ded gaci pal x`          | I used to eat apples.             |                                                                                                  |
+| present | simple present             | `x`                       | I eat an apple.                   |                                                                                                  |
+| present | present continuous         | `bami reC x`              | I am eating an apple.             |                                                                                                  |
+| present | present perfect            | `luti pot x`              | I have eaten an apple.            |                                                                                                  |
+| present | present perfect continuous | `luti pot bami reC x`     | I have been eating an apple.      |                                                                                                  |
+| future  | simple future              | `kif x`                   | I will eat an apple.              |                                                                                                  |
+| future  | future continuous          | `kif bami reC x`          | I will be eating an apple.        |                                                                                                  |
+| future  | future perfect             | `kif luti pot x`          | I will have eaten an apple.       |                                                                                                  |
+| future  | future perfect continuous  | `kif luti pot bami reC x` | I will have been eating an apple. |                                                                                                  |
+
+Gerunds
+
+| type                  | phrase  | example                        |
+| :-------------------- | :------ | :----------------------------- |
+| subject               | `reC x` | Eating an apple is cool.       |
+| object                | `reC x` | I love eating apples.          |
+| object of preposition | `reC x` | I am excited by eating apples. |
+
+    It  is   quickly  eating     a   big  apple.
+    riq bami kwek lik reC takuli nif brat tapwaka.
+
+    It  will have quickly  eaten      the apple.
+    riq kif  luti kwek lik pot takuli dan tapwaka.
+
+    I   was      having   doubts.
+    suq ded bami reC havi kip sakana.
+
+    The swimming  ducks       overheard    the dirt-covered    black  bear.
+    dan reC swami kip hamsana ded tub hiri dan dortan pot kovi akalim nanukwa.
+
+    The red   -headed  sparrow plucked     recently    ripened    berries.
+    dan hodem pot hedi pasera  ded varnaki lik zukdjin pot baxali kip berika.
+
+    The brightly   lit      screen has  been     shining    for  a   long time.
+    dan lik britan pot mari masaka luti pot bami reC zaraki foro nif nuc  kala.
+
+## Phrases
+
+In Tune, there are 3 main types of _realized_ words.
+
+| type   | traditional realization | suffix |
+| :----- | :---------------------- | :----- |
+| action | verb                    | `-i`   |
+| object | noun                    | `-a`   |
+| manner | adjectives              | `-u`   |
+
+But when you are speaking, any "modifiers" to one of the 3 realized word forms don't get a prefix either, so they serve as the nebulous base, which gains meaning through context.
+
+In addition, there is a strict word order for phrases. Action phrases, object phrases, and manner phrases are such that all modifiers precede the main "head", as a "tail". The tail words get no suffixes, but the head gets its appropriate suffix.
+
+In a sense, the head words divide up the sentence like points in a string, and the hanging part of the string are the modifiers. You can sequence together things like the following:
+
+| sequence               | example               |
+| :--------------------- | :-------------------- |
+| `object-action`        | I love                |
+| `object-action-object` | I love stuff          |
+| `object-action-manner` | I turn red            |
+| `action-object`        | Create something      |
+| `action-object-manner` | Create something fast |
+
+You separate each of these things by adding the suffix to the head of the phrase.
+
+## Sentence Structure
+
+Sentences work in subject-verb-object form (SVO). So you might say:
+
+> I write code.
+
+or
+
+> I climb trees.
+
+Now, it might get more complex and you add some manners around these words.
+
+> I `often` climb `big` trees.
+
+Or even:
+
+> I `quickly` climb`ed a big` tree `over` there.
+
+Or:
+
+> I `would quickly love to` climb `that big reddish` tree `just over` there.
+
+So those get into fusions and nested verbs.
+
+    that  big   red   -ish
+    huz   brat  hodem nix
+
+Then "just over there" might be:
+
+    just over there
+    djas tubi futa
+
+But the first one is a serial verb construction.
+
+    would  quickly    love
+    wud    kwek lik   luvi
+
+So we have:
+
+> I would quickly love to climb that big reddish tree just over there.<br/>
+> suq wud kwek lik luvi pal klami huz brat hodem nix dipa djas tubi futa.
+
+So that gets you a reasonable sentence. You add the `-a` to the final part of a noun phrase, and you add the `-i` to the final part of a verb phrase.
+
+For the noun phrase, you can have multiple nouns be interspersed there.
+
+> The owl-eyed monkey.<br/>
+> dan yanxuf leg nayan markata
+
+So you end a noun phrase with an `-a` always, but the intermediate nouns can be inferred from their base context. Likewise, you always end a vowel with an `i`, it helps to use vowels which can also be nouns.
+
+> The creator created creation.<br/>
+> dan zek bramana ded bramani tak bramana
+
+## Sentences with Logic
+
+This is for "not", "if", "then", "and", "or", and "but/except" (and a few other ones you need not worry about, for full simple logic).
+
+So for the sentence "I don't want grapes, but want the cheese and crackers or the hummus, if it potentially exists", we have:
+
+    I   don't   want  grapes
+    suq nan kar wanti kip svaduq
+
+    but want  the cheese and crackers
+    hid wanti dan gevina jon kip matzata
+
+    or  the hummus
+    cor dan humusa
+
+    if  it  potentially exists.
+    kik vaq ten net     wavi.
+
+So that is how you can compose larger more complex sentences.
+
+## Example Sentences
+
+| english                                        | translation                                          |
+| :--------------------------------------------- | :--------------------------------------------------- |
+| We hear children.                              | wit hiri kip gaga                                    |
+| The leaf is green.                             | dan patrama bami yaroku                              |
+| You see red dirt.                              | riq visi hodem refixa                                |
+| The small child jumps.                         | dan smal gaga natari                                 |
+| My parents are here.                           | suq sasaya bami davu                                 |
+| What is the year?                              | suko bami dan xana                                   |
+| I have a good family.                          | suq havi nif tov mixpaka                             |
+| There are two fruits.                          | fut bami dob camaraya                                |
+| This leaf is small and green.                  | lig patrama bami smalu hono yaroku                   |
+| My sibling is home again.                      | suq tata bami homa geno                              |
+| The white rock moves.                          | dan loven gravana muvi                               |
+| Are you calm today?                            | bami riq friCelu lig yoma                            |
+| Find the purple fruit!                         | fandi dan mofik camara                               |
+| Who is your sibling?                           | miqo bami riq poz tata                               |
+| I am behind the tree.                          | suq bami kimo dan dipa                               |
+| The dirt is black.                             | dan refixa bami kalimu                               |
+| Can you see us?                                | kani riq visi wita                                   |
+| They cannot hear you.                          | peta nan kani hiri riqa                              |
+| Jump three times.                              | natari san puma                                      |
+| Find it again.                                 | fandi vaqa geno                                      |
+| Her friend is climbing a tree.                 | fim riq frenda bami klami nif dipa                   |
+| The red fruit is close to you.                 | dan hodem camara bami rifo riqa                      |
+| How do I find the biggest tree?                | gavo gini suq fandi dan mis brat dipa?               |
+| It is time to dig for rocks.                   | vaq bami kala palo kanani foro gravanaya             |
+| What color is the star tonight?                | suko klora bami dan miqxiqa lig nita?                |
+| I do not know the time.                        | suq nan bodi dan kala                                |
+| Is your rock purple or white?                  | bami riq poz gravana mofiku wul lovenu?              |
+| Calling her parents is too hard.               | gin keki fim vaq poz sasaya bami gamo skotu          |
+| Did you see the yellow star?                   | riq ded visi dan sahov miqxiqa?                      |
+| Count one, two, three.                         | pumi zenu, dobu, sanu                                |
+| She will call me tomorrow.                     | fim vaq fat keki suq fid yoma                        |
+| He was your first friend.                      | mif vaq ded bami riq poz zen frenda                  |
+| I want to see, too.                            | suq wanti visi, gamo                                 |
+| I see a lot of dirt over there.                | suq visi nif lat refixa tubo futa                    |
+| This is not a very ripe piece of fruit.        | lig nan bami nif taz baxal kuwama xalo camara        |
+| Why will she be wild today, do you think?      | robo fat fim vaq bami txaqdjemu lig yoma, riq ciqki? |
+| I am the middle child of my family.            | suq bami dan mid gaga xalo suq poz mixpaka           |
+| She was very small last year.                  | fim vaq ded bami taz smalu last xana                 |
+| Do not move my small fruit!                    | nan gin muvi suq poz smal camara                     |
+| Will I find them behind a tree?                | suq fat fandi peta kimo nif dipa?                    |
+| She said I should not climb there.             | fim vaq ded seni suqa xudi nan klami futu            |
+| I like that you always have a plan.            | suq liki huzo riq liz havi nif plana                 |
+| We are too far away to see the tree.           | wit bami gam far lano pal visi dan dipa              |
+| It would be good to see my home again.         | vaq wud bami tovu pal visi suq poz homa geno         |
+| Get off that tree or I will call your parents! | geti vuno huz dipa wulo suq fat keki riq poz sasaya! |
+| He thought she could see him.                  | mif vaqa ded ciqki fim vaqa kud visi mif vaqa        |
+| It is hard to have so much energy.             | riqa bami skotu pal havi tan kaf vira                |
+| I planned to call you yesterday.               | suq ded plani pal keki riqa daf yoma                 |
+| Don't dig over there because it's too far.     | nan kanani tubo futa zago vaq bami gam faro          |
+| What time ded he say he would call?            | suko kala ded gini mif vaq seni mif vaq wud keki     |
+| Maybe they should go home now.                 | meb pet xud gomi homa xomo                           |
+| They had not looked for a rock of that color.  | peta ded havi nan luki for nav gravana xal huz klora |
+| He used to be our calmest friend.              | mif vaqa ded gul bami wit poz mis friCel frenda      |
+| They wanted us to find a purple leaf.          | peta ded wanti wita pal fandi nav mofik patrama      |
+| When can you plan our next dig?                | wino kani riq plani poz wit fid kanana?              |
+| Please move it to a better time.               | plize muvi vaq palo nif mor tov kala                 |
+| Is it too late to call your parents?           | bami vaq gam letu pal keki poz riq sasaya            |
+| I didn't plan on doing that ever again!        | suq nan plani nevo kor gini huza vak genu            |
+| I wish you could see this like I do.           | suq xiwaqi riq kud visi liga liki suq gini           |
+| Will you only look for your family?            | riq gax fat luki foro riq poz mixpaka?               |
+| We have seen the star high in the sky.         | wit pot visi dan miqxiqa molu raso dan hindrana      |
+| We are aboard a boat.                          | wit bami raso bordanu nif navana                     |
+| She talked about the sun.                      | riq basiti mato dan suryana                          |
+| The sky is above the sea.                      | dan hindrana bami supo dan varuna                    |
+| They will be across the water.                 | pet fat bami biso dan mayima                         |
+| He wanted to rest after the long night.        | vaq ded wanti pal xabati rito dan nic nita           |
+| Are you with them or against them?             | bami riq yako peta wulo humo peta                    |
+| We walked along the trail for an hour.         | wit txalati ludo dan triyala foro nif hita           |
+| There might be animals among us.               | fut yaq bami zoyona maqo wita                        |
+| We must go around the forest.                  | wit mast gomi soko dan yahara                        |
+| He is as tall as a tree.                       | vaq bami muzo talaku liko nif dipa                   |

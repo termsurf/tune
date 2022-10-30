@@ -1,0 +1,101 @@
+<head>
+  <style>
+    @font-face {
+      font-family: "Tone";
+      src: url("../tmp/ToneEtch.new.4.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "NotoSans";
+      src: url("../tmp/NotoSansMono-Regular.otf") format("opentype");
+    }
+
+    html,
+    body {
+      background: #333;
+      color: white;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      flex-shrink: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    * {
+      font-family: NotoSans;
+    }
+
+    .english {
+      font-size: 18px;
+      opacity: 0.4;
+      color: #cc9aff;
+      white-space: pre;
+    }
+
+    .ascii {
+      font-size: 18px;
+      padding-top: 10px;
+      opacity: 0.7;
+      color: #cc9aff;
+      white-space: pre;
+    }
+
+    .tone {
+      font-family: Tone;
+      font-size: 18px;
+      margin-top: 16px;
+      white-space: pre;
+      /* color: #8dd484; */
+    }
+
+    .row {
+      padding: 18px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <script>
+    const list = [
+      {
+        english: `The beautiful gorilla is a large monkey.`,
+        ascii: `dan byut fal abrat markatwa bami nif brat markata.`
+      },
+      {
+        english: `3 million 686 thousand two hundred and 21.`,
+        ascii: `san dribo viv yorko fit viv larxo dob yorko dobo zena.`
+      },
+      {
+        english: `The swimming ducks overheard the dirt-covered black bear.`,
+        ascii: `dan reC swami kip hamsana ded tub hiri dan dortan pot kovi akalim nanukwa.`
+      },
+      {
+        english: `We walked over to the tree near the rock.`,
+        ascii: `wit ded tub pal waki dan dipa rifi dan gravana.`
+      }
+    ]
+
+    const html = []
+
+    list.forEach(item => {
+      html.push(`
+<div class="row">
+  <div class="english">${item.english}</div>
+  <div class="ascii">${item.ascii}</div>
+  <div class="tone">${item.ascii}</div>
+</div>
+      `)
+    })
+
+    document.body.innerHTML = `<div class="content">${html.join('\n')}</div>`
+  </script>
+</body>

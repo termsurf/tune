@@ -1,0 +1,29 @@
+tune,english
+gaslina,semigroupoid
+gaspina,small category
+gaspuna,groupoid
+gorlina,magma
+gorluna,quasigroup
+gorpina,unital magma
+goslina,semigroup
+gorpuna,loop
+gosluna,inverse semigroup
+gospina,monoid
+gospima,commutative monoid
+gospuna,group
+gospuma,abelian group
+malaraka:maralaka,medial (xy • uz ≡ xu • yz)
+mamalaka:malamaka,left semimedial (xx • yz ≡ xy • xz)
+lakamama:lamakama,right semimedial (yz • xx ≡ yx • zx)
+masalaka:malamaka,left distributive (x • yz ≡ xy • xz)
+lakamasa:lamakama,right distributive (yz • x ≡ yx • zx)
+mala:lama,Commutative (xy ≡ yx)
+mama:masa,Idempotent (xx ≡ x)
+mama:lala,Unipotent (xx ≡ yy)
+mamalasa:mama:lasamama,zeropotent (xx • y ≡ xx ≡ y • xx)
+,alternative (xx • y ≡ x • xy and x • yy ≡ xy • y)
+malamasa:masalama,flexible (xy • x ≡ x • yx)
+masalaka:malakasa,associative (x • yz ≡ xy • z)
+mala:maka,left unar (xy ≡ xz)
+lama:kama,right unar (yx ≡ zx)
+,"# If, for all x, y, and, z, xy = xz implies y = z"
