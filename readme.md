@@ -1607,7 +1607,7 @@ car, bak suq frenda! fut riq kani, riq kani buda. mili dan mastima. muz kani dan
 
 > _Watchful like a hunter, open minded like a beautiful blue flower, ready like the wind, we begin our trek. Following the trail of the wilderness, feasting on its diversity. Others will soon join in as they see fit._
 
-watx falu muzo nic matzod zeka, hago pot manasa muzo nic byut fal kahol florana, red muzo dan tanuna, wit logi bak wit trekapa. reC dabari dan triyala xal dan txandjem doma, reC fistari nevo bak vaq gavan doma. yas biqa kif sin yuci ras muzo pet visi koxara.
+watx falyu muzi nic matzod zeka, hago pot manasa muzo nic byut fal kahol florana, red muzo dan tanuna, wit logi bak wit trekapa. reC dabari dan triyala xal dan txandjem doma, reC fistari nevo bak vaq gavan doma. yas biqa kif sin yuci ras muzo pet visi koxara.
 
 > _Now it's time for work. Things to be done. Ideas to create. Problems to illustrate, solutions to spiral back around, like the tunnels we so generously have dug. More must be dug. Gems uncovered. Roots nibbled upon, areas explored and safety and benevolence experienced. After all, this process needs some company. Let the mind mould the earth, and I should have a safe restful home for the night. Sniff Sniff._
 
