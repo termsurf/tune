@@ -1641,21 +1641,21 @@ So that is how you can compose larger more complex sentences.
 | english                       | translation                       |
 | :---------------------------- | :-------------------------------- |
 | We hear children.             | wit hiri yas gaga                 |
-| The leaf is green.            | dan patrama vuti yaroku           |
+| The leaf is green.            | dan patrama vuti yaroka           |
 | You see red dirt.             | riq visi hodem refixa             |
 | The small child jumps.        | dan smal gaga natari              |
 | My parents are here.          | bak suq yas sasa vuti dava        |
 | What is the year?             | suk vuti dan xana?                |
 | I have a good family.         | suq havi nic tov mixpaka          |
 | There are two fruits.         | fut vuti dob yas camara           |
-| This leaf is small and green. | lig patrama vuti smalu jon yaroku |
+| This leaf is small and green. | lig patrama vuti smalu jon yaroka |
 | My sibling is home again.     | suq tata vuti homa geno           |
 | The white rock moves.         | dan loven gravana muvi            |
 | Are you calm today?           | vuti riqa friCelu lig yoma        |
 | Find the purple fruit!        | fandi dan mofik camara!           |
 | Who is your sibling?          | miq vuti bak riq tata?            |
 | I am behind the tree.         | suq vuti kimo dan dipa            |
-| The dirt is black.            | dan refixa vuti kalimu            |
+| The dirt is black.            | dan refixa vuti kalima            |
 | Can you see us?               | kan riqa visi wita                |
 | They cannot hear you.         | peta nun kin hiri riqa            |
 | Jump three times.             | natari san puma                   |
@@ -1673,7 +1673,7 @@ So that is how you can compose larger more complex sentences.
 |                                                   | bak suq bak brat tat stafa                               |
 | Small my big sibling's stuff                      | bak smal suqa bak brat tata stafa                        |
 |                                                   | bak smal suq bak brat tat stafa                          |
-| My nice big brother's particularly precious book. | bak suqa nis brat maf bak tata lak tardiqu makmad zuzona |
+| My nice big brother's particularly precious book. | bak suqa nis brat maf bak tata lak tardiqa makmad zuzona |
 |                                                   | bak suq nis brat maf bak tat lak tardiq makmad zuzona    |
 | My sibling's stuff on the table.                  | bak suq bak tat stafa nevo dan barmana.                  |
 | My sibling's on the table stuff.                  | bak suq bak tat nevo dan barmana stafa.                  |
