@@ -28,6 +28,7 @@ const map = {
   a: `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" />`,
   o: `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" />`,
   u: `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" />`,
+  D: `<img height="28" src="https://github.com/teamtreesurf/tune/blob/make/view/d.dot.svg?raw=true" />`,
   ' ': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" />`,
   '!': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/exclam-33.svg?raw=true" />`,
   '(': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/parenleft-40.svg?raw=true" />`,
@@ -35,7 +36,7 @@ const map = {
   ',': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/comma-44.svg?raw=true" />`,
 }
 
-const WORDS = `gal(yular, p)
+const WORDS = `zig lax(gal(p, D), gal(k, D)), gal(b, D)
 `.trim().split(/\n+/)
 
 const out = WORDS.map(x => x.split('').map(x => map[x]).join(''))
