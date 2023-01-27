@@ -59,7 +59,7 @@ So what are our biases? Our main bias is that we were born and raised English sp
 
 As such, we try and develop out of this mental model a language which can both be used to write code (the key words use in the data model, like seen in [Link Text](https://github.com/teamtreesurf/link) and [here](https://github.com/teamtreesurf/base/blob/a0d9c06ebf5f2aaae51627fb8383aa48923487ba/book/tree/code-tree/base.link)), and also speak to some degree. Because we are trying to make this relatively straightforward to parse and understand by a computer, we are doing all that we can to cut down on the complexity you find in natural languages. In an ideal world, you could learn to think about the base structure of the universe, and write code about the universe, and even communicate about your code, to someone else.
 
-The word for "tune" in Tune is `him`. It means to chime, to align yourself with the oneness. The word for "god" is `niq`. The `niq` is the entire system, which left a void and filled the void with creation so that the creation may experience the wonders of the universe in its return back to `niq`. The raw `him`, tied to the `niq`, realizes the oneness in the balance, `hum`.
+The word for "tune" in Tune is `him`. It means to chime, to align yourself with the oneness. The word for "god" is `niq`. The `niq` is the entire system, which from one angle left a void and filled the void with creation so that the creation may experience the wonders of the universe in its return back to `niq`. The raw `him`, tied to the `niq`, realizes the oneness in the balance, `hum`.
 
 ## Sounds (and Writing System)
 
