@@ -1,0 +1,55 @@
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  height="250px"
+  width="250px"
+  viewBox="0 0 140 140"
+  preserveAspectRatio="none"
+>
+  <defs>
+    <style>
+      @import url("https://teamtreesurf.github.io/tune/text/ToneEtch.ttf.css");
+
+      text {
+        text-align: center;
+        width: 20px;
+        text-anchor: middle;
+        fill: #777;
+        font-family: Tone;
+      }
+    </style>
+  </defs>
+  <text x="50px" y="113px">b</text>
+  <text x="80px" y="80px">a</text>
+  <text x="110px" y="50px">d</text>
+  <text x="110px" y="80px">i</text>
+  <text x="80px" y="113px">u</text>
+  <text x="110px" y="113px">g</text>
+  <path
+    d="M 20 120,L 120 120"
+    fill="none"
+    stroke="#ccc"
+    stroke-width="2px"
+    stroke-linecap="round"
+  ></path>
+  <path
+    d="M 120 120, L 120 20"
+    fill="none"
+    stroke="#ccc"
+    stroke-width="2px"
+    stroke-linecap="round"
+  ></path>
+  <path
+    d="M 120 20, L 20 120"
+    fill="none"
+    stroke="#ccc"
+    stroke-width="2px"
+    stroke-linecap="round"
+  ></path>
+  <circle
+    r="4"
+    cx="20px"
+    cy="120px"
+    fill="rgba(121, 85, 243, 0.7)"
+  ></circle>
+</svg>
