@@ -22,7 +22,7 @@
 
 ## Summary
 
-_Note: Tune is just in the prototype phases right now. [Here](https://docs.google.com/spreadsheets/d/1GxKYr8wTVQyGuotdQTrG1DJh92KBSqvxF-zC-3kISBs/edit?usp=sharing) is a spreadsheet with some words/sentences currently being worked on._
+_Note: Tune is just in the prototype phases right now. [Here](https://docs.google.com/spreadsheets/d/1GxKYr8wTVQyGuotdQTrG1DJh92KBSqvxF-zC-3kISBs/edit?usp=sharing) is a spreadsheet with some words/sentences currently being worked on. [Here](https://github.com/teamtreesurf/tune/blob/make/tone/example.mp4) is an example of how it sounds currently._
 
 Tune is a [#conlang](https://en.wikipedia.org/wiki/Constructed_language) ("constructed language") that takes influence from English, Chinese, Sanskrit, Vietnamese, Hebrew, and Arabic. Its phonology (i.e. the sounds it uses) consist of 22 consonant sounds and 5 vowel sounds. It is a mostly "analytic" language, meaning that pretty much everything is diviyod into words instead of having word inflections or word morphology changes. There are no tones (like in Chinese), or clicks, like in some African languages. It is a subject-verb-object language (SVO), so verbs come second generally speaking. There are only nouns and verbs, no adjectives or other word forms like prepositions. All nouns and verbs can be used as modifiers for other nouns and verbs as well.
 
