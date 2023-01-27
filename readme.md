@@ -334,9 +334,11 @@ Personal names begin with basically a word meaning like "soul", gender agnostic.
     Hi       John    Smith.
     henu sol djohan  smicane.
 
-The personal name ends in `-e`, so it gives us a sharper clue that it is a meaningless name not the actual thing (like an actual smith).
+The personal name ends in `-e`, so it gives us a sharper clue that it is a meaningless name not the actual thing (like an actual smith). Longer names start with `e-`, like if they are 3+ words.
 
 There is over a hundred thousand possible names which can be had, but reusing/picking a common name would be ideal so as to keep vocabulary small. Some of the words might grow to gain some meaning, so a name could mean something in the future, though we will try and reserve some names for names sake up front, kind of like we have in English.
+
+Names are first transliterated close to their original sound, unless we want to find a clever meaningful name which more aptly characterizes the person but doesn't phonetically reflect their native name.
 
 ### Other Formal Names
 
