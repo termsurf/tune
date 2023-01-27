@@ -294,10 +294,11 @@ These are nouns, called `kaq`. If it's derived from a verb or adjective, it's th
 
 ### Representing Self and Other
 
-| word  | writing                                                                                                                                                                                                                                                                                                        | meaning |
-| :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
-| `biq` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" /> | other   |
-| `baq` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" />  | self    |
+| word  | writing                                                                                                                                                                                                                                                                                                         | meaning |
+| :---- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
+| `biq` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" />  | other   |
+| `baq` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" />   | self    |
+| `vut` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/v-118.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /> | god     |
 
 ### I, you, it
 
