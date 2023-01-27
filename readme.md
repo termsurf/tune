@@ -1057,7 +1057,7 @@ So to say out loud "3 million 686 thousand two hundred and 21", you would say:
 
 You put the `-a` on the power multipliers, to give some context and help with fluidity.
 
-You can specify the inverse with `his x`. So 10^12 is `his kiqk`.
+You can specify the inverse with `his x`. So $10^{12}$ is `his kiqk`.
 
 ### Musical Notes
 
