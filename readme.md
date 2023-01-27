@@ -308,24 +308,24 @@ These are nouns, modelled as `kaq` in general and called `saq` in their instance
 | word      | writing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | meaning   |
 | :-------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------- |
 | `suq`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/s-115.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                      | I/me      |
-| `bak suq` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/s-115.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" /> | my        |
+| `suq bak` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/s-115.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /> | my        |
 | `riq`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/r-114.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                      | you       |
-| `bak riq` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/r-114.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" /> | your      |
+| `riq bak` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/r-114.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /> | your      |
 | `vaq`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/v-118.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                       | it        |
-| `bak vaq` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/v-118.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" />  | it's      |
+| `vaq bak` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/v-118.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/q-113.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" />  | it's      |
 | `wit`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/w-119.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                      | we/us     |
-| `bak wit` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/w-119.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /> | our       |
+| `wit bak` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/w-119.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /> | our       |
 | `pet`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/p-112.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/e-101.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                      | they/them |
-| `bak pet` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/p-112.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/e-101.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /> | their     |
+| `pet bak` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/p-112.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/e-101.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /> | their     |
 
 There are no special "grammatical cases" like in English where the subject of a phrase is "I" but the object is "me". It is all the same no matter what part of speech it is.
 
 | english                        | tune                              |
 | :----------------------------- | :-------------------------------- |
-| My favorite color.             | bak suq xiwan klora.              |
+| My favorite color.             | suq bak xiwan klora.              |
 | I love things.                 | suq lavi yas ciqa.                |
-| Our favorite place.            | bak wita xiwan plesa.             |
-| Their interesting little nook. | bak peta reC rotxak txam djaloka. |
+| Our favorite place.            | wit baka xiwan plesa.             |
+| Their interesting little nook. | pet baka reC rotxak txam djaloka. |
 
 ### Personal Names
 
@@ -600,30 +600,30 @@ Here are some religions and the people.
 
 | translation       | term         | derivation         |
 | :---------------- | :----------- | :----------------- |
-| `zek yehud`       | jew          | praised agent      |
-| `yum yehud`       | jewish       | praised oriented   |
-| `yog yehud`       | judaism      | praised practice   |
-| `zek nahar`       | hindu        | rivered agent      |
-| `yog nahar`       | hinduism     | rivered practice   |
-| `zek muslam`      | muslim       | submitted person   |
-| `yum muslam`      | islamic      | submitted oriented |
-| `yog muslam`      | islam        | submitted practice |
+| `yehud zek`       | jew          | praised agent      |
+| `yehud yum`       | jewish       | praised oriented   |
+| `yehud yog`       | judaism      | praised practice   |
+| `nahar zek`       | hindu        | rivered agent      |
+| `nahar yog`       | hinduism     | rivered practice   |
+| `muslam zek`      | muslim       | submitted person   |
+| `muslam yum`      | islamic      | submitted oriented |
+| `muslam yog`      | islam        | submitted practice |
 | `yehud yaxas sol` | muhammad     | praise worthy soul |
-| `zek kristos`     | christian    | anointed person    |
-| `yog kristos`     | christianity | anointed practice  |
-| `zen kristos`     | jesus christ | anointed one       |
-| `zek bud`         | buddhist     | awakened person    |
-| `yog bud`         | buddhism     | awakened practice  |
-| `zen bud`         | buddha       | awakened one       |
+| `kristos zek`     | christian    | anointed person    |
+| `kristos yog`     | christianity | anointed practice  |
+| `kristos zen`     | jesus christ | anointed one       |
+| `bud zek`         | buddhist     | awakened person    |
+| `bud yog`         | buddhism     | awakened practice  |
+| `bud zen`         | buddha       | awakened one       |
 
 So you could use them in sentences.
 
 | english                          | tune                       |
 | :------------------------------- | :------------------------- |
-| They are Jewish.                 | pet vuti yum yehuda.       |
-| They follow Islam.               | pet dabari yog muslama.    |
-| He/she is a Hindu.               | vaq vuti nic zek nahara.   |
-| He/she believes in Christianity. | vaq ras fini yog kristosa. |
+| They are Jewish.                 | pet vuti yehud yuma.       |
+| They follow Islam.               | pet dabari muslam yoga.    |
+| He/she is a Hindu.               | vaq vuti nic nahar zeka.   |
+| He/she believes in Christianity. | vaq ras fini kristos yoga. |
 
 ### Common Modifiers
 
@@ -717,15 +717,15 @@ So we have a few examples:
 | phrase                   | meaning         |
 | :----------------------- | :-------------- |
 | `braman`                 | creation        |
-| `yog braman`             | creationism     |
-| `yod braman`             | created (past)  |
-| `pot braman`             | created (state) |
-| `reC braman`             | creating        |
-| `kif braman`             | will create     |
-| `zek yog braman`         | creationist     |
-| `yas zek yog braman`     | creationists    |
-| `bak zek yog braman`     | creationist's   |
-| `bak yas zek yog braman` | creationists'   |
+| `braman yog`             | creationism     |
+| `braman yod`             | created (past)  |
+| `braman pot`             | created (state) |
+| `braman reC`             | creating        |
+| `braman kif`             | will create     |
+| `braman yog zek`         | creationist     |
+| `braman yog zek yas`     | creationists    |
+| `braman yog zek bak`     | creationist's   |
+| `braman yog zek bak yas` | creationists'   |
 
 And some example sentences.
 
@@ -928,7 +928,7 @@ Then some sentences:
 | english                                     | tune                                             |
 | :------------------------------------------ | :----------------------------------------------- |
 | We cross across the crossy cross.           | wit bisi biso dan bis lak bisa.                  |
-| Our role is as poets.                       | bak wit muza vuti muzo xiran zeka.               |
+| Our role is as poets.                       | wit bak muza vuti muzo xiran zeka.               |
 | We looked at the location.                  | wit yod luki hato dan hata.                      |
 | We looked just at the cloud.                | wit yod luki jas hato dan gadira.                |
 | We looked over at the big white cloud.      | wit yod luki tub hato dan brat loven gadira.     |
@@ -1644,7 +1644,7 @@ So that is how you can compose larger more complex sentences.
 | The leaf is green.            | dan patrama vuti yaroka           |
 | You see red dirt.             | riq visi hodem refixa             |
 | The small child jumps.        | dan smal gaga natari              |
-| My parents are here.          | bak suq yas sasa vuti dava        |
+| My parents are here.          | suq bak yas sasa vuti dava        |
 | What is the year?             | suk vuti dan xana?                |
 | I have a good family.         | suq havi nic tov mixpaka          |
 | There are two fruits.         | fut vuti dob yas camara           |
@@ -1665,40 +1665,40 @@ So that is how you can compose larger more complex sentences.
 
 | english                                           | translation                                              |
 | :------------------------------------------------ | :------------------------------------------------------- |
-| My sibling's stuff.                               | bak suqa bak tata stafa                                  |
-|                                                   | bak suq bak tat stafa                                    |
-| My siblings' stuff.                               | bak suqa bak yas tata stafa                              |
-|                                                   | bak suq bak yas tat stafa                                |
-| My big sibling's stuff                            | bak suqa bak brat tata stafa                             |
-|                                                   | bak suq bak brat tat stafa                               |
+| My sibling's stuff.                               | suq baka bak tata stafa                                  |
+|                                                   | suq bak bak tat stafa                                    |
+| My siblings' stuff.                               | suq baka bak yas tata stafa                              |
+|                                                   | suq bak bak yas tat stafa                                |
+| My big sibling's stuff                            | suq baka bak brat tata stafa                             |
+|                                                   | suq bak bak brat tat stafa                               |
 | Small my big sibling's stuff                      | bak smal suqa bak brat tata stafa                        |
 |                                                   | bak smal suq bak brat tat stafa                          |
-| My nice big brother's particularly precious book. | bak suqa nis brat maf bak tata lak tardiqa makmad zuzona |
-|                                                   | bak suq nis brat maf bak tat lak tardiq makmad zuzona    |
-| My sibling's stuff on the table.                  | bak suq bak tat stafa nevo dan barmana.                  |
-| My sibling's on the table stuff.                  | bak suq bak tat nevo dan barmana stafa.                  |
+| My nice big brother's particularly precious book. | suq baka nis brat maf bak tata lak tardiqa makmad zuzona |
+|                                                   | suq bak nis brat maf bak tat lak tardiq makmad zuzona    |
+| My sibling's stuff on the table.                  | suq bak bak tat stafa nevo dan barmana.                  |
+| My sibling's on the table stuff.                  | suq bak bak tat nevo dan barmana stafa.                  |
 
 ## Rabbit Story
 
 > _"Mmmm..." I stretch, opening my eyes. My legs are still quietly tucked in. Mmm... My home feels extra cozy today. Don't want to wake up, let those eyes droop down for just a little longer! Mmmm!! The burrow has an unusually musty smell about it. It is time to do work! Chipper me this. And all will be well, just wait and see._
 
-mum... suq cenyani, reC hagi bak suqa yas nayana. bak suqa yas legana vuti tep lak haxkitu pot bit tavuti. mum... bak suqa homa fili sag xuxiqu lig yomwa. nun wanti rik budi, liti yas huza yas nayana kar drupaki fori jas nic txam mor nuca. mum!! dan mikila havi nic unun lak tontxaqyu mastim mila bura. vuti kala pal zusi warka. txepuri suq liga. jon wax kif vuti laqalu, jas weti jon visi.
+mum... suq cenyani, reC hagi suq baka yas nayana. suq baka yas legana vuti tep lak haxkitu pot bit tavuti. mum... suq baka homa fili sag xuxiqu lig yomwa. nun wanti rik budi, liti yas huza yas nayana kar drupaki fori jas nic txam mor nuca. mum!! dan mikila havi nic unun lak tontxaqyu mastim mila bura. vuti kala pal zusi warka. txepuri suq liga. jon wax kif vuti laqalu, jas weti jon visi.
 
 > _Hop hop hop, out of my burrow. Emerging from the ground, my hind legs support my peeping eyes. Look around! See the beauty. Witness the infinite unfolding. The rays of the sun warmly touch me like a kiss. Surrounded by green and purple, red and blue, I feel the yellow chanting with all of us. Sniff. Sniff. "What's this?" Perching on all toes, I freeze. Ears kept sharp and steady. Bloop. A bit of rain settling into the dirt. Wow, so cool._
 
-flap flap flap, xal suri bak suq mikila. reC lop hinbaci dan bumita, bak suq las yas legana tamiki bak suq reC pipin yas nayana. sok luki! visi dan byuta. danzeqi dan hensof ireC faC kipulwi. dan yas reyana xal dan suryana lak worm taxi suq muzi nic naxaka. pot soki bajo yaroku jon mofiku, hodemu jon kaholu, suq fili dan sahovu reC yuc txantipi wax xal wita. xuk. xuk. "suk vuti liga?" reC ras purtxiki wax yas djalzita, suq doqdjimi. yas hirita yod xamari tedjatu jon stavaru. blup. nic txuqzata xal gexima reC ras pal xiveti dan dortana. wam, tan kul.
+flap flap flap, xal suri suq bak mikila. reC lop hinbaci dan bumita, suq bak las yas legana tamiki suq bak reC pipin yas nayana. sok luki! visi dan byuta. danzeqi dan hensof ireC faC kipulwi. dan yas reyana xal dan suryana lak worm taxi suq muzi nic naxaka. pot soki bajo yaroku jon mofiku, hodemu jon kaholu, suq fili dan sahovu reC yuc txantipi wax xal wita. xuk. xuk. "suk vuti liga?" reC ras purtxiki wax yas djalzita, suq doqdjimi. yas hirita yod xamari tedjatu jon stavaru. blup. nic txuqzata xal gexima reC ras pal xiveti dan dortana. wam, tan kul.
 
 > _A soft breeze glances my fur. Boom, it's wonderful to be alive. To be tantalized by the aroma of wild sage; to be seated amongst the tallest pines. Pluck! A blackberry. What more could one want._
 
-nic saft naxafa mabati bak suq parvana. bum, vuti pelek falyu len vuti hayimu. len vuti pot yoreni bajo dan faqxaqa xal txandjem marvata. len vuti pot maq yaxavi dan mis talak pinusa. plak! nic kalim berikwa. suk mor kadi zen wanti.
+nic saft naxafa mabati suq bak parvana. bum, vuti pelek falyu len vuti hayimu. len vuti pot yoreni bajo dan faqxaqa xal txandjem marvata. len vuti pot maq yaxavi dan mis talak pinusa. plak! nic kalim berikwa. suk mor kadi zen wanti.
 
 > _Ah, my friend! There you are, you're awake! Smell the must. Be like the newborn babe and take a gander. Feel the rhythm, feel connected. Feel inspired. The information and computation that surrounds us is at its best._
 
-car, bak suq frenda! fut riq vuti, riq vuti buda. mili dan mastima. muz vuti dan num djataq beba jon teki nic mabati. fili dan ketzeva, fili pot bandiki. fili pot xalivi. dan xaqa jon xiqa bif soki wita hat vuti vaq mis tova.
+car, suq bak frenda! fut riq vuti, riq vuti buda. mili dan mastima. muz vuti dan num djataq beba jon teki nic mabati. fili dan ketzeva, fili pot bandiki. fili pot xalivi. dan xaqa jon xiqa bif soki wita hat vuti vaq mis tova.
 
 > _Watchful like a hunter, open minded like a beautiful blue flower, ready like the wind, we begin our trek. Following the trail of the wilderness, feasting on its diversity. Others will soon join in as they see fit._
 
-watx falyu muzi nic matzod zeka, hago pot manasa muzo nic byut fal kahol florana, red muzo dan tanuna, wit logi bak wit trekapa. reC dabari dan triyala xal dan txandjem doma, reC fistari nevo bak vaq gavan doma. yas biqa kif sin yuci ras muzo pet visi koxara.
+watx falyu muzi nic matzod zeka, hago pot manasa muzo nic byut fal kahol florana, red muzo dan tanuna, wit logi wit bak trekapa. reC dabari dan triyala xal dan txandjem doma, reC fistari nevo bak vaq gavan doma. yas biqa kif sin yuci ras muzo pet visi koxara.
 
 > _Now it's time for work. Things to be done. Ideas to create. Problems to illustrate, solutions to spiral back around, like the tunnels we so generously have dug. More must be dug. Gems uncovered. Roots nibbled upon, areas explored and safety and benevolence experienced. After all, this process needs some company. Let the mind mould the earth, and I should have a safe restful home for the night. Sniff Sniff._
 
@@ -1706,7 +1706,7 @@ xom vaq vuti kala foro warka. yas ciqa len vuti potu. yas dima len bramani. yas 
 
 > _Licking our ears and rubbing our paws, well-groomed rabbits begin our rugged journey. Like master chefs early in the dawn. Whoo whoo whoo, we dig away. We must take a few essential stops along the way, too. To see the lights and know what's ahead in the darkness._
 
-reC lakeki bak wit yas hirita jon rabaki bak wit yas regela, laqal pot grumap yas xafana logi bak wit parvat djornita. muzo yas rabaq mek zeka har raso dan xakara. wut wut wut, wit kanani lano. wit mus teki nic vug yum sesu yas virama ludo dan weka, soz. len visi dan yas mara jon bodi suk vuti wok raso dan ram doma.
+reC lakeki wit bak yas hirita jon rabaki wit bak yas regela, laqal pot grumap yas xafana logi wit bak parvat djornita. muzo yas rabaq mek zeka har raso dan xakara. wut wut wut, wit kanani lano. wit mus teki nic vug yum sesu yas virama ludo dan weka, soz. len visi dan yas mara jon bodi suk vuti wok raso dan ram doma.
 
 > _Boom. A new stone. A speck of the unseen. A specimen of the evolution of creation._
 
@@ -1722,7 +1722,7 @@ xom, mapi riq suro. suk wit zusi fidu? wit lidi dan djiben woza wit vuti reC fes
 
 > _The sun is sinking in the horizon. The breeze is still cool. Grasshoppers and woodpeckers flicker about. The salmon still fill the stream. Moon is becoming visible, and yet, we have no desire to end our endeavors. What mysteries await? What more must we find and learn to construct this map and use it to the worlds advantage?_
 
-dan suryana vuti reC kiyori raso dan hurzona. dan naxafa vuti tep hatzanu. yas salaba jon aviCur naker zekwa ratzidi mato. dan xaketa tep fali dan rima. txandrana vuti reC bapidi vis kinu, jon yat, wit havi nun xaqyala pal goli bak wit yas xiyena. suk yas rahasa vuti reC weti. suk mor mus wit fandi jon hakimi len kudjeqi lig tubyala jon yuzi vaq palo dan bak bala matalu.
+dan suryana vuti reC kiyori raso dan hurzona. dan naxafa vuti tep hatzanu. yas salaba jon aviCur naker zekwa ratzidi mato. dan xaketa tep fali dan rima. txandrana vuti reC bapidi vis kinu, jon yat, wit havi nun xaqyala pal goli wit bak yas xiyena. suk yas rahasa vuti reC weti. suk mor mus wit fandi jon hakimi len kudjeqi lig tubyala jon yuzi vaq palo dan bak bala matalu.
 
 > _Rain. We must master the rain. Know how it starts, and how to bring it back when things are near. We must find the patterns in the light and night, in the big and small, in the rough and smooth, until it just clicks. You know better than I what this feels like. We are masters, just like all things who reach into the unknown and open to the wisdom of the elders. Once we figure it out, we will be able to move mountains._
 
@@ -1730,15 +1730,15 @@ gexima. wit mus rabaqi dan gexima. bodi gav riq logi, jon gav len padari riq las
 
 > _But, for now, we are here. On time. Sitting on our chosen spots. Clean, focused, satisfied, and capable. Sniff. Sniff. I munch on a scatter of weeds. What are you up to next? I begin dipping my paws into the soil to dig into it, shifting it this way and that. I take my time, distracted by my imagination, looking through my eyes to my front and sides, yet seeing with my body. You know it when you see it, you know it when you feel it, you know it when you do it. Just wish I could have had a little bit more time to try this one last thing. But alas, the sun has set._
 
-hid, foro xoma, wit vuti dava. nevo kala. reC yaxavi nevo bak wit pot yaktaru yas ripa. gandjiqu, pot honu, pot tarpanu, jon kinu. xuk xuk. suq meqkeni nevo nic jonxera xal pastxura. suk vuti riq rik palo fida? suq logi reC hatbili bak suq yas regela ras palo dan prita len kanani ras palo vaqa, reC zuzati vaqa lig weka jon huz. suq teki bak suq kala, pot distraki bajo bak suqa dimyona, reC luki cumo bak suq yas nayana palo bak suq sila jon yas zeda, yat reC visi yuco bak suq bada. riq bodi vaqa win riq visi vaqa, riq bodi vaqa win riq fili vaqa, riq bodi vaqa win riq zusi vaqa. jas xiwaqi suqa kad luti pot havi nic vug txuqzat mor kala len zoki liga zen last puma. hid lib, dan suryana luti pot tegi.
+hid, foro xoma, wit vuti dava. nevo kala. reC yaxavi nevo wit bak pot yaktaru yas ripa. gandjiqu, pot honu, pot tarpanu, jon kinu. xuk xuk. suq meqkeni nevo nic jonxera xal pastxura. suk vuti riq rik palo fida? suq logi reC hatbili suq bak yas regela ras palo dan prita len kanani ras palo vaqa, reC zuzati vaqa lig weka jon huz. suq teki suq bak kala, pot distraki bajo suq baka dimyona, reC luki cumo suq bak yas nayana palo suq bak sila jon yas zeda, yat reC visi yuco suq bak bada. riq bodi vaqa win riq visi vaqa, riq bodi vaqa win riq fili vaqa, riq bodi vaqa win riq zusi vaqa. jas xiwaqi suqa kad luti pot havi nic vug txuqzat mor kala len zoki liga zen last puma. hid lib, dan suryana luti pot tegi.
 
 | gloss                                                            |
 | :--------------------------------------------------------------- |
-| _flap flap flap, xal suri bak suq mikila._                       |
+| _flap flap flap, xal suri suq bak mikila._                       |
 | hop hop hop, base exit possess I burrow.                         |
 | _reC lop hinbaci dan bumita,_                                    |
 | progress depart emerge the ground,                               |
-| _bak suq las yas legana tamiki bak suq reC pipin yas nayana_     |
+| _suq bak las yas legana tamiki suq bak reC pipin yas nayana_     |
 | possess I back many leg support possess I progress peep many eye |
 | _nic txuqzata xal gexima reC ras pal xiveti dan dortana_         |
 | a bit base rain progress attach arrive settle the dirt           |
