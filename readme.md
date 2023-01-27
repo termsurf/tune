@@ -24,16 +24,16 @@
 
 _Note: Tune is just in the prototype phases right now. [Here](https://docs.google.com/spreadsheets/d/1GxKYr8wTVQyGuotdQTrG1DJh92KBSqvxF-zC-3kISBs/edit?usp=sharing) is a spreadsheet with some words/sentences currently being worked on._
 
-Tune is a [#conlang](https://en.wikipedia.org/wiki/Constructed_language) ("constructed language") that takes influence from English, Chinese, Sanskrit, Vietnamese, Hebrew, and Arabic. Its phonology (i.e. the sounds it uses) consist of 22 consonant sounds and 5 vowel sounds. It is a mostly "analytic" language, meaning that pretty much everything is divided into words instead of having word inflections or word morphology changes. There are no tones (like in Chinese), or clicks, like in some African languages. It is a subject-verb-object language (SVO), so verbs come second generally speaking. There are only nouns and verbs, no adjectives or other word forms. All nouns and verbs can be used as modifiers for other nouns and verbs as well.| | curve |
+Tune is a [#conlang](https://en.wikipedia.org/wiki/Constructed_language) ("constructed language") that takes influence from English, Chinese, Sanskrit, Vietnamese, Hebrew, and Arabic. Its phonology (i.e. the sounds it uses) consist of 22 consonant sounds and 5 vowel sounds. It is a mostly "analytic" language, meaning that pretty much everything is diviyod into words instead of having word inflections or word morphology changes. There are no tones (like in Chinese), or clicks, like in some African languages. It is a subject-verb-object language (SVO), so verbs come second generally speaking. There are only nouns and verbs, no adjectives or other word forms like prepositions. All nouns and verbs can be used as modifiers for other nouns and verbs as well.
 
-For a brief example, here are some complex sentences to get a glance of how things work. Skip ahead to the Sounds section to see how to pronounce each letter, and see the definitions of words.
+For a brief example, here are some complex sentences to get a glance of how things work. _We are still working on how to get rid of English-style prepositions from Tune, but haven't quite figured it out yet._ Skip ahead to the Sounds section to see how to pronounce each letter, and see the definitions of words.
 
 | sentence                                                                           |
 | :--------------------------------------------------------------------------------- |
 | _I walked over past the tree to the rock in the big cave by the cliff._            |
-| suq ded waki hub bas dan dipa pal dan gravana ras dan brat valama baj dan klifana. |
+| suq hub yod waki bas dan dipa pal dan gravana ras dan brat valama baj dan klifana. |
 | _There was something really interesting about them._                               |
-| fut ded kani sam ciqwa ral reC rotxaki mat vaqa.                                   |
+| fut yod vuti sam ciqwa ral reC rotxaki mat vaqa.                                   |
 
 ## Open Questions
 
@@ -45,29 +45,27 @@ Some open questions that remain are:
 
 While we don't have a fully-developed framework for reasoning about the world, and building our language around, we have a somewhat developed framework based on years spent building a compiler for a [typed imperative programming language](https://github.com/teamtreesurf#open-source-software) (far far from done or even working yet). In studying how to build an optimized typed imperative programming language _compiler_, and how to write the actual code, it appears that all things can be modelled through the use of actions and objects.
 
-There is only experience, `siz`, which is a general thing encapsulating information `xaq` and computation `xiq`, the two main types. We don't know too much scientifically about experience yet, so it's hard to go into any more detail. Information, however, can be described in terms of 1's and 0's. Information things appear as objects `saq`, and computation things as actions `siq`, typed as `kaq` and `kiq`. This means there are only nouns and verbs in this language, no adjectives or adverbs, or conjunctions even. Conjunctions are operations between two or more things, so they are actions, granted a special type of action which acts on the structure of the sentence. Adjectives like "big" are really _patterns of action_, patterns of _being_. As such, they are objects. By saying "x is big", we are really saying "x has bigness", that it matches a pattern, even saying "x matches big-things". So all adjectives are thus turned into objects. What about prepositions? Prepositions can be objects as well, like "to", an arrive-motion. Or "around", it signifies a boundary, so it's like "I go around the tree" becomes "I boundary go the tree.".
+There is only experience, `siz`, which is a general thing encapsulating information `xaq` and computation `xiq`, the two main types. We don't know too much scientifically about experience yet, so it's hard to go into any more detail. Information, however, can be described in terms of 1's and 0's. Information things appear as objects `saq`, and computation things as actions `siq`, typed as `kaq` and `kiq`. This means there are only nouns and verbs in this language, no adjectives or adverbs, or conjunctions or prepositions even. Conjunctions are operations between two or more things, so they are actions, granted a special type of action which acts on the structure of the sentence. Adjectives like "big" are really _patterns of action_, patterns of _being_. As such, they are objects. By saying "x is big", we are really saying "x has bigness", that it matches a pattern, even saying "x matches big-things". So all adjectives are thus turned into objects. What about prepositions? Prepositions can be objects as well, like "to", an arrive-motion. Or "around", it signifies a boundary, so it's like "I go around the tree" becomes "I boundary go the tree.".
 
-The `x` seems meaningful from an experiential standpoint because it is like the sound of flowing water. So the universe is called `wax`, after that flow and wash because perhaps that's what the universe does! Now is called `xom` after the East `om` and the flow. All things are part of this flow. The `k` is important because it could be an early beatboxing sound from the stone-tool-making Homo Habilis, `tul hadam`. The `i` is a smile/hot/sunny sound and the `a` is a relaxation/warm sound, while the `u` is a cold/dark sound. These 3 together form the triad of good, neutral, bad. Peace, activity, pain. There is something special about these 3 sounds and that number. So we made [Tone](https://github.com/teamtreesurf/tone), the writing system, reflect that. And we made Tune reflect that in the 2 main things (objects and actions), and the 3rd thing, the aspects or manners which is a way of perceiving things. The 22 consonants start out like a snake and weave their way down to the rattle at the end.
+The `x` seems meaningful from an experiential standpoint because it is like the sound of a flowing stream. So the universe is called `wax`, after that flow and wash because perhaps that's what the universe does! Now is called `xom` after the East `om` and the flow. All things are part of this flow. The `k` is important because it could be an early beatboxing sound from the stone-tool-making Homo Habilis, `tul hadam`. The `i` is a smile/hot/sunny sound and the `a` is a relaxation/warm sound, while the `u` is a cold/dark sound. These 3 together form the triad of good, neutral, bad. Peace, activity, pain. There is something special about these 3 sounds and that number. So we made [Tone](https://github.com/teamtreesurf/tone), the writing system, reflect that. But we made Tune reflect the 2 main things (objects and actions).
 
-Actions, coming from programming, are things like functions, pure or impure. They take input and produce output (and in the impure case, side effects). In the grand general scheme of things, the universe can be considered a great evolving bundle of information and computation, stored in some sort of memory, like an aggregation, in one sort of realization. Actions, then, are the computation, and objects, are the observable artifacts in the realization in the memory. These can be physical objects like light and matter, or mental objects like thoughts and abstractions. In the end, the brain is like an antenna that is streaming through experiences, and thoughts are just models or reflections of reality. Anything that you think and can imagine is just one permutation of the possibilities of the realization.
+The 22 consonants start out like a snake and weave their way down to the rattle at the end. They are divided into 9, 1, 8, 4, in their order.
+
+Actions, coming from programming, are things like functions, pure or impure. They take input and produce output (and in the impure case, side effects). In the grand general scheme of things, the universe can be considered a great evolving bundle of information and computation, stored in some sort of memory, like an aggregation, in one sort of realization. But this information and computation is made out of _raw experience_. Actions, then, are the computation, and objects, are the observable artifacts in the realization in the memory. These can be physical objects like light and matter, or mental objects like thoughts and abstractions. In the end, the brain is like an antenna that is streaming through experiences, and thoughts are just models or reflections of reality. Anything that you think and can imagine is just one permutation of the possibilities of the realization.
 
 But what is interesting is, all actions can be boiled down to "do", the `zus`. So Tune as a language really only has 1 verb, `zus`. You then apply this verb to the result of an action, the `vit`. That is like saying "do rain", which is the action of raining. Or "do make", which is the action of making. You can shorten this with the `-i` suffix on the base `siz` or experience, like `meki` for "to make". The result of the action is the object of the action, and is with `-a`. So we talk in terms of actions and objects.
 
-But because 3D space is so common in our everyday experience, and even the flow of time we can imagine as a straight line, _movement_ is another key factor in addition to actions and the result of actions. Planned movement, or movement goals, reorient the participants in the conversation. So when you say "over the bridge", you mean "reorient over the bridge", or "move over the bridge". So "over" is both the final position, and the motion to the final position from wherever it was previously in the conversation. It is relative to a previous position, or a not position.
-
-As such, we call these _targets_. There are also words like "for", as if "I waited for them". This is also a sort of goal, the goal of receiving the supply. And "like" and "as" can be them too. "They are like a tomato", the goal is juxtaposing it with something else. It is finding the appropriate role. It reorients the source at the target. These are targets, sometimes motion targets, sometimes energy targets, sometimes type targets. Targets get the special `-o` suffix.
-
-So what are our biases? Our main bias is that we were born and raised English speakers, with minor secondary Indo-European language learning in school. We are doing our best to study Chinese, and dabble in various other languages covering the full spectrum of possibilities. We also believe that the universe can be fundamentally understood, that it's not a black box. So we may be called reductionist at times but we are only to the extent of trying to figure out a base model for reality that is computable.
+So what are our biases? Our main bias is that we were born and raised English speakers in the USA, with minor secondary Indo-European language learning in school. We are doing our best to study Chinese, and dabble in various other languages covering the full spectrum of possibilities. We also believe that the universe can be fundamentally understood, that it's not a black box. So we may be called reductionist at times but we are only to the extent of trying to figure out a base model for reality that is computable.
 
 As such, we try and develop out of this mental model a language which can both be used to write code (the key words use in the data model, like seen in [Link Text](https://github.com/teamtreesurf/link) and [here](https://github.com/teamtreesurf/base/blob/a0d9c06ebf5f2aaae51627fb8383aa48923487ba/book/tree/code-tree/base.link)), and also speak to some degree. Because we are trying to make this relatively straightforward to parse and understand by a computer, we are doing all that we can to cut down on the complexity you find in natural languages. In an ideal world, you could learn to think about the base structure of the universe, and write code about the universe, and even communicate about your code, to someone else.
 
-The word for "tune" in Tune is `him`. It means to chime, to align yourself with the oneness.
-
-With all that said, now we will outline the phonology in more detail so you know what to expect and how to write the words on a typical keyboard in ASCII. Then we will go into some of the standard concepts in the form of words. Finally, we will show some fundamental sentence structures.| | curve |
+The word for "tune" in Tune is `him`. It means to chime, to align yourself with the oneness. The word for "god" is `niq`. The `niq` is the entire system, which left a void and filled the void with creation so that the creation may experience the wonders of the universe in its return back to `niq`. The raw `him`, tied to the `niq`, realizes the oneness in the balance, `hum`.
 
 ## Sounds (and Writing System)
 
-First, we need to know how to actually write the words in Tune, and what sounds we can even use to make words in the first place! That is the writing system and "phonology" (sound study).| | curve |
+With all that said, now we will outline the phonology in more detail so you know what to expect and how to write the words on a typical keyboard in ASCII. Then we will go into some of the standard concepts in the form of words. Finally, we will show some fundamental sentence structures.
+
+First, we need to know how to actually write the words in Tune, and what sounds we can even use to make words in the first place! That is the writing system and "phonology" (sound study).
 
 All sounds and pronunciations are written in simple ASCII using [Call Text](https://github.com/teamtreesurf/call), but the Call Text letters are introduced next to IPA letters, in case you are already familiar with IPA. Call Text is a system we have devised for writing the _pronunciation_ of words using only letters you have on your traditional laptop keyboard. We use only a small subset of the aspectes of Call Text in Tune, because Tune is designed as a language to only use the "fundamental" sounds, and it turns out to map nicely to the lettering system of Call Text. Take a look at that Call Text link, it describes in much more detail what call script is all about and how it works, if you are interested. However, we will give you just the pieces of it you need to know about right here as well.
 
@@ -164,7 +162,7 @@ Here we will describe the key word formation rules. First, some major things we 
 - Word components can't start with `xr`, `xl`, or `xn` because they are too hard to pronounce.
 - There can only be one vowel between consonants. That is, there are not sounds like `oi` and `ao`.
 - There are only 1 or 2 syllable words, not more than that.
-- The stress falls on the last syllable of the base word. So if vowels are added the placement of the stress stays the same relative to the base.
+- The stress falls on the last syllable of the base word. So if vowels are adyod the placement of the stress stays the same relative to the base.
 - Words can end up being quite long depending on the consonant clusters used, such as `djarktxartz`, but ideally we don't have long difficult to say words like that.
 
 Many of the words are imported and modified from the following languages, which roughly fit the mold/pattern of words in Tune:
@@ -364,10 +362,10 @@ If it's only two words for a formal thing, then we can leave off the preceding `
 
 ```
 The beautiful gorilla       is   a   large monkey.
-dan byut fal  brat markatwa kani nic brat  markata.
+dan byut fal  brat markatwa vuti nic brat  markata.
 ```
 
-Here are some example more complex multi-word terms. The surrounding `a-` ... `-wa` are not included, they are left off in definitions.
+Here are some example more complex multi-word terms. The surrounding `a-` ... `-wa` are not incluyod, they are left off in definitions.
 
 | term                    | literal                  | meaning         |
 | :---------------------- | :----------------------- | :-------------- |
@@ -383,13 +381,13 @@ Here are some example more complex multi-word terms. The surrounding `a-` ... `-
 | `djiv djataq zoyan`     | live birth animal        | theria          |
 | `djiv ved`              | life science             | biology         |
 | `dob xak lan yan`       | two wheeled line vehicle | bike            |
-| `dob pot kanik zoyan`   | second mouthed animal    | deuterostoma    |
+| `dob pot vutik zoyan`   | second mouthed animal    | deuterostoma    |
 | `dragan flam`           | dragon fly               | dragonfly       |
 | `faked dik`             | command maker            | commander       |
 | `fitas bomon zoyan`     | fetus membrane animal    | amniota         |
 | `flam veC zek`          | fly catcher              | gnatcatcher     |
 | `hadam gas`             | human gas                | fart            |
-| `hadarx simet zoyan`    | mirror symmetry animal   | bilateria       |
+| `hadarx sum zoyan`      | mirror symmetry animal   | bilateria       |
 | `hadic dik`             | news maker               | journalist      |
 | `har djiv`              | early life               | archaea         |
 | `har yum`               | early day                | morning         |
@@ -424,7 +422,7 @@ Here are some example more complex multi-word terms. The surrounding `a-` ... `-
 | `mol nic`               | high long                | tall            |
 | `mor tov`               | more good                | better          |
 | `murkam pakxin`         | stupid bird              | booby           |
-| `nacos kanik zoyan`     | jaw mouth animal         | gnathostomata   |
+| `nacos vutik zoyan`     | jaw mouth animal         | gnathostomata   |
 | `nanuk wizal`           | bear weasel              | marten          |
 | `nar katal`             | person kill              | murder          |
 | `nefros zoyan`          | kidney animal            | nephrozoa       |
@@ -614,20 +612,20 @@ So you could use them in sentences.
 
 | english                          | tune                             |
 | :------------------------------- | :------------------------------- |
-| They are Jewish.                 | pet kani upot yehud yumyu.       |
+| They are Jewish.                 | pet vuti upot yehud yumyu.       |
 | They follow Islam.               | pet dabari apot muslam yogwa.    |
-| He/she is a Hindu.               | vaq kani nic apot nahar zekwa.   |
+| He/she is a Hindu.               | vaq vuti nic apot nahar zekwa.   |
 | He/she believes in Christianity. | vaq ras fini apot kristos yogwa. |
 
 ### Common Modifiers
 
 Tune sometimes/often uses several different single words when English uses one single affix. For example, the `-y` suffix in English could mean to be "x like", "x oriented", "x emanating", or other things. So we have words for each of those, so each piece has a distinct meaning. Same with `-tion`, which often means a "result of x", but also "x process", or "x event".
 
-Here are English-like suffixes and how they may be mapped to Tune. Most of these words are short because they are so commonly used and added as modifiers. They are usually added before the main action, object, or manner.
+Here are English-like suffixes and how they may be mapped to Tune. Most of these words are short because they are so commonly used and adyod as modifiers. They are usually adyod before the main action, object, or manner.
 
 | prefix    | writing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | meaning                                                 |
 | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------ |
-| `ded`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/d-100.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/e-101.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/d-100.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                     | past tense "-ed" like "created"                         |
+| `yod`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/d-100.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/e-101.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/d-100.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                     | past tense "-ed" like "created"                         |
 | `pot`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/p-112.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                     | complete state "-ed"                                    |
 | `reC`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/r-114.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/e-101.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/$C-67.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                     | progress "-ing"                                         |
 | `bak`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                       | possesive ("the bird's food")                           |
@@ -712,7 +710,7 @@ So we have a few examples:
 | :----------------------- | :-------------- |
 | `braman`                 | creation        |
 | `yog braman`             | creationism     |
-| `ded braman`             | created (past)  |
+| `yod braman`             | created (past)  |
 | `pot braman`             | created (state) |
 | `reC braman`             | creating        |
 | `kif braman`             | will create     |
@@ -725,13 +723,13 @@ And some example sentences.
 
 | english                                       | tune                                             |
 | :-------------------------------------------- | :----------------------------------------------- |
-| We wanted to walk to the tree.                | wit ded wanti len pal waki dan dipa.             |
-| We wanted to go do something.                 | wit ded wanti len gomi pal kari sam ciqwa.       |
+| We wanted to walk to the tree.                | wit yod wanti len pal waki dan dipa.             |
+| We wanted to go do something.                 | wit yod wanti len gomi pal kari sam ciqwa.       |
 | We would try to go there and study.           | wit wud pal zoki fut gomi jon txanyani.          |
-| That was a disinformation campaign.           | huz ded kani nic bat kox yundoqa.                |
+| That was a disinformation campaign.           | huz yod vuti nic bat kox yundoqa.                |
 | It boils down to information and computation. | vaq kuf pal dumili koxa jon xika.                |
-| I wonder if it's better or best.              | suq peleki kik vaq kani mor tov cor mis tov.     |
-| You never know what you're going to get.      | riq nun vak bodi suk riq kani reC gomi len geti. |
+| I wonder if it's better or best.              | suq peleki kik vaq vuti mor tov cor mis tov.     |
+| You never know what you're going to get.      | riq nun vak bodi suk riq vuti reC gomi len geti. |
 | The land before time.                         | dan landa turi kala.                             |
 
 ### Manners
@@ -922,14 +920,14 @@ Then some sentences:
 | english                                     | tune                                             |
 | :------------------------------------------ | :----------------------------------------------- |
 | We cross across the crossy cross.           | wit bisi biso dan bis lak bisa.                  |
-| Our role is as poets.                       | bak wit muza kani muzo xiran zeka.               |
-| We looked at the location.                  | wit ded luki hato dan hata.                      |
-| We looked just at the cloud.                | wit ded luki jas hato dan gadira.                |
-| We looked over at the big white cloud.      | wit ded luki tub hato dan brat loven gadira.     |
-| We walked behind the back.                  | wit ded waki kimo dan kima.                      |
-| We walked over behind the tree.             | wit ded waki tub kimo dan dipa.                  |
-| We walked over to the tree near the rock.   | wit ded waki tub palo dan dipa rifo dan gravana. |
-| We walked beyond the tree over to the rock. | wit ded waki sago dan dipa tub palo dan gravana. |
+| Our role is as poets.                       | bak wit muza vuti muzo xiran zeka.               |
+| We looked at the location.                  | wit yod luki hato dan hata.                      |
+| We looked just at the cloud.                | wit yod luki jas hato dan gadira.                |
+| We looked over at the big white cloud.      | wit yod luki tub hato dan brat loven gadira.     |
+| We walked behind the back.                  | wit yod waki kimo dan kima.                      |
+| We walked over behind the tree.             | wit yod waki tub kimo dan dipa.                  |
+| We walked over to the tree near the rock.   | wit yod waki tub palo dan dipa rifo dan gravana. |
+| We walked beyond the tree over to the rock. | wit yod waki sago dan dipa tub palo dan gravana. |
 
 These show how the same base can be used in different notions.
 
@@ -961,8 +959,8 @@ The some logic sentences. Notice since these are given unique words, we don't ne
 
 | english                                 | tune                                    |
 | :-------------------------------------- | :-------------------------------------- |
-| We went so we could see the transition. | wit ded gomi son wit kud visi dan Cona. |
-| We went though we did not want to.      | wit ded gomi Cal wit nun pal wanti.     |
+| We went so we could see the transition. | wit yod gomi son wit kud visi dan Cona. |
+| We went though we did not want to.      | wit yod gomi Cal wit nun pal wanti.     |
 
 ### Interrogative words
 
@@ -1156,7 +1154,7 @@ Scientific metric system:
 | `towan`         | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/w-119.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | ellipse          |
 | `ganam`         | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/g-103.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/m-109.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | polygon (2D)     |
 | `hidran`        | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/h-104.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/d-100.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/r-114.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | polyhedron (3D)  |
-| `topan`         | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/p-112.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | polytope (nD)    |
+| `top`           | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/t-116.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/p-112.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | polytope (nD)    |
 | `san ganam`     | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/s-115.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/g-103.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/m-109.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                        | triangle         |
 | `gul`           | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/g-103.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/l-108.svg?raw=true" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | regular          |
 | `gul kam ganam` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/g-103.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/l-108.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/k-107.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/m-109.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/space-32.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/g-103.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/m-109.svg?raw=true" /> | regular pentagon |
@@ -1195,8 +1193,8 @@ Scientific metric system:
 | `hub`    | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/h-104.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/u-117.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/b-98.svg?raw=true" />                                                                                                                                                                                                                                                                                                                | x-axis / horizontal  |
 | `lal`    | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/l-108.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/l-108.svg?raw=true" />                                                                                                                                                                                                                                                                                                                | y-axis / vertical    |
 | `noz`    | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/z-122.svg?raw=true" />                                                                                                                                                                                                                                                                                                               | z-axis / depth       |
-| yular    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | $e$ (Euler's number) |
-| payan    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | $\pi$                |
+| `yular`  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | $e$ (Euler's number) |
+| `payan`  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | $\pi$                |
 
 ## Mathematical Expressions
 
@@ -1211,26 +1209,44 @@ Scientific metric system:
 
 ## Foundational Math
 
-| term        | meaning                 |
-| :---------- | :---------------------- |
-| `setan`     | set                     |
-| `grupan`    | group                   |
-| `riqan`     | ring                    |
-| `matun`     | union                   |
-| `hatzot`    | intersection            |
-| `banar`     | binary                  |
-| `prexan`    | operation               |
-| `manfold`   | manifold                |
-| `matrik`    | metric                  |
-| `pradjik`   | projection              |
-| `tapal`     | topology                |
-| `nebor`     | neighbor                |
-| `poyntad`   | mathematical space      |
-| `magman`    | magma (group theory)    |
-| `lowaq`     | groupoid (group theory) |
-| `magtud`    | magnitude               |
-| `dor`       | direction               |
-| `liC setan` | vector ("point set")    |
+| term       | meaning                 |
+| :--------- | :---------------------- |
+| `sat`      | set                     |
+| `dir`      | direction               |
+| `pac`      | path                    |
+| `grup`     | group                   |
+| `riqk`     | ring                    |
+| `fild`     | field                   |
+| `flat`     | flat                    |
+| `kras`     | lattice                 |
+| `normal`   | normal (math)           |
+| `pant`     | mathematical space      |
+| `dob yum`  | binary                  |
+| `sarf`     | manifold                |
+| `trik`     | metric                  |
+| `pradjik`  | projection              |
+| `tarp`     | topology                |
+| `narb`     | neighbor                |
+| `magman`   | magma (group theory)    |
+| `lowaq`    | groupoid (group theory) |
+| `magtud`   | magnitude               |
+| `kol`      | cycle                   |
+| `pit`      | repeat                  |
+| `liC lip`  | vector ("point list")   |
+| `poz`      | position                |
+| `map`      | map                     |
+| `nist`     | nest                    |
+| `nist lip` | tensor (nest list)      |
+| `ral`      | relation                |
+| `linom`    | polynomial              |
+
+## Abbreviations
+
+Abbreviations are where you put a macron on the first letter of the abbreviation.
+
+## Numbers
+
+Numbers you put a dot on the first consonant for decimal.
 
 ## Data Structures
 
@@ -1430,7 +1446,7 @@ Scientific metric system:
 
 ## Importing Words
 
-Often times it is not possible to seamlessly translate a term into Tune from another language, so we must just phonetically modify the term to fit the Tune phonology, and copy it like that. This is common with place names or people names, which often derive from past meaningless names, so there is no simple meaningful base definition for the word. Words like "Algeria" mean "land of the algerians", but no one knows what "algerian" means, it means the people of that region. So we can copy that word over as best as we can, similar to how Chinese does it. Alternatively, as time passes, we can come up with nice sounding names for foreign words, so they have richer meaning in Tune.| | curve |
+Often times it is not possible to seamlessly translate a term into Tune from another language, so we must just phonetically modify the term to fit the Tune phonology, and copy it like that. This is common with place names or people names, which often derive from past meaningless names, so there is no simple meaningful base definition for the word. Words like "Algeria" mean "land of the algerians", but no one knows what "algerian" means, it means the people of that region. So we can copy that word over as best as we can, similar to how Chinese does it. Alternatively, as time passes, we can come up with nice sounding names for foreign words, so they have richer meaning in Tune.
 
 ## Verb Constructs
 
@@ -1438,19 +1454,19 @@ Here are most of the verb aspects and tenses you might need.
 
 | tense   | type                       | phrase                    | example                           | note                                                                                             |
 | :------ | :------------------------- | :------------------------ | :-------------------------------- | :----------------------------------------------------------------------------------------------- |
-| past    | simple past                | `ded x`                   | I ate an apple.                   | the action has already happened or has been completed                                            |
-| past    | past continuous            | `ded kani reC x`          | I was eating an apple.            | refers to something in the past that has already happened, but as though it were still happening |
-| past    | past perfect               | `ded luti pot x`          | I had eaten an apple.             | talk about events that have already been completed before a specified time                       |
-| past    | past perfect continuous    | `ded luti pot kani reC x` | I had been eating an apple.       | refers to an action that was still happening until another event occurred                        |
-| past    | past regular               | `ded gaci pal x`          | I used to eat apples.             |                                                                                                  |
+| past    | simple past                | `yod x`                   | I ate an apple.                   | the action has already happened or has been completed                                            |
+| past    | past continuous            | `yod vuti reC x`          | I was eating an apple.            | refers to something in the past that has already happened, but as though it were still happening |
+| past    | past perfect               | `yod luti pot x`          | I had eaten an apple.             | talk about events that have already been completed before a specified time                       |
+| past    | past perfect continuous    | `yod luti pot vuti reC x` | I had been eating an apple.       | refers to an action that was still happening until another event occurred                        |
+| past    | past regular               | `yod gaci pal x`          | I used to eat apples.             |                                                                                                  |
 | present | simple present             | `x`                       | I eat an apple.                   |                                                                                                  |
-| present | present continuous         | `kani reC x`              | I am eating an apple.             |                                                                                                  |
+| present | present continuous         | `vuti reC x`              | I am eating an apple.             |                                                                                                  |
 | present | present perfect            | `luti pot x`              | I have eaten an apple.            |                                                                                                  |
-| present | present perfect continuous | `luti pot kani reC x`     | I have been eating an apple.      |                                                                                                  |
+| present | present perfect continuous | `luti pot vuti reC x`     | I have been eating an apple.      |                                                                                                  |
 | future  | simple future              | `kif x`                   | I will eat an apple.              |                                                                                                  |
-| future  | future continuous          | `kif kani reC x`          | I will be eating an apple.        |                                                                                                  |
+| future  | future continuous          | `kif vuti reC x`          | I will be eating an apple.        |                                                                                                  |
 | future  | future perfect             | `kif luti pot x`          | I will have eaten an apple.       |                                                                                                  |
-| future  | future perfect continuous  | `kif luti pot kani reC x` | I will have been eating an apple. |                                                                                                  |
+| future  | future perfect continuous  | `kif luti pot vuti reC x` | I will have been eating an apple. |                                                                                                  |
 
 Gerunds
 
@@ -1461,22 +1477,22 @@ Gerunds
 | object of preposition | `reC x` | I am excited by eating apples. |
 
     It  is   quickly  eating     a   big  apple.
-    riq kani kwek lak reC takuli nic brat tapwaka.
+    riq vuti kwek lak reC takuli nic brat tapwaka.
 
     It  will have quickly  eaten      the apple.
     riq kif  luti kwek lak pot takuli dan tapwaka.
 
     I   was      having   doubts.
-    suq ded kani reC havi yas sakana.
+    suq yod vuti reC havi yas sakana.
 
     The swimming ducks       overheard    the dirt-covered    black  bear.
-    dan reC swam yas hamsana ded tub hiri dan dortan pot kovi kalim  nanukwa.
+    dan reC swam yas hamsana yod tub hiri dan dortan pot kovi kalim  nanukwa.
 
-    The red   -headed sparrow plucked     recently    ripened    berries.
-    dan hodem pot hed pasera  ded varnaki lak zukdjin pot baxali yas berika.
+    The red   -heayod sparrow plucked     recently    ripened    berries.
+    dan hodem pot hed pasera  yod varnaki lak zukdjin pot baxali yas berika.
 
     The brightly   lit      screen has  been     shining    for  a   long time.
-    dan lak britan pot mari masaka luti pot kani reC zaraki foro nic nuc  kala.
+    dan lak britan pot mari masaka luti pot vuti reC zaraki foro nic nuc  kala.
 
 ## Phrases
 
@@ -1556,7 +1572,7 @@ For the noun phrase, you can have multiple nouns be interspersed there.
 So you end a noun phrase with an `-a` always, but the intermediate nouns can be inferred from their base context. Likewise, you always end a vowel with an `i`, it helps to use vowels which can also be nouns.
 
 > The creator created creation.<br/>
-> dan braman zeka ded bramani bramana
+> dan braman zeka yod bramani bramana
 
 ## Sentences with Logic
 
@@ -1583,21 +1599,21 @@ So that is how you can compose larger more complex sentences.
 | english                       | translation                       |
 | :---------------------------- | :-------------------------------- |
 | We hear children.             | wit hiri yas gaga                 |
-| The leaf is green.            | dan patrama kani yaroku           |
+| The leaf is green.            | dan patrama vuti yaroku           |
 | You see red dirt.             | riq visi hodem refixa             |
 | The small child jumps.        | dan smal gaga natari              |
-| My parents are here.          | bak suq yas sasa kani dava        |
-| What is the year?             | suk kani dan xana?                |
+| My parents are here.          | bak suq yas sasa vuti dava        |
+| What is the year?             | suk vuti dan xana?                |
 | I have a good family.         | suq havi nic tov mixpaka          |
-| There are two fruits.         | fut kani dob yas camara           |
-| This leaf is small and green. | lig patrama kani smalu jon yaroku |
-| My sibling is home again.     | suq tata kani homa geno           |
+| There are two fruits.         | fut vuti dob yas camara           |
+| This leaf is small and green. | lig patrama vuti smalu jon yaroku |
+| My sibling is home again.     | suq tata vuti homa geno           |
 | The white rock moves.         | dan loven gravana muvi            |
-| Are you calm today?           | kani riqa friCelu lig yoma        |
+| Are you calm today?           | vuti riqa friCelu lig yoma        |
 | Find the purple fruit!        | fandi dan mofik camara!           |
-| Who is your sibling?          | miq kani bak riq tata?            |
-| I am behind the tree.         | suq kani kimo dan dipa            |
-| The dirt is black.            | dan refixa kani kalimu            |
+| Who is your sibling?          | miq vuti bak riq tata?            |
+| I am behind the tree.         | suq vuti kimo dan dipa            |
+| The dirt is black.            | dan refixa vuti kalimu            |
 | Can you see us?               | kan riqa visi wita                |
 | They cannot hear you.         | peta nun kin hiri riqa            |
 | Jump three times.             | natari san puma                   |
@@ -1624,31 +1640,31 @@ So that is how you can compose larger more complex sentences.
 
 > _"Mmmm..." I stretch, opening my eyes. My legs are still quietly tucked in. Mmm... My home feels extra cozy today. Don't want to wake up, let those eyes droop down for just a little longer! Mmmm!! The burrow has an unusually musty smell about it. It is time to do work! Chipper me this. And all will be well, just wait and see._
 
-mum... suq cenyani, reC hagi bak suqa yas nayana. bak suqa yas legana kani tep lak haxkitu pot bit takani. mum... bak suqa homa fili sag xuxiqu lig yomwa. nun wanti rik budi, liti yas huza yas nayana kar drupaki fori jas nic txam mor nuca. mum!! dan mikila havi nic unun lak tontxaqyu mastim mila bura. kani kala pal zusi warka. txepuri suq liga. jon wax kif kani laqalu, jas weti jon visi.
+mum... suq cenyani, reC hagi bak suqa yas nayana. bak suqa yas legana vuti tep lak haxkitu pot bit tavuti. mum... bak suqa homa fili sag xuxiqu lig yomwa. nun wanti rik budi, liti yas huza yas nayana kar drupaki fori jas nic txam mor nuca. mum!! dan mikila havi nic unun lak tontxaqyu mastim mila bura. vuti kala pal zusi warka. txepuri suq liga. jon wax kif vuti laqalu, jas weti jon visi.
 
-> _Hop hop hop, out of my burrow. Emerging from the ground, my hind legs support my peeping eyes. Look around! See the beauty. Witness the infinite unfolding. The rays of the sun warmly touch me like a kiss. Surrounded by green and purple, red and blue, I feel the yellow chanting with all of us. Sniff. Sniff. "What's this?" Perching on all toes, I freeze. Ears kept sharp and steady. Bloop. A bit of rain settling into the dirt. Wow, so cool._
+> _Hop hop hop, out of my burrow. Emerging from the ground, my hind legs support my peeping eyes. Look around! See the beauty. Witness the infinite unfolding. The rays of the sun warmly touch me like a kiss. Surrounyod by green and purple, red and blue, I feel the yellow chanting with all of us. Sniff. Sniff. "What's this?" Perching on all toes, I freeze. Ears kept sharp and steady. Bloop. A bit of rain settling into the dirt. Wow, so cool._
 
-flap flap flap, xal suri bak suq mikila. reC lop hinbaci dan bumita, bak suq las yas legana tamiki bak suq reC pipin yas nayana. sok luki! visi dan byuta. danzeqi dan hensof ireC faC kipulwi. dan yas reyana xal dan suryana lak worm taxi suq muzi nic naxaka. pot soki bajo yaroku jon mofiku, hodemu jon kaholu, suq fili dan sahovu reC yuc txantipi wax xal wita. xuk. xuk. "suk kani liga?" reC ras purtxiki wax yas djalzita, suq doqdjimi. yas hirita ded xamari tedjatu jon stavaru. blup. nic txuqzata xal gexima reC ras pal xiveti dan dortana. wam, tan kul.
+flap flap flap, xal suri bak suq mikila. reC lop hinbaci dan bumita, bak suq las yas legana tamiki bak suq reC pipin yas nayana. sok luki! visi dan byuta. danzeqi dan hensof ireC faC kipulwi. dan yas reyana xal dan suryana lak worm taxi suq muzi nic naxaka. pot soki bajo yaroku jon mofiku, hodemu jon kaholu, suq fili dan sahovu reC yuc txantipi wax xal wita. xuk. xuk. "suk vuti liga?" reC ras purtxiki wax yas djalzita, suq doqdjimi. yas hirita yod xamari tedjatu jon stavaru. blup. nic txuqzata xal gexima reC ras pal xiveti dan dortana. wam, tan kul.
 
 > _A soft breeze glances my fur. Boom, it's wonderful to be alive. To be tantalized by the aroma of wild sage; to be seated amongst the tallest pines. Pluck! A blackberry. What more could one want._
 
-nic saft naxafa mabati bak suq parvana. bum, kani pelek falyu len kani hayimu. len kani pot yoreni bajo dan faqxaqa xal txandjem marvata. len kani pot maq yaxavi dan mis talak pinusa. plak! nic kalim berikwa. suk mor kadi zen wanti.
+nic saft naxafa mabati bak suq parvana. bum, vuti pelek falyu len vuti hayimu. len vuti pot yoreni bajo dan faqxaqa xal txandjem marvata. len vuti pot maq yaxavi dan mis talak pinusa. plak! nic kalim berikwa. suk mor kadi zen wanti.
 
 > _Ah, my friend! There you are, you're awake! Smell the must. Be like the newborn babe and take a gander. Feel the rhythm, feel connected. Feel inspired. The information and computation that surrounds us is at its best._
 
-car, bak suq frenda! fut riq kani, riq kani buda. mili dan mastima. muz kani dan num djataq beba jon teki nic mabati. fili dan ketzeva, fili pot bandiki. fili pot xalivi. dan xaqa jon xiqa bif soki wita hat kani vaq mis tova.
+car, bak suq frenda! fut riq vuti, riq vuti buda. mili dan mastima. muz vuti dan num djataq beba jon teki nic mabati. fili dan ketzeva, fili pot bandiki. fili pot xalivi. dan xaqa jon xiqa bif soki wita hat vuti vaq mis tova.
 
-> _Watchful like a hunter, open minded like a beautiful blue flower, ready like the wind, we begin our trek. Following the trail of the wilderness, feasting on its diversity. Others will soon join in as they see fit._
+> _Watchful like a hunter, open minyod like a beautiful blue flower, ready like the wind, we begin our trek. Following the trail of the wilderness, feasting on its diversity. Others will soon join in as they see fit._
 
 watx falyu muzi nic matzod zeka, hago pot manasa muzo nic byut fal kahol florana, red muzo dan tanuna, wit logi bak wit trekapa. reC dabari dan triyala xal dan txandjem doma, reC fistari nevo bak vaq gavan doma. yas biqa kif sin yuci ras muzo pet visi koxara.
 
 > _Now it's time for work. Things to be done. Ideas to create. Problems to illustrate, solutions to spiral back around, like the tunnels we so generously have dug. More must be dug. Gems uncovered. Roots nibbled upon, areas explored and safety and benevolence experienced. After all, this process needs some company. Let the mind mould the earth, and I should have a safe restful home for the night. Sniff Sniff._
 
-xom vaq kani kala foro warka. yas ciqa len kani potu. yas dima len bramani. yas woza len xwomiqi, yas lida len loxwani las soko, muzo dan yas cuma wit tan nadiv lak luti pot kanani. mor mus kani pot kanani. yas djemaki pot faC kov. yas miziza pot niboli rik nevo, yas nola pot lori jon hantxwana jon sumat doma pot sizi. rito wax, lig kixa carfi sam kumpana. liti dan manasa moldati dan maxa, jon suq xad havi nic hantxwanu xabat falu homa foro dan nita. xuk xuk.| | curve |
+xom vaq vuti kala foro warka. yas ciqa len vuti potu. yas dima len bramani. yas woza len xwomiqi, yas lida len loxwani las soko, muzo dan yas cuma wit tan nadiv lak luti pot kanani. mor mus vuti pot kanani. yas djemaki pot faC kov. yas miziza pot niboli rik nevo, yas nola pot lori jon hantxwana jon sumat doma pot sizi. rito wax, lig kixa carfi sam kumpana. liti dan manasa moldati dan maxa, jon suq xad havi nic hantxwanu xabat falu homa foro dan nita. xuk xuk.
 
 > _Licking our ears and rubbing our paws, well-groomed rabbits begin our rugged journey. Like master chefs early in the dawn. Whoo whoo whoo, we dig away. We must take a few essential stops along the way, too. To see the lights and know what's ahead in the darkness._
 
-reC lakeki bak wit yas hirita jon rabaki bak wit yas regela, laqal pot grumap yas xafana logi bak wit parvat djornita. muzo yas rabaq mek zeka har raso dan xakara. wut wut wut, wit kanani lano. wit mus teki nic vug yum sesu yas virama ludo dan weka, soz. len visi dan yas mara jon bodi suk kani wok raso dan ram doma.
+reC lakeki bak wit yas hirita jon rabaki bak wit yas regela, laqal pot grumap yas xafana logi bak wit parvat djornita. muzo yas rabaq mek zeka har raso dan xakara. wut wut wut, wit kanani lano. wit mus teki nic vug yum sesu yas virama ludo dan weka, soz. len visi dan yas mara jon bodi suk vuti wok raso dan ram doma.
 
 > _Boom. A new stone. A speck of the unseen. A specimen of the evolution of creation._
 
@@ -1656,23 +1672,23 @@ bum. nic num gravana. nic nikuda xal dan pot nun visi. nic spesmana xal dan viba
 
 > _Bam. What'd you find?! Some gold creeping out from the crevices of this rock. Nice._
 
-bem. suk ded zusi riq fandi?! sam Cahaba reC sarpami sur lopo dan yas nakika xal dan gravana. nas.
+bem. suk yod zusi riq fandi?! sam Cahaba reC sarpami sur lopo dan yas nakika xal dan gravana. nas.
 
 > _Now, map it out. What do we do next? We solve the main problem we're facing in traversing down this rabbit hole._
 
-xom, mapi riq suro. suk wit zusi fidu? wit lidi dan djiben woza wit kani reC fesi raso reC txalati kafo huz xafan mehura.
+xom, mapi riq suro. suk wit zusi fidu? wit lidi dan djiben woza wit vuti reC fesi raso reC txalati kafo huz xafan mehura.
 
 > _The sun is sinking in the horizon. The breeze is still cool. Grasshoppers and woodpeckers flicker about. The salmon still fill the stream. Moon is becoming visible, and yet, we have no desire to end our endeavors. What mysteries await? What more must we find and learn to construct this map and use it to the worlds advantage?_
 
-dan suryana kani reC kiyori raso dan hurzona. dan naxafa kani tep hatzanu. yas salaba jon aviCur naker zekwa ratzidi mato. dan xaketa tep fali dan rima. txandrana kani reC bapidi vis kinu, jon yat, wit havi nun xaqyala pal goli bak wit yas xiyena. suk yas rahasa kani reC weti. suk mor mus wit fandi jon hakimi len kudjeqi lig tubyala jon yuzi vaq palo dan bak bala matalu.
+dan suryana vuti reC kiyori raso dan hurzona. dan naxafa vuti tep hatzanu. yas salaba jon aviCur naker zekwa ratzidi mato. dan xaketa tep fali dan rima. txandrana vuti reC bapidi vis kinu, jon yat, wit havi nun xaqyala pal goli bak wit yas xiyena. suk yas rahasa vuti reC weti. suk mor mus wit fandi jon hakimi len kudjeqi lig tubyala jon yuzi vaq palo dan bak bala matalu.
 
 > _Rain. We must master the rain. Know how it starts, and how to bring it back when things are near. We must find the patterns in the light and night, in the big and small, in the rough and smooth, until it just clicks. You know better than I what this feels like. We are masters, just like all things who reach into the unknown and open to the wisdom of the elders. Once we figure it out, we will be able to move mountains._
 
-gexima. wit mus rabaqi dan gexima. bodi gav riq logi, jon gav len padari riq lasu win yas ciqa kani rifu. wit mus fandi dan yas tavnita raso dan mara jon nita, raso dan bratu jon smalu, raso dan darunu jon xayefu, tux riq jas kleki. riq bodi mor tovu Cen suq suk liga fili muzo. wit kani yas rabaqi, jas muzo wax yas ciqa miq biki ras palo dan nun pot boda jon hagi palo dan txakmana xal dan yas vetus zeka. xev wit sur dimuti vaqa, wit kif kin kani len muvi yas kakaka.
+gexima. wit mus rabaqi dan gexima. bodi gav riq logi, jon gav len padari riq lasu win yas ciqa vuti rifu. wit mus fandi dan yas tavnita raso dan mara jon nita, raso dan bratu jon smalu, raso dan darunu jon xayefu, tux riq jas kleki. riq bodi mor tovu Cen suq suk liga fili muzo. wit vuti yas rabaqi, jas muzo wax yas ciqa miq biki ras palo dan nun pot boda jon hagi palo dan txakmana xal dan yas vetus zeka. xev wit sur dimuti vaqa, wit kif kin vuti len muvi yas kakaka.
 
 > _But, for now, we are here. On time. Sitting on our chosen spots. Clean, focused, satisfied, and capable. Sniff. Sniff. I munch on a scatter of weeds. What are you up to next? I begin dipping my paws into the soil to dig into it, shifting it this way and that. I take my time, distracted by my imagination, looking through my eyes to my front and sides, yet seeing with my body. You know it when you see it, you know it when you feel it, you know it when you do it. Just wish I could have had a little bit more time to try this one last thing. But alas, the sun has set._
 
-hid, foro xoma, wit kani dava. nevo kala. reC yaxavi nevo bak wit pot yaktaru yas ripa. gandjiqu, pot honu, pot tarpanu, jon kinu. xuk xuk. suq meqkeni nevo nic jonxera xal pastxura. suk kani riq rik palo fida? suq logi reC hatbili bak suq yas regela ras palo dan prita len kanani ras palo vaqa, reC zuzati vaqa lig weka jon huz. suq teki bak suq kala, pot distraki bajo bak suqa dimyona, reC luki cumo bak suq yas nayana palo bak suq sila jon yas zeda, yat reC visi yuco bak suq bada. riq bodi vaqa win riq visi vaqa, riq bodi vaqa win riq fili vaqa, riq bodi vaqa win riq zusi vaqa. jas xiwaqi suqa kad luti pot havi nic vug txuqzat mor kala len zoki liga zen last puma. hid lib, dan suryana luti pot tegi.
+hid, foro xoma, wit vuti dava. nevo kala. reC yaxavi nevo bak wit pot yaktaru yas ripa. gandjiqu, pot honu, pot tarpanu, jon kinu. xuk xuk. suq meqkeni nevo nic jonxera xal pastxura. suk vuti riq rik palo fida? suq logi reC hatbili bak suq yas regela ras palo dan prita len kanani ras palo vaqa, reC zuzati vaqa lig weka jon huz. suq teki bak suq kala, pot distraki bajo bak suqa dimyona, reC luki cumo bak suq yas nayana palo bak suq sila jon yas zeda, yat reC visi yuco bak suq bada. riq bodi vaqa win riq visi vaqa, riq bodi vaqa win riq fili vaqa, riq bodi vaqa win riq zusi vaqa. jas xiwaqi suqa kad luti pot havi nic vug txuqzat mor kala len zoki liga zen last puma. hid lib, dan suryana luti pot tegi.
 
 | gloss                                                            |
 | :--------------------------------------------------------------- |
@@ -1684,7 +1700,7 @@ hid, foro xoma, wit kani dava. nevo kala. reC yaxavi nevo bak wit pot yaktaru ya
 | possess I back many leg support possess I progress peep many eye |
 | _nic txuqzata xal gexima reC ras pal xiveti dan dortana_         |
 | a bit base rain progress attach arrive settle the dirt           |
-| _bum, kani pelek falyu len kani hayimu_                          |
+| _bum, vuti pelek falyu len vuti hayimu_                          |
 | boom, be wonder fill abstract be alive                           |
 
 ## License
