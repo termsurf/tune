@@ -370,27 +370,27 @@ Here are some example more complex multi-word terms. The surrounding `a-` ... `-
 | :---------------------- | :----------------------- | :-------------- |
 | `bad yanxip`            | body maneuver            | gymnastics      |
 | `blabak kox`            | blob cell                | amorphea        |
-| `boc kemar zoyon`       | together arch animal     | synapsida       |
+| `boc kemar zoyan`       | together arch animal     | synapsida       |
 | `brat kalim korvid`     | large black corvid       | raven           |
 | `brat markat`           | large monkey             | gorilla         |
 | `brat pakxin`           | big bird                 | ostrich         |
 | `brat savik`            | large knife              | sword           |
 | `dihag kilat`           | concern lack             | apathy          |
-| `dirman saruk zoyon`    | skin wing animal         | dermoptera      |
-| `djiv djataq zoyon`     | live birth animal        | theria          |
+| `dirman saruk zoyan`    | skin wing animal         | dermoptera      |
+| `djiv djataq zoyan`     | live birth animal        | theria          |
 | `djiv ved`              | life science             | biology         |
 | `dob xak lan yan`       | two wheeled line vehicle | bike            |
-| `dob pot kanik zoyon`   | second mouthed animal    | deuterostoma    |
+| `dob pot kanik zoyan`   | second mouthed animal    | deuterostoma    |
 | `dragan flam`           | dragon fly               | dragonfly       |
 | `faked dik`             | command maker            | commander       |
-| `fitas bomon zoyon`     | fetus membrane animal    | amniota         |
+| `fitas bomon zoyan`     | fetus membrane animal    | amniota         |
 | `flam veC zek`          | fly catcher              | gnatcatcher     |
 | `hadam gas`             | human gas                | fart            |
-| `hadarx simet zoyon`    | mirror symmetry animal   | bilateria       |
+| `hadarx simet zoyan`    | mirror symmetry animal   | bilateria       |
 | `hadic dik`             | news maker               | journalist      |
 | `har djiv`              | early life               | archaea         |
 | `har yum`               | early day                | morning         |
-| `hed kordat zoyon`      | head cord animal         | cephalochordate |
+| `hed kordat zoyan`      | head cord animal         | cephalochordate |
 | `huprat hadam`          | upright human            | homo erectus    |
 | `kadan zek`             | tooth agent              | dentist         |
 | `kalim korvid`          | black corvid             | crow            |
@@ -399,46 +399,46 @@ Here are some example more complex multi-word terms. The surrounding `a-` ... `-
 | `kapal sirpent`         | poisonous snake          | viper           |
 | `klakin swapar minxak`  | ice swipe game           | hockey          |
 | `klakin gexim`          | ice rain                 | hail            |
-| `kordat zoyon`          | chord animal             | chordata        |
+| `kordat zoyan`          | chord animal             | chordata        |
 | `kwek slip`             | quick sleep              | nap             |
-| `laf hakron zoyon`      | four limb animal         | tetrapoda       |
-| `lanak nic bizik zoyon` | wool long nose animal    | mammoth         |
-| `larot zoyon`           | pregnant animal          | eutheria        |
+| `laf hakron zoyan`      | four limb animal         | tetrapoda       |
+| `lanak nic bizik zoyan` | wool long nose animal    | mammoth         |
+| `larot zoyan`           | pregnant animal          | eutheria        |
 | `laxon rul wux`         | language rules           | grammar         |
 | `leCyat djaraq pakxin`  | mud runner bird          | curlew          |
 | `let yum`               | late day                 | evening         |
 | `loven fraktal xutxal`  | white fractal vegetable  | cauliflower     |
 | `malak samak zek`       | king fisher              | kingfisher      |
-| `mamol kemar zoyon`     | mammal arch animal       | therapsida      |
-| `mamol zoyon`           | mammal animal            | mammalia        |
+| `mamol kemar zoyan`     | mammal arch animal       | therapsida      |
+| `mamol zoyan`           | mammal animal            | mammalia        |
 | `manstor lizard`        | monster lizard           | gila monster    |
 | `mayim kadur`           | water ball               | waterpolo       |
 | `mehur kadur`           | hole ball                | golf            |
 | `menat lizard`          | mane lizard              | iguana          |
-| `mil zoyon`             | smell animal             | olfactores      |
+| `mil zoyan`             | smell animal             | olfactores      |
 | `mis tov`               | most good                | best            |
 | `yixum hadam`           | art human                | homo sapiens    |
 | `mol nic`               | high long                | tall            |
 | `mor tov`               | more good                | better          |
 | `murkam pakxin`         | stupid bird              | booby           |
-| `nacos kanik zoyon`     | jaw mouth animal         | gnathostomata   |
+| `nacos kanik zoyan`     | jaw mouth animal         | gnathostomata   |
 | `nanuk wizal`           | bear weasel              | marten          |
 | `nar katal`             | person kill              | murder          |
-| `nefros zoyon`          | kidney animal            | nephrozoa       |
-| `nikil hastok zoyon`    | complete bone animal     | euteleostei     |
+| `nefros zoyan`          | kidney animal            | nephrozoa       |
+| `nikil hastok zoyan`    | complete bone animal     | euteleostei     |
 | `nohut kan`             | comfort able             | comfortable     |
 | `not tek zek`           | note taker               | secretary       |
 | `ponen markat`          | lazy monkey              | loris           |
-| `radjal zoyon`          | comb animal              | ctenophora      |
+| `radjal zoyan`          | comb animal              | ctenophora      |
 | `regal kadur`           | foot ball                | soccer          |
 | `riport dik`            | report maker             | reporter        |
-| `rit zoyon`             | after animal             | eumetazoa       |
+| `rit zoyan`             | after animal             | eumetazoa       |
 | `samik wurk`            | fight work               | strike          |
-| `sarksat teridj zoyon`  | flesh fin animal         | sarcopterygii   |
+| `sarksat teridj zoyan`  | flesh fin animal         | sarcopterygii   |
 | `smal kalim markat`     | small black monkey       | bonobo          |
 | `smal hayit`            | small eagle              | hawk            |
-| `spandjen zoyon`        | sponge animal            | porifera        |
-| `spinak hastok zoyon`   | spine bone animal        | vertebrata      |
+| `spandjen zoyan`        | sponge animal            | porifera        |
+| `spinak hastok zoyan`   | spine bone animal        | vertebrata      |
 
 If it is an action, then `i- ... -wi`.
 
