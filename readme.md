@@ -156,14 +156,18 @@ In the end, we have 22 consonants and 5 vowels, for a total of 27 sounds. Here i
 
 Here we will describe the key word formation rules. First, some major things we can get out of the way up front.
 
+- Verbs end in `-i`.
+- Nouns end in `-a`.
+- Modifiers technically end in `-u`, but you can leave off the `-u` 99% of the time. That is, avoid the negative.
+- Noun phrases where words always come together end in `-wa` if two words, and for 3+ words they are wrapped in `a- ... -wa`. Same with verb phrases, end in `-wi` or wrap in `i- ... -wi`.
 - All base word forms start and end with a consonant. They are turned into nouns and verbs by adding vowels to the end.
 - Words components can't end in `h`, `y`, or `w`, as these don't really make a clear audible sound to a non-native speaker.
 - Words components can't start in q (-ng sound).
 - Word components can't start with `xr`, `xl`, or `xn` because they are too hard to pronounce.
 - There can only be one vowel between consonants. That is, there are not sounds like `oi` and `ao`.
-- There are only 1 or 2 syllable words, not more than that.
+- Most words are 1 or 2 syllables, but words can be arbitrary number of syllables. This helps import foreign words.
 - The stress falls on the last syllable of the base word. So if vowels are adyod the placement of the stress stays the same relative to the base.
-- Words can end up being quite long depending on the consonant clusters used, such as `djarktxartz`, but ideally we don't have long difficult to say words like that.
+- Words can end up being quite long depending on the consonant clusters used, such as `djarktxarts`, but ideally we don't have long difficult to say words like that.
 
 Many of the words are imported and modified from the following languages, which roughly fit the mold/pattern of words in Tune:
 
@@ -195,14 +199,15 @@ Words have a single _main_ form, either being an action (verb) or object (noun).
 
 All words are `siz` in their base form. They manifest into actions and objects by suffixing the words with singular vowels.
 
-| suffix | type                   |
-| :----- | :--------------------- |
-| `-i`   | action (do result)     |
-| `-a`   | object (action result) |
-| `-o`   | target (action goal)   |
-| `-u`   | format (object type)   |
+| suffix | type                    |
+| :----- | :---------------------- |
+| `-i`   | action (do result)      |
+| `-a`   | object (action result)  |
+| `-u`   | format (result feature) |
 
 You only add the suffixes when it is necessary for disambiguation.
+
+There are action types `kiq`, and object types `kaq`. This is used to describe the abstract things, especially used in modeling and representation like used in code.
 
 ## Actions
 
@@ -224,8 +229,8 @@ These are verbs. Here are a few basic ones.
 | `hin` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/h-104.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /> | conclude   |
 | `lor` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/l-108.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/r-114.svg?raw=true" /> | explore    |
 | `faC` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/f-102.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/$C-67.svg?raw=true" />  | reverse    |
-| `Con` |                                                                                                                                                                                                                                                                                                                 | transition |
-| `nan` |                                                                                                                                                                                                                                                                                                                 | negate     |
+| `Con` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/$C-67.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/o-111.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /> | transition |
+| `nan` | <img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/a-97.svg?raw=true" /><img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/n-110.svg?raw=true" />  | negate     |
 
 Many actions fall into these forms:
 
@@ -250,7 +255,7 @@ Here are some actions and how they can be derived from adjectives or nouns.
 
 ## Objects
 
-These are nouns, called `kaq`. If it's derived from a verb or adjective, it's the thing itself.
+These are nouns, modelled as `kaq` in general and called `saq` in their instance. If it's derived from a verb or adjective, it's the thing itself.
 
 | action        | derivation                       |
 | :------------ | :------------------------------- |
@@ -290,7 +295,7 @@ These are nouns, called `kaq`. If it's derived from a verb or adjective, it's th
 | aggregation   | aggregate result                 |
 | walk          | walk activity, the walk itself   |
 
-### Representing Self and Other
+### Self and Other
 
 | word  | writing                                                                                                                                                                                                                                                                                                         | meaning |
 | :---- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
@@ -317,23 +322,19 @@ There are no special "grammatical cases" like in English where the subject of a 
 
 | english                        | tune                              |
 | :----------------------------- | :-------------------------------- |
-| My favorite color.             | bak suqa xiwan klora.             |
+| My favorite color.             | bak suq xiwan klora.              |
 | I love things.                 | suq lavi yas ciqa.                |
 | Our favorite place.            | bak wita xiwan plesa.             |
 | Their interesting little nook. | bak peta reC rotxak txam djaloka. |
-
-### Generic types
-
-There are action types `kiq`, and object types `kaq`. This is used to describe the abstract things, especially used in modeling and representation like used in code.
 
 ### Personal Names
 
 Personal names begin with basically a word meaning like "soul", gender agnostic. So it is `sol x`.
 
     Hi       John    Smith.
-    henu sol djohan  smicane.
+    henu sol djohan  smicanwe.
 
-The personal name ends in `-e`, so it gives us a sharper clue that it is a meaningless name not the actual thing (like an actual smith). Longer names start with `e-`, like if they are 3+ words.
+The personal name ends in `-we`, so it gives us a sharper clue that it is a meaningless name not the actual thing (like an actual smith). Longer names start with `e-`, like if they are 3+ words.
 
 There is over a hundred thousand possible names which can be had, but reusing/picking a common name would be ideal so as to keep vocabulary small. Some of the words might grow to gain some meaning, so a name could mean something in the future, though we will try and reserve some names for names sake up front, kind of like we have in English.
 
@@ -445,7 +446,7 @@ If it is an action, then `i- ... -wi`.
 
 ### Time
 
-Telling time uses a 12 hour clock with rise and fall. It uses the Gregorian calendar (standard western calendar).
+Telling time uses a 12 hour clock with "rise" and "fall". It uses the Gregorian calendar (standard western calendar).
 
 | term   | writing                                                                                                                                                                                                                                                                                                                                                                                                              | meaning |
 | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
@@ -461,15 +462,19 @@ Telling time uses a 12 hour clock with rise and fall. It uses the Gregorian cale
 
 To say it is 6:37am, you would say:
 
-    viva san xab riza
+    viva san xaba riza
 
 Or 11:16pm:
 
-    cuka zen viv zara
+    cuka zen viva zara
 
 The date format is like this:
 
-    /year/month/day hours:minutes:seconds
+    year/month/day hours:minutes:seconds
+
+So January 11, 2011 would be at 11:16pm:
+
+    dhzz/zz/z zz:zv z
 
 ### Random Things
 
@@ -593,29 +598,32 @@ You have () parentheses and \<\>, quotes ' and ", and the slash / for how you wo
 
 Here are some religions and the people.
 
-| translation           | term         | derivation         |
-| :-------------------- | :----------- | :----------------- |
-| `pot yehud zek`       | jew          | praised agent      |
-| `pot yehud yum`       | jewish       | praised oriented   |
-| `pot yehud yog`       | judaism      | praised practice   |
-| `pot nahar zek`       | hindu        | rivered agent      |
-| `pot nahar zek`       | hinduism     | rivered practice   |
-| `pot muslam zek`      | muslim       | submitted person   |
-| `pot muslam yum`      | islamic      | submitted oriented |
-| `pot muslam yog`      | islam        | submitted practice |
-| `yehud lak yaxas zen` | muhammad     | praise worthy one  |
-| `pot kristos zek`     | christian    | anointed person    |
-| `pot kristos yog`     | christianity | anointed practice  |
-| `pot kristos zen`     | jesus christ | anointed one       |
+| translation       | term         | derivation         |
+| :---------------- | :----------- | :----------------- |
+| `zek yehud`       | jew          | praised agent      |
+| `yum yehud`       | jewish       | praised oriented   |
+| `yog yehud`       | judaism      | praised practice   |
+| `zek nahar`       | hindu        | rivered agent      |
+| `yog nahar`       | hinduism     | rivered practice   |
+| `zek muslam`      | muslim       | submitted person   |
+| `yum muslam`      | islamic      | submitted oriented |
+| `yog muslam`      | islam        | submitted practice |
+| `yehud yaxas sol` | muhammad     | praise worthy soul |
+| `zek kristos`     | christian    | anointed person    |
+| `yog kristos`     | christianity | anointed practice  |
+| `zen kristos`     | jesus christ | anointed one       |
+| `zek bud`         | buddhist     | awakened person    |
+| `yog bud`         | buddhism     | awakened practice  |
+| `zen bud`         | buddha       | awakened one       |
 
 So you could use them in sentences.
 
-| english                          | tune                             |
-| :------------------------------- | :------------------------------- |
-| They are Jewish.                 | pet vuti upot yehud yumyu.       |
-| They follow Islam.               | pet dabari apot muslam yogwa.    |
-| He/she is a Hindu.               | vaq vuti nic apot nahar zekwa.   |
-| He/she believes in Christianity. | vaq ras fini apot kristos yogwa. |
+| english                          | tune                       |
+| :------------------------------- | :------------------------- |
+| They are Jewish.                 | pet vuti yum yehuda.       |
+| They follow Islam.               | pet dabari yog muslama.    |
+| He/she is a Hindu.               | vaq vuti nic zek nahara.   |
+| He/she believes in Christianity. | vaq ras fini yog kristosa. |
 
 ### Common Modifiers
 

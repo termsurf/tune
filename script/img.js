@@ -36,7 +36,7 @@ const map = {
   ',': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/comma-44.svg?raw=true" />`,
 }
 
-const WORDS = `vut
+const WORDS = `nan
 `.trim().split(/\n+/)
 
 const out = WORDS.map(x => x.split('').map(x => map[x]).join(''))
