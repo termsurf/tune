@@ -32,6 +32,7 @@ const map = {
   '!': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/exclam-33.svg?raw=true" />`,
   '(': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/parenleft-40.svg?raw=true" />`,
   ')': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/parenright-41.svg?raw=true" />`,
+  ',': `<img height="28" src="https://github.com/teamtreesurf/tone/blob/make/text/svgs/comma-44.svg?raw=true" />`,
 }
 
 const WORDS = `gal(yular, p)
