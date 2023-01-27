@@ -1191,13 +1191,26 @@ Scientific metric system:
 
 ## Foundational Math
 
-| term     | meaning      |
-| :------- | :----------- |
-| `setan`  | set          |
-| `grupan` | group        |
-| `riqan`  | ring         |
-| `matun`  | union        |
-| `hatzot` | intersection |
+| term        | meaning                 |
+| :---------- | :---------------------- |
+| `setan`     | set                     |
+| `grupan`    | group                   |
+| `riqan`     | ring                    |
+| `matun`     | union                   |
+| `hatzot`    | intersection            |
+| `banar`     | binary                  |
+| `prexan`    | operation               |
+| `manfold`   | manifold                |
+| `matrik`    | metric                  |
+| `pradjik`   | projection              |
+| `tapal`     | topology                |
+| `nebor`     | neighbor                |
+| `poyntad`   | mathematical space      |
+| `magman`    | magma (group theory)    |
+| `lowaq`     | groupoid (group theory) |
+| `magtud`    | magnitude               |
+| `dor`       | direction               |
+| `liC setan` | vector ("point set")    |
 
 ## Data Structures
 
