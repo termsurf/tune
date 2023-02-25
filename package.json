@@ -1,47 +1,12 @@
 {
-  "name": "tune",
-  "displayName": "tune",
-  "description": "Cross-Cultural Writing System",
+  "name": "term",
+  "displayName": "term",
+  "description": "An Intermediate Constructed Language",
   "license": "Apache-2.0",
-  "publisher": "teamtreesurf",
+  "publisher": "moonbond",
   "repository": {
     "type": "git",
-    "url": "https://github.com/teamtreesurf/tune.git"
-  },
-  "engines": {
-    "vscode": "^1.59.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "configurationDefaults": {
-      "[tune]": {
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": false,
-        "editor.fontFamily": "ToneEtch"
-      }
-    },
-    "languages": [
-      {
-        "id": "tune",
-        "aliases": [
-          "Tune",
-          "tune"
-        ],
-        "extensions": [
-          ".tune"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "tune",
-        "scopeName": "source.tune",
-        "path": "./syntaxes/tune.tmLanguage.json"
-      }
-    ]
+    "url": "https://github.com/moonbond/term.git"
   },
   "version": "2.0.0",
   "devDependencies": {
