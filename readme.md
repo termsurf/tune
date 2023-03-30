@@ -6,11 +6,11 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/tunebond/tune/blob/make/view/base.svg?raw=true' height='222'/>
+  <img src='https://github.com/tunebond/tune/blob/make/view/fungi.svg?raw=true' height='222'/>
 </p>
 
 <p align='center'>
-  <img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/h-104.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/m-109.svg?raw=true" />
+  <img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/d-100.svg?raw=true" />
 </p>
 <p align='center'>
   Bead: An Intermediate Constructed Language
