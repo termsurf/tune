@@ -1821,7 +1821,7 @@ mahuk,slop,o,mahu,马虎,chinese
 mahut,character (nature),o,mahut,מַהוּת,hebrew
 mak,forward,m,,,
 makab,cube,o,makeab,مكعب,arabic
-makaf,hyphen,o,maqaf,מַקָּף‎,hebrew
+makaf,hyphen,o,maqaf,מַקָּף,hebrew
 makal,disease,o,machala,מַחֲלָה,hebrew
 makar,sale,o,makhár,מָכַר,hebrew
 makat,needle,o,machat,מַחַט,hebrew
@@ -2325,7 +2325,7 @@ pasal,idol,o,pesel,פֶּסֶל,hebrew
 paser,sparrow,o,passer,,latin
 paskal,pascal (measurement),o,,,english
 pasor,ban,o,le'es(o)R,לֶאֱסוֹר,hebrew
-pasuk,period (mark),a,pasuq,פָּסוּק‎,hebrew
+pasuk,period (mark),a,pasuq,פָּסוּק,hebrew
 pat,act of,a,,,
 patal,roof,o,paṭala,पटल,sanskrit
 patant,patent,o,,,english
@@ -2614,7 +2614,7 @@ rol,cycle,o,,,
 rom,merge,a,,,
 roqyik,apt,m,róng yì,容易,chinese
 rotiv,sauce,o,rotev,רוֹטֶב,hebrew
-rotxak,interest,o,,रोचक,sanskrit
+hintres,interest,o,,,english
 roxam,impression,o,roshem,רוֹשֶׁם,hebrew
 rudran,roar,o,rudra,रुद्र,sanskrit
 ruf,thirteen,o,,,
@@ -3536,7 +3536,7 @@ xawal,ask,a,shaw'al,שָׁאַל,hebrew
 xayef,smooth,a,lexay(e)f,לְשַׁייֵּף,hebrew
 xayek,attribute,o,lexay(e)H,לְשַׁייֵּךְ,hebrew
 xaytan,describe,a,šayṭana,شَيْطَنَ,arabic
-xazuf,tan,o,shazúf,שָׁזוּף‎,hebrew
+xazuf,tan,o,shazúf,שָׁזוּף,hebrew
 xedjan,slash,a,xuējiǎn,削减,chinese
 xedjip,implicate,a,shèjí,涉及,chinese
 xelak,question,o,sh'elá,שְׁאֵלָה,hebrew
@@ -3600,7 +3600,7 @@ xitxip,season (period),o,shíqí,时期,chinese
 xivan,destroy,a,,,
 xivav,chip (like computing),o,shvav,שְׁבָב,hebrew
 xivet,settle,a,lax(e)vet,לָשֶׁבֶת,hebrew
-xiwan,favorite,m,xǐ huan,喜欢,chinese
+favrit,favorite,m,,,english
 xiwaq,wish,o,xiwang,希望,chinese
 xiwek,deem,a,shìwéi,视为,chinese
 xix,all encompasing thing,m,,,
@@ -3675,7 +3675,7 @@ yacam,kneel,o,jaṯama,جَثَمَ,arabic
 yaCnak,dwindle,a,,hjaðna,icelandic
 yahar,forest,o,ya'ar,יַעַר,hebrew
 yahir,arrogant,m,yahir,יָהִיר,hebrew
-yahud,jew,a,yahūdiyy,يَهُودِيّ‎,arabic
+yahud,jew,a,yahūdiyy,يَهُودِيّ,arabic
 yahul,solve,a,yahullu,يَحُلُّ,arabic
 yakaf,fear,o,yakhaf,يخاف,arabic
 yakas,sentiment,o,yákhas,יַחַס,hebrew
