@@ -6,7 +6,7 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/tunebond/tune/blob/make/view/fungi.svg?raw=true' height='222'/>
+  <img src='https://github.com/tunebond/bead/blob/make/view/fungi.svg?raw=true' height='222'/>
 </p>
 
 <p align='center'>
