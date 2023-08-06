@@ -13,7 +13,7 @@
   <img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/d-100.svg?raw=true" />
 </p>
 <p align='center'>
-  Bead: An Intermediate Constructed Language
+  Beat: An Intermediate Constructed Language
 </p>
 
 <br/>
@@ -22,7 +22,7 @@
 
 ## Summary
 
-_Note: Bead is just in the prototype phases right now. Check out the [website](https://bead.chat) for the latest grammar, lexicon, and other things._
+_Note: Beat is just in the prototype phases right now. Check out the [website](https://bead.chat) for the latest grammar, lexicon, and other things._
 
 ## License
 
