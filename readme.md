@@ -22,7 +22,7 @@
 
 ## Summary
 
-_Note: Beat is just in the prototype phases right now. Check out the [website](https://bead.chat) for the latest grammar, lexicon, and other things._
+_Note: Beat is just in the prototype phases right now. Check out the [website](https://beat.land) for the latest grammar, lexicon, and other things._
 
 ## License
 
