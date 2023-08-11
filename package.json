@@ -1,12 +1,12 @@
 {
-  "name": "bead",
-  "displayName": "bead",
+  "name": "tune",
+  "displayName": "tune",
   "description": "An Intermediate Constructed Language",
   "license": "Apache-2.0",
-  "publisher": "moonbond",
+  "publisher": "nerdbond",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moonbond/term.git"
+    "url": "https://github.com/nerdbond/tune.git"
   },
   "version": "2.0.0",
   "devDependencies": {
