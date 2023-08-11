@@ -6,11 +6,11 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/tunebond/bead/blob/make/view/fungi.svg?raw=true' height='222'/>
+  <img src='https://github.com/nerdbond/bead/blob/make/view/fungi.svg?raw=true' height='222'/>
 </p>
 
 <p align='center'>
-  <img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="42" src="https://github.com/tunebond/tone/blob/make/text/svgs/d-100.svg?raw=true" />
+  <img height="42" src="https://github.com/nerdbond/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="42" src="https://github.com/nerdbond/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="42" src="https://github.com/nerdbond/tone/blob/make/text/svgs/d-100.svg?raw=true" />
 </p>
 <p align='center'>
   Beat: An Intermediate Constructed Language
@@ -42,4 +42,4 @@ limitations under the License.
 
 ## TuneBond
 
-This is being developed by the folks at [TuneBond](https://tune.bond), a California-based project for helping humanity master information and computation. Find us on [Twitter](https://twitter.com/tunebond), [LinkedIn](https://www.linkedin.com/company/tunebond), and [Facebook](https://www.facebook.com/tunebond). Check out our other [GitHub projects](https://github.com/tunebond) as well!
+This is being developed by the folks at [TuneBond](https://tune.bond), a California-based project for helping humanity master information and computation. Find us on [Twitter](https://twitter.com/nerdbond), [LinkedIn](https://www.linkedin.com/company/nerdbond), and [Facebook](https://www.facebook.com/nerdbond). Check out our other [GitHub projects](https://github.com/nerdbond) as well!
