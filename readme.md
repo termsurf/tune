@@ -6,7 +6,7 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/nerdbond/bead/blob/make/view/fungi.svg?raw=true' height='222'/>
+  <img src='https://github.com/nerdbond/bead/blob/make/view/bird.svg?raw=true' height='222'/>
 </p>
 
 <p align='center'>
