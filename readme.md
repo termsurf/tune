@@ -9,11 +9,9 @@
   <img src='https://github.com/nerdbond/tune/blob/make/view/bird.svg?raw=true' height='222'/>
 </p>
 
+<h3 align='center'>tune</h3>
 <p align='center'>
-  <img height="42" src="https://github.com/nerdbond/tone/blob/make/text/svgs/b-98.svg?raw=true" /><img height="42" src="https://github.com/nerdbond/tone/blob/make/text/svgs/i-105.svg?raw=true" /><img height="42" src="https://github.com/nerdbond/tone/blob/make/text/svgs/d-100.svg?raw=true" />
-</p>
-<p align='center'>
-  Tune: An Intermediate Constructed Language
+  An Intermediate Constructed Language
 </p>
 
 <br/>
