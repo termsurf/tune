@@ -3,10 +3,10 @@
   "displayName": "tune",
   "description": "An Intermediate Constructed Language",
   "license": "Apache-2.0",
-  "publisher": "nerdbond",
+  "publisher": "wavebond",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nerdbond/tune.git"
+    "url": "https://github.com/wavebond/tune.git"
   },
   "version": "2.0.0",
   "devDependencies": {
