@@ -3,10 +3,10 @@
   "displayName": "tune",
   "description": "An Intermediate Constructed Language",
   "license": "Apache-2.0",
-  "publisher": "textsurf",
+  "publisher": "termsurf",
   "repository": {
     "type": "git",
-    "url": "https://github.com/textsurf/tune.git"
+    "url": "https://github.com/termsurf/tune.git"
   },
   "version": "2.0.0",
   "devDependencies": {
