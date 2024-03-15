@@ -6,7 +6,7 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/termsurf/tune/blob/make/view/bird.svg?raw=true' height='222'/>
+  <img src='https://github.com/termsurf/tune/blob/make/view/view.svg?raw=true' height='222'/>
 </p>
 
 <h3 align='center'>tune</h3>
@@ -20,7 +20,7 @@
 
 ## Summary
 
-_Note: Tune is just in the prototype phases right now. Check out the [website](https://tune.land) for the latest grammar, lexicon, and other things._
+_Note: Tune is just in the prototype phases right now. Check out the [website](https://tune.surf) for the latest grammar, lexicon, and other things._
 
 ## License
 
