@@ -384,6 +384,15 @@ export function run(plan: Plan): {
   for (const shape of plan.shapes) {
     const pieces = build(plan, shape)
 
+    /** The fast counter is what every sweep trusts, so it is held to
+     * the built list on every single run rather than now and then. */
+    const counted = tally(plan, shape)
+    if (counted !== pieces.length) {
+      throw new Error(
+        `${plan.name}/${shape}: built ${pieces.length}, tallied ${counted}`,
+      )
+    }
+
     if (separable(plan)) {
       const said = predict(plan, shape)
       if (said !== pieces.length) {
@@ -412,6 +421,130 @@ export function run(plan: Plan): {
       leanAll: plan.shapes.reduce((n, s) => n + leanCount[s], 0),
     },
   }
+}
+
+/**
+ * Counts one shape without building a single word.
+ *
+ * A sweep over thousands of plans cannot afford to make and sort a
+ * couple of thousand strings for each one, so this does the same
+ * arithmetic on integers.
+ *
+ * The three tests each collapse to something precomputable:
+ *
+ *   rhyme   depends only on the vowel and the first sound of the
+ *           closing, so it becomes a 5 bit mask per closing
+ *   bar     refuses a sound at one slot, which is the same as taking
+ *           members out of that side's pool before the loop starts
+ *   echo    depends only on the first and last sound, so it becomes a
+ *           lookup over the two ends
+ *   sieve   needs the rank sum, and the onset and coda parts of that
+ *           sum do not change inside the vowel loop
+ *
+ * What is left is an integer triple loop with no allocation in it.
+ */
+export function tally(plan: Plan, shape: Shape): number {
+  const [rawOnsets, rawCodas] = sidesOf(plan, shape)
+  const map = nearMap(plan.near)
+
+  const banned = (part: string) =>
+    [...part].some(s => plan.ban.includes(s))
+
+  /** A bar at a slot is a pool filter, worked out once. */
+  const barsHere = plan.bar.filter(b => b.shape === shape)
+  const onsetWidth = shape === 'CCVC' ? 2 : 1
+  const vowelAt = onsetWidth
+
+  function keepOnset(onset: string): boolean {
+    if (banned(onset)) return false
+    return !barsHere.some(b => b.at < onsetWidth && b.sounds.includes(onset[b.at]))
+  }
+
+  function keepCoda(coda: string): boolean {
+    if (banned(coda)) return false
+    return !barsHere.some(
+      b => b.at > vowelAt && b.sounds.includes(coda[b.at - vowelAt - 1]),
+    )
+  }
+
+  const onsets = rawOnsets.filter(keepOnset)
+  const codas = rawCodas.filter(keepCoda)
+
+  const vowels = plan.vowel.filter(
+    v => !plan.ban.includes(v) && !barsHere.some(b => b.at === vowelAt && b.sounds.includes(v)),
+  )
+
+  if (onsets.length === 0 || codas.length === 0 || vowels.length === 0) {
+    return 0
+  }
+
+  const rank = plan.sieve?.rank
+  const mod = plan.sieve?.mod ?? 0
+  const keepSet = plan.sieve ? new Set(plan.sieve.keep) : null
+
+  /** Which vowels each closing may follow, and the closing's rank sum. */
+  const codaOk: Array<Array<boolean>> = []
+  const codaRank: Array<number> = []
+  const codaTail: Array<string> = []
+
+  for (const coda of codas) {
+    const ok = vowels.map(v => !plan.rhyme.includes(v + coda[0]))
+    codaOk.push(ok)
+    let sum = 0
+    if (rank) {
+      for (const s of coda) {
+        sum += rank.get(s) ?? 0
+      }
+    }
+    codaRank.push(sum)
+    codaTail.push(coda[coda.length - 1])
+  }
+
+  const vowelRank = vowels.map(v => (rank ? (rank.get(v) ?? 0) : 0))
+
+  let total = 0
+
+  for (const onset of onsets) {
+    const head = onset[0]
+
+    let onsetSum = 0
+    if (rank) {
+      for (const s of onset) {
+        onsetSum += rank.get(s) ?? 0
+      }
+    }
+
+    for (let ci = 0; ci < codas.length; ci++) {
+      if (plan.echo !== 'none') {
+        const tail = codaTail[ci]
+        const near =
+          plan.echo === 'same'
+            ? head === tail
+            : (map.get(head)?.has(tail) ?? head === tail)
+        if (near) {
+          continue
+        }
+      }
+
+      const ok = codaOk[ci]
+
+      if (!keepSet) {
+        for (let vi = 0; vi < vowels.length; vi++) {
+          if (ok[vi]) total++
+        }
+        continue
+      }
+
+      const partial = onsetSum + codaRank[ci]
+      for (let vi = 0; vi < vowels.length; vi++) {
+        if (ok[vi] && keepSet.has((partial + vowelRank[vi]) % mod)) {
+          total++
+        }
+      }
+    }
+  }
+
+  return total
 }
 
 /** The count alone, skipping the lean pass, for sweeping many plans. */
