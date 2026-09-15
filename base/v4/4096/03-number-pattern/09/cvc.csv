@@ -14,7 +14,6 @@ miv
 mif
 mix
 mij
-miC
 mic
 mem
 men
@@ -31,7 +30,6 @@ mev
 mef
 mex
 mej
-meC
 mec
 mam
 man
@@ -48,7 +46,6 @@ mav
 maf
 max
 maj
-maC
 mac
 mal
 mom
@@ -66,7 +63,6 @@ mov
 mof
 mox
 moj
-moC
 moc
 mol
 mum
@@ -84,41 +80,34 @@ muv
 muf
 mux
 muj
-muC
 muc
 nim
 nin
 niq
-nig
 nid
 nib
 nip
 nit
-nik
 nis
 niz
 niv
 nif
 nix
 nij
-niC
 nic
 nem
 nen
 neq
-neg
 ned
 neb
 nep
 net
-nek
 nes
 nez
 nev
 nef
 nex
 nej
-neC
 nec
 nam
 nan
@@ -135,7 +124,6 @@ nav
 naf
 nax
 naj
-naC
 nac
 nal
 nom
@@ -153,13 +141,11 @@ nov
 nof
 nox
 noj
-noC
 noc
 nol
 num
 nun
 nuq
-nug
 nud
 nub
 nup
@@ -171,7 +157,6 @@ nuv
 nuf
 nux
 nuj
-nuC
 nuc
 gim
 gin
@@ -188,7 +173,6 @@ giv
 gif
 gix
 gij
-giC
 gic
 gem
 gen
@@ -205,7 +189,6 @@ gev
 gef
 gex
 gej
-geC
 gec
 gam
 gan
@@ -222,7 +205,6 @@ gav
 gaf
 gax
 gaj
-gaC
 gac
 gal
 gom
@@ -240,7 +222,6 @@ gov
 gof
 gox
 goj
-goC
 goc
 gol
 gum
@@ -251,14 +232,12 @@ gud
 gub
 gup
 gut
-guk
 gus
 guz
 guv
 guf
 gux
 guj
-guC
 guc
 dim
 din
@@ -275,7 +254,6 @@ div
 dif
 dix
 dij
-diC
 dic
 dem
 den
@@ -292,7 +270,6 @@ dev
 def
 dex
 dej
-deC
 dec
 dam
 dan
@@ -309,7 +286,6 @@ dav
 daf
 dax
 daj
-daC
 dac
 dal
 dom
@@ -327,7 +303,6 @@ dov
 dof
 dox
 doj
-doC
 doc
 dol
 dum
@@ -345,7 +320,6 @@ duv
 duf
 dux
 duj
-duC
 duc
 bim
 bin
@@ -362,7 +336,6 @@ biv
 bif
 bix
 bij
-biC
 bic
 bem
 ben
@@ -379,7 +352,6 @@ bev
 bef
 bex
 bej
-beC
 bec
 bam
 ban
@@ -396,7 +368,6 @@ bav
 baf
 bax
 baj
-baC
 bac
 bal
 bom
@@ -414,7 +385,6 @@ bov
 bof
 box
 boj
-boC
 boc
 bol
 bum
@@ -432,7 +402,6 @@ buv
 buf
 bux
 buj
-buC
 buc
 pim
 pin
@@ -449,7 +418,6 @@ piv
 pif
 pix
 pij
-piC
 pic
 pem
 pen
@@ -466,7 +434,6 @@ pev
 pef
 pex
 pej
-peC
 pec
 pam
 pan
@@ -483,7 +450,6 @@ pav
 paf
 pax
 paj
-paC
 pac
 pal
 pom
@@ -501,7 +467,6 @@ pov
 pof
 pox
 poj
-poC
 poc
 pol
 pum
@@ -511,7 +476,6 @@ pug
 pud
 pub
 pup
-put
 puk
 pus
 puz
@@ -519,7 +483,6 @@ puv
 puf
 pux
 puj
-puC
 puc
 tim
 tin
@@ -536,7 +499,6 @@ tiv
 tif
 tix
 tij
-tiC
 tic
 tem
 ten
@@ -553,7 +515,6 @@ tev
 tef
 tex
 tej
-teC
 tec
 tam
 tan
@@ -570,7 +531,6 @@ tav
 taf
 tax
 taj
-taC
 tac
 tal
 tom
@@ -588,7 +548,6 @@ tov
 tof
 tox
 toj
-toC
 toc
 tol
 tum
@@ -606,7 +565,6 @@ tuv
 tuf
 tux
 tuj
-tuC
 tuc
 kim
 kin
@@ -623,7 +581,6 @@ kiv
 kif
 kix
 kij
-kiC
 kic
 kem
 ken
@@ -640,7 +597,6 @@ kev
 kef
 kex
 kej
-keC
 kec
 kam
 kan
@@ -657,7 +613,6 @@ kav
 kaf
 kax
 kaj
-kaC
 kac
 kal
 kom
@@ -675,7 +630,6 @@ kov
 kof
 kox
 koj
-koC
 koc
 kol
 kum
@@ -686,14 +640,12 @@ kud
 kub
 kup
 kut
-kuk
 kus
 kuz
 kuv
 kuf
 kux
 kuj
-kuC
 kuc
 him
 hin
@@ -710,7 +662,6 @@ hiv
 hif
 hix
 hij
-hiC
 hic
 hem
 hen
@@ -727,7 +678,6 @@ hev
 hef
 hex
 hej
-heC
 hec
 ham
 han
@@ -744,7 +694,6 @@ hav
 haf
 hax
 haj
-haC
 hac
 hal
 hom
@@ -762,7 +711,6 @@ hov
 hof
 hox
 hoj
-hoC
 hoc
 hol
 hum
@@ -780,7 +728,6 @@ huv
 huf
 hux
 huj
-huC
 huc
 sim
 sin
@@ -797,7 +744,6 @@ siv
 sif
 six
 sij
-siC
 sic
 sem
 sen
@@ -814,7 +760,6 @@ sev
 sef
 sex
 sej
-seC
 sec
 sam
 san
@@ -831,7 +776,6 @@ sav
 saf
 sax
 saj
-saC
 sac
 sal
 som
@@ -849,7 +793,6 @@ sov
 sof
 sox
 soj
-soC
 soc
 sol
 sum
@@ -867,7 +810,6 @@ suv
 suf
 sux
 suj
-suC
 suc
 zim
 zin
@@ -884,7 +826,6 @@ ziv
 zif
 zix
 zij
-ziC
 zic
 zem
 zen
@@ -901,7 +842,6 @@ zev
 zef
 zex
 zej
-zeC
 zec
 zam
 zan
@@ -918,7 +858,6 @@ zav
 zaf
 zax
 zaj
-zaC
 zac
 zal
 zom
@@ -936,7 +875,6 @@ zov
 zof
 zox
 zoj
-zoC
 zoc
 zol
 zum
@@ -954,7 +892,6 @@ zuv
 zuf
 zux
 zuj
-zuC
 zuc
 vim
 vin
@@ -971,7 +908,6 @@ viv
 vif
 vix
 vij
-viC
 vic
 vem
 ven
@@ -988,7 +924,6 @@ vev
 vef
 vex
 vej
-veC
 vec
 vam
 van
@@ -1005,7 +940,6 @@ vav
 vaf
 vax
 vaj
-vaC
 vac
 val
 vom
@@ -1023,7 +957,6 @@ vov
 vof
 vox
 voj
-voC
 voc
 vol
 vum
@@ -1041,7 +974,6 @@ vuv
 vuf
 vux
 vuj
-vuC
 vuc
 fim
 fin
@@ -1058,7 +990,6 @@ fiv
 fif
 fix
 fij
-fiC
 fic
 fem
 fen
@@ -1075,24 +1006,20 @@ fev
 fef
 fex
 fej
-feC
 fec
 fam
 fan
 faq
-fag
 fad
 fab
 fap
 fat
-fak
 fas
 faz
 fav
 faf
 fax
 faj
-faC
 fac
 fal
 fom
@@ -1110,7 +1037,6 @@ fov
 fof
 fox
 foj
-foC
 foc
 fol
 fum
@@ -1128,7 +1054,6 @@ fuv
 fuf
 fux
 fuj
-fuC
 fuc
 rim
 rin
@@ -1145,7 +1070,6 @@ riv
 rif
 rix
 rij
-riC
 ric
 rem
 ren
@@ -1162,7 +1086,6 @@ rev
 ref
 rex
 rej
-reC
 rec
 ram
 ran
@@ -1179,7 +1102,6 @@ rav
 raf
 rax
 raj
-raC
 rac
 ral
 rom
@@ -1197,7 +1119,6 @@ rov
 rof
 rox
 roj
-roC
 roc
 rol
 rum
@@ -1215,7 +1136,6 @@ ruv
 ruf
 rux
 ruj
-ruC
 ruc
 lim
 lin
@@ -1232,7 +1152,6 @@ liv
 lif
 lix
 lij
-liC
 lic
 lem
 len
@@ -1249,7 +1168,6 @@ lev
 lef
 lex
 lej
-leC
 lec
 lam
 lan
@@ -1266,7 +1184,6 @@ lav
 laf
 lax
 laj
-laC
 lac
 lal
 lom
@@ -1284,7 +1201,6 @@ lov
 lof
 lox
 loj
-loC
 loc
 lol
 lum
@@ -1302,7 +1218,6 @@ luv
 luf
 lux
 luj
-luC
 luc
 wim
 win
@@ -1319,7 +1234,6 @@ wiv
 wif
 wix
 wij
-wiC
 wic
 wem
 wen
@@ -1336,7 +1250,6 @@ wev
 wef
 wex
 wej
-weC
 wec
 wam
 wan
@@ -1353,7 +1266,6 @@ wav
 waf
 wax
 waj
-waC
 wac
 wal
 wom
@@ -1362,7 +1274,6 @@ woq
 wog
 wod
 wob
-wop
 wot
 wok
 wos
@@ -1371,7 +1282,6 @@ wov
 wof
 wox
 woj
-woC
 woc
 wol
 wum
@@ -1389,5 +1299,4 @@ wuv
 wuf
 wux
 wuj
-wuC
 wuc

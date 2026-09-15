@@ -50,7 +50,6 @@ max
 maj
 maC
 mac
-mar
 mal
 mom
 mon
@@ -69,7 +68,6 @@ mox
 moj
 moC
 moc
-mor
 mol
 mum
 mun
@@ -91,12 +89,10 @@ muc
 nim
 nin
 niq
-nig
 nid
 nib
 nip
 nit
-nik
 nis
 niz
 niv
@@ -108,12 +104,10 @@ nic
 nem
 nen
 neq
-neg
 ned
 neb
 nep
 net
-nek
 nes
 nez
 nev
@@ -139,7 +133,6 @@ nax
 naj
 naC
 nac
-nar
 nal
 nom
 non
@@ -158,12 +151,10 @@ nox
 noj
 noC
 noc
-nor
 nol
 num
 nun
 nuq
-nug
 nud
 nub
 nup
@@ -228,7 +219,6 @@ gax
 gaj
 gaC
 gac
-gar
 gal
 gom
 gon
@@ -247,7 +237,6 @@ gox
 goj
 goC
 goc
-gor
 gol
 gum
 gun
@@ -257,7 +246,6 @@ gud
 gub
 gup
 gut
-guk
 gus
 guz
 guv
@@ -317,7 +305,6 @@ dax
 daj
 daC
 dac
-dar
 dal
 dom
 don
@@ -336,7 +323,6 @@ dox
 doj
 doC
 doc
-dor
 dol
 dum
 dun
@@ -406,7 +392,6 @@ bax
 baj
 baC
 bac
-bar
 bal
 bom
 bon
@@ -425,7 +410,6 @@ box
 boj
 boC
 boc
-bor
 bol
 bum
 bun
@@ -495,7 +479,6 @@ pax
 paj
 paC
 pac
-par
 pal
 pom
 pon
@@ -514,7 +497,6 @@ pox
 poj
 poC
 poc
-por
 pol
 pum
 pun
@@ -523,7 +505,6 @@ pug
 pud
 pub
 pup
-put
 puk
 pus
 puz
@@ -584,7 +565,6 @@ tax
 taj
 taC
 tac
-tar
 tal
 tom
 ton
@@ -603,7 +583,6 @@ tox
 toj
 toC
 toc
-tor
 tol
 tum
 tun
@@ -673,7 +652,6 @@ kax
 kaj
 kaC
 kac
-kar
 kal
 kom
 kon
@@ -692,7 +670,6 @@ kox
 koj
 koC
 koc
-kor
 kol
 kum
 kun
@@ -702,7 +679,6 @@ kud
 kub
 kup
 kut
-kuk
 kus
 kuz
 kuv
@@ -762,7 +738,6 @@ hax
 haj
 haC
 hac
-har
 hal
 hom
 hon
@@ -781,7 +756,6 @@ hox
 hoj
 hoC
 hoc
-hor
 hol
 hum
 hun
@@ -851,7 +825,6 @@ sax
 saj
 saC
 sac
-sar
 sal
 som
 son
@@ -870,7 +843,6 @@ sox
 soj
 soC
 soc
-sor
 sol
 sum
 sun
@@ -940,7 +912,6 @@ zax
 zaj
 zaC
 zac
-zar
 zal
 zom
 zon
@@ -959,7 +930,6 @@ zox
 zoj
 zoC
 zoc
-zor
 zol
 zum
 zun
@@ -1029,7 +999,6 @@ vax
 vaj
 vaC
 vac
-var
 val
 vom
 von
@@ -1048,7 +1017,6 @@ vox
 voj
 voC
 voc
-vor
 vol
 vum
 vun
@@ -1104,12 +1072,10 @@ fec
 fam
 fan
 faq
-fag
 fad
 fab
 fap
 fat
-fak
 fas
 faz
 fav
@@ -1118,7 +1084,6 @@ fax
 faj
 faC
 fac
-far
 fal
 fom
 fon
@@ -1137,7 +1102,6 @@ fox
 foj
 foC
 foc
-for
 fol
 fum
 fun
@@ -1207,7 +1171,6 @@ rax
 raj
 raC
 rac
-rar
 ral
 rom
 ron
@@ -1226,7 +1189,6 @@ rox
 roj
 roC
 roc
-ror
 rol
 rum
 run
@@ -1296,7 +1258,6 @@ lax
 laj
 laC
 lac
-lar
 lal
 lom
 lon
@@ -1315,7 +1276,6 @@ lox
 loj
 loC
 loc
-lor
 lol
 lum
 lun
@@ -1385,7 +1345,6 @@ wax
 waj
 waC
 wac
-war
 wal
 wom
 won
@@ -1393,7 +1352,6 @@ woq
 wog
 wod
 wob
-wop
 wot
 wok
 wos
@@ -1404,7 +1362,6 @@ wox
 woj
 woC
 woc
-wor
 wol
 wum
 wun

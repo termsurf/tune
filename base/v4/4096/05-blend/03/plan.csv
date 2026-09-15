@@ -3,6 +3,6 @@ divides_by,256
 cvc,1280
 cvcc,1280
 ccvc,1536
-drift,0.887
+drift,0.865
 mark,"every shape divides by 256"
 mark,"the three shapes sit within 256 of each other"

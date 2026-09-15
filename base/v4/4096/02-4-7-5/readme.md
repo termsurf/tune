@@ -10,9 +10,9 @@ CCVC  1280
 
 How each shape reaches its number:
 
-- **CVC** at 1024: a glide opens a three letter word half the time; j closes a three letter word a quarter of the time; an even sieve keeping 3 of 5
-- **CVCC** at 1792: c and C open a quarter of the words they could; an even sieve keeping 4 of 5
-- **CCVC** at 1280: a voiceless stop stands second in an opening cluster a quarter of the time; j closes a word opening on a cluster a quarter of the time; an even sieve keeping 4 of 5
+- **CVC** at 1024: p, t and k open a quarter of the words they could; a voiceless stop closes a three letter word half the time; an even sieve keeping 4 of 6
+- **CVCC** at 1792: a hush or a tooth sound opens a word closing on a cluster half the time; a liquid stands first in a closing cluster half the time; a voiceless stop stands last in a closing cluster three quarters of the time
+- **CCVC** at 1280: a hush or a tooth sound stands second in an opening cluster three quarters of the time; a voiceless stop closes a word opening on a cluster a quarter of the time; an even sieve keeping 4 of 5
 
 ## What the words mean
 
@@ -44,6 +44,6 @@ closing on the same or a similar consonant, and it would cost
 `mam`, `pap`, `tat` and `dad`, which are words a language cannot
 do without.
 
-After the closeness pass, 767 words stay distinct.
+After the closeness pass, 808 words stay distinct.
 
 Rebuild with `pnpm --dir deck/tune exec tsx make/v4/code/ratio.ts`.

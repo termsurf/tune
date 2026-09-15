@@ -4,6 +4,9 @@ grin
 griq
 grig
 grid
+grib
+grip
+grit
 grik
 gris
 griz
@@ -18,6 +21,9 @@ gren
 greq
 greg
 gred
+greb
+grep
+gret
 grek
 gres
 grez
@@ -44,7 +50,6 @@ grax
 graj
 graC
 grac
-gral
 grom
 gron
 groq
@@ -62,7 +67,6 @@ grox
 groj
 groC
 groc
-grol
 grum
 grun
 gruq
@@ -85,6 +89,9 @@ glin
 gliq
 glig
 glid
+glib
+glip
+glit
 glik
 glis
 gliz
@@ -99,6 +106,9 @@ glen
 gleq
 gleg
 gled
+gleb
+glep
+glet
 glek
 gles
 glez
@@ -125,7 +135,6 @@ glax
 glaj
 glaC
 glac
-glal
 glom
 glon
 gloq
@@ -143,7 +152,6 @@ glox
 gloj
 gloC
 gloc
-glol
 glum
 glun
 gluq
@@ -212,7 +220,6 @@ drax
 draj
 draC
 drac
-dral
 drom
 dron
 droq
@@ -230,7 +237,6 @@ drox
 droj
 droC
 droc
-drol
 drum
 drun
 druq
@@ -299,7 +305,6 @@ brax
 braj
 braC
 brac
-bral
 brom
 bron
 broq
@@ -317,7 +322,6 @@ brox
 broj
 broC
 broc
-brol
 brum
 brun
 bruq
@@ -386,7 +390,6 @@ blax
 blaj
 blaC
 blac
-blal
 blom
 blon
 bloq
@@ -404,7 +407,6 @@ blox
 bloj
 bloC
 bloc
-blol
 blum
 blun
 bluq
@@ -430,6 +432,7 @@ prid
 prib
 prip
 prit
+prik
 pris
 priz
 priv
@@ -472,7 +475,6 @@ prax
 praj
 praC
 prac
-pral
 prom
 pron
 proq
@@ -490,7 +492,6 @@ prox
 proj
 proC
 proc
-prol
 prum
 prun
 pruq
@@ -559,7 +560,6 @@ plax
 plaj
 plaC
 plac
-plal
 plom
 plon
 ploq
@@ -577,7 +577,6 @@ plox
 ploj
 ploC
 ploc
-plol
 plum
 plun
 pluq
@@ -646,7 +645,6 @@ trax
 traj
 traC
 trac
-tral
 trom
 tron
 troq
@@ -664,7 +662,6 @@ trox
 troj
 troC
 troc
-trol
 trum
 trun
 truq
@@ -687,6 +684,8 @@ krin
 kriq
 krig
 krid
+krib
+krit
 krik
 kris
 kriz
@@ -701,6 +700,9 @@ kren
 kreq
 kreg
 kred
+kreb
+krep
+kret
 krek
 kres
 krez
@@ -716,6 +718,7 @@ kraq
 krag
 krad
 krab
+krap
 krat
 krak
 kras
@@ -726,7 +729,6 @@ krax
 kraj
 kraC
 krac
-kral
 krom
 kron
 kroq
@@ -744,7 +746,6 @@ krox
 kroj
 kroC
 kroc
-krol
 krum
 krun
 kruq
@@ -767,6 +768,9 @@ klin
 kliq
 klig
 klid
+klib
+klip
+klit
 klik
 klis
 kliz
@@ -781,6 +785,9 @@ klen
 kleq
 kleg
 kled
+kleb
+klep
+klet
 klek
 kles
 klez
@@ -807,7 +814,6 @@ klax
 klaj
 klaC
 klac
-klal
 klom
 klon
 kloq
@@ -825,7 +831,6 @@ klox
 kloj
 kloC
 kloc
-klol
 klum
 klun
 kluq
@@ -833,6 +838,7 @@ klug
 klud
 klub
 klup
+klut
 kluk
 klus
 kluz
@@ -845,6 +851,7 @@ kluc
 spim
 spin
 spiq
+spig
 spid
 spib
 spip
@@ -860,14 +867,19 @@ spic
 spem
 spen
 speq
+speg
 sped
 speb
 spep
 spet
+spek
+spes
+spez
 spev
 spef
 spex
 spej
+speC
 spec
 spam
 span
@@ -878,12 +890,13 @@ spab
 spap
 spat
 spak
+spas
 spav
 spaf
 spax
 spaj
+spaC
 spac
-spal
 spom
 spon
 spoq
@@ -893,12 +906,14 @@ spob
 spop
 spot
 spok
+spos
+spoz
 spov
 spof
 spox
 spoj
+spoC
 spoc
-spol
 spum
 spun
 spuq
@@ -967,7 +982,6 @@ skax
 skaj
 skaC
 skac
-skal
 skom
 skon
 skoq
@@ -985,7 +999,6 @@ skox
 skoj
 skoC
 skoc
-skol
 skum
 skun
 skuq
@@ -1054,7 +1067,6 @@ vrax
 vraj
 vraC
 vrac
-vral
 vrom
 vron
 vroq
@@ -1072,7 +1084,6 @@ vrox
 vroj
 vroC
 vroc
-vrol
 vrum
 vrun
 vruq
@@ -1141,7 +1152,6 @@ frax
 fraj
 fraC
 frac
-fral
 from
 fron
 froq
@@ -1159,7 +1169,6 @@ frox
 froj
 froC
 froc
-frol
 frum
 frun
 fruq
@@ -1228,7 +1237,6 @@ flax
 flaj
 flaC
 flac
-flal
 flom
 flon
 floq
@@ -1246,7 +1254,6 @@ flox
 floj
 floC
 floc
-flol
 flum
 flun
 fluq

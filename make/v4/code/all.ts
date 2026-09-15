@@ -16,8 +16,8 @@
  * different targets.
  *
  * Usage:
- *   pnpm --dir deck/tune regen
- *   pnpm --dir deck/tune regen --skip favorite
+ *   pnpm --dir deck/tune v4:regen
+ *   pnpm --dir deck/tune v4:regen --skip favorite
  */
 
 import { execFileSync } from 'child_process'

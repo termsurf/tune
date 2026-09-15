@@ -10,7 +10,7 @@
   },
   "version": "2.0.0",
   "scripts": {
-    "regen": "tsx make/v4/code/all.ts",
+    "v4:regen": "tsx make/v4/code/all.ts",
     "v4:base": "tsx make/v4/code/calculate.ts",
     "v4:check": "tsx make/v4/code/check.ts",
     "v4:drop": "tsx make/v4/code/twelve.ts",
