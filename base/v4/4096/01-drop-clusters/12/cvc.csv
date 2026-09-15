@@ -12,7 +12,6 @@ mis
 miz
 miv
 mif
-miC
 mem
 men
 meq
@@ -26,7 +25,6 @@ mes
 mez
 mev
 mef
-meC
 mam
 man
 maq
@@ -40,9 +38,6 @@ mas
 maz
 mav
 maf
-maC
-mar
-mal
 mom
 mon
 moq
@@ -56,9 +51,6 @@ mos
 moz
 mov
 mof
-moC
-mor
-mol
 mum
 mun
 muq
@@ -72,7 +64,6 @@ mus
 muz
 muv
 muf
-muC
 nim
 nin
 niq
@@ -86,7 +77,6 @@ nis
 niz
 niv
 nif
-niC
 nem
 nen
 neq
@@ -100,7 +90,6 @@ nes
 nez
 nev
 nef
-neC
 nam
 nan
 naq
@@ -114,9 +103,6 @@ nas
 naz
 nav
 naf
-naC
-nar
-nal
 nom
 non
 noq
@@ -130,9 +116,6 @@ nos
 noz
 nov
 nof
-noC
-nor
-nol
 num
 nun
 nuq
@@ -146,7 +129,6 @@ nus
 nuz
 nuv
 nuf
-nuC
 gim
 gin
 giq
@@ -160,7 +142,6 @@ gis
 giz
 giv
 gif
-giC
 gem
 gen
 geq
@@ -174,7 +155,6 @@ ges
 gez
 gev
 gef
-geC
 gam
 gan
 gaq
@@ -188,9 +168,6 @@ gas
 gaz
 gav
 gaf
-gaC
-gar
-gal
 gom
 gon
 goq
@@ -204,9 +181,6 @@ gos
 goz
 gov
 gof
-goC
-gor
-gol
 gum
 gun
 guq
@@ -220,7 +194,6 @@ gus
 guz
 guv
 guf
-guC
 dim
 din
 diq
@@ -234,7 +207,6 @@ dis
 diz
 div
 dif
-diC
 dem
 den
 deq
@@ -248,7 +220,6 @@ des
 dez
 dev
 def
-deC
 dam
 dan
 daq
@@ -262,9 +233,6 @@ das
 daz
 dav
 daf
-daC
-dar
-dal
 dom
 don
 doq
@@ -278,9 +246,6 @@ dos
 doz
 dov
 dof
-doC
-dor
-dol
 dum
 dun
 duq
@@ -294,7 +259,6 @@ dus
 duz
 duv
 duf
-duC
 bim
 bin
 biq
@@ -308,7 +272,6 @@ bis
 biz
 biv
 bif
-biC
 bem
 ben
 beq
@@ -322,7 +285,6 @@ bes
 bez
 bev
 bef
-beC
 bam
 ban
 baq
@@ -336,9 +298,6 @@ bas
 baz
 bav
 baf
-baC
-bar
-bal
 bom
 bon
 boq
@@ -352,9 +311,6 @@ bos
 boz
 bov
 bof
-boC
-bor
-bol
 bum
 bun
 buq
@@ -368,7 +324,6 @@ bus
 buz
 buv
 buf
-buC
 pim
 pin
 piq
@@ -382,7 +337,6 @@ pis
 piz
 piv
 pif
-piC
 pem
 pen
 peq
@@ -396,7 +350,6 @@ pes
 pez
 pev
 pef
-peC
 pam
 pan
 paq
@@ -410,9 +363,6 @@ pas
 paz
 pav
 paf
-paC
-par
-pal
 pom
 pon
 poq
@@ -426,9 +376,6 @@ pos
 poz
 pov
 pof
-poC
-por
-pol
 pum
 pun
 puq
@@ -442,7 +389,6 @@ pus
 puz
 puv
 puf
-puC
 tim
 tin
 tiq
@@ -456,7 +402,6 @@ tis
 tiz
 tiv
 tif
-tiC
 tem
 ten
 teq
@@ -470,7 +415,6 @@ tes
 tez
 tev
 tef
-teC
 tam
 tan
 taq
@@ -484,9 +428,6 @@ tas
 taz
 tav
 taf
-taC
-tar
-tal
 tom
 ton
 toq
@@ -500,9 +441,6 @@ tos
 toz
 tov
 tof
-toC
-tor
-tol
 tum
 tun
 tuq
@@ -516,7 +454,6 @@ tus
 tuz
 tuv
 tuf
-tuC
 kim
 kin
 kiq
@@ -530,7 +467,6 @@ kis
 kiz
 kiv
 kif
-kiC
 kem
 ken
 keq
@@ -544,7 +480,6 @@ kes
 kez
 kev
 kef
-keC
 kam
 kan
 kaq
@@ -558,9 +493,6 @@ kas
 kaz
 kav
 kaf
-kaC
-kar
-kal
 kom
 kon
 koq
@@ -574,9 +506,6 @@ kos
 koz
 kov
 kof
-koC
-kor
-kol
 kum
 kun
 kuq
@@ -590,7 +519,6 @@ kus
 kuz
 kuv
 kuf
-kuC
 him
 hin
 hiq
@@ -604,7 +532,6 @@ his
 hiz
 hiv
 hif
-hiC
 hem
 hen
 heq
@@ -618,7 +545,6 @@ hes
 hez
 hev
 hef
-heC
 ham
 han
 haq
@@ -632,9 +558,6 @@ has
 haz
 hav
 haf
-haC
-har
-hal
 hom
 hon
 hoq
@@ -648,9 +571,6 @@ hos
 hoz
 hov
 hof
-hoC
-hor
-hol
 hum
 hun
 huq
@@ -664,7 +584,6 @@ hus
 huz
 huv
 huf
-huC
 sim
 sin
 siq
@@ -678,7 +597,6 @@ sis
 siz
 siv
 sif
-siC
 sem
 sen
 seq
@@ -692,7 +610,6 @@ ses
 sez
 sev
 sef
-seC
 sam
 san
 saq
@@ -706,9 +623,6 @@ sas
 saz
 sav
 saf
-saC
-sar
-sal
 som
 son
 soq
@@ -722,9 +636,6 @@ sos
 soz
 sov
 sof
-soC
-sor
-sol
 sum
 sun
 suq
@@ -738,7 +649,6 @@ sus
 suz
 suv
 suf
-suC
 zim
 zin
 ziq
@@ -752,7 +662,6 @@ zis
 ziz
 ziv
 zif
-ziC
 zem
 zen
 zeq
@@ -766,7 +675,6 @@ zes
 zez
 zev
 zef
-zeC
 zam
 zan
 zaq
@@ -780,9 +688,6 @@ zas
 zaz
 zav
 zaf
-zaC
-zar
-zal
 zom
 zon
 zoq
@@ -796,9 +701,6 @@ zos
 zoz
 zov
 zof
-zoC
-zor
-zol
 zum
 zun
 zuq
@@ -812,7 +714,6 @@ zus
 zuz
 zuv
 zuf
-zuC
 vim
 vin
 viq
@@ -826,7 +727,6 @@ vis
 viz
 viv
 vif
-viC
 vem
 ven
 veq
@@ -840,7 +740,6 @@ ves
 vez
 vev
 vef
-veC
 vam
 van
 vaq
@@ -854,9 +753,6 @@ vas
 vaz
 vav
 vaf
-vaC
-var
-val
 vom
 von
 voq
@@ -870,9 +766,6 @@ vos
 voz
 vov
 vof
-voC
-vor
-vol
 vum
 vun
 vuq
@@ -886,7 +779,6 @@ vus
 vuz
 vuv
 vuf
-vuC
 fim
 fin
 fiq
@@ -900,7 +792,6 @@ fis
 fiz
 fiv
 fif
-fiC
 fem
 fen
 feq
@@ -914,7 +805,6 @@ fes
 fez
 fev
 fef
-feC
 fam
 fan
 faq
@@ -928,9 +818,6 @@ fas
 faz
 fav
 faf
-faC
-far
-fal
 fom
 fon
 foq
@@ -944,9 +831,6 @@ fos
 foz
 fov
 fof
-foC
-for
-fol
 fum
 fun
 fuq
@@ -960,7 +844,6 @@ fus
 fuz
 fuv
 fuf
-fuC
 Cim
 Cin
 Ciq
@@ -974,7 +857,6 @@ Cis
 Ciz
 Civ
 Cif
-CiC
 Cem
 Cen
 Ceq
@@ -988,7 +870,6 @@ Ces
 Cez
 Cev
 Cef
-CeC
 Cam
 Can
 Caq
@@ -1002,9 +883,6 @@ Cas
 Caz
 Cav
 Caf
-CaC
-Car
-Cal
 Com
 Con
 Coq
@@ -1018,9 +896,6 @@ Cos
 Coz
 Cov
 Cof
-CoC
-Cor
-Col
 Cum
 Cun
 Cuq
@@ -1034,7 +909,71 @@ Cus
 Cuz
 Cuv
 Cuf
-CuC
+cim
+cin
+ciq
+cig
+cid
+cib
+cip
+cit
+cik
+cis
+ciz
+civ
+cif
+cem
+cen
+ceq
+ceg
+ced
+ceb
+cep
+cet
+cek
+ces
+cez
+cev
+cef
+cam
+can
+caq
+cag
+cad
+cab
+cap
+cat
+cak
+cas
+caz
+cav
+caf
+com
+con
+coq
+cog
+cod
+cob
+cop
+cot
+cok
+cos
+coz
+cov
+cof
+cum
+cun
+cuq
+cug
+cud
+cub
+cup
+cut
+cuk
+cus
+cuz
+cuv
+cuf
 yim
 yin
 yiq
@@ -1048,7 +987,6 @@ yis
 yiz
 yiv
 yif
-yiC
 yem
 yen
 yeq
@@ -1062,7 +1000,6 @@ yes
 yez
 yev
 yef
-yeC
 yam
 yan
 yaq
@@ -1076,9 +1013,6 @@ yas
 yaz
 yav
 yaf
-yaC
-yar
-yal
 yom
 yon
 yoq
@@ -1092,9 +1026,6 @@ yos
 yoz
 yov
 yof
-yoC
-yor
-yol
 yum
 yun
 yuq
@@ -1108,7 +1039,6 @@ yus
 yuz
 yuv
 yuf
-yuC
 rim
 rin
 riq
@@ -1122,7 +1052,6 @@ ris
 riz
 riv
 rif
-riC
 rem
 ren
 req
@@ -1136,7 +1065,6 @@ res
 rez
 rev
 ref
-reC
 ram
 ran
 raq
@@ -1150,9 +1078,6 @@ ras
 raz
 rav
 raf
-raC
-rar
-ral
 rom
 ron
 roq
@@ -1166,9 +1091,6 @@ ros
 roz
 rov
 rof
-roC
-ror
-rol
 rum
 run
 ruq
@@ -1182,7 +1104,6 @@ rus
 ruz
 ruv
 ruf
-ruC
 lim
 lin
 liq
@@ -1196,7 +1117,6 @@ lis
 liz
 liv
 lif
-liC
 lem
 len
 leq
@@ -1210,7 +1130,6 @@ les
 lez
 lev
 lef
-leC
 lam
 lan
 laq
@@ -1224,9 +1143,6 @@ las
 laz
 lav
 laf
-laC
-lar
-lal
 lom
 lon
 loq
@@ -1240,9 +1156,6 @@ los
 loz
 lov
 lof
-loC
-lor
-lol
 lum
 lun
 luq
@@ -1256,7 +1169,6 @@ lus
 luz
 luv
 luf
-luC
 wim
 win
 wiq
@@ -1270,7 +1182,6 @@ wis
 wiz
 wiv
 wif
-wiC
 wem
 wen
 weq
@@ -1284,7 +1195,6 @@ wes
 wez
 wev
 wef
-weC
 wam
 wan
 waq
@@ -1298,9 +1208,6 @@ was
 waz
 wav
 waf
-waC
-war
-wal
 wom
 won
 woq
@@ -1314,9 +1221,6 @@ wos
 woz
 wov
 wof
-woC
-wor
-wol
 wum
 wun
 wuq
@@ -1330,4 +1234,3 @@ wus
 wuz
 wuv
 wuf
-wuC

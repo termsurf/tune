@@ -14,8 +14,8 @@
  *
  * `3.ts` and `4.ts` in v3 both shuffled the candidates before the lean
  * pass, which spread the survivors across the inventory but meant two
- * runs never agreed. The shuffle here is seeded, so the spread is kept
- * and the answer is the same every time.
+ * runs never agreed. There is no randomness here at all: the words are
+ * dealt out one opening at a time, which spreads them the same way and
  *
  * Usage:
  *   pnpm --dir deck/tune exec tsx make/v4/code/calculate.ts

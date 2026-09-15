@@ -40,8 +40,6 @@ export type Near = {
   /** How many consonant slots may differ outright and the two words
    * still count as close. 0 is the strictest, and the house value. */
   slack: number
-  /** Seeds the shuffle, so the lean pass repeats. */
-  seed: number
 }
 
 /**
@@ -303,24 +301,49 @@ export function tooNear(
   return true
 }
 
-/** A small deterministic generator, so the shuffle repeats. */
-export function makeRandom(seed: number): () => number {
-  let state = seed >>> 0
-  return () => {
-    state = (state + 0x6d2b79f5) >>> 0
-    let t = state
-    t = Math.imul(t ^ (t >>> 15), t | 1)
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
-  }
-}
+/**
+ * Deals the words out one opening at a time, round and round.
+ *
+ * The closeness pass is greedy, so whatever it sees first it keeps, and
+ * the order it sees things in decides which words survive. Walking the
+ * sorted list straight through would give every survivor to the
+ * openings that sort early and starve the rest.
+ *
+ * v3 shuffled to avoid that, which spread the survivors but meant two
+ * runs never agreed. **There is no randomness here, seeded or
+ * otherwise.** Bucketing by opening and taking one from each bucket in
+ * turn spreads them the same way and is a fixed answer: the same input
+ * gives the same list, every time, on any machine.
+ */
+export function deal(pieces: Array<Piece>): Array<Piece> {
+  const buckets = new Map<string, Array<Piece>>()
+  const order: Array<string> = []
 
-function shuffle<T>(list: Array<T>, random: () => number): Array<T> {
-  const out = [...list]
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1))
-    ;[out[i], out[j]] = [out[j], out[i]]
+  for (const piece of pieces) {
+    let bucket = buckets.get(piece.onset)
+    if (!bucket) {
+      bucket = []
+      buckets.set(piece.onset, bucket)
+      order.push(piece.onset)
+    }
+    bucket.push(piece)
   }
+
+  const out: Array<Piece> = []
+  for (let round = 0; out.length < pieces.length; round++) {
+    let moved = false
+    for (const key of order) {
+      const bucket = buckets.get(key)
+      if (bucket && round < bucket.length) {
+        out.push(bucket[round])
+        moved = true
+      }
+    }
+    if (!moved) {
+      break
+    }
+  }
+
   return out
 }
 
@@ -333,7 +356,6 @@ function shuffle<T>(list: Array<T>, random: () => number): Array<T> {
  */
 export function lean(plan: Plan, pieces: Array<Piece>): Array<Piece> {
   const map = nearMap(plan.near)
-  const random = makeRandom(plan.near.seed)
   const kept: Array<Piece> = []
   const byVowel = new Map<string, Array<Piece>>()
 
@@ -341,7 +363,7 @@ export function lean(plan: Plan, pieces: Array<Piece>): Array<Piece> {
     byVowel.set(vowel, [])
   }
 
-  for (const candidate of shuffle(pieces, random)) {
+  for (const candidate of deal(pieces)) {
     const at = plan.vowel.indexOf(candidate.vowel)
     let close = false
 

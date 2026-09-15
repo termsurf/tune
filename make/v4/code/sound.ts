@@ -67,10 +67,17 @@ export type Shape = (typeof SHAPES)[number]
 // ─── Clusters ───────────────────────────────────────────
 
 /**
- * The clusters v4 may open on, exactly as `4.ts` listed them.
+ * The clusters v4 may open on.
+ *
+ * `4.ts` listed twenty of these. **`dj` is the twenty first**, and it
+ * belongs for the same reason `tx` does: the two are digraphs standing
+ * for one sound each, not clusters, so whatever one may do the other
+ * may do. v3 already let `dj` close a word while `tx` both opened and
+ * closed, which was an asymmetry between two sounds that are a matched
+ * voiced and voiceless pair.
  */
 export const ONSET_CLUSTERS = (
-  'br bl dr fr fl gr gl kr kl pr pl tr vr sk sp st sl sm sn tx'
+  'br bl dr fr fl gr gl kr kl pr pl tr vr sk sp st sl sm sn tx dj'
 ).split(' ')
 
 /**
@@ -91,7 +98,23 @@ export const CODA_CLUSTERS = (
  */
 export const HUSHES = ['x', 'j']
 
+/**
+ * `tx` and `dj` are two letters standing for ONE sound each, so they
+ * are not clusters at all and the hush rule does not reach them.
+ *
+ * v3's `4.ts` refused every cluster holding `x` or `j` and took these
+ * two with it. `make/v3/talk/code/sound.ts` had already caught that and
+ * written it down: they "are the most common clusters in the language
+ * by a wide margin, and they are digraphs for single sounds rather than
+ * clusters at all, which is why they were being handled separately".
+ * v4 agrees with the note rather than with the code it annotates.
+ */
+export const DIGRAPHS = ['tx', 'dj']
+
 export function holdsHush(cluster: string): boolean {
+  if (DIGRAPHS.includes(cluster)) {
+    return false
+  }
   return [...cluster].some(sound => HUSHES.includes(sound))
 }
 

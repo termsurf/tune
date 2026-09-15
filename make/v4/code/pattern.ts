@@ -170,8 +170,26 @@ for (let openSize = 6; openSize <= openPool.length; openSize++) {
             if (POWERS.includes(cvc) && POWERS.includes(cvcc) && POWERS.includes(ccvc)) {
               marks.push('every shape a power of two')
             }
+            /**
+             * Three ways two shapes can come out equal, and they are
+             * different claims about the language.
+             *
+             *   cvcc = ccvc   the two shapes CARRYING a cluster balance,
+             *                 so a cluster is worth the same at either
+             *                 end and CVC is the odd one out
+             *   cvc = ccvc    the two shapes closing on one consonant
+             *                 balance
+             *   cvc = cvcc    the two shapes opening on one consonant
+             *                 balance
+             */
+            if (cvcc === ccvc) {
+              marks.push('the two cluster shapes balance exactly')
+            }
             if (cvc === ccvc) {
               marks.push('the two one cluster shapes balance exactly')
+            }
+            if (cvc === cvcc) {
+              marks.push('the two shapes opening on one consonant balance')
             }
             if (cvc % 256 === 0 && cvcc % 256 === 0 && ccvc % 256 === 0) {
               marks.push('every shape a multiple of 256')

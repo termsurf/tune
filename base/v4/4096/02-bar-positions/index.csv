@@ -1,6 +1,7 @@
 variant,cvc,cvcc,ccvc,all,lean,echo,sieve,rules
-01,1161,1585,1350,4096,601,none,"0 1 2 3 of 5","a three letter word never closes on a hush or a tooth sound; a word closing on a cluster never opens on a liquid; a word closing on a cluster never opens on the breath"
-02,1558,1192,1346,4096,570,none,"0 1 2 3 4 of 6","a word closing on a cluster never opens on a liquid; a word closing on a cluster never opens on a stop; a word opening on a cluster never closes on a liquid"
-03,1245,1409,1442,4096,547,none,"0 1 2 3 4 5 of 7","a three letter word never closes on a hush or a tooth sound; a word closing on a cluster never opens on a hush or a tooth; a word closing on a cluster never opens on a glide"
-04,1559,1925,612,4096,590,same,"0 1 2 3 4 5 6 of 8","a word opening on a cluster never closes on a hush or a tooth; a word opening on a cluster never closes on a stop"
-05,857,1879,1360,4096,607,same,"0 1 2 3 4 5 of 7","a three letter word never opens on a hush or a tooth sound; a three letter word never closes on a nasal; a three letter word never opens on a voiceless stop"
+01,1207,1627,1262,4096,713,none,"0 1 2 3 4 of 7","a three letter word never opens on a glide; a word closing on a cluster never opens on the breath"
+02,1335,1726,1035,4096,785,same,"0 1 2 of 4","a word opening on a cluster never closes on a nasal"
+03,1485,1917,694,4096,720,same,"0 1 2 3 4 of 6","a word opening on a cluster never closes on a nasal; a word opening on a cluster never closes on a stop"
+04,1191,1473,1432,4096,710,same,"0 1 2 3 4 5 of 7","a three letter word never closes on a hush or a tooth sound; a word closing on a cluster never opens on a hush or a tooth; a word closing on a cluster never opens on the breath"
+05,1559,1810,727,4096,659,same,"0 1 2 3 4 5 6 of 8","a word closing on a cluster never opens on a glide; a word opening on a cluster never closes on a nasal; a word opening on a cluster never closes on a stop"
+06,1559,1069,1468,4096,630,same,"0 1 2 3 4 5 6 of 8","a word closing on a cluster never opens on a glide; a word closing on a cluster never opens on a liquid; a word closing on a cluster never opens on a stop"

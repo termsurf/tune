@@ -79,11 +79,19 @@ export const RULES: Array<Rule> = [
     says: 'a word opening on a cluster never closes on a hush or a tooth',
     bar: { shape: 'CCVC', at: 3, sounds: MARKED, note: 'marked closing' },
   },
-  {
-    name: 'ccvc_closes_short',
-    says: 'a word opening on a cluster never closes on a nasal',
-    bar: { shape: 'CCVC', at: 3, sounds: NASAL, note: 'nasal closing' },
-  },
+  /**
+   * There is no rule here barring a nasal from closing a word, and
+   * there must not be.
+   *
+   * **Closing on a nasal is one of the most important things a word can
+   * do.** `m` and `n` carry an enormous share of the closings in every
+   * language that has them, and a Tune that cannot say `-am` or `-in`
+   * has given up more than any count is worth.
+   *
+   * `q` closes less often than `m` and `n` but still plainly belongs,
+   * which is `thing` and `song`. It is weighted below them in
+   * `pick.ts` and barred nowhere.
+   */
   {
     name: 'ccvc_closes_hard',
     says: 'a word opening on a cluster never closes on a liquid',
@@ -103,11 +111,6 @@ export const RULES: Array<Rule> = [
     name: 'cvcc_closes_dry',
     says: 'a closing cluster never has a liquid in its first slot',
     bar: { shape: 'CVCC', at: 2, sounds: LIQUID, note: 'liquid first' },
-  },
-  {
-    name: 'cvc_closes_quiet',
-    says: 'a three letter word never closes on a nasal',
-    bar: { shape: 'CVC', at: 2, sounds: NASAL, note: 'nasal closing' },
   },
   {
     name: 'cvc_opens_voiced',

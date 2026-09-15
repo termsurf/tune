@@ -1,10 +1,8 @@
 setting,value
-echo,none
-sieve,0 1 2 3 4 of 6
-rule,"a word closing on a cluster never opens on a liquid"
-rule,"a word closing on a cluster never opens on a stop"
-rule,"a word opening on a cluster never closes on a liquid"
+echo,same
+sieve,0 1 2 of 4
+rule,"a word opening on a cluster never closes on a nasal"
 open,m n g d b p t k h s f v z j x c C w l r y
 close,m n q g d b p t k s f v z j x c C l r
-onset,br bl dr fr fl gr gl kr kl pr pl tr vr sk sp st sl sm sn
-coda,mp nt nd qk lp lb lf lv ls lz lt lc ld lk rp rb rf rv rs rz rt rd rk rg ft ps ks bz gz ts dz sk sp st
+onset,br bl dr fr fl gr gl kr kl pr pl tr vr sk sp st sl sm sn tx
+coda,mp nt nd qk lp lb lf lv ls lz lt lc ld lk rp rb rf rv rs rz rt rd rk rg ft ps ks bz gz ts dj dz sk sp st

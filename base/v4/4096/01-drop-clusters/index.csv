@@ -1,13 +1,13 @@
 variant,cvc,cvcc,ccvc,all,lean,open,close,onset,coda,coda_liquid,dropped_openings,dropped_closings,dropped_onset_clusters,dropped_coda_clusters
-01,1139,1751,1206,4096,547,17,14,18,32,19,j x c C,j x c C r,sl,rg st
-02,1184,1728,1184,4096,500,16,16,16,33,19,j x c C y,j x c,sl sm sn,rg
-03,1157,1248,1691,4096,462,13,19,19,30,18,j x c C w l r y,,,rk rg sp st
-04,1264,1568,1264,4096,479,16,17,16,31,19,j x c C y,j x,sl sm sn,rg sp st
-05,1185,1410,1501,4096,522,15,17,19,29,17,j x c C r y,j x,,rd rk rg sp st
-06,1206,1818,1072,4096,547,18,14,16,31,18,j x c,j x c C r,sl sm sn,rk rg st
-07,1258,1802,1036,4096,530,17,16,14,32,18,j x c C,j x c,sp st sl sm sn,rk rg
-08,1344,1408,1344,4096,482,16,18,16,29,19,j x c C y,j,sl sm sn,rg dz sk sp st
-09,1335,1515,1246,4096,511,15,19,14,31,18,j x c C r y,,sp st sl sm sn,rk rg st
-10,1311,1957,828,4096,535,19,15,12,32,19,j x,j x c C,vr sk sp st sl sm sn,rg st
-11,1235,1691,1170,4096,503,19,13,18,28,17,j x,j x c C l r,sl,rd rk rg sk sp st
-12,1332,1728,1036,4096,516,18,16,14,30,18,j x c,j x c,sp st sl sm sn,rk rg sp st
+01,1139,1751,1206,4096,662,17,14,18,32,19,j x c C,j x c C r,vr sl,rg sp st
+02,1184,1728,1184,4096,619,16,16,16,33,19,j x c C y,j x c,vr sl sm sn,rg st
+03,1157,1248,1691,4096,555,13,19,19,30,18,j x c C w l r y,,vr,rk rg sk sp st
+04,1264,1568,1264,4096,565,16,17,16,31,19,j x c C y,j x,vr sl sm sn,rg sk sp st
+05,1185,1410,1501,4096,603,15,17,19,29,17,j x c C r y,j x,vr,rd rk rg sk sp st
+06,1206,1818,1072,4096,643,18,14,16,31,18,j x c,j x c C r,vr sl sm sn,rk rg sp st
+07,1258,1802,1036,4096,654,17,16,14,32,18,j x c C,j x c,vr st sl sm sn tx,rk rg st
+08,1173,1819,1104,4096,673,17,15,16,31,16,j x c C,j x c C,vr sl sm sn,rt rd rk rg
+09,1344,1408,1344,4096,586,16,18,16,29,19,j x c C y,j,vr sl sm sn,rg dj dz sk sp st
+10,1335,1515,1246,4096,618,15,19,14,31,18,j x c C r y,,vr st sl sm sn tx,rk rg sp st
+11,1311,1957,828,4096,586,19,15,12,32,19,j x,j x c C,vr sk sp st sl sm sn tx,rg sp st
+12,1235,1691,1170,4096,614,19,13,18,28,17,j x,j x c C l r,vr sl,rd rk rg dz sk sp st

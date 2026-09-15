@@ -44,7 +44,7 @@ export const HOUSE: Plan = {
   rhyme: BAD_RHYME,
   ban: BAD_ANYWHERE,
   shapes: [...SHAPES],
-  near: { groups: SIMILAR_GROUPS, reach: 1, slack: 0, seed: 20260914 },
+  near: { groups: SIMILAR_GROUPS, reach: 1, slack: 0 },
   echo: 'none',
   sieve: null,
   bar: [],
@@ -63,7 +63,37 @@ export const SOUND_RANK_MAP = new Map(SORT_ORDER.map((sound, i) => [sound, i]))
  */
 export const MARKED_SOUNDS = ['x', 'j', 'c', 'C']
 
-export const MARKED_ONSETS = ['sl', 'sm', 'sn']
+/**
+ * The openings that leave first, in the order they go.
+ *
+ * `vr` is the most marginal of the lot and goes ahead of everything.
+ * **It matters less than `tx`**, which reads as a cluster and is not
+ * one: `tx` is a digraph for a single sound and one of the two most
+ * used openings in the language, so it goes last if it goes at all and
+ * is never in this list.
+ *
+ * The three `s` plus sonorant openings follow `vr`, because "s clusters
+ * only with a stop" is a rule somebody can state and the three leave
+ * together.
+ */
+export const MARKED_ONSETS = ['vr', 'sl', 'sm', 'sn']
+
+/**
+ * The closings that leave first, in the order they go.
+ *
+ * A liquid plus a stop is the weakest kind of closing, and the plain
+ * stops are weaker than the rubs. `lp lb` and `lt ld` go ahead of
+ * everything, then their `r` counterparts.
+ *
+ * **`lf lv ls lz lc` are the ones worth keeping**, a liquid running
+ * into a rub, which is the most audible closing the language has. They
+ * are last in this list so they are last to go.
+ */
+export const MARKED_CODAS = [
+  'lp', 'lb', 'lt', 'ld',
+  'rp', 'rb', 'rt', 'rd',
+  'lk', 'rk', 'rg',
+]
 
 /** Closings that cannot follow `i` or `e`, so they are worth less. */
 export const LIQUIDS = ['l', 'r']

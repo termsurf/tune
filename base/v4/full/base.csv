@@ -1874,6 +1874,7 @@ mint,CVCC,m,i,nt
 miqk,CVCC,m,i,qk
 migz,CVCC,m,i,gz
 midz,CVCC,m,i,dz
+midj,CVCC,m,i,dj
 mibz,CVCC,m,i,bz
 mips,CVCC,m,i,ps
 mits,CVCC,m,i,ts
@@ -1888,6 +1889,7 @@ ment,CVCC,m,e,nt
 meqk,CVCC,m,e,qk
 megz,CVCC,m,e,gz
 medz,CVCC,m,e,dz
+medj,CVCC,m,e,dj
 mebz,CVCC,m,e,bz
 meps,CVCC,m,e,ps
 mets,CVCC,m,e,ts
@@ -1902,6 +1904,7 @@ mant,CVCC,m,a,nt
 maqk,CVCC,m,a,qk
 magz,CVCC,m,a,gz
 madz,CVCC,m,a,dz
+madj,CVCC,m,a,dj
 mabz,CVCC,m,a,bz
 maps,CVCC,m,a,ps
 mats,CVCC,m,a,ts
@@ -1936,6 +1939,7 @@ mont,CVCC,m,o,nt
 moqk,CVCC,m,o,qk
 mogz,CVCC,m,o,gz
 modz,CVCC,m,o,dz
+modj,CVCC,m,o,dj
 mobz,CVCC,m,o,bz
 mops,CVCC,m,o,ps
 mots,CVCC,m,o,ts
@@ -1970,6 +1974,7 @@ munt,CVCC,m,u,nt
 muqk,CVCC,m,u,qk
 mugz,CVCC,m,u,gz
 mudz,CVCC,m,u,dz
+mudj,CVCC,m,u,dj
 mubz,CVCC,m,u,bz
 mups,CVCC,m,u,ps
 muts,CVCC,m,u,ts
@@ -1984,6 +1989,7 @@ nint,CVCC,n,i,nt
 niqk,CVCC,n,i,qk
 nigz,CVCC,n,i,gz
 nidz,CVCC,n,i,dz
+nidj,CVCC,n,i,dj
 nibz,CVCC,n,i,bz
 nips,CVCC,n,i,ps
 nits,CVCC,n,i,ts
@@ -1998,6 +2004,7 @@ nent,CVCC,n,e,nt
 neqk,CVCC,n,e,qk
 negz,CVCC,n,e,gz
 nedz,CVCC,n,e,dz
+nedj,CVCC,n,e,dj
 nebz,CVCC,n,e,bz
 neps,CVCC,n,e,ps
 nets,CVCC,n,e,ts
@@ -2012,6 +2019,7 @@ nant,CVCC,n,a,nt
 naqk,CVCC,n,a,qk
 nagz,CVCC,n,a,gz
 nadz,CVCC,n,a,dz
+nadj,CVCC,n,a,dj
 nabz,CVCC,n,a,bz
 naps,CVCC,n,a,ps
 nats,CVCC,n,a,ts
@@ -2046,6 +2054,7 @@ nont,CVCC,n,o,nt
 noqk,CVCC,n,o,qk
 nogz,CVCC,n,o,gz
 nodz,CVCC,n,o,dz
+nodj,CVCC,n,o,dj
 nobz,CVCC,n,o,bz
 nops,CVCC,n,o,ps
 nots,CVCC,n,o,ts
@@ -2080,6 +2089,7 @@ nunt,CVCC,n,u,nt
 nuqk,CVCC,n,u,qk
 nugz,CVCC,n,u,gz
 nudz,CVCC,n,u,dz
+nudj,CVCC,n,u,dj
 nubz,CVCC,n,u,bz
 nups,CVCC,n,u,ps
 nuts,CVCC,n,u,ts
@@ -2094,6 +2104,7 @@ gint,CVCC,g,i,nt
 giqk,CVCC,g,i,qk
 gigz,CVCC,g,i,gz
 gidz,CVCC,g,i,dz
+gidj,CVCC,g,i,dj
 gibz,CVCC,g,i,bz
 gips,CVCC,g,i,ps
 gits,CVCC,g,i,ts
@@ -2108,6 +2119,7 @@ gent,CVCC,g,e,nt
 geqk,CVCC,g,e,qk
 gegz,CVCC,g,e,gz
 gedz,CVCC,g,e,dz
+gedj,CVCC,g,e,dj
 gebz,CVCC,g,e,bz
 geps,CVCC,g,e,ps
 gets,CVCC,g,e,ts
@@ -2122,6 +2134,7 @@ gant,CVCC,g,a,nt
 gaqk,CVCC,g,a,qk
 gagz,CVCC,g,a,gz
 gadz,CVCC,g,a,dz
+gadj,CVCC,g,a,dj
 gabz,CVCC,g,a,bz
 gaps,CVCC,g,a,ps
 gats,CVCC,g,a,ts
@@ -2156,6 +2169,7 @@ gont,CVCC,g,o,nt
 goqk,CVCC,g,o,qk
 gogz,CVCC,g,o,gz
 godz,CVCC,g,o,dz
+godj,CVCC,g,o,dj
 gobz,CVCC,g,o,bz
 gops,CVCC,g,o,ps
 gots,CVCC,g,o,ts
@@ -2190,6 +2204,7 @@ gunt,CVCC,g,u,nt
 guqk,CVCC,g,u,qk
 gugz,CVCC,g,u,gz
 gudz,CVCC,g,u,dz
+gudj,CVCC,g,u,dj
 gubz,CVCC,g,u,bz
 gups,CVCC,g,u,ps
 guts,CVCC,g,u,ts
@@ -2204,6 +2219,7 @@ dint,CVCC,d,i,nt
 diqk,CVCC,d,i,qk
 digz,CVCC,d,i,gz
 didz,CVCC,d,i,dz
+didj,CVCC,d,i,dj
 dibz,CVCC,d,i,bz
 dips,CVCC,d,i,ps
 dits,CVCC,d,i,ts
@@ -2218,6 +2234,7 @@ dent,CVCC,d,e,nt
 deqk,CVCC,d,e,qk
 degz,CVCC,d,e,gz
 dedz,CVCC,d,e,dz
+dedj,CVCC,d,e,dj
 debz,CVCC,d,e,bz
 deps,CVCC,d,e,ps
 dets,CVCC,d,e,ts
@@ -2232,6 +2249,7 @@ dant,CVCC,d,a,nt
 daqk,CVCC,d,a,qk
 dagz,CVCC,d,a,gz
 dadz,CVCC,d,a,dz
+dadj,CVCC,d,a,dj
 dabz,CVCC,d,a,bz
 daps,CVCC,d,a,ps
 dats,CVCC,d,a,ts
@@ -2266,6 +2284,7 @@ dont,CVCC,d,o,nt
 doqk,CVCC,d,o,qk
 dogz,CVCC,d,o,gz
 dodz,CVCC,d,o,dz
+dodj,CVCC,d,o,dj
 dobz,CVCC,d,o,bz
 dops,CVCC,d,o,ps
 dots,CVCC,d,o,ts
@@ -2300,6 +2319,7 @@ dunt,CVCC,d,u,nt
 duqk,CVCC,d,u,qk
 dugz,CVCC,d,u,gz
 dudz,CVCC,d,u,dz
+dudj,CVCC,d,u,dj
 dubz,CVCC,d,u,bz
 dups,CVCC,d,u,ps
 duts,CVCC,d,u,ts
@@ -2314,6 +2334,7 @@ bint,CVCC,b,i,nt
 biqk,CVCC,b,i,qk
 bigz,CVCC,b,i,gz
 bidz,CVCC,b,i,dz
+bidj,CVCC,b,i,dj
 bibz,CVCC,b,i,bz
 bips,CVCC,b,i,ps
 bits,CVCC,b,i,ts
@@ -2328,6 +2349,7 @@ bent,CVCC,b,e,nt
 beqk,CVCC,b,e,qk
 begz,CVCC,b,e,gz
 bedz,CVCC,b,e,dz
+bedj,CVCC,b,e,dj
 bebz,CVCC,b,e,bz
 beps,CVCC,b,e,ps
 bets,CVCC,b,e,ts
@@ -2342,6 +2364,7 @@ bant,CVCC,b,a,nt
 baqk,CVCC,b,a,qk
 bagz,CVCC,b,a,gz
 badz,CVCC,b,a,dz
+badj,CVCC,b,a,dj
 babz,CVCC,b,a,bz
 baps,CVCC,b,a,ps
 bats,CVCC,b,a,ts
@@ -2376,6 +2399,7 @@ bont,CVCC,b,o,nt
 boqk,CVCC,b,o,qk
 bogz,CVCC,b,o,gz
 bodz,CVCC,b,o,dz
+bodj,CVCC,b,o,dj
 bobz,CVCC,b,o,bz
 bops,CVCC,b,o,ps
 bots,CVCC,b,o,ts
@@ -2410,6 +2434,7 @@ bunt,CVCC,b,u,nt
 buqk,CVCC,b,u,qk
 bugz,CVCC,b,u,gz
 budz,CVCC,b,u,dz
+budj,CVCC,b,u,dj
 bubz,CVCC,b,u,bz
 bups,CVCC,b,u,ps
 buts,CVCC,b,u,ts
@@ -2424,6 +2449,7 @@ pint,CVCC,p,i,nt
 piqk,CVCC,p,i,qk
 pigz,CVCC,p,i,gz
 pidz,CVCC,p,i,dz
+pidj,CVCC,p,i,dj
 pibz,CVCC,p,i,bz
 pips,CVCC,p,i,ps
 pits,CVCC,p,i,ts
@@ -2438,6 +2464,7 @@ pent,CVCC,p,e,nt
 peqk,CVCC,p,e,qk
 pegz,CVCC,p,e,gz
 pedz,CVCC,p,e,dz
+pedj,CVCC,p,e,dj
 pebz,CVCC,p,e,bz
 peps,CVCC,p,e,ps
 pets,CVCC,p,e,ts
@@ -2452,6 +2479,7 @@ pant,CVCC,p,a,nt
 paqk,CVCC,p,a,qk
 pagz,CVCC,p,a,gz
 padz,CVCC,p,a,dz
+padj,CVCC,p,a,dj
 pabz,CVCC,p,a,bz
 paps,CVCC,p,a,ps
 pats,CVCC,p,a,ts
@@ -2486,6 +2514,7 @@ pont,CVCC,p,o,nt
 poqk,CVCC,p,o,qk
 pogz,CVCC,p,o,gz
 podz,CVCC,p,o,dz
+podj,CVCC,p,o,dj
 pobz,CVCC,p,o,bz
 pops,CVCC,p,o,ps
 pots,CVCC,p,o,ts
@@ -2520,6 +2549,7 @@ punt,CVCC,p,u,nt
 puqk,CVCC,p,u,qk
 pugz,CVCC,p,u,gz
 pudz,CVCC,p,u,dz
+pudj,CVCC,p,u,dj
 pubz,CVCC,p,u,bz
 pups,CVCC,p,u,ps
 puts,CVCC,p,u,ts
@@ -2534,6 +2564,7 @@ tint,CVCC,t,i,nt
 tiqk,CVCC,t,i,qk
 tigz,CVCC,t,i,gz
 tidz,CVCC,t,i,dz
+tidj,CVCC,t,i,dj
 tibz,CVCC,t,i,bz
 tips,CVCC,t,i,ps
 tits,CVCC,t,i,ts
@@ -2548,6 +2579,7 @@ tent,CVCC,t,e,nt
 teqk,CVCC,t,e,qk
 tegz,CVCC,t,e,gz
 tedz,CVCC,t,e,dz
+tedj,CVCC,t,e,dj
 tebz,CVCC,t,e,bz
 teps,CVCC,t,e,ps
 tets,CVCC,t,e,ts
@@ -2562,6 +2594,7 @@ tant,CVCC,t,a,nt
 taqk,CVCC,t,a,qk
 tagz,CVCC,t,a,gz
 tadz,CVCC,t,a,dz
+tadj,CVCC,t,a,dj
 tabz,CVCC,t,a,bz
 taps,CVCC,t,a,ps
 tats,CVCC,t,a,ts
@@ -2596,6 +2629,7 @@ tont,CVCC,t,o,nt
 toqk,CVCC,t,o,qk
 togz,CVCC,t,o,gz
 todz,CVCC,t,o,dz
+todj,CVCC,t,o,dj
 tobz,CVCC,t,o,bz
 tops,CVCC,t,o,ps
 tots,CVCC,t,o,ts
@@ -2630,6 +2664,7 @@ tunt,CVCC,t,u,nt
 tuqk,CVCC,t,u,qk
 tugz,CVCC,t,u,gz
 tudz,CVCC,t,u,dz
+tudj,CVCC,t,u,dj
 tubz,CVCC,t,u,bz
 tups,CVCC,t,u,ps
 tuts,CVCC,t,u,ts
@@ -2644,6 +2679,7 @@ kint,CVCC,k,i,nt
 kiqk,CVCC,k,i,qk
 kigz,CVCC,k,i,gz
 kidz,CVCC,k,i,dz
+kidj,CVCC,k,i,dj
 kibz,CVCC,k,i,bz
 kips,CVCC,k,i,ps
 kits,CVCC,k,i,ts
@@ -2658,6 +2694,7 @@ kent,CVCC,k,e,nt
 keqk,CVCC,k,e,qk
 kegz,CVCC,k,e,gz
 kedz,CVCC,k,e,dz
+kedj,CVCC,k,e,dj
 kebz,CVCC,k,e,bz
 keps,CVCC,k,e,ps
 kets,CVCC,k,e,ts
@@ -2672,6 +2709,7 @@ kant,CVCC,k,a,nt
 kaqk,CVCC,k,a,qk
 kagz,CVCC,k,a,gz
 kadz,CVCC,k,a,dz
+kadj,CVCC,k,a,dj
 kabz,CVCC,k,a,bz
 kaps,CVCC,k,a,ps
 kats,CVCC,k,a,ts
@@ -2706,6 +2744,7 @@ kont,CVCC,k,o,nt
 koqk,CVCC,k,o,qk
 kogz,CVCC,k,o,gz
 kodz,CVCC,k,o,dz
+kodj,CVCC,k,o,dj
 kobz,CVCC,k,o,bz
 kops,CVCC,k,o,ps
 kots,CVCC,k,o,ts
@@ -2740,6 +2779,7 @@ kunt,CVCC,k,u,nt
 kuqk,CVCC,k,u,qk
 kugz,CVCC,k,u,gz
 kudz,CVCC,k,u,dz
+kudj,CVCC,k,u,dj
 kubz,CVCC,k,u,bz
 kups,CVCC,k,u,ps
 kuts,CVCC,k,u,ts
@@ -2754,6 +2794,7 @@ hint,CVCC,h,i,nt
 hiqk,CVCC,h,i,qk
 higz,CVCC,h,i,gz
 hidz,CVCC,h,i,dz
+hidj,CVCC,h,i,dj
 hibz,CVCC,h,i,bz
 hips,CVCC,h,i,ps
 hits,CVCC,h,i,ts
@@ -2768,6 +2809,7 @@ hent,CVCC,h,e,nt
 heqk,CVCC,h,e,qk
 hegz,CVCC,h,e,gz
 hedz,CVCC,h,e,dz
+hedj,CVCC,h,e,dj
 hebz,CVCC,h,e,bz
 heps,CVCC,h,e,ps
 hets,CVCC,h,e,ts
@@ -2782,6 +2824,7 @@ hant,CVCC,h,a,nt
 haqk,CVCC,h,a,qk
 hagz,CVCC,h,a,gz
 hadz,CVCC,h,a,dz
+hadj,CVCC,h,a,dj
 habz,CVCC,h,a,bz
 haps,CVCC,h,a,ps
 hats,CVCC,h,a,ts
@@ -2816,6 +2859,7 @@ hont,CVCC,h,o,nt
 hoqk,CVCC,h,o,qk
 hogz,CVCC,h,o,gz
 hodz,CVCC,h,o,dz
+hodj,CVCC,h,o,dj
 hobz,CVCC,h,o,bz
 hops,CVCC,h,o,ps
 hots,CVCC,h,o,ts
@@ -2850,6 +2894,7 @@ hunt,CVCC,h,u,nt
 huqk,CVCC,h,u,qk
 hugz,CVCC,h,u,gz
 hudz,CVCC,h,u,dz
+hudj,CVCC,h,u,dj
 hubz,CVCC,h,u,bz
 hups,CVCC,h,u,ps
 huts,CVCC,h,u,ts
@@ -2864,6 +2909,7 @@ sint,CVCC,s,i,nt
 siqk,CVCC,s,i,qk
 sigz,CVCC,s,i,gz
 sidz,CVCC,s,i,dz
+sidj,CVCC,s,i,dj
 sibz,CVCC,s,i,bz
 sips,CVCC,s,i,ps
 sits,CVCC,s,i,ts
@@ -2878,6 +2924,7 @@ sent,CVCC,s,e,nt
 seqk,CVCC,s,e,qk
 segz,CVCC,s,e,gz
 sedz,CVCC,s,e,dz
+sedj,CVCC,s,e,dj
 sebz,CVCC,s,e,bz
 seps,CVCC,s,e,ps
 sets,CVCC,s,e,ts
@@ -2892,6 +2939,7 @@ sant,CVCC,s,a,nt
 saqk,CVCC,s,a,qk
 sagz,CVCC,s,a,gz
 sadz,CVCC,s,a,dz
+sadj,CVCC,s,a,dj
 sabz,CVCC,s,a,bz
 saps,CVCC,s,a,ps
 sats,CVCC,s,a,ts
@@ -2926,6 +2974,7 @@ sont,CVCC,s,o,nt
 soqk,CVCC,s,o,qk
 sogz,CVCC,s,o,gz
 sodz,CVCC,s,o,dz
+sodj,CVCC,s,o,dj
 sobz,CVCC,s,o,bz
 sops,CVCC,s,o,ps
 sots,CVCC,s,o,ts
@@ -2960,6 +3009,7 @@ sunt,CVCC,s,u,nt
 suqk,CVCC,s,u,qk
 sugz,CVCC,s,u,gz
 sudz,CVCC,s,u,dz
+sudj,CVCC,s,u,dj
 subz,CVCC,s,u,bz
 sups,CVCC,s,u,ps
 suts,CVCC,s,u,ts
@@ -2974,6 +3024,7 @@ zint,CVCC,z,i,nt
 ziqk,CVCC,z,i,qk
 zigz,CVCC,z,i,gz
 zidz,CVCC,z,i,dz
+zidj,CVCC,z,i,dj
 zibz,CVCC,z,i,bz
 zips,CVCC,z,i,ps
 zits,CVCC,z,i,ts
@@ -2988,6 +3039,7 @@ zent,CVCC,z,e,nt
 zeqk,CVCC,z,e,qk
 zegz,CVCC,z,e,gz
 zedz,CVCC,z,e,dz
+zedj,CVCC,z,e,dj
 zebz,CVCC,z,e,bz
 zeps,CVCC,z,e,ps
 zets,CVCC,z,e,ts
@@ -3002,6 +3054,7 @@ zant,CVCC,z,a,nt
 zaqk,CVCC,z,a,qk
 zagz,CVCC,z,a,gz
 zadz,CVCC,z,a,dz
+zadj,CVCC,z,a,dj
 zabz,CVCC,z,a,bz
 zaps,CVCC,z,a,ps
 zats,CVCC,z,a,ts
@@ -3036,6 +3089,7 @@ zont,CVCC,z,o,nt
 zoqk,CVCC,z,o,qk
 zogz,CVCC,z,o,gz
 zodz,CVCC,z,o,dz
+zodj,CVCC,z,o,dj
 zobz,CVCC,z,o,bz
 zops,CVCC,z,o,ps
 zots,CVCC,z,o,ts
@@ -3070,6 +3124,7 @@ zunt,CVCC,z,u,nt
 zuqk,CVCC,z,u,qk
 zugz,CVCC,z,u,gz
 zudz,CVCC,z,u,dz
+zudj,CVCC,z,u,dj
 zubz,CVCC,z,u,bz
 zups,CVCC,z,u,ps
 zuts,CVCC,z,u,ts
@@ -3084,6 +3139,7 @@ vint,CVCC,v,i,nt
 viqk,CVCC,v,i,qk
 vigz,CVCC,v,i,gz
 vidz,CVCC,v,i,dz
+vidj,CVCC,v,i,dj
 vibz,CVCC,v,i,bz
 vips,CVCC,v,i,ps
 vits,CVCC,v,i,ts
@@ -3098,6 +3154,7 @@ vent,CVCC,v,e,nt
 veqk,CVCC,v,e,qk
 vegz,CVCC,v,e,gz
 vedz,CVCC,v,e,dz
+vedj,CVCC,v,e,dj
 vebz,CVCC,v,e,bz
 veps,CVCC,v,e,ps
 vets,CVCC,v,e,ts
@@ -3112,6 +3169,7 @@ vant,CVCC,v,a,nt
 vaqk,CVCC,v,a,qk
 vagz,CVCC,v,a,gz
 vadz,CVCC,v,a,dz
+vadj,CVCC,v,a,dj
 vabz,CVCC,v,a,bz
 vaps,CVCC,v,a,ps
 vats,CVCC,v,a,ts
@@ -3146,6 +3204,7 @@ vont,CVCC,v,o,nt
 voqk,CVCC,v,o,qk
 vogz,CVCC,v,o,gz
 vodz,CVCC,v,o,dz
+vodj,CVCC,v,o,dj
 vobz,CVCC,v,o,bz
 vops,CVCC,v,o,ps
 vots,CVCC,v,o,ts
@@ -3180,6 +3239,7 @@ vunt,CVCC,v,u,nt
 vuqk,CVCC,v,u,qk
 vugz,CVCC,v,u,gz
 vudz,CVCC,v,u,dz
+vudj,CVCC,v,u,dj
 vubz,CVCC,v,u,bz
 vups,CVCC,v,u,ps
 vuts,CVCC,v,u,ts
@@ -3194,6 +3254,7 @@ fint,CVCC,f,i,nt
 fiqk,CVCC,f,i,qk
 figz,CVCC,f,i,gz
 fidz,CVCC,f,i,dz
+fidj,CVCC,f,i,dj
 fibz,CVCC,f,i,bz
 fips,CVCC,f,i,ps
 fits,CVCC,f,i,ts
@@ -3208,6 +3269,7 @@ fent,CVCC,f,e,nt
 feqk,CVCC,f,e,qk
 fegz,CVCC,f,e,gz
 fedz,CVCC,f,e,dz
+fedj,CVCC,f,e,dj
 febz,CVCC,f,e,bz
 feps,CVCC,f,e,ps
 fets,CVCC,f,e,ts
@@ -3222,6 +3284,7 @@ fant,CVCC,f,a,nt
 faqk,CVCC,f,a,qk
 fagz,CVCC,f,a,gz
 fadz,CVCC,f,a,dz
+fadj,CVCC,f,a,dj
 fabz,CVCC,f,a,bz
 faps,CVCC,f,a,ps
 fats,CVCC,f,a,ts
@@ -3256,6 +3319,7 @@ font,CVCC,f,o,nt
 foqk,CVCC,f,o,qk
 fogz,CVCC,f,o,gz
 fodz,CVCC,f,o,dz
+fodj,CVCC,f,o,dj
 fobz,CVCC,f,o,bz
 fops,CVCC,f,o,ps
 fots,CVCC,f,o,ts
@@ -3290,6 +3354,7 @@ funt,CVCC,f,u,nt
 fuqk,CVCC,f,u,qk
 fugz,CVCC,f,u,gz
 fudz,CVCC,f,u,dz
+fudj,CVCC,f,u,dj
 fubz,CVCC,f,u,bz
 fups,CVCC,f,u,ps
 futs,CVCC,f,u,ts
@@ -3304,6 +3369,7 @@ xint,CVCC,x,i,nt
 xiqk,CVCC,x,i,qk
 xigz,CVCC,x,i,gz
 xidz,CVCC,x,i,dz
+xidj,CVCC,x,i,dj
 xibz,CVCC,x,i,bz
 xips,CVCC,x,i,ps
 xits,CVCC,x,i,ts
@@ -3318,6 +3384,7 @@ xent,CVCC,x,e,nt
 xeqk,CVCC,x,e,qk
 xegz,CVCC,x,e,gz
 xedz,CVCC,x,e,dz
+xedj,CVCC,x,e,dj
 xebz,CVCC,x,e,bz
 xeps,CVCC,x,e,ps
 xets,CVCC,x,e,ts
@@ -3332,6 +3399,7 @@ xant,CVCC,x,a,nt
 xaqk,CVCC,x,a,qk
 xagz,CVCC,x,a,gz
 xadz,CVCC,x,a,dz
+xadj,CVCC,x,a,dj
 xabz,CVCC,x,a,bz
 xaps,CVCC,x,a,ps
 xats,CVCC,x,a,ts
@@ -3366,6 +3434,7 @@ xont,CVCC,x,o,nt
 xoqk,CVCC,x,o,qk
 xogz,CVCC,x,o,gz
 xodz,CVCC,x,o,dz
+xodj,CVCC,x,o,dj
 xobz,CVCC,x,o,bz
 xops,CVCC,x,o,ps
 xots,CVCC,x,o,ts
@@ -3400,6 +3469,7 @@ xunt,CVCC,x,u,nt
 xuqk,CVCC,x,u,qk
 xugz,CVCC,x,u,gz
 xudz,CVCC,x,u,dz
+xudj,CVCC,x,u,dj
 xubz,CVCC,x,u,bz
 xups,CVCC,x,u,ps
 xuts,CVCC,x,u,ts
@@ -3414,6 +3484,7 @@ jint,CVCC,j,i,nt
 jiqk,CVCC,j,i,qk
 jigz,CVCC,j,i,gz
 jidz,CVCC,j,i,dz
+jidj,CVCC,j,i,dj
 jibz,CVCC,j,i,bz
 jips,CVCC,j,i,ps
 jits,CVCC,j,i,ts
@@ -3428,6 +3499,7 @@ jent,CVCC,j,e,nt
 jeqk,CVCC,j,e,qk
 jegz,CVCC,j,e,gz
 jedz,CVCC,j,e,dz
+jedj,CVCC,j,e,dj
 jebz,CVCC,j,e,bz
 jeps,CVCC,j,e,ps
 jets,CVCC,j,e,ts
@@ -3442,6 +3514,7 @@ jant,CVCC,j,a,nt
 jaqk,CVCC,j,a,qk
 jagz,CVCC,j,a,gz
 jadz,CVCC,j,a,dz
+jadj,CVCC,j,a,dj
 jabz,CVCC,j,a,bz
 japs,CVCC,j,a,ps
 jats,CVCC,j,a,ts
@@ -3476,6 +3549,7 @@ jont,CVCC,j,o,nt
 joqk,CVCC,j,o,qk
 jogz,CVCC,j,o,gz
 jodz,CVCC,j,o,dz
+jodj,CVCC,j,o,dj
 jobz,CVCC,j,o,bz
 jops,CVCC,j,o,ps
 jots,CVCC,j,o,ts
@@ -3510,6 +3584,7 @@ junt,CVCC,j,u,nt
 juqk,CVCC,j,u,qk
 jugz,CVCC,j,u,gz
 judz,CVCC,j,u,dz
+judj,CVCC,j,u,dj
 jubz,CVCC,j,u,bz
 jups,CVCC,j,u,ps
 juts,CVCC,j,u,ts
@@ -3524,6 +3599,7 @@ Cint,CVCC,C,i,nt
 Ciqk,CVCC,C,i,qk
 Cigz,CVCC,C,i,gz
 Cidz,CVCC,C,i,dz
+Cidj,CVCC,C,i,dj
 Cibz,CVCC,C,i,bz
 Cips,CVCC,C,i,ps
 Cits,CVCC,C,i,ts
@@ -3538,6 +3614,7 @@ Cent,CVCC,C,e,nt
 Ceqk,CVCC,C,e,qk
 Cegz,CVCC,C,e,gz
 Cedz,CVCC,C,e,dz
+Cedj,CVCC,C,e,dj
 Cebz,CVCC,C,e,bz
 Ceps,CVCC,C,e,ps
 Cets,CVCC,C,e,ts
@@ -3552,6 +3629,7 @@ Cant,CVCC,C,a,nt
 Caqk,CVCC,C,a,qk
 Cagz,CVCC,C,a,gz
 Cadz,CVCC,C,a,dz
+Cadj,CVCC,C,a,dj
 Cabz,CVCC,C,a,bz
 Caps,CVCC,C,a,ps
 Cats,CVCC,C,a,ts
@@ -3586,6 +3664,7 @@ Cont,CVCC,C,o,nt
 Coqk,CVCC,C,o,qk
 Cogz,CVCC,C,o,gz
 Codz,CVCC,C,o,dz
+Codj,CVCC,C,o,dj
 Cobz,CVCC,C,o,bz
 Cops,CVCC,C,o,ps
 Cots,CVCC,C,o,ts
@@ -3620,6 +3699,7 @@ Cunt,CVCC,C,u,nt
 Cuqk,CVCC,C,u,qk
 Cugz,CVCC,C,u,gz
 Cudz,CVCC,C,u,dz
+Cudj,CVCC,C,u,dj
 Cubz,CVCC,C,u,bz
 Cups,CVCC,C,u,ps
 Cuts,CVCC,C,u,ts
@@ -3634,6 +3714,7 @@ cint,CVCC,c,i,nt
 ciqk,CVCC,c,i,qk
 cigz,CVCC,c,i,gz
 cidz,CVCC,c,i,dz
+cidj,CVCC,c,i,dj
 cibz,CVCC,c,i,bz
 cips,CVCC,c,i,ps
 cits,CVCC,c,i,ts
@@ -3648,6 +3729,7 @@ cent,CVCC,c,e,nt
 ceqk,CVCC,c,e,qk
 cegz,CVCC,c,e,gz
 cedz,CVCC,c,e,dz
+cedj,CVCC,c,e,dj
 cebz,CVCC,c,e,bz
 ceps,CVCC,c,e,ps
 cets,CVCC,c,e,ts
@@ -3662,6 +3744,7 @@ cant,CVCC,c,a,nt
 caqk,CVCC,c,a,qk
 cagz,CVCC,c,a,gz
 cadz,CVCC,c,a,dz
+cadj,CVCC,c,a,dj
 cabz,CVCC,c,a,bz
 caps,CVCC,c,a,ps
 cats,CVCC,c,a,ts
@@ -3696,6 +3779,7 @@ cont,CVCC,c,o,nt
 coqk,CVCC,c,o,qk
 cogz,CVCC,c,o,gz
 codz,CVCC,c,o,dz
+codj,CVCC,c,o,dj
 cobz,CVCC,c,o,bz
 cops,CVCC,c,o,ps
 cots,CVCC,c,o,ts
@@ -3730,6 +3814,7 @@ cunt,CVCC,c,u,nt
 cuqk,CVCC,c,u,qk
 cugz,CVCC,c,u,gz
 cudz,CVCC,c,u,dz
+cudj,CVCC,c,u,dj
 cubz,CVCC,c,u,bz
 cups,CVCC,c,u,ps
 cuts,CVCC,c,u,ts
@@ -3744,6 +3829,7 @@ yint,CVCC,y,i,nt
 yiqk,CVCC,y,i,qk
 yigz,CVCC,y,i,gz
 yidz,CVCC,y,i,dz
+yidj,CVCC,y,i,dj
 yibz,CVCC,y,i,bz
 yips,CVCC,y,i,ps
 yits,CVCC,y,i,ts
@@ -3758,6 +3844,7 @@ yent,CVCC,y,e,nt
 yeqk,CVCC,y,e,qk
 yegz,CVCC,y,e,gz
 yedz,CVCC,y,e,dz
+yedj,CVCC,y,e,dj
 yebz,CVCC,y,e,bz
 yeps,CVCC,y,e,ps
 yets,CVCC,y,e,ts
@@ -3772,6 +3859,7 @@ yant,CVCC,y,a,nt
 yaqk,CVCC,y,a,qk
 yagz,CVCC,y,a,gz
 yadz,CVCC,y,a,dz
+yadj,CVCC,y,a,dj
 yabz,CVCC,y,a,bz
 yaps,CVCC,y,a,ps
 yats,CVCC,y,a,ts
@@ -3806,6 +3894,7 @@ yont,CVCC,y,o,nt
 yoqk,CVCC,y,o,qk
 yogz,CVCC,y,o,gz
 yodz,CVCC,y,o,dz
+yodj,CVCC,y,o,dj
 yobz,CVCC,y,o,bz
 yops,CVCC,y,o,ps
 yots,CVCC,y,o,ts
@@ -3840,6 +3929,7 @@ yunt,CVCC,y,u,nt
 yuqk,CVCC,y,u,qk
 yugz,CVCC,y,u,gz
 yudz,CVCC,y,u,dz
+yudj,CVCC,y,u,dj
 yubz,CVCC,y,u,bz
 yups,CVCC,y,u,ps
 yuts,CVCC,y,u,ts
@@ -3854,6 +3944,7 @@ rint,CVCC,r,i,nt
 riqk,CVCC,r,i,qk
 rigz,CVCC,r,i,gz
 ridz,CVCC,r,i,dz
+ridj,CVCC,r,i,dj
 ribz,CVCC,r,i,bz
 rips,CVCC,r,i,ps
 rits,CVCC,r,i,ts
@@ -3868,6 +3959,7 @@ rent,CVCC,r,e,nt
 reqk,CVCC,r,e,qk
 regz,CVCC,r,e,gz
 redz,CVCC,r,e,dz
+redj,CVCC,r,e,dj
 rebz,CVCC,r,e,bz
 reps,CVCC,r,e,ps
 rets,CVCC,r,e,ts
@@ -3882,6 +3974,7 @@ rant,CVCC,r,a,nt
 raqk,CVCC,r,a,qk
 ragz,CVCC,r,a,gz
 radz,CVCC,r,a,dz
+radj,CVCC,r,a,dj
 rabz,CVCC,r,a,bz
 raps,CVCC,r,a,ps
 rats,CVCC,r,a,ts
@@ -3916,6 +4009,7 @@ ront,CVCC,r,o,nt
 roqk,CVCC,r,o,qk
 rogz,CVCC,r,o,gz
 rodz,CVCC,r,o,dz
+rodj,CVCC,r,o,dj
 robz,CVCC,r,o,bz
 rops,CVCC,r,o,ps
 rots,CVCC,r,o,ts
@@ -3950,6 +4044,7 @@ runt,CVCC,r,u,nt
 ruqk,CVCC,r,u,qk
 rugz,CVCC,r,u,gz
 rudz,CVCC,r,u,dz
+rudj,CVCC,r,u,dj
 rubz,CVCC,r,u,bz
 rups,CVCC,r,u,ps
 ruts,CVCC,r,u,ts
@@ -3964,6 +4059,7 @@ lint,CVCC,l,i,nt
 liqk,CVCC,l,i,qk
 ligz,CVCC,l,i,gz
 lidz,CVCC,l,i,dz
+lidj,CVCC,l,i,dj
 libz,CVCC,l,i,bz
 lips,CVCC,l,i,ps
 lits,CVCC,l,i,ts
@@ -3978,6 +4074,7 @@ lent,CVCC,l,e,nt
 leqk,CVCC,l,e,qk
 legz,CVCC,l,e,gz
 ledz,CVCC,l,e,dz
+ledj,CVCC,l,e,dj
 lebz,CVCC,l,e,bz
 leps,CVCC,l,e,ps
 lets,CVCC,l,e,ts
@@ -3992,6 +4089,7 @@ lant,CVCC,l,a,nt
 laqk,CVCC,l,a,qk
 lagz,CVCC,l,a,gz
 ladz,CVCC,l,a,dz
+ladj,CVCC,l,a,dj
 labz,CVCC,l,a,bz
 laps,CVCC,l,a,ps
 lats,CVCC,l,a,ts
@@ -4026,6 +4124,7 @@ lont,CVCC,l,o,nt
 loqk,CVCC,l,o,qk
 logz,CVCC,l,o,gz
 lodz,CVCC,l,o,dz
+lodj,CVCC,l,o,dj
 lobz,CVCC,l,o,bz
 lops,CVCC,l,o,ps
 lots,CVCC,l,o,ts
@@ -4060,6 +4159,7 @@ lunt,CVCC,l,u,nt
 luqk,CVCC,l,u,qk
 lugz,CVCC,l,u,gz
 ludz,CVCC,l,u,dz
+ludj,CVCC,l,u,dj
 lubz,CVCC,l,u,bz
 lups,CVCC,l,u,ps
 luts,CVCC,l,u,ts
@@ -4074,6 +4174,7 @@ wint,CVCC,w,i,nt
 wiqk,CVCC,w,i,qk
 wigz,CVCC,w,i,gz
 widz,CVCC,w,i,dz
+widj,CVCC,w,i,dj
 wibz,CVCC,w,i,bz
 wips,CVCC,w,i,ps
 wits,CVCC,w,i,ts
@@ -4088,6 +4189,7 @@ went,CVCC,w,e,nt
 weqk,CVCC,w,e,qk
 wegz,CVCC,w,e,gz
 wedz,CVCC,w,e,dz
+wedj,CVCC,w,e,dj
 webz,CVCC,w,e,bz
 weps,CVCC,w,e,ps
 wets,CVCC,w,e,ts
@@ -4102,6 +4204,7 @@ want,CVCC,w,a,nt
 waqk,CVCC,w,a,qk
 wagz,CVCC,w,a,gz
 wadz,CVCC,w,a,dz
+wadj,CVCC,w,a,dj
 wabz,CVCC,w,a,bz
 waps,CVCC,w,a,ps
 wats,CVCC,w,a,ts
@@ -4136,6 +4239,7 @@ wont,CVCC,w,o,nt
 woqk,CVCC,w,o,qk
 wogz,CVCC,w,o,gz
 wodz,CVCC,w,o,dz
+wodj,CVCC,w,o,dj
 wobz,CVCC,w,o,bz
 wops,CVCC,w,o,ps
 wots,CVCC,w,o,ts
@@ -4170,6 +4274,7 @@ wunt,CVCC,w,u,nt
 wuqk,CVCC,w,u,qk
 wugz,CVCC,w,u,gz
 wudz,CVCC,w,u,dz
+wudj,CVCC,w,u,dj
 wubz,CVCC,w,u,bz
 wups,CVCC,w,u,ps
 wuts,CVCC,w,u,ts
@@ -4356,6 +4461,95 @@ glux,CCVC,gl,u,x
 gluj,CCVC,gl,u,j
 gluC,CCVC,gl,u,C
 gluc,CCVC,gl,u,c
+djim,CCVC,dj,i,m
+djin,CCVC,dj,i,n
+djiq,CCVC,dj,i,q
+djig,CCVC,dj,i,g
+djid,CCVC,dj,i,d
+djib,CCVC,dj,i,b
+djip,CCVC,dj,i,p
+djit,CCVC,dj,i,t
+djik,CCVC,dj,i,k
+djis,CCVC,dj,i,s
+djiz,CCVC,dj,i,z
+djiv,CCVC,dj,i,v
+djif,CCVC,dj,i,f
+djix,CCVC,dj,i,x
+djij,CCVC,dj,i,j
+djiC,CCVC,dj,i,C
+djic,CCVC,dj,i,c
+djem,CCVC,dj,e,m
+djen,CCVC,dj,e,n
+djeq,CCVC,dj,e,q
+djeg,CCVC,dj,e,g
+djed,CCVC,dj,e,d
+djeb,CCVC,dj,e,b
+djep,CCVC,dj,e,p
+djet,CCVC,dj,e,t
+djek,CCVC,dj,e,k
+djes,CCVC,dj,e,s
+djez,CCVC,dj,e,z
+djev,CCVC,dj,e,v
+djef,CCVC,dj,e,f
+djex,CCVC,dj,e,x
+djej,CCVC,dj,e,j
+djeC,CCVC,dj,e,C
+djec,CCVC,dj,e,c
+djam,CCVC,dj,a,m
+djan,CCVC,dj,a,n
+djaq,CCVC,dj,a,q
+djag,CCVC,dj,a,g
+djad,CCVC,dj,a,d
+djab,CCVC,dj,a,b
+djap,CCVC,dj,a,p
+djat,CCVC,dj,a,t
+djak,CCVC,dj,a,k
+djas,CCVC,dj,a,s
+djaz,CCVC,dj,a,z
+djav,CCVC,dj,a,v
+djaf,CCVC,dj,a,f
+djax,CCVC,dj,a,x
+djaj,CCVC,dj,a,j
+djaC,CCVC,dj,a,C
+djac,CCVC,dj,a,c
+djar,CCVC,dj,a,r
+djal,CCVC,dj,a,l
+djom,CCVC,dj,o,m
+djon,CCVC,dj,o,n
+djoq,CCVC,dj,o,q
+djog,CCVC,dj,o,g
+djod,CCVC,dj,o,d
+djob,CCVC,dj,o,b
+djop,CCVC,dj,o,p
+djot,CCVC,dj,o,t
+djok,CCVC,dj,o,k
+djos,CCVC,dj,o,s
+djoz,CCVC,dj,o,z
+djov,CCVC,dj,o,v
+djof,CCVC,dj,o,f
+djox,CCVC,dj,o,x
+djoj,CCVC,dj,o,j
+djoC,CCVC,dj,o,C
+djoc,CCVC,dj,o,c
+djor,CCVC,dj,o,r
+djol,CCVC,dj,o,l
+djum,CCVC,dj,u,m
+djun,CCVC,dj,u,n
+djuq,CCVC,dj,u,q
+djug,CCVC,dj,u,g
+djud,CCVC,dj,u,d
+djub,CCVC,dj,u,b
+djup,CCVC,dj,u,p
+djut,CCVC,dj,u,t
+djuk,CCVC,dj,u,k
+djus,CCVC,dj,u,s
+djuz,CCVC,dj,u,z
+djuv,CCVC,dj,u,v
+djuf,CCVC,dj,u,f
+djux,CCVC,dj,u,x
+djuj,CCVC,dj,u,j
+djuC,CCVC,dj,u,C
+djuc,CCVC,dj,u,c
 drim,CCVC,dr,i,m
 drin,CCVC,dr,i,n
 driq,CCVC,dr,i,q
@@ -4801,6 +4995,95 @@ plux,CCVC,pl,u,x
 pluj,CCVC,pl,u,j
 pluC,CCVC,pl,u,C
 pluc,CCVC,pl,u,c
+txim,CCVC,tx,i,m
+txin,CCVC,tx,i,n
+txiq,CCVC,tx,i,q
+txig,CCVC,tx,i,g
+txid,CCVC,tx,i,d
+txib,CCVC,tx,i,b
+txip,CCVC,tx,i,p
+txit,CCVC,tx,i,t
+txik,CCVC,tx,i,k
+txis,CCVC,tx,i,s
+txiz,CCVC,tx,i,z
+txiv,CCVC,tx,i,v
+txif,CCVC,tx,i,f
+txix,CCVC,tx,i,x
+txij,CCVC,tx,i,j
+txiC,CCVC,tx,i,C
+txic,CCVC,tx,i,c
+txem,CCVC,tx,e,m
+txen,CCVC,tx,e,n
+txeq,CCVC,tx,e,q
+txeg,CCVC,tx,e,g
+txed,CCVC,tx,e,d
+txeb,CCVC,tx,e,b
+txep,CCVC,tx,e,p
+txet,CCVC,tx,e,t
+txek,CCVC,tx,e,k
+txes,CCVC,tx,e,s
+txez,CCVC,tx,e,z
+txev,CCVC,tx,e,v
+txef,CCVC,tx,e,f
+txex,CCVC,tx,e,x
+txej,CCVC,tx,e,j
+txeC,CCVC,tx,e,C
+txec,CCVC,tx,e,c
+txam,CCVC,tx,a,m
+txan,CCVC,tx,a,n
+txaq,CCVC,tx,a,q
+txag,CCVC,tx,a,g
+txad,CCVC,tx,a,d
+txab,CCVC,tx,a,b
+txap,CCVC,tx,a,p
+txat,CCVC,tx,a,t
+txak,CCVC,tx,a,k
+txas,CCVC,tx,a,s
+txaz,CCVC,tx,a,z
+txav,CCVC,tx,a,v
+txaf,CCVC,tx,a,f
+txax,CCVC,tx,a,x
+txaj,CCVC,tx,a,j
+txaC,CCVC,tx,a,C
+txac,CCVC,tx,a,c
+txar,CCVC,tx,a,r
+txal,CCVC,tx,a,l
+txom,CCVC,tx,o,m
+txon,CCVC,tx,o,n
+txoq,CCVC,tx,o,q
+txog,CCVC,tx,o,g
+txod,CCVC,tx,o,d
+txob,CCVC,tx,o,b
+txop,CCVC,tx,o,p
+txot,CCVC,tx,o,t
+txok,CCVC,tx,o,k
+txos,CCVC,tx,o,s
+txoz,CCVC,tx,o,z
+txov,CCVC,tx,o,v
+txof,CCVC,tx,o,f
+txox,CCVC,tx,o,x
+txoj,CCVC,tx,o,j
+txoC,CCVC,tx,o,C
+txoc,CCVC,tx,o,c
+txor,CCVC,tx,o,r
+txol,CCVC,tx,o,l
+txum,CCVC,tx,u,m
+txun,CCVC,tx,u,n
+txuq,CCVC,tx,u,q
+txug,CCVC,tx,u,g
+txud,CCVC,tx,u,d
+txub,CCVC,tx,u,b
+txup,CCVC,tx,u,p
+txut,CCVC,tx,u,t
+txuk,CCVC,tx,u,k
+txus,CCVC,tx,u,s
+txuz,CCVC,tx,u,z
+txuv,CCVC,tx,u,v
+txuf,CCVC,tx,u,f
+txux,CCVC,tx,u,x
+txuj,CCVC,tx,u,j
+txuC,CCVC,tx,u,C
+txuc,CCVC,tx,u,c
 trim,CCVC,tr,i,m
 trin,CCVC,tr,i,n
 triq,CCVC,tr,i,q

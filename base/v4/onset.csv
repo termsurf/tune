@@ -18,4 +18,5 @@ st,yes,used
 sl,yes,used
 sm,yes,used
 sn,yes,used
-tx,no,holds_hush
+tx,yes,used
+dj,yes,used

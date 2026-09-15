@@ -27,6 +27,7 @@ import { SHAPES, compareWords } from './sound'
 import { countFull, run, withPlan, type Plan } from './plan'
 import {
   HOUSE,
+  MARKED_CODAS,
   MARKED_ONSETS,
   MARKED_SOUNDS,
   opensOnLiquid,
@@ -69,11 +70,15 @@ function moved(way: Way): number {
  * gives the same count.
  */
 function shrink(way: Way): Plan {
+  /**
+   * The order things leave in: the marked ones first and in the order
+   * `first` names them, then everything else from the end of the list.
+   */
   function order(list: Array<string>, first: Array<string>): Array<string> {
-    return [
-      ...list.filter(c => first.includes(c)),
-      ...[...list].reverse().filter(c => !first.includes(c)),
-    ]
+    const marked = list
+      .filter(c => first.includes(c))
+      .sort((a, b) => first.indexOf(a) - first.indexOf(b))
+    return [...marked, ...[...list].reverse().filter(c => !first.includes(c))]
   }
 
   const openGone = new Set(
@@ -86,11 +91,15 @@ function shrink(way: Way): Plan {
     order(HOUSE.onset, MARKED_ONSETS).slice(0, way.onsetDrop),
   )
 
-  const liquidCodas = HOUSE.coda.filter(opensOnLiquid)
-  const otherCodas = HOUSE.coda.filter(c => !opensOnLiquid(c))
+  /** Marked closings go first, then the rest from the end. */
+  const liquidCodas = order(HOUSE.coda.filter(opensOnLiquid), MARKED_CODAS)
+  const otherCodas = order(
+    HOUSE.coda.filter(c => !opensOnLiquid(c)),
+    MARKED_CODAS,
+  )
   const codaGone = new Set([
-    ...[...liquidCodas].reverse().slice(0, way.liquidDrop),
-    ...[...otherCodas].reverse().slice(0, way.otherDrop),
+    ...liquidCodas.slice(0, way.liquidDrop),
+    ...otherCodas.slice(0, way.otherDrop),
   ])
 
   return withPlan(HOUSE, {

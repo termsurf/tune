@@ -1,0 +1,4 @@
+shape,count,how
+CVC,1024,"2 closings go; a three letter word never opens on a hush or a tooth sound; echo same; sieve 0 1 2 3 of 5"
+CVCC,1728,"1 openings go; sieve 0 1 2 of 4"
+CCVC,1344,"a word opening on a cluster never closes on a liquid; echo same; sieve 0 1 2 3 of 5"
