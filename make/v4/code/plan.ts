@@ -29,7 +29,12 @@
  *   CCVC  = |onset| x (|vowel| x |close| - blocked)
  */
 
+import { SORT_ORDER } from '../../../code/phonology'
+
 import { compareWords, type Shape } from './sound'
+
+/** The tone order, used wherever a rule needs a fixed number per sound. */
+const RANK = new Map(SORT_ORDER.map((sound, i) => [sound, i]))
 
 export type Near = {
   /** Consonants near enough that swapping one says nothing new. */
@@ -86,6 +91,28 @@ export type Bar = {
   note: string
 }
 
+/**
+ * A sound allowed at a slot only some of the time.
+ *
+ * A `Bar` is all or nothing: the breath never opens a three letter
+ * word. That is a blunt thing to say about a sound that plainly does
+ * open words, just not many. A ration says the softer and truer thing.
+ *
+ *   h opens a quarter of the three letter words it could
+ *   x opens three quarters of them
+ *
+ * Which quarter is decided by the word's own rank sum, so it is fixed
+ * and even rather than picked. **Nothing here is random.**
+ */
+export type Ration = {
+  shape: Shape
+  at: number
+  sounds: Array<string>
+  keep: number
+  of: number
+  note: string
+}
+
 export type Plan = {
   name: string
   note: string
@@ -101,6 +128,7 @@ export type Plan = {
   echo: Echo
   sieve: Sieve | null
   bar: Array<Bar>
+  ration: Array<Ration>
 }
 
 export type Piece = {
@@ -141,6 +169,19 @@ function allowed(
 
   for (const bar of plan.bar) {
     if (bar.shape === shape && bar.sounds.includes(word[bar.at])) {
+      return false
+    }
+  }
+
+  for (const ration of plan.ration) {
+    if (ration.shape !== shape || !ration.sounds.includes(word[ration.at])) {
+      continue
+    }
+    let sum = 0
+    for (const sound of word) {
+      sum += RANK.get(sound) ?? 0
+    }
+    if (sum % ration.of >= ration.keep) {
       return false
     }
   }
@@ -210,7 +251,12 @@ export function build(plan: Plan, shape: Shape): Array<Piece> {
  * count has to be built rather than predicted.
  */
 export function separable(plan: Plan): boolean {
-  return plan.echo === 'none' && plan.sieve === null && plan.bar.length === 0
+  return (
+    plan.echo === 'none' &&
+    plan.sieve === null &&
+    plan.bar.length === 0 &&
+    plan.ration.length === 0
+  )
 }
 
 export function predict(plan: Plan, shape: Shape): number {
@@ -504,6 +550,23 @@ export function tally(plan: Plan, shape: Shape): number {
   const mod = plan.sieve?.mod ?? 0
   const keepSet = plan.sieve ? new Set(plan.sieve.keep) : null
 
+  /**
+   * A ration needs the whole word's rank sum, like the sieve does, but
+   * it only bites when its own slot holds one of its sounds. Which pool
+   * members that is never changes inside the loop, so it is worked out
+   * once and the inner loop only asks a boolean.
+   */
+  const rations = plan.ration.filter(r => r.shape === shape)
+  const needsRank = rations.length > 0 || keepSet !== null
+
+  const rationHits = rations.map(ration => ({
+    ration,
+    onOnset: ration.at < onsetWidth,
+    onVowel: ration.at === vowelAt,
+    onCoda: ration.at > vowelAt,
+    slot: ration.at < onsetWidth ? ration.at : ration.at - vowelAt - 1,
+  }))
+
   /** Which vowels each closing may follow, and the closing's rank sum. */
   const codaOk: Array<Array<boolean>> = []
   const codaRank: Array<number> = []
@@ -513,28 +576,34 @@ export function tally(plan: Plan, shape: Shape): number {
     const ok = vowels.map(v => !plan.rhyme.includes(v + coda[0]))
     codaOk.push(ok)
     let sum = 0
-    if (rank) {
+    if (needsRank) {
       for (const s of coda) {
-        sum += rank.get(s) ?? 0
+        sum += RANK.get(s) ?? 0
       }
     }
     codaRank.push(sum)
     codaTail.push(coda[coda.length - 1])
   }
 
-  const vowelRank = vowels.map(v => (rank ? (rank.get(v) ?? 0) : 0))
+  const vowelRank = vowels.map(v => (needsRank ? (RANK.get(v) ?? 0) : 0))
 
   let total = 0
 
-  for (const onset of onsets) {
+  for (let oi = 0; oi < onsets.length; oi++) {
+    const onset = onsets[oi]
     const head = onset[0]
 
     let onsetSum = 0
-    if (rank) {
+    if (needsRank) {
       for (const s of onset) {
-        onsetSum += rank.get(s) ?? 0
+        onsetSum += RANK.get(s) ?? 0
       }
     }
+
+    /** Which rations this opening could trip, worked out per opening. */
+    const live = rationHits.filter(hit =>
+      hit.onOnset ? hit.ration.sounds.includes(onset[hit.slot]) : true,
+    )
 
     for (let ci = 0; ci < codas.length; ci++) {
       if (plan.echo !== 'none') {
@@ -549,17 +618,41 @@ export function tally(plan: Plan, shape: Shape): number {
       }
 
       const ok = codaOk[ci]
+      const coda = codas[ci]
 
-      if (!keepSet) {
+      if (!keepSet && live.length === 0) {
         for (let vi = 0; vi < vowels.length; vi++) {
           if (ok[vi]) total++
         }
         continue
       }
 
+      /** Rations still in play once the closing is known too. */
+      const biting = live.filter(hit =>
+        hit.onCoda ? hit.ration.sounds.includes(coda[hit.slot]) : true,
+      )
+
       const partial = onsetSum + codaRank[ci]
+
       for (let vi = 0; vi < vowels.length; vi++) {
-        if (ok[vi] && keepSet.has((partial + vowelRank[vi]) % mod)) {
+        if (!ok[vi]) {
+          continue
+        }
+        const sum = partial + vowelRank[vi]
+        if (keepSet && !keepSet.has(sum % mod)) {
+          continue
+        }
+        let allowed = true
+        for (const hit of biting) {
+          if (hit.onVowel && !hit.ration.sounds.includes(vowels[vi])) {
+            continue
+          }
+          if (sum % hit.ration.of >= hit.ration.keep) {
+            allowed = false
+            break
+          }
+        }
+        if (allowed) {
           total++
         }
       }

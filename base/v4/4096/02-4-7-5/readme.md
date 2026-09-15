@@ -1,0 +1,19 @@
+# 4:7:5 = 16
+
+**The one leaned toward.** 
+```text
+CVC   1024
+CVCC  1792
+CCVC  1280
+      4096 = 2^12, so a base word is twelve bits
+```
+
+How each shape reaches its number:
+
+- **CVC** at 1024: a hush or a tooth sound closes a three letter word three quarters of the time; no word opens and closes alike (similar); an even sieve keeping 2 of 3
+- **CVCC** at 1792: c and C open a quarter of the words they could; an even sieve keeping 4 of 5
+- **CCVC** at 1280: c or C closes a word opening on a cluster a quarter of the time; no word opens and closes alike (same); an even sieve keeping 4 of 5
+
+After the closeness pass, 807 words stay distinct.
+
+Rebuild with `pnpm --dir deck/tune exec tsx make/v4/code/ratio.ts`.

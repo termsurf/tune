@@ -42,7 +42,7 @@ import {
   SOUND_RANK_MAP,
   opensOnLiquid,
 } from './house'
-import { RULES, type Rule } from './rule'
+import { PORTIONS, RULES, type Portion, type Rule } from './rule'
 
 const here = dirname(fileURLToPath(import.meta.url))
 
@@ -113,6 +113,7 @@ type Way = {
   liquidDrop: number
   otherDrop: number
   rule: Rule | null
+  portion: Portion | null
   echo: Echo
   sieve: Sieve
   moved: number
@@ -121,6 +122,7 @@ type Way = {
 function planOf(way: Way): Plan {
   return withPlan(HOUSE, {
     name: `${way.shape}`,
+    ration: way.portion ? [way.portion.ration] : [],
     open: keepFrom(HOUSE.open, openOrder.slice(0, way.openDrop)),
     close: keepFrom(HOUSE.close, closeOrder.slice(0, way.closeDrop)),
     onset: keepFrom(HOUSE.onset, onsetOrder.slice(0, way.onsetDrop)),
@@ -155,36 +157,50 @@ for (const shape of SHAPES) {
     ...RULES.filter(r => r.bar.shape === shape),
   ]
 
+  /**
+   * The partial drops: a marked sound keeping a share of its openings
+   * instead of losing all of them. `CCVC` opens on a cluster, so a
+   * ration on the opening slot has nothing to bite there.
+   */
+  const portions: Array<Portion | null> = [
+    null,
+    ...PORTIONS.filter(p => p.ration.shape === shape),
+  ]
+
   for (let openDrop = 0; openDrop <= openMax; openDrop++) {
     for (let closeDrop = 0; closeDrop <= closeMax; closeDrop++) {
       for (let onsetDrop = 0; onsetDrop <= onsetMax; onsetDrop++) {
         for (let liquidDrop = 0; liquidDrop <= liquidMax; liquidDrop++) {
           for (let otherDrop = 0; otherDrop <= otherMax; otherDrop++) {
             for (const rule of rules) {
-              for (const echo of ECHOES) {
-                for (const sieve of SIEVES) {
-                  const way: Way = {
-                    shape,
-                    openDrop,
-                    closeDrop,
-                    onsetDrop,
-                    liquidDrop,
-                    otherDrop,
-                    rule,
-                    echo,
-                    sieve,
-                    moved:
-                      openDrop +
-                      closeDrop +
-                      onsetDrop +
-                      liquidDrop +
-                      otherDrop +
-                      (rule ? 1 : 0) +
-                      (echo === 'none' ? 0 : 1) +
-                      (sieve ? 1 : 0),
-                  }
-                  if (tally(planOf(way), shape) === WANT[shape]) {
-                    ways[shape].push(way)
+              for (const portion of portions) {
+                for (const echo of ECHOES) {
+                  for (const sieve of SIEVES) {
+                    const way: Way = {
+                      shape,
+                      openDrop,
+                      closeDrop,
+                      onsetDrop,
+                      liquidDrop,
+                      otherDrop,
+                      rule,
+                      portion,
+                      echo,
+                      sieve,
+                      moved:
+                        openDrop +
+                        closeDrop +
+                        onsetDrop +
+                        liquidDrop +
+                        otherDrop +
+                        (rule ? 1 : 0) +
+                        (portion ? 1 : 0) +
+                        (echo === 'none' ? 0 : 1) +
+                        (sieve ? 1 : 0),
+                    }
+                    if (tally(planOf(way), shape) === WANT[shape]) {
+                      ways[shape].push(way)
+                    }
                   }
                 }
               }
@@ -229,6 +245,7 @@ function says(way: Way): string {
   if (way.liquidDrop) parts.push(`${way.liquidDrop} liquid closings go`)
   if (way.otherDrop) parts.push(`${way.otherDrop} other closings go`)
   if (way.rule) parts.push(way.rule.says)
+  if (way.portion) parts.push(way.portion.says)
   if (way.echo !== 'none') parts.push(`echo ${way.echo}`)
   if (way.sieve) {
     parts.push(`sieve ${way.sieve.keep.join(' ')} of ${way.sieve.mod}`)

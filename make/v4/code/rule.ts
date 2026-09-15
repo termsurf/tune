@@ -14,7 +14,8 @@
  * so a rule names a natural class rather than a list somebody chose.
  */
 
-import type { Bar } from './plan'
+import type { Bar, Ration } from './plan'
+import type { Shape } from './sound'
 
 // ─── Natural Classes ────────────────────────────────────
 
@@ -140,3 +141,126 @@ export const RULES: Array<Rule> = [
 ]
 
 export const RULE_BY_NAME = new Map(RULES.map(r => [r.name, r]))
+
+// ─── Rations ────────────────────────────────────────────
+
+/**
+ * The same idea said softly.
+ *
+ * A bar is all or nothing, and for a sound like the breath that is too
+ * blunt: `h` plainly opens words, just not many of them. A ration lets
+ * a sound keep a share of its openings instead of losing all of them.
+ *
+ * **These are all on the start**, because the opening is where a
+ * language shows its preferences most plainly. `j`, `c`, `C` and `h`
+ * are the four that should be thin there, and `x` is thinned only
+ * lightly because it is an ordinary sound.
+ *
+ * Which share a sound keeps is decided by the word's own rank sum, so
+ * it is fixed and spread evenly, never picked and never random.
+ */
+export type Portion = {
+  name: string
+  says: string
+  ration: Ration
+}
+
+function onStart(
+  name: string,
+  says: string,
+  sounds: Array<string>,
+  keep: number,
+  of: number,
+): Array<Portion> {
+  return (['CVC', 'CVCC'] as const).map(shape => ({
+    name: `${name}_${shape.toLowerCase()}`,
+    says,
+    ration: { shape, at: 0, sounds, keep, of, note: name },
+  }))
+}
+
+/**
+ * Every slot of every shape, at a quarter, a half and three quarters.
+ *
+ * **Nothing here ever says never.** A family keeps a share of a slot,
+ * and the share is the whole rule. Which share a given word falls in is
+ * fixed by its own rank sum, so the thinning is spread evenly and is
+ * the same on every run.
+ */
+const SLOTS: Array<{ shape: Shape; at: number; where: string }> = [
+  { shape: 'CVC', at: 0, where: 'opens a three letter word' },
+  { shape: 'CVC', at: 2, where: 'closes a three letter word' },
+  { shape: 'CVCC', at: 0, where: 'opens a word closing on a cluster' },
+  { shape: 'CVCC', at: 2, where: 'stands first in a closing cluster' },
+  { shape: 'CVCC', at: 3, where: 'stands last in a closing cluster' },
+  { shape: 'CCVC', at: 1, where: 'stands second in an opening cluster' },
+  { shape: 'CCVC', at: 3, where: 'closes a word opening on a cluster' },
+]
+
+const FAMILIES: Array<{ name: string; sounds: Array<string>; call: string }> = [
+  { name: 'marked', sounds: MARKED, call: 'a hush or a tooth sound' },
+  { name: 'teeth', sounds: TEETH, call: 'c or C' },
+  { name: 'soft_hush', sounds: ['j'], call: 'j' },
+  { name: 'breath', sounds: BREATH, call: 'the breath' },
+  { name: 'glide', sounds: GLIDE, call: 'a glide' },
+  { name: 'liquid', sounds: LIQUID, call: 'a liquid' },
+  { name: 'voiceless', sounds: VOICELESS_STOP, call: 'a voiceless stop' },
+  { name: 'voiced', sounds: VOICED_STOP, call: 'a voiced stop' },
+  { name: 'nasal', sounds: NASAL, call: 'a nasal' },
+]
+
+const SHARES: Array<{ keep: number; of: number; call: string }> = [
+  { keep: 1, of: 4, call: 'a quarter of the time' },
+  { keep: 1, of: 2, call: 'half the time' },
+  { keep: 3, of: 4, call: 'three quarters of the time' },
+]
+
+function everySlot(): Array<Portion> {
+  const out: Array<Portion> = []
+  for (const slot of SLOTS) {
+    for (const family of FAMILIES) {
+      for (const share of SHARES) {
+        out.push({
+          name: `${family.name}_${share.keep}of${share.of}_${slot.shape.toLowerCase()}_${slot.at}`,
+          says: `${family.call} ${slot.where} ${share.call}`,
+          ration: {
+            shape: slot.shape,
+            at: slot.at,
+            sounds: family.sounds,
+            keep: share.keep,
+            of: share.of,
+            note: family.name,
+          },
+        })
+      }
+    }
+  }
+  return out
+}
+
+export const PORTIONS: Array<Portion> = [
+  /**
+   * Half and half, which is the honest version of "never opens on a
+   * voiceless stop".
+   *
+   * `p`, `t` and `k` open words in every language that has them, so
+   * refusing them outright says something false. Letting them take half
+   * the openings they could says the true thing: the voiced side is
+   * commoner here, but only somewhat.
+   */
+  ...onStart('voiceless_half', 'p, t and k open half the words they could', VOICELESS_STOP, 1, 2),
+  ...onStart('voiceless_quarter', 'p, t and k open a quarter of the words they could', VOICELESS_STOP, 1, 4),
+  ...onStart('voiceless_three_quarters', 'p, t and k open three quarters of the words they could', VOICELESS_STOP, 3, 4),
+  ...onStart('voiced_half', 'b, d and g open half the words they could', VOICED_STOP, 1, 2),
+  ...onStart('breath_quarter', 'the breath opens a quarter of the words it could', ['h'], 1, 4),
+  ...onStart('breath_half', 'the breath opens half the words it could', ['h'], 1, 2),
+  ...onStart('teeth_quarter', 'c and C open a quarter of the words they could', ['c', 'C'], 1, 4),
+  ...onStart('teeth_half', 'c and C open half the words they could', ['c', 'C'], 1, 2),
+  ...onStart('soft_hush_quarter', 'j opens a quarter of the words it could', ['j'], 1, 4),
+  ...onStart('soft_hush_half', 'j opens half the words it could', ['j'], 1, 2),
+  ...onStart('hush_three_quarters', 'x opens three quarters of the words it could', ['x'], 3, 4),
+  ...onStart('marked_half', 'j, c, C and h open half the words they could', ['j', 'c', 'C', 'h'], 1, 2),
+  ...onStart('marked_quarter', 'j, c, C and h open a quarter of the words they could', ['j', 'c', 'C', 'h'], 1, 4),
+  ...onStart('marked_three_quarters', 'j, c, C and h open three quarters of the words they could', ['j', 'c', 'C', 'h'], 3, 4),
+  ...everySlot(),
+]

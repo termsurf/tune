@@ -1,0 +1,4 @@
+shape,count,how
+CVC,1024,"a three letter word never opens on a voiceless stop; j, c, C and h open a quarter of the words they could; sieve 0 1 2 of 4"
+CVCC,2048,"5 liquid closings go; c and C open a quarter of the words they could"
+CCVC,1024,"3 onset clusters go; a word opening on a cluster never closes on a liquid; echo similar; sieve 0 1 2 3 of 5"

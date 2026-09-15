@@ -48,6 +48,7 @@ export const HOUSE: Plan = {
   echo: 'none',
   sieve: null,
   bar: [],
+  ration: [],
 }
 
 /** Ranks every sound, for a plan that thins by an even sieve. */
