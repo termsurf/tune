@@ -1,0 +1,334 @@
+tune word,english meaning,origin language,origin word,origin script
+bab,sibling
+baC,birth
+bal,world (conception of reality)
+bam,create
+bas,base
+bat,opposite (anti)
+bib,left
+bid,ten
+bif,previous
+big,large
+bik,reach
+bim,line
+bip,bit
+biq,else
+bis,across (trans-)
+boc,depth
+bod,together
+bok,ifnotmatch/otherwise
+bon,relation/link (the connection itself)
+bor,boundary
+bub,now/current
+bud,awakening
+bul,side
+bum,reject
+buq,self (auto-)
+bur,being
+cat,hook
+cif,
+cob,distance (tele-)
+com,effect
+cuk,eleven
+dad,parent
+dal,"thing (hatchling)"
+dan,urge
+dar,unknown/external
+das,negative
+dat,point/particle
+dav,here
+dic,time
+did,just (close-focus)/close
+din,whole
+dip,tree
+dir,bit on
+dis,number
+dit,datetime stamp/instance in time
+div,divine
+dix,condition (general state)
+dob,two
+dol,boundary
+dom,"area or state of being (-dom)"
+dop,value
+dud,extend
+duk,suffering
+dul,of
+dun,
+dus,length
+fab,include
+fal,"full of (-full)"
+fam,scale (relative size)
+fas,face (surface)
+fib,next
+fic,faith
+fig,"feel/feeling (e-motion stream)"
+fin,"belief in x"
+fit,eight
+fol,formal
+fon,machine
+for,joint (the point where the two connect)
+fos,information
+fub,y-axis
+fud,food
+ful,where
+fun,within (endo-)
+fut,there
+gad,god
+gag,child
+gam,game
+gav,how (missing-action-focus)
+gax,only
+gin,"the nature of doing x (-ence)"
+gir,through
+git,quality
+giv,give
+giz,position
+gok,end
+gol,front
+gos,get
+gun,thread/string
+gux,memory (storage medium)
+hab,grow
+hag,open
+hal,span
+han,zero
+has,medium
+hav,have
+hid,but
+hif,bit off
+him,back
+hip,logic
+hom,home
+hon,focus
+hor,out
+hot,hate/rejection (emotionless)
+hub,x-axis
+hum,small
+huz,that
+kag,item
+kag,node
+kam,five
+kan,"ability (-ability)"
+kaq,object type
+kar,do
+kaz,cause
+kik,ifmatch/then
+kin,"-ableness"
+kip,group
+kiq,action type
+kix,all encompassing type
+kod,code
+kov,part
+kox,nand
+kuq,fusion type
+kus,exclude
+lab,current
+laf,four
+lak,lock
+lam,do like something
+las,"less of (-less) empty"
+lat,pile/lot/heap (large)
+lat,much (large-lot-focus)
+lav,every
+lid,solution
+lif,leaf
+lig,this
+lim,branch
+lip,chain
+lix,instance
+lod,load
+log,"flow (speech utterance)"
+lon,loan
+lor,balance
+los,separate
+luf,far (large-distance-focus)
+lul,block/prevent
+lum,all
+lup,loop
+Cam,without
+mab,evaluate/run (code)
+mac,allow
+mad,thing about the thing (meta-)
+maj,magic
+mal,distance
+mam,source
+map,map (map/reduce)
+mar,"more (-er)"
+mav,"love (-phile)"
+mib,size
+mif,set (get)
+mij,who (missing communicating-agent-focus)
+min,main/primary
+mis,"most (-est) (large-collection-partition-focus)
+mod,twelve
+mok,play
+mon,"featuring x"
+mor,be
+mox,"the model of the action (e.g. the transform)"
+mud,life
+mug,different
+muv,move
+muv,to (move-focus)
+nad,"having some aspects of (-ish)"
+naf,enough
+nal,"period of x (-hood)"
+nam,name/define
+nar,filter
+nas,nine
+nav,a (isolated-element-focus)
+nid,desire/craving
+nin,their
+nir,near
+nis,neutral
+niv,with (con-)
+nob,maybe
+nof,add
+nog,known
+nol,area/field
+not,message
+noz,z-axis
+nuc,mind
+nug,representation
+nul,close (vs. open)
+nun,not (un- or -im)
+nur,transform
+pak,undo
+pan,pain
+paq,response
+pat,"act of"
+paz,pause
+pin,rotate/spin
+pip,experience
+piq,request
+pis,peace
+pog,free
+pop,accept
+puf,proof
+pup,borrow
+rad,update
+raf,thirteen
+ral,real
+ran,subtract
+ras,in
+rat,"the x action process"
+rav,"reminiscent of (-esque)"
+rid,read
+rig,infinite
+rin,again (re-)
+rip,location
+rob,why
+rod,path
+rol,cycle
+rom,merge
+ros,start
+rov,they (communicating-agent-external-reference-focus)
+ruC,need
+ruC,risk
+rug,hold
+ruk,bottom
+rul,rule (in system)
+run,write
+rup,partial (semi-)
+sad,positive
+saj,
+sal,result
+sam,same (sym-)
+san,three
+sar,still
+sas,flow
+sid,seed/origin
+sik,seek
+sin,after (post-)
+siq,you (communicating-agent-target-focus)
+sir,ignorance
+sis,
+sit,situation
+sob,death
+sof,safe
+sol,soul (accumulation of all experience)
+som,
+sop,above (super)
+sud,somewhat (pseudo-)
+suk,what (missing object focus)
+sun,probable
+suq,I/me (communicating-agent-source-focus)
+sur,divide
+sus,beyond (extra- or hyper-)
+tak,take
+tan,before (pre-)
+tap,top
+tat,target
+taz,"very much of (-some)"
+tic,fourteen
+tiq,true
+tit,
+tix,boolean
+tof,"relates to (affectional)"
+ton,tone/sound
+tub,"over (overburden)"
+tul,"it's a tool (zipper)"
+tuq,false
+tut,
+vag,material/substance
+van,"having the nature of (-ivity)"
+vas,force
+vav,repeat
+vib,vibe
+vig,select
+vim,way/style
+vit,multi
+viv,six
+vix,preserve/store/save
+vod,void
+vok,event
+von,the (primary-element-focus)
+voz,multiply
+vud,"study or science of (-ology)"
+vux,entity
+wak,traverse
+war,identity
+wav,exist
+wax,universe (all that is in existence)
+wez,fifteen
+wig,require
+win,when
+wir,
+wiv,reduce
+wol,mesh (inter-)
+woz,problem
+wuv,on
+wux,system
+xab,seven
+xag,choice/option
+xam,"the state of being x (-acy)"
+xaq,object
+xik,computation
+xiq,action
+xit,form/shape
+xiv,destroy
+xix,all encompasing thing
+xok,copy
+xov,configure/configuration
+xox,change
+xuq,fusion
+yak,off
+yan,vehicle/method
+yap,all (omni-)
+yip,"resembling (-istic)"
+yiq,foundation
+yod,sort
+yog,practice of focusing on x (-ism)
+yox,possible
+yum,period
+yuq,non-foundation
+yuz,use,english,use
+zag,because
+zaz,fact (something that happened)
+zig,equal (iso-)
+zip,graph
+zir,"pertaining to x (pleasantry)"
+zok,try
+zon,one
+zon,first
+zox,sense
+zul,"-wise"

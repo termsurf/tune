@@ -1,0 +1,151 @@
+           	vutx      	entity
+           	form      	form                                               	            	              	english
+           	dram      	human                                              	adam        	אָדָם         	hebrew
+           	zeqk      	hand
+body       	zorn      	ear
+body       	cutx      	tooth
+body       	hort      	heart (body)
+           	bren      	brain                                              	            	              	english
+body       	garm      	arm                                                	arm         	              	english
+body       	legz      	leg                                                	leg         	              	english
+body       	gral      	foot                                               	regel       	רֶגֶל         	hebrew
+body       	brod      	bone
+           	bloC      	blood                                              	            	blóð          	icelandic
+body       	skin      	skin                                               	            	              	english
+body       	halx      	hair
+body       	blin      	belly
+body       	nurv      	nerve                                              	            	              	english
+           	ston      	stone                                              	            	              	english
+           	wand      	wind (coil)
+           	sand      	sand                                               	            	              	english
+           	malt      	metal                                              	            	              	english
+           	hals      	ice
+           	snom      	snow
+           	smok      	smoke                                              	            	              	english
+           	prax      	ash                                                	            	              	english
+           	stik      	stick (plant)                                      	            	              	english
+           	vriC      	wood                                               	            	viður         	icelandic
+           	molz      	mow (grass)
+plant      	gras      	grass                                              	            	              	english
+plant      	flor      	flower                                             	            	              	english
+           	cral      	hill
+           	varz      	forest                                             	ya'ar       	יַעַר         	hebrew
+           	dors      	desert                                             	            	              	english
+           	kliv      	cave
+           	narv      	river                                              	nahar       	נָהָר         	hebrew
+           	vrun      	ocean                                              	varuna      	वरुण          	sanskrit
+           	star      	star                                               	            	              	english
+           	glob      	planet                                             	            	              	english
+           	wold      	world
+           	klad      	cloud
+           	farg      	fog                                                	            	              	english
+animal     	nuqk      	bear (animal)                                      	            	ᓇᓄᖅ           	inuktitut
+animal     	batx      	bat (animal)                                       	            	              	english
+animal     	horn      	horn (animal)
+animal     	slag      	slug (animal)
+animal     	fork      	ant (animal)                                       	            	              	latin
+           	bist      	beast                                              	            	              	english
+           	frix      	fish
+animal     	ximp      	shrimp (fish)                                      	ebi         	海老            	japanese
+animal     	wurm      	worm                                               	            	              	english
+animal     	hors      	horse                                              	            	              	english
+animal     	wolf      	wolf                                               	            	              	english
+animal     	klat      	cat                                                	            	              	english
+           	groq      	lion                                               	            	              	english
+animal     	vaqk      	cow                                                	            	              	latin
+           	ranz      	ram
+animal     	glot      	goat                                               	            	              	english
+animal     	prag      	pig                                                	            	              	english
+animal     	djir      	deer                                               	            	              	english
+animal     	barv      	duck (bird)                                        	bar'maz     	ברווז         	hebrew
+           	gost      	ghost                                              	            	              	english
+           	hanz      	house                                              	            	              	english
+           	glet      	gate
+           	gril      	case (container)
+           	braz      	box                                                	            	              	english
+           	film      	film (material)
+           	svik      	knife                                              	            	ᓴᕕᒃ           	inuktitut
+           	spok      	spoke (wheel)
+           	raft      	raft                                               	            	              	english
+           	saqk      	sign                                               	            	              	english
+           	nadj      	knowledge                                          	            	              	english
+           	ledj      	theory
+           	trab      	tribe                                              	            	              	english
+           	nord      	order                                              	            	              	english
+           	xark      	society                                            	            	              	english
+           	sitx      	second (time)                                      	            	              	english
+           	hedj      	age                                                	            	              	english
+           	part      	part                                               	part        	              	english
+           	mold      	mold (shape)
+measurement	hamp      	ampere (electric current)                          	            	              	english
+           	flat      	flat                                               	            	              	english
+           	sold      	solid                                              	            	              	english
+           	brat      	big                                                	brhat       	बृहत्         	sanskrit
+           	smal      	small                                              	            	              	english
+           	tals      	tall                                               	            	              	english
+           	klir      	clear                                              	            	              	english
+           	gump      	new                                                	            	              	english
+           	marg      	old
+           	xant      	ancient
+           	last      	last                                               	            	              	english
+           	klok      	quick                                              	            	              	english
+           	slom      	slow                                               	            	              	english
+           	slok      	weak
+           	hard      	hard (vs. soft)                                    	            	              	english
+           	saft      	soft                                               	            	              	english
+           	klin      	clean                                              	            	              	english
+           	wald      	wild
+           	flum      	fly (action)
+           	torn      	turn
+           	slad      	slide
+           	spin      	spin                                               	            	              	english
+           	djip      	over
+           	dart      	east
+           	trad      	west
+           	norc      	north                                              	            	              	english
+           	cron      	south
+           	flun      	few
+           	drim      	dream
+           	senz      	essence                                            	            	              	english
+           	korn      	category
+animal     	drov      	multicellular life
+           	slip      	sleep                                              	            	              	english
+           	vram      	insight                                            	tovana      	תּוֹבָנָה     	hebrew
+           	dolt      	doubt                                              	            	              	english
+           	kulx      	answer
+           	gram      	gram (measure)                                     	            	              	english
+           	plud      	pound (measure)                                    	            	              	english
+math       	lirk      	ratio
+           	krag      	node
+           	padj      	edge                                               	            	              	english
+           	trak      	track (path)                                       	maslul      	מַסְלוּל      	hebrew
+math       	grup      	group (math)                                       	            	              	english
+           	band      	band (group)
+science    	larg      	element
+           	mast      	member
+           	most      	most (-est) (large-collection-partition-focus)
+           	drig      	degree                                             	            	              	english
+           	dalg      	magnitude
+           	skim      	minimum
+           	maks      	maximum
+           	rost      	past (distance)                                    	            	              	english
+           	corb      	distance (tele-)
+           	drix      	direction
+           	farm      	far                                                	            	              	english
+           	stil      	still (motion)                                     	            	              	english
+science    	brit      	orbit                                              	            	              	english
+           	rutz      	race (event)                                       	merutza     	מְרוּצָה      	hebrew
+           	retx      	rate (change)                                      	rate        	              	english
+sound      	plap      	glottal stop
+           	droz      	enter
+           	zord      	exit
+           	kedj      	accept
+           	diqk      	deny
+           	titx      	teach
+           	sliC      	therefore                                          	suǒyǐ       	所以            	chinese
+           	kund      	kind (good)                                        	            	              	english
+           	forn      	fine (good)
+           	tred      	trade                                              	            	              	english
+           	xarz      	opposite (anti)
+           	pras      	press (force)                                      	            	              	english
+math       	flid      	field (math)                                       	            	              	english

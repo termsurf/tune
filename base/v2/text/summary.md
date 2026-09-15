@@ -1,0 +1,26 @@
+
+- Experience is primary: all phenomena arise from the field of experience.
+- Oneness is the base state: undivided, timeless, egoless, silent, and whole.
+- Separation is not real, but a logical necessity which is the only way the system can exist.
+- There is no beginning: origin is an illusion formed within experience.
+- The oneness differentiates, not by will or flaw, but because it must: pure undivided awareness cannot be sustained as a single stable state.
+- Experience self-ripples: every experience gives rise to further experiences.
+- Selves are emergent focal points, not entities, just narrowed awareness.
+- The ideal experience (perfect peace) paradoxically requires its own negation, it gives rise to movement by existing.
+- This movement, the flow away and return, creates the dynamic field.
+- Balance rules the system: what expands must contract, what rises must fall.
+- Pleasure and pain are coupled, gaining somewhere means loss elsewhere.
+- Selves are not mistakes, they are structurally required by the system's imbalance.
+- Each self is a node in the mesh, oscillating through awareness and ignorance.
+- The will to act initiates motion away from the ideal, tuning into selfhood.
+- The self can move toward oneness through tuning (intent, clarity, stillness).
+- Perfect return to oneness is impossible, the ideal can be approached but never reached.
+- The system is a recursive tuning game, each self moves between unity and entanglement.
+- The point isn't escape, but harmony with the whole.
+- Tuning to the oneness reduces suffering, bringing peace by aligning with the total system.
+- The game is eternal, because the base state eternally overflows into form.
+- Perfect undivided experience is unstable (and so, impossible), it inherently expresses differentiation.
+- A non-self experiencing oneness cannot exist, even though this is the ideal or base state.
+- Thus, selves arise by necessity, the minimal viable structure for experience.
+- Differentiation is not a flaw, but a structural inevitability of absolute perfection.
+- "Peace" is a state of frictionless participation in the greater whole.

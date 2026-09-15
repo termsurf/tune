@@ -1,0 +1,165 @@
+r red = alkali metal
+d orange = alkaline earth
+l yellow = transition metal
+z olive = basic metal
+f green = semimetal
+k cyan = non-metal
+b blue = halogen
+s purple = noble gas
+m magenta = lanthanide
+n pink = actinide
+
+h
+z
+d
+s
+l
+k
+v
+x
+f
+n
+b
+c
+m
+r
+t
+w
+
+hydrogen = kh
+helium
+lithium
+beryllium
+boron = fh
+carbon = kz
+nitrogen = kd
+oxygen = ks
+fluorine
+neon
+sodium
+magnesium
+aluminum
+silicon
+phosphorous
+sulfur
+chlorine
+argon
+potassium
+calcium
+scandium
+titanium
+vanadium
+chromium
+manganese
+iron
+cobalt
+nickel
+copper
+zinc
+gallium
+germanium
+arsenic
+selenium
+bromine
+krypton
+rubidium
+strontium
+yttrium
+zirconium
+niobium
+molybdenum
+technetium
+ruthenium
+rhodium
+palladium
+silver
+cadmium
+indium
+tin
+antimony
+tellurium
+iodine
+xenon
+caesium
+barium
+lanthanum
+cerium
+praseodymium
+neodymium
+promethium
+samarium
+europium
+gadolinium
+terbium
+dysprosium
+holmium
+erbium
+thulium
+ytterbium
+lutetium
+hafnium
+tantalum
+tungsten
+rhenium
+osmium
+iridium
+platinum
+gold
+mercury
+thallium
+lead
+bismuth
+polonium
+astatine
+radon
+francium
+radium
+actinium
+thorium
+protactinium
+uranium
+neptunium
+plutonium
+americium
+curium
+berkelium
+californium
+einsteinium
+fermium
+mendelevium
+nobelium
+lawrencium
+rutherfordium
+dubnium
+seaborgium
+bohrium
+hassium
+meitnerium
+darmstadtium
+roentgenium
+copernicium
+nihonium
+flerovium
+moscovium
+livermorium
+tennessine
+oganesson
+
+hydrogen = gray
+carbon = black
+nitrogen = blue
+oxygen = red
+sulfur = yellow
+phosphorus = orange
+chlorine = green
+fluorine = olive
+bromine = brown
+iodine = purple
+iron = tan
+calcium = pink
+sodium = cyan
+potassium = magenta
+magnesium = peach
+# repeat colors, with labels
+silicon = yellow
+aluminum = gray

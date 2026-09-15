@@ -1,0 +1,643 @@
+## 3 letter words
+
+(category is base of tree, terms are nested in one layer)
+
+```
+existence
+  be
+  nonbeing
+  exist
+  entity
+  thing
+  self
+  other
+  identity
+  difference
+  presence
+  absence (void)
+  reality
+  essence
+  dynamic
+  real
+  nonreal
+  nature
+  universe
+  possibility
+  impossibility
+  necessity
+  contingency
+  instance
+  category
+  class
+
+experience
+  soul
+  mind
+  awareness
+  attention
+  perceive
+  thought
+  meaning
+  intuition
+  will
+  desire
+  peace
+  pain
+  pleasure
+  observation
+  introspection
+  reflection
+  absorption
+  immersion
+  integration
+  gender
+  male
+  female
+  divine
+  witness
+  silence
+  noise
+  unreal
+  appearance
+  imagination
+  life
+  death
+  meditate
+  ignore
+  wake
+  sleep
+  dream
+  curiosity
+  boredom
+  focus
+  distraction
+  clarity
+  confusion
+  insight
+  bewilder
+  drive
+  motivation
+  passion
+  care
+  commitment
+
+information
+  wisdom
+  knowledge
+  mystery
+  truth
+  belief
+  doubt
+  insight
+  understanding
+  information
+  data
+  code
+  pattern
+  rule
+  read
+  save
+  store
+  memory
+  clear
+  fuzzy
+  certain
+  uncertain
+  model
+  representation
+  encoding
+  decoding
+  compression
+
+tool
+  tool
+  machine
+  mechanism
+  instrument
+
+emotion
+  need
+  want
+  lack
+  love
+  hate
+  fear
+  anger
+  frustration
+  joy
+  sadness
+  beauty
+  awe
+  patience
+  anxiety
+  annoy
+  calm
+  wonder
+  arrogance
+  ego
+  humility
+  respect
+  gratitude
+  shame
+  guilt
+  envy
+  pride
+  relief
+  longing
+  hope
+
+communication
+  bit
+  byte
+  name
+  word
+  communicate
+  utterance
+  expression
+  symbol
+  sign
+  signal
+  message
+  call
+  question
+  answer
+  request
+  response
+  tell
+  listen
+  receive
+  send
+  clue
+  warn
+  log
+  watch
+  track
+  stream (constant flow)
+  sync
+  declare
+  promise
+  command
+  forbid
+  permit
+  notify
+
+structure
+  type
+  variable
+  property
+  object
+  thing
+  form
+  state
+  number
+  count
+  measure
+  ratio
+  sum
+  difference
+  product
+  power
+  limit
+  function
+  variable
+  constant
+  dimension
+  substance
+  architecture
+  system
+  base
+  head
+  tree
+  branch
+  leaf
+  fruit
+  network
+  layer
+  foundation
+  constant
+  discrete
+  continuous
+  stable
+  unstable
+  loop
+  node
+  edge
+  path
+  stack
+  queue
+  sequence
+  vector
+
+energy
+  energy
+  force
+  field
+  spirit
+  vibration
+  momentum
+  potential
+  entropy
+  resonance
+
+relation
+  relate
+  connect
+  separate
+  bind
+  part
+  whole
+  between
+  toward
+  parent
+  child
+  sibling
+  mother
+  father
+  source
+  origin
+  contrast
+  compare
+  group
+  element
+  member
+  link
+  individual
+  collection
+  unify
+  ownership
+  containment
+  inclusion
+  exclusion
+  adjacency
+  overlap
+  dependency
+  equivalence
+
+scale
+  scale
+  degree
+  intensity
+  depth
+  level
+  rate
+  magnitude
+  minimum
+  maximum
+  threshold
+
+time
+  time
+  now
+  moment
+  before
+  after
+  past
+  future
+  present (time)
+  duration
+  period
+  cycle
+  repeat
+  again
+  instant
+  interval
+  sequence
+  frequency
+  delay
+
+space
+  near
+  far
+  center
+  edge
+  inside
+  outside
+  within
+  without
+  place
+  direction
+  location
+  distance
+  axis
+  space
+  position
+  center
+  edge
+  forward
+  backward
+  boundary
+  orientation
+
+motion
+  from
+  through
+  across
+  around
+  still
+  returning pattern (like cycle but more dynamic)
+  return
+  orbit
+  process
+  event
+  transition
+  phase
+  motion
+  proceed
+  stall
+
+action
+  change
+  cause
+  effect
+  act
+  move
+  become
+  create
+  destroy
+  persist
+  preserve
+  remove
+  join
+  divide
+  flow
+  transform
+  turn
+  return
+  start
+  stop
+  enter
+  exit
+  pause
+  wait
+  unify
+  split
+  divide
+  consume
+  produce
+  generate
+  complete
+  finish
+  continue
+  load
+  release
+  free
+  hold
+  accept
+  deny
+  assert
+  provide
+  carry
+  collect
+  gather
+  hunt
+  seek
+  find
+  step
+  linger
+  rush
+  work
+  show
+  hide
+  weave
+  accelerate
+  decelerate
+  speed
+  fast
+  slow
+  hurt
+  heal
+  damage
+  repair
+  dirty
+  wash
+  iterate
+  associate
+  hone
+  teach
+  learn
+  transfer
+  flip
+  navigate
+  alter
+  comprehend
+  waste
+  throw
+  cast
+  order
+  sequence
+  trust
+  steal
+  close
+  open
+  jump
+  duck
+  trudge
+  scare
+  wish
+  pretend
+  fake
+  remember
+  remind
+  distill
+  blend
+  merge
+  indulge
+
+ability
+  capacity
+  technique
+  skill
+  behavior
+  easy
+  hard
+
+logic
+  true
+  false
+  and
+  or
+  not
+  if
+  then
+  because
+  therefore
+  possible
+  necessary
+  maybe
+  condition
+  satisfy
+  validate
+  prove
+  problem
+  solution
+  assumption
+  conclusion
+  reason
+  intersection
+  union
+
+value
+  good
+  bad
+  better
+  worse
+  pure
+  impure
+  full
+  empty
+  balance
+  harmony
+  order
+  chaos
+  quality
+
+interaction
+  game
+  play
+  fate
+  destiny
+  filter
+  search
+  browse
+  explore
+  evolve
+  grow
+  rise
+  fall
+  control
+  government
+  win
+  lose
+  tie
+  distributed
+  decentralized
+  centralized
+  hierarchy
+  role
+  own
+  borrow
+  loan
+  give
+  take
+  pay
+  rent
+  use
+  trick
+  reward
+  punish
+  trap
+  tend
+  mend
+  fix
+  break
+  lie
+  withold
+  pray
+  honor
+  honest
+  trade
+  buy
+  sell
+
+polarity
+  different
+  same
+  equal
+  opposite
+  similar
+```
+
+## 4 letter words
+
+(same nested structure)
+
+```
+direction
+  up
+  down
+  left
+  right
+  north
+  east
+  south
+  west
+
+orientation
+  high
+  low
+  above
+  below
+
+space
+  point
+  line
+  angle
+  straight
+  crooked
+  curved
+
+sense
+  hear
+  feel
+  touch
+  smell
+  taste
+
+  pressure (force)
+
+sound
+  sound
+  tone
+  pitch
+  echo
+
+action
+  rotate
+  animate
+  skew
+  twist
+  spin
+  cook
+  eat
+  drink
+
+energy
+  matter
+  light
+  water
+  stone
+  metal
+  wood
+  dust
+  fire
+
+body
+  person
+  human
+  animal
+  plant
+  organ
+  blood
+  bone
+  river
+  mountain
+  bird
+  dog
+  fish
+
+tool
+  house
+  boat
+  wheel
+  table
+  sword
+  device
+
+writing
+  text
+  book
+
+structure
+  matrix
+  grid
+```

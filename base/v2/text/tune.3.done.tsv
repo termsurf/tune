@@ -1,0 +1,236 @@
+category   	term      	meaning                                            	latin       	native        	language
+           	six       	all encompasing thing
+           	ciq       	thing (hatchling)                                  	            	              	english
+code       	pop       	property (of object)                               	            	              	english
+           	kaq       	object
+           	laq       	object feature type
+           	biq       	being                                              	            	              	english
+           	dal       	matter (physics)
+           	bux       	bundle (matter condensing)
+           	zem       	plasma (matter)                                    	            	              	english
+           	neC       	a (isolated-element-focus)
+           	dom       	state
+           	dux       	condition (general state)
+           	bor       	condition (case)
+code       	kix       	process
+           	hap       	event
+           	xun       	change
+           	jom       	pattern
+           	tok       	structure                                          	            	              	english
+           	rul       	rule (in system)
+           	mix       	network                                            	            	              	english
+           	zul       	animal                                             	zoia        	ζῷᾰ           	greek
+           	bax       	bird                                               	bird        	              	english
+           	bag       	insect                                             	            	              	english
+           	jan       	spirit                                             	            	              	english
+           	gad       	god                                                	            	              	english
+           	nar       	person                                             	nára        	नर            	sanskrit
+           	gag       	child
+           	vat       	body
+body       	lag       	organ (body)
+           	had       	head                                               	            	              	english
+           	fes       	face                                               	            	              	english
+body       	xic       	eye
+           	noz       	nose                                               	            	              	english
+body       	taq       	tongue
+           	man       	mind                                               	mánas       	मनस्          	sanskrit
+           	for       	fire
+           	fun       	wind (air)                                         	            	              	english
+           	les       	air
+           	rak       	rock
+           	rit       	soil                                               	pṛthvī      	पृथ्वी        	sanskrit
+           	cat       	mud                                                	            	leðja         	icelandic
+           	dip       	tree
+plant      	lif       	leaf                                               	            	              	english
+math       	lig       	square root                                        	            	              	english
+           	sid       	seed
+           	lut       	fruit                                              	            	              	english
+           	lum       	branch
+code       	cuv       	field (ether)
+           	jil       	stream
+           	xum       	sky
+           	san       	sun                                                	sū́rya      	सूर्य         	sanskrit
+           	lun       	moon
+           	xam       	heaven
+           	yan       	vehicle                                            	yana        	यान           	sanskrit
+           	xup       	ship
+           	bot       	boat                                               	            	              	english
+code       	xin       	machine                                            	            	              	english
+           	ves       	vessel
+           	hom       	home                                               	            	              	english
+           	dor       	door
+           	pac       	path
+           	tul       	tool                                               	tool        	              	english
+           	huk       	hook
+           	lip       	chain
+           	fon       	device
+           	kes       	case (situation)
+           	tub       	tube                                               	            	              	english
+           	fid       	food
+           	yem       	yum (food)
+           	dug       	drink                                              	            	              	english
+           	dat       	word                                               	            	              	english
+           	nam       	name
+           	tak       	speech utterance
+           	xim       	speech                                             	            	              	english
+           	voz       	voice                                              	            	              	english
+sound      	sam       	sound                                              	sound       	              	english
+           	saq       	song                                               	            	              	english
+           	tox       	text
+           	mar       	symbol
+           	dis       	number
+number     	hoz       	cardinal number
+code       	kod       	code
+           	mis       	message                                            	            	              	english
+           	min       	meaning                                            	            	              	english
+           	jak       	wisdom
+           	fix       	belief
+           	hip       	group
+           	fam       	family                                             	            	              	english
+           	pik       	master
+           	det       	datetime stamp/instance in time
+           	pum       	time (count)
+           	kal       	time                                               	kala        	काल           	sanskrit
+           	sul       	still (time)
+           	rup       	right (time)
+           	yam       	day                                                	yom         	יוֹם          	hebrew
+           	yit       	night
+           	yar       	year
+           	har       	era                                                	            	              	english
+           	rol       	cycle
+           	hod       	period of x (-hood)
+           	tip       	step
+           	ros       	force                                              	            	              	english
+           	bup       	energy
+           	tet       	signal                                             	le'ot(e)t   	לְאוֹתֵת      	hebrew
+           	ren       	rain
+           	lit       	light
+           	ram       	dark                                               	rāma        	राम           	sanskrit
+animal     	dag       	dog                                                	            	              	english
+           	bar       	bear (carry)                                       	            	              	english
+animal     	his       	snake                                              	            	              	english
+           	gus       	back (front)
+           	kum       	back area
+           	nuc       	long
+           	ric       	straight
+           	mac       	great                                              	mahat       	महत्          	sanskrit
+           	zom       	so/great
+           	lem       	low                                                	            	              	english
+color      	vog       	black
+color      	red       	red
+color      	bul       	blue
+color      	faz       	green
+color      	lad       	yellow
+color      	cov       	brown
+color      	god       	gold                                               	            	              	english
+color      	sav       	silver                                             	            	              	english
+color      	rov       	copper
+           	xax       	eternal
+           	taf       	good                                               	tov         	טוֹב          	hebrew
+           	fut       	bad
+           	pit       	pure                                               	            	              	english
+           	tir       	TRUE
+           	rot       	FALSE
+           	rik       	up                                                 	fawq        	فوق           	arabic
+           	taj       	down (to be cool with something)
+           	kur       	down
+           	bet       	under
+           	sig       	front
+           	tef       	left                                               	            	              	english
+           	fot       	right (direction)
+           	nav       	center
+           	rif       	close (near)
+           	vir       	remote (far)
+           	luf       	far (large-distance-focus)
+           	dun       	join (to one)
+           	ton       	agent (one who does x)
+number     	zan       	one
+number     	dob       	two
+number     	suC       	three
+number     	laf       	four
+number     	kom       	five
+           	mag       	many
+           	lom       	plural (many)
+           	lor       	lord
+           	dav       	divine
+           	baq       	be
+           	suf       	self (auto-)
+           	Car       	other
+           	zut       	identity
+           	zaq       	presence
+           	nux       	nature
+           	van       	having the nature of (-ivit
+           	jul       	universe
+           	siv       	perceive
+category   	term      	meaning
+           	tux       	intuition
+           	gis       	will (future)
+           	xiq       	will
+           	zim       	pleasure
+           	muz       	pain
+           	dac       	death
+           	vuq       	data
+           	mor       	the model of the action
+           	gun       	representation
+           	guj       	memory
+           	luq       	question
+           	piq       	request
+           	paq       	response
+           	bak       	send
+           	kab       	receive
+           	tal       	tell
+           	nix       	listen
+           	tuq       	type
+code       	fuq       	function
+           	kus       	constant
+code       	var       	variable
+math       	pat       	dimension
+           	dib       	connect
+           	nub       	separate
+           	hol       	whole
+           	sas       	parent
+           	lik       	link
+           	sap       	present (now)
+           	xom       	now
+           	tor       	before
+           	ret       	after
+           	huz       	duration
+           	vav       	repeat
+           	lok       	place (space location)
+           	ruk       	location
+           	giz       	position
+           	toz       	position (cardinal)
+           	mov       	move
+           	xuv       	return
+           	sop       	so/transition
+           	Con       	transition
+           	kaz       	cause
+           	zak       	effect
+           	bam       	create
+           	xiv       	destroy
+           	vig       	start
+           	kuv       	divide
+           	hoq       	hold
+           	sik       	seek
+           	fan       	find
+           	xol       	show
+           	hud       	hide
+           	lin       	learn
+           	kon       	and
+           	non       	not (un- or -im)
+           	sag       	beyond (extra- or hyper-)
+           	ved       	study or science of (-ology
+           	xat       	or
+           	hid       	not hidden
+           	teq       	like (as if)
+           	kiz       	if
+           	cun       	then
+           	tuz       	because
+           	maq       	harmony
+           	gif       	give
+           	tek       	take
+           	yuz       	use
+           	sem       	same (sym-)
+           	pom       	different
+           	zaf       	equal (iso-)
+           	sal       	like (similar)

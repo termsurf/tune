@@ -1,0 +1,593 @@
+elder,bEld
+baby,bleb
+alligator,gord
+lizard,klIp
+science,skEx
+art,skIx
+history,spEx
+theater,spIx
+person,gest
+tip,kUsp
+baby,spUd
+adult,stUd
+lost,gost
+found,host
+card,kard
+image,flek
+video,flIk
+audio,flak
+digital,hUnt
+wheel,swil
+sheep,txip
+flower,flor
+mountain,mant
+star,stUd
+planet,plAn
+insect,sekt
+reptile,rept
+human,kwan
+bird,bOrd
+flute,flut
+drum,drum
+guitar,glIt
+drug,drUg
+spoon,forn
+fork,fork
+knife,fors
+chopsticks,ford
+firepit,kIln
+implicitly,tsow
+figure out,klIk
+map out,flIk
+meaning,gord
+nest,nest
+horn,horn
+hope,hort
+despair,nort
+build quickly,hAtx
+build correctly,rAtx
+fish,karp
+collect/gather,gAt
+hunt,bAt
+table,blot
+chair,blIt
+cabinet,blom
+shelf,blIm
+building,xak
+shark,xark
+poop,pup
+fart,pap
+pee,pip
+belch,bIp
+throw up,bap
+cough,kaf
+sneeze,kif
+laugh,lAf
+hiccup,hIk
+happy,hAp
+goat,got
+buffalo,bUf
+hand,hAn
+pen,pEn
+cat,kret
+dog,grod
+drug,drUg
+gem,djem
+plant,pAnt
+chocolate,fUdj
+algae,djAk
+fungus,fUqk
+bacteria,pUsk
+virus,vUsk
+protein,torn
+molecule,korn
+sun,xain
+earth,Cain
+moon,zain
+lightning,kaud
+thunder,laud
+cloud,yaud
+comet,kamp
+camp,kAmp
+wolf,wolf
+elk,bElk
+butterfly,flum
+caterpillar,klum
+fly,flAm
+larvae,worm
+crab,krAb
+rabbit,grAb
+deer,dirl
+wind,wInd
+snow,snol
+fox,faks
+moose,hOft
+crow,claq
+eagle,glil
+hawk,hald
+seagull,glUl
+salmon,glAm
+trout,trUt
+sparrow,spEr
+raccoon,kirn
+dove,glUv
+crack,krAk
+smoke,smok
+fire,fair
+river,carv
+lake,blek
+chicken,klUk
+duck,qwAk
+snail,snel
+frog,frag
+animal,bist
+cow,brif
+sky,kwin
+land,lAnd
+forest,grin
+glass,glAs
+cement,mort
+metal,maol
+wood,haol
+meat,flex
+grain,gren
+milk,mIlk
+vegetable,vedj
+bee,stiq
+rodent,dEnt
+ant,bAnt
+wasp,wasp
+owl,kaol
+mouse,maos
+word lover,lord
+ball,bUlb
+document,doks
+book,kris
+folder,hold
+writing utensil,rEnd
+
+January
+February
+March
+April
+May
+June
+July
+Augest
+September
+October
+November
+December
+
+hammer
+nail
+screw
+screwdriver
+saw
+paper
+case
+holder
+cliff (edge of plateau)
+plateau (raised land)
+holder (thing that holds)
+breeze (gust of wind)
+tradition
+society
+group
+organization
+tribe
+gap
+space
+status
+situation
+environment
+sport
+
+spelling
+pronunciation
+reason
+weather
+gust
+camera
+              keyboard
+              screen
+https://github.com/mountbuildcache/mount/blob/126e2b2bbec442b941f806cce82b43d73a6306d8/code/snake/code/guide/english/ontology.w
+deep
+shallow
+cozy
+hot,kIld
+cold,kold
+stirdy
+firm
+fragile (easy to break)
+easy
+hard
+simple
+complex
+dry
+sticky
+free
+hungry
+thirsty
+special
+unique
+old
+young
+new
+fresh
+necessary
+significant
+ordinary
+normal
+full
+excited (adjectifying a verb)
+forward
+backward
+to the side
+around
+over
+under
+underneath
+out of
+into (move into)
+vertical
+horizontal
+round
+square
+flat
+empty
+main
+primary
+last
+first
+safe
+interior
+external
+standard
+sharp
+dull
+rough
+smooth
+stable
+generic
+specific
+available
+known
+sweet
+pleasant
+nice
+friendly
+amazing
+awesome
+funny (makes you laugh)
+fun
+cool
+away from
+away
+happy
+stiff
+down
+up
+left
+right
+single
+dual
+approximate
+probable
+possible
+fluent
+enjoyable
+parallel
+crossing
+capable
+interesting
+in advance
+loud
+quiet
+tall
+short
+small
+big
+inner
+outer
+raised
+lowered
+low
+high
+natural
+synthetic
+clever
+creative
+passive
+passionate
+active
+uncertain
+certain
+wishy washy
+useful
+contageous (transferable)
+hearty
+benefit
+advanced
+
+sharp
+dull/blunt
+bright
+dark
+heavy
+light
+striped
+spotted
+burnt
+wild / of the field
+winged
+head is
+  white
+tooth is
+  white
+painted
+  white
+uncertain
+from
+  africa
+  america
+  asia
+  southern
+  northern
+  brazilian
+  california
+  canada
+  chile
+  china
+  european
+  earth
+  indian
+  japanese
+  kentucky
+sides
+  on all
+shaped
+  bottle/flask
+  star
+  heart
+  [feature: heart-shaped leaves]
+  disk
+narrow
+  flowered
+  leaved
+  narrow
+bears
+  flowers
+  berries
+  seeds
+  fruit
+related to
+  man
+  bee
+  bear
+  dog
+  goat
+  crow
+  back
+  hedgehog
+  sea-urchin
+  cat
+  horse
+found
+  near
+    water
+  in
+    sand
+    sea
+lives in
+  sand
+  sea
+  garden
+  water
+color is
+  silvery
+  black
+  white
+  deep purple
+  orange
+  golden
+  two colored
+  blue
+  gray
+  pale
+    green
+  [feature]
+  uniform
+  yellow
+  blue-green
+  ivory
+  amber
+  red
+  deep
+  light
+  dark
+  brown
+releases
+  aromatics
+like
+  tree/shrub
+  sword
+  cat
+  granite
+  sun
+  hare
+features
+  life
+  pleasantness
+  arm
+  beard
+  short
+    leaves
+    necked
+    tailed
+    beak
+  slow
+  bulb
+  ancient
+  joint
+  gills
+  callouses
+  shine
+  hair
+  tail
+  stem
+  head
+  horn
+  girdle/belt
+  mane/flowing hair
+  eyelash
+  ash
+  citrus
+  shin
+  leg
+  dweller
+  crown
+  ribbed
+  thick/fat
+  crest
+  curved x
+  finger/toe
+  ten
+  womb
+  skin
+  two
+  diffuse
+  terrible
+  trouble
+  twelve
+  elongated/long
+  domesticated
+  sweet
+  prickly/spiny
+  edible
+  taller
+  elegant
+  edgeless
+  opposite/against
+  nine
+  sword
+  upright
+  wool
+  indented
+  jagged/serrated
+  exhalted
+  false
+  sickle
+  rust
+  thread
+  digging
+  breakable
+  soot
+  forked
+  milk
+  belly
+  smooth
+  hairless
+  giant
+  kernels
+  glands
+  slender
+  graceful
+  strong-smelling
+  tadpole
+  blood
+  simple
+  seat/facet
+  half-sphere
+  different
+  six
+  hybrid
+  lots of [x]
+  above
+  beneath
+  tiled
+  unequal
+  inedible
+  offensive
+  unmarked
+  unusual/irregular
+  sap
+  smooth
+  flake
+  scale
+  rind
+  crust
+  husk
+  light
+  lobe
+  sorrowful/mournful
+certainty level
+  doubtful
+
+gender
+gay
+lesbian
+bi
+trans
+queer
+straight
+worry,worn
+
+apple
+banana
+kiwi
+strawberry
+blackberry
+raspberry
+pear
+orange
+tomato
+broccoli
+
+run,plum
+walk,plUm
+park,park
+
+mouth,maoc
+tongue,glik
+spit,spIt
+voice,vois
+finger,glak
+mean,main
+kind,kain
+careful,kErf
+teacher,titx
+student,ritx
+community,kyun
+easy,gard
+hard,hard
+fun,frib
+need,nord
+want,word
+respect,spEk
+politeness,paol
+cool,xiqk
+realization,blum
+mind,djiq
+soul,djaq
+burn,rud
+like,lIk
+kiss,kIs
+hug,hUg
+risk,rIsk
+jacket,kot
+food,fud
+fly,hak
+swim,xak
+walk,wak
+sit,dak
+lay,lak
+globe,lob
+mountain,hil
+play,plAs
+grass,gras
+habit (repetitive behavior)
+door
+floor
+interpret,slum
+analyze,slom

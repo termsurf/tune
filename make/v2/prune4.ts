@@ -1,0 +1,76 @@
+import fs from 'fs'
+import path from 'path'
+
+const textDir = path.resolve(__dirname, '..', '..', 'base', 'v1')
+
+const termsRaw = fs
+  .readFileSync(path.join(textDir, '3-terms.csv'), 'utf-8')
+  .split('\n')
+  .map(l => l.trim())
+  .filter(Boolean)
+
+const termsHeader = termsRaw[0]
+const terms = termsRaw.slice(1)
+
+const tsvRaw = fs
+  .readFileSync(path.join(textDir, 'tune.4.tsv'), 'utf-8')
+  .split('\n')
+
+// Check if first line looks like a header
+const firstLine = tsvRaw[0]
+const hasHeader = firstLine.includes('term') && firstLine.includes('meaning')
+const tsvHeader = hasHeader ? tsvRaw[0] : null
+const tsvLines = (hasHeader ? tsvRaw.slice(1) : tsvRaw).filter(l => l.trim())
+
+function getMeaning(tsvLine: string): string {
+  const parts = tsvLine.split('\t')
+  return (parts[2] || '').trim().toLowerCase()
+}
+
+function matchesTerm(meaning: string, term: string): boolean {
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const re = new RegExp(`\\b${escaped}\\b`, 'i')
+  return re.test(meaning)
+}
+
+const matched = new Set<string>()
+const matchedTsvLines = new Set<string>()
+const doneLines: string[] = []
+
+for (const term of terms) {
+  for (const line of tsvLines) {
+    if (matchedTsvLines.has(line)) continue
+    const meaning = getMeaning(line)
+    if (!meaning) continue
+    if (matchesTerm(meaning, term)) {
+      matched.add(term)
+      matchedTsvLines.add(line)
+      doneLines.push(line)
+    }
+  }
+}
+
+const remainingTerms = terms.filter(t => !matched.has(t))
+const remainingTsv = tsvLines.filter(l => !matchedTsvLines.has(l))
+
+fs.writeFileSync(
+  path.join(textDir, '3-terms.csv'),
+  [termsHeader, ...remainingTerms].join('\n') + '\n',
+)
+
+const tsvOutLines = tsvHeader ? [tsvHeader, ...remainingTsv] : remainingTsv
+fs.writeFileSync(
+  path.join(textDir, 'tune.4.tsv'),
+  tsvOutLines.join('\n') + '\n',
+)
+
+const doneOutLines = tsvHeader ? [tsvHeader, ...doneLines] : doneLines
+fs.writeFileSync(
+  path.join(textDir, 'tune.4.done.tsv'),
+  doneOutLines.join('\n') + '\n',
+)
+
+console.log(`Matched: ${matched.size}`)
+console.log(`Remaining in 3-terms.csv: ${remainingTerms.length}`)
+console.log(`Remaining in tune.4.tsv: ${remainingTsv.length}`)
+console.log(`Written to tune.4.done.tsv: ${doneLines.length}`)

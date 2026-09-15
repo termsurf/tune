@@ -102,6 +102,41 @@ which is 3,230, less 760, because 20 of the 34 closings begin on `l` or
 **After closeness** is what is left once no two words sound alike all
 the way through. It is about an eighth of the full list.
 
+### With 16 openings and 32 closings
+
+Trimming the cluster lists to 16 and 32 costs about 8 percent of the
+language.
+
+| shape | today | at 16 and 32 |
+| :---- | ---: | ---: |
+| `CVC` | 1,729 | 1,729 |
+| `CVCC` | 2,470 | 2,280 to 2,356 |
+| `CCVC` | 1,729 | 1,456 |
+| **all** | **5,928** | **5,465 to 5,541** |
+
+**`CVC` does not move at all**, because it never uses a cluster.
+
+**`CCVC` lands on exactly 1,456 whichever three openings go.** Every
+opening is worth the same 91 words, being 5 vowels times 19 closings
+less the 4 blurred rhymes, so 16 × 91 = 1,456 and the choice cannot
+change it.
+
+**`CVCC` is the only one where the choice matters**, and only in one
+respect: how many of the 32 closings begin on `l` or `r`. Those are the
+closings that cannot follow `i` or `e`, so each one is worth 57 words
+rather than 95. Today 20 of the 34 do.
+
+| `l` or `r` closings kept | `CVCC` |
+| ---: | ---: |
+| 20 | 2,280 |
+| 19 | 2,318 |
+| 18 | 2,356 |
+
+Dropping a closing that begins on a liquid costs less than dropping any
+other, so a trim aimed at keeping the count up takes the liquids first.
+These are measured by running the rule engine over every way of
+choosing the smaller lists, not worked out on paper.
+
 ## The Two Passes
 
 Both are written, and neither replaces the other.
