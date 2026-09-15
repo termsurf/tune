@@ -33,7 +33,7 @@ import {
 } from './house'
 
 const here = dirname(fileURLToPath(import.meta.url))
-const OUT_DIR = resolve(here, '../../../base/v4/4096')
+const OUT_DIR = resolve(here, '../../../base/v4/4096/01-drop-clusters')
 
 const TARGET = 4096
 

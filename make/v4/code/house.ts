@@ -25,6 +25,8 @@ import {
   holdsHush,
 } from './sound'
 
+import { SORT_ORDER } from '../../../code/phonology'
+
 import type { Plan } from './plan'
 
 export const HOUSE: Plan = {
@@ -43,7 +45,12 @@ export const HOUSE: Plan = {
   ban: BAD_ANYWHERE,
   shapes: [...SHAPES],
   near: { groups: SIMILAR_GROUPS, reach: 1, slack: 0, seed: 20260914 },
+  echo: 'none',
+  sieve: null,
 }
+
+/** Ranks every sound, for a plan that thins by an even sieve. */
+export const SOUND_RANK_MAP = new Map(SORT_ORDER.map((sound, i) => [sound, i]))
 
 /**
  * When a plan has to shed sounds, these go first.

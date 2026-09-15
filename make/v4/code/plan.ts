@@ -44,6 +44,50 @@ export type Near = {
   seed: number
 }
 
+/**
+ * What a word may not do across its own vowel.
+ *
+ * This is the one rule that thins a Tune WITHOUT taking anything out of
+ * the pools, so every opening and every closing still reaches a word.
+ *
+ *   none     no restriction
+ *   same     a word may not open and close on the same consonant
+ *   similar  a word may not open and close on consonants from one
+ *            similarity group, which is the rule Semitic roots follow
+ */
+export type Echo = 'none' | 'same' | 'similar'
+
+/**
+ * An even thinning, for when a rule alone does not land on the number
+ * wanted.
+ *
+ * A word is kept when the sum of its sounds' ranks, modulo `mod`, is
+ * one of `keep`. It cuts across the whole language rather than favouring
+ * any sound, so every pool member survives in proportion.
+ */
+export type Sieve = {
+  mod: number
+  keep: Array<number>
+  rank: Map<string, number>
+}
+
+/**
+ * A sound refused at one slot of one shape.
+ *
+ * This is the knob that thins a Tune without shrinking its inventory.
+ * "`CVC` never opens on a hush" takes a quarter off `CVC` while leaving
+ * the hushes free to open a `CVCC` and to close anything, so the sound
+ * is still in the language. `at` is the position in the written word,
+ * counting from zero, so `CCVC` slot 1 is the second half of the
+ * opening cluster.
+ */
+export type Bar = {
+  shape: Shape
+  at: number
+  sounds: Array<string>
+  note: string
+}
+
 export type Plan = {
   name: string
   note: string
@@ -56,6 +100,9 @@ export type Plan = {
   ban: Array<string>
   shapes: Array<Shape>
   near: Near
+  echo: Echo
+  sieve: Sieve | null
+  bar: Array<Bar>
 }
 
 export type Piece = {
@@ -82,9 +129,20 @@ function sidesOf(plan: Plan, shape: Shape): [Array<string>, Array<string>] {
   return [plan.onset, plan.close]
 }
 
-function allowed(plan: Plan, word: string): boolean {
+function allowed(
+  plan: Plan,
+  map: Map<string, Set<string>>,
+  shape: Shape,
+  word: string,
+): boolean {
   for (const sound of word) {
     if (plan.ban.includes(sound)) {
+      return false
+    }
+  }
+
+  for (const bar of plan.bar) {
+    if (bar.shape === shape && bar.sounds.includes(word[bar.at])) {
       return false
     }
   }
@@ -93,17 +151,43 @@ function allowed(plan: Plan, word: string): boolean {
       return false
     }
   }
+
+  /** The two ends of the word, whether or not either is a cluster. */
+  const head = word[0]
+  const tail = word[word.length - 1]
+
+  if (plan.echo === 'same' && head === tail) {
+    return false
+  }
+  if (plan.echo === 'similar') {
+    const near = map.get(head)?.has(tail) ?? head === tail
+    if (near) {
+      return false
+    }
+  }
+
+  if (plan.sieve) {
+    let sum = 0
+    for (const sound of word) {
+      sum += plan.sieve.rank.get(sound) ?? 0
+    }
+    if (!plan.sieve.keep.includes(sum % plan.sieve.mod)) {
+      return false
+    }
+  }
+
   return true
 }
 
 export function build(plan: Plan, shape: Shape): Array<Piece> {
   const [onsets, codas] = sidesOf(plan, shape)
+  const map = nearMap(plan.near)
   const pieces: Array<Piece> = []
   for (const onset of onsets) {
     for (const vowel of plan.vowel) {
       for (const coda of codas) {
         const word = onset + vowel + coda
-        if (allowed(plan, word)) {
+        if (allowed(plan, map, shape, word)) {
           pieces.push({ word, shape, onset, vowel, coda })
         }
       }
@@ -122,6 +206,15 @@ export function build(plan: Plan, shape: Shape): Array<Piece> {
  * openings times what one opening buys. What one opening buys is every
  * vowel and closing pair the rhyme rule does not block.
  */
+/**
+ * The closed form only holds while no rule looks at both ends of a word
+ * at once. `echo` and `sieve` both do, so with either of them on the
+ * count has to be built rather than predicted.
+ */
+export function separable(plan: Plan): boolean {
+  return plan.echo === 'none' && plan.sieve === null && plan.bar.length === 0
+}
+
 export function predict(plan: Plan, shape: Shape): number {
   const [onsets, codas] = sidesOf(plan, shape)
 
@@ -291,11 +384,13 @@ export function run(plan: Plan): {
   for (const shape of plan.shapes) {
     const pieces = build(plan, shape)
 
-    const said = predict(plan, shape)
-    if (said !== pieces.length) {
-      throw new Error(
-        `${plan.name}/${shape}: built ${pieces.length}, predicted ${said}`,
-      )
+    if (separable(plan)) {
+      const said = predict(plan, shape)
+      if (said !== pieces.length) {
+        throw new Error(
+          `${plan.name}/${shape}: built ${pieces.length}, predicted ${said}`,
+        )
+      }
     }
 
     const kept = lean(plan, pieces)
@@ -321,7 +416,77 @@ export function run(plan: Plan): {
 
 /** The count alone, skipping the lean pass, for sweeping many plans. */
 export function countFull(plan: Plan): number {
-  return plan.shapes.reduce((n, shape) => n + predict(plan, shape), 0)
+  if (separable(plan)) {
+    return plan.shapes.reduce((n, shape) => n + predict(plan, shape), 0)
+  }
+  return plan.shapes.reduce((n, shape) => n + build(plan, shape).length, 0)
+}
+
+// ─── Coverage ───────────────────────────────────────────
+
+export type Coverage = {
+  /** Pool members that got listed and then stranded. */
+  open: Array<string>
+  close: Array<string>
+  onset: Array<string>
+  coda: Array<string>
+  /** Sounds the inventory claims that no word anywhere uses. */
+  sound: Array<string>
+  /** Every pool member reaches a word. */
+  pools: boolean
+  /** Every sound reaches a word, somewhere, at some position. */
+  whole: boolean
+}
+
+/**
+ * Which pool members never reach a word.
+ *
+ * A plan that thins by rule rather than by dropping is only honest if
+ * every opening and every closing it still lists actually turns up, so
+ * this reports what got listed and then stranded.
+ */
+export function coverage(
+  plan: Plan,
+  full: Record<Shape, Array<Piece>>,
+  inventory: Array<string>,
+): Coverage {
+  const usedOpen = new Set<string>()
+  const usedClose = new Set<string>()
+  const usedOnset = new Set<string>()
+  const usedCoda = new Set<string>()
+  const usedSound = new Set<string>()
+
+  for (const shape of plan.shapes) {
+    for (const piece of full[shape] ?? []) {
+      if (shape === 'CVC') {
+        usedOpen.add(piece.onset)
+        usedClose.add(piece.coda)
+      } else if (shape === 'CVCC') {
+        usedOpen.add(piece.onset)
+        usedCoda.add(piece.coda)
+      } else {
+        usedOnset.add(piece.onset)
+        usedClose.add(piece.coda)
+      }
+      for (const sound of piece.word) {
+        usedSound.add(sound)
+      }
+    }
+  }
+
+  const open = plan.open.filter(c => !usedOpen.has(c))
+  const close = plan.close.filter(c => !usedClose.has(c))
+  const onset = plan.onset.filter(c => !usedOnset.has(c))
+  const coda = plan.coda.filter(c => !usedCoda.has(c))
+  const sound = inventory.filter(s => !usedSound.has(s))
+
+  const pools =
+    open.length === 0 &&
+    close.length === 0 &&
+    onset.length === 0 &&
+    coda.length === 0
+
+  return { open, close, onset, coda, sound, pools, whole: sound.length === 0 }
 }
 
 // ─── Changing A Plan ────────────────────────────────────

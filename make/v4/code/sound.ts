@@ -100,14 +100,27 @@ export const CODA_CLUSTERS_CLEAR = CODA_CLUSTERS.filter(c => !holdsHush(c))
 
 // ─── Rules ──────────────────────────────────────────────
 
-/** Sounds too weak to open a word. */
-export const BAD_OPEN = ['q', 'w', 'y']
+/**
+ * Sounds too weak to open a word.
+ *
+ * `q` alone, which is what the Tune readme has always said. v3's
+ * `3.ts` also refused `w` and `y` here and `4.ts` refused `w`
+ * everywhere, and between them those two left `w` and `y` with nowhere
+ * to go: they could not open, could not close, and stand in no cluster,
+ * so neither sound appeared in a single word.
+ *
+ * **Every one of the 22 consonants has to reach a word.** A sound the
+ * inventory claims and the lexicon never uses is not part of the
+ * language. So the glides open words again, `wat` and `yat`, and the
+ * extra bans are gone.
+ */
+export const BAD_OPEN = ['q']
 
 /** Sounds too weak to close a word. */
 export const BAD_CLOSE = ['h', 'w', 'y']
 
-/** A glide v4 does not say at all. */
-export const BAD_ANYWHERE = ['w']
+/** Nothing is refused outright. Every sound has somewhere to stand. */
+export const BAD_ANYWHERE: Array<string> = []
 
 /**
  * A vowel followed by a liquid blurs into the liquid, so `bil` cannot
@@ -129,7 +142,7 @@ export type WordRule = {
 export const WORD_RULES: Array<WordRule> = [
   {
     name: 'no_weak_open',
-    note: 'a word never starts with q, w or y',
+    note: 'a word never starts with q',
     test: word => !BAD_OPEN.includes(word[0]),
   },
   {
@@ -138,8 +151,8 @@ export const WORD_RULES: Array<WordRule> = [
     test: word => !BAD_CLOSE.includes(word[word.length - 1]),
   },
   {
-    name: 'no_lost_glide',
-    note: 'w is said nowhere in v4',
+    name: 'no_lost_sound',
+    note: 'nothing is refused outright, so every consonant reaches a word',
     test: word => ![...word].some(sound => BAD_ANYWHERE.includes(sound)),
   },
   {

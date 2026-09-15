@@ -55,7 +55,7 @@ import { fileURLToPath } from 'url'
 import { MARKED_ONSETS, MARKED_SOUNDS, opensOnLiquid } from './house'
 
 const here = dirname(fileURLToPath(import.meta.url))
-const DIR = resolve(here, '../../../base/v4/4096')
+const DIR = resolve(here, '../../../base/v4/4096/01-drop-clusters')
 
 const LIQUIDS = ['l', 'r']
 
