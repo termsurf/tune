@@ -190,7 +190,7 @@ for (const shape of SHAPES) {
 // ─── 8: The Counts Agree ────────────────────────────────
 
 for (const row of read('count.csv')) {
-  const [shape, , full, lean] = row.split(',')
+  const [shape, full, lean] = row.split(',')
   if (shape === 'all') {
     const fullAll = SHAPES.reduce((n, s) => n + words.full[s].length, 0)
     const leanAll = SHAPES.reduce((n, s) => n + words.lean[s].length, 0)

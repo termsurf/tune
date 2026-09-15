@@ -25,6 +25,8 @@
  *   start and end rules, so nothing moved.
  */
 
+import { SORT_ORDER } from '../../../code/phonology'
+
 // ─── Inventory ──────────────────────────────────────────
 
 export const VOWELS = 'ieaou'.split('')
@@ -108,10 +110,15 @@ export const BAD_CLOSE = ['h', 'w', 'y']
 export const BAD_ANYWHERE = ['w']
 
 /**
- * A close front vowel followed by a liquid blurs into the liquid, so
- * `bil` cannot be held apart from `bi`.
+ * A vowel followed by a liquid blurs into the liquid, so `bil` cannot
+ * be held apart from `bi`.
+ *
+ * v3 named the two front vowels. `u` belongs with them: `bul` and `bur`
+ * blur the same way, because a rounded back vowel and a following
+ * liquid share the same tongue gesture. That leaves `a` and `o` as the
+ * only vowels a liquid may close on.
  */
-export const BAD_RHYME = ['il', 'el', 'ir', 'er']
+export const BAD_RHYME = ['il', 'el', 'ir', 'er', 'ul', 'ur']
 
 export type WordRule = {
   name: string
@@ -137,7 +144,7 @@ export const WORD_RULES: Array<WordRule> = [
   },
   {
     name: 'no_blurred_rhyme',
-    note: 'il, el, ir and er never stand next to each other',
+    note: 'a liquid closes only on a or o, so il el ir er ul ur never stand',
     test: word => {
       for (let i = 0; i < word.length - 1; i++) {
         if (BAD_RHYME.includes(word.slice(i, i + 2))) {
@@ -274,10 +281,12 @@ export function tooClose(a: string, b: string): boolean {
 
 // ─── Sort Order ─────────────────────────────────────────
 
-export const SOUND_ORDER =
-  'i e a o u m n q b d g p t k h s z f v x j c C w l r y'.split(' ')
-
-export const SOUND_RANK = new Map(SOUND_ORDER.map((sound, i) => [sound, i]))
+/**
+ * Every v4 file sorts by the tone order, and the tone order is the
+ * package's own `code/phonology`. v4 does not keep a second copy of it,
+ * because two lists of the same thing disagree eventually.
+ */
+export const SOUND_RANK = new Map(SORT_ORDER.map((sound, i) => [sound, i]))
 
 export function compareWords(a: string, b: string): number {
   if (a.length !== b.length) {

@@ -1,0 +1,13 @@
+rank,variant,beauty,even,one_rule,marked,family,lean,why
+1,09,0.819,0.803,1,1.000,0.500,466,"one cut, stated once; breaks a coda family; shapes near even"
+2,02,0.792,0.602,1,1.000,0.500,477,"one cut, stated once; breaks a coda family"
+3,10,0.704,0.173,1,1.000,0.500,483,"one cut, stated once; breaks a coda family; shapes lopsided"
+4,08,0.612,0.953,0,1.000,0.500,460,"openings and closings cut differently; breaks a coda family; shapes near even"
+5,05,0.601,0.769,0,1.000,0.500,478,"openings and closings cut differently; breaks a coda family; shapes near even"
+6,04,0.564,0.777,0,1.000,0.500,456,"openings and closings cut differently; breaks a coda family; shapes near even"
+7,03,0.551,0.609,1,0.300,0.500,462,"loses 2 liquid as an opening or closing; one cut, stated once; breaks a coda family"
+8,12,0.534,0.493,0,1.000,0.500,476,"openings and closings cut differently; breaks a coda family"
+9,07,0.518,0.439,0,1.000,0.500,474,"openings and closings cut differently; breaks a coda family"
+10,11,0.487,0.618,1,0.300,0.000,468,"loses 2 liquid as an opening or closing; one cut, stated once; breaks an onset family; breaks a coda family"
+11,06,0.459,0.454,0,0.650,0.500,499,"loses 1 liquid as an opening or closing; openings and closings cut differently; breaks a coda family"
+12,01,0.392,0.552,0,0.650,0.000,492,"loses 1 liquid as an opening or closing; openings and closings cut differently; breaks an onset family; breaks a coda family"
