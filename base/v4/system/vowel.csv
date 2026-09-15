@@ -1,0 +1,12 @@
+size,vowels,palindrome,path
+2,e o,no,the flat axis left then right
+3,i a u,no,the upright axis top through centre to bottom
+4,i o u e,no,around the cross up right down left
+5,i e a o u,no,a snake touching every point once
+6,i a u e a o,no,both axes upright then flat
+7,i o u e u o i,yes,around to the left arm then back the way it came
+8,a i a o a u a e,no,a star out to each point and home between
+9,i e a o u o a e i,yes,the snake out and the snake back
+10,i e a o u u o a e i,yes,the snake out and back turning after the end
+12,i a u u a i i a u u a i,yes,the upright axis down and up twice
+16,i o u e e o u i i o u e e o u i,no,around twice but the second half does not rotate

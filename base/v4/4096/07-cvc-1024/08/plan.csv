@@ -1,4 +1,4 @@
 shape,count,how
-CVC,1024,"1 openings go; 1 closings go; a three letter word never opens on the breath; echo similar; sieve 0 1 2 of 4"
-CVCC,1728,"1 openings go; a word closing on a cluster never opens on a glide; sieve 0 1 2 3 4 of 6"
-CCVC,1344,"a word opening on a cluster never closes on a liquid; echo same; sieve 0 1 2 3 of 5"
+CVC,1024,"a voiced stop opens a three letter word three quarters of the time; echo similar; sieve 0 1 2 3 of 6"
+CVCC,1792,"a word closing on a cluster never opens on a glide; c or C opens a word closing on a cluster a quarter of the time; echo similar"
+CCVC,1280,"1 onset clusters go; j closes a word opening on a cluster a quarter of the time; sieve 0 1 2 of 4"

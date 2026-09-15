@@ -21,7 +21,8 @@
     "v4:blend": "tsx make/v4/code/blend.ts",
     "v4:ratio": "tsx make/v4/code/ratio.ts",
     "v4:keep": "tsx make/v4/code/keep.ts",
-    "v4:term": "tsx make/v4/code/term.ts"
+    "v4:term": "tsx make/v4/code/term.ts",
+    "v4:list": "tsx make/v4/code/list.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",
