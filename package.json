@@ -9,6 +9,18 @@
     "url": "https://github.com/cluesurf/tune.git"
   },
   "version": "2.0.0",
+  "scripts": {
+    "regen": "tsx make/v4/code/all.ts",
+    "v4:base": "tsx make/v4/code/calculate.ts",
+    "v4:check": "tsx make/v4/code/check.ts",
+    "v4:drop": "tsx make/v4/code/twelve.ts",
+    "v4:rank": "tsx make/v4/code/rank.ts",
+    "v4:bar": "tsx make/v4/code/whole.ts",
+    "v4:number": "tsx make/v4/code/pattern.ts",
+    "v4:weight": "tsx make/v4/code/weight.ts",
+    "v4:blend": "tsx make/v4/code/blend.ts",
+    "v4:ratio": "tsx make/v4/code/ratio.ts"
+  },
   "devDependencies": {
     "compromise": "^14.15.0",
     "csv-parse": "6.1.0",

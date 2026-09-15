@@ -1,0 +1,7 @@
+variant,divides_by,cvc,cvcc,ccvc,all,drift,marks
+01,256,1280,1536,1280,4096,0.803,"every shape divides by 256; the two one cluster shapes balance exactly; the three shapes sit within 256 of each other"
+02,256,1024,2048,1024,4096,0.851,"every shape divides by 256; the two one cluster shapes balance exactly; the cluster closing shape equals the other two together"
+03,256,1280,1280,1536,4096,0.887,"every shape divides by 256; the three shapes sit within 256 of each other"
+04,256,1536,1280,1280,4096,0.851,"every shape divides by 256; the three shapes sit within 256 of each other"
+05,256,1536,1024,1536,4096,0.943,"every shape divides by 256; the two one cluster shapes balance exactly"
+06,256,768,2048,1280,4096,0.916,"every shape divides by 256; the cluster closing shape equals the other two together"

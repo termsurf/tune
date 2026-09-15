@@ -82,11 +82,21 @@ export const ONSET_CLUSTERS =
   )
 
 /**
- * The clusters v4 may close on, exactly as `4.ts` listed them.
+ * The clusters v4 may close on.
+ *
+ * `4.ts` listed these without `tx`, which left the two digraphs
+ * lopsided: `dj` could both open and close a word while `tx` could only
+ * open one, so `dj` turned up about twice as often as its voiceless
+ * twin. They stand for one sound each and are a matched pair, so
+ * whatever one may do the other may do.
+ *
+ * `tx` closing a word is `watch`, which is not an exotic thing to ask
+ * of a mouth. Note it is not `xt`, already on the list and the other
+ * way round.
  */
 export const CODA_CLUSTERS = (
   'mp nt nd qk lp lb lf lv ls lx lz lt lc ld lk rp rb rf rv rs rz rt ' +
-  'rd rk rg rx ft ps px ks kx bz gz ts dj dz sk sp st xt'
+  'rd rk rg rx ft ps px ks kx bz gz ts dj tx dz sk sp st xt'
 ).split(' ')
 
 /**
@@ -186,34 +196,48 @@ export const BAD_RHYME = ['il', 'el', 'ir', 'er', 'ul', 'ur']
  */
 
 /**
- * The slurs, and anything that sounds like one.
+ * The slurs, written out.
  *
- * `nik` is not on this list and must not be a word either, because
- * `g` and `k` differ by voicing alone and the ear does not reliably
- * hold them apart. The same goes for `nek`, and for `mig`, and for a
- * dozen others nobody would think to write down.
+ * `nik` and `nek` are on the list because `g` and `k` differ by voicing
+ * alone and the ear does not hold them apart reliably. They are named
+ * rather than derived.
  *
- * So these are SEEDS, not the list. The real list is every form within
- * one step of a seed, worked out by the same closeness test the lexicon
- * already uses: every consonant similar, every vowel the same or one
- * notch away. Listing forms by hand would miss exactly the ones that
- * matter, because the ones that matter are the ones that did not occur
- * to the person writing the list.
+ * An earlier version swept the whole neighbourhood of each of these,
+ * every form with similar consonants and a close vowel, which came to
+ * 353 refused forms and took `mag`, `nag`, `mok` and two dozen other
+ * innocent words with it. **The cost was not worth it.** A list a
+ * person can read and argue with beats a rule that quietly eats a
+ * tenth of the language. Add a form here when one turns up.
  */
 export const TABOO_SLUR =
-  'nig neg nug guk fag jap wop spik spaz tard gimp krip xik'.split(' ')
+  'nig neg nug nik nek kuk guk fag jap djap wop spik spaz tard gimp krip xik'.split(
+    ' ',
+  )
 
 /**
- * Profanity, refused as written and no wider.
+ * Profanity, refused as written.
  *
- * A near miss here is a near miss, not a wound, so the neighbourhood is
- * not swept. Widening it would cost a great many ordinary words to
- * avoid the odd snigger.
+ * **Almost nothing is on this list, and that is the decision.** An
+ * earlier version carried two dozen forms, `kum` `puk` `krap` `bast`
+ * `dam` `slut` `hor` `xit` `pis` `tit` `dik` `kok` and the rest, and
+ * every one of them cost a real word to head off a snigger that was
+ * never coming. A Tune word is read as a Tune word.
+ *
+ * The slurs stay because a speaker saying an ordinary thing and being
+ * heard to say a slur is a harm they did not choose. Crudity is not
+ * that, so the bar is set where the English reading is the only one a
+ * speaker could land on.
  */
-export const TABOO_CRUDE = (
-  'fuk fak xit xat xut xag pis tit dik kok kuk prik klit kunt kant ' +
-  'slut klut hor kum jiz puk krap bast dam kaf'
-).split(' ')
+export const TABOO_CRUDE = 'fak put'.split(' ')
+
+/** Every form v4 refuses outright. */
+export const TABOO = [...TABOO_SLUR, ...TABOO_CRUDE]
+
+const TABOO_SET = new Set(TABOO)
+
+export function isTaboo(word: string): boolean {
+  return TABOO_SET.has(word)
+}
 
 export type WordRule = {
   name: string
@@ -387,56 +411,6 @@ export function tooClose(a: string, b: string): boolean {
     }
   }
   return true
-}
-
-// ─── Taboo, Worked Out ──────────────────────────────────
-
-/**
- * Every form within one step of a seed.
- *
- * A consonant may be swapped for anything in its similarity group and a
- * vowel for itself or a neighbour on the `i e a o u` ladder, which is
- * exactly the reach of `tooClose`. Walking the neighbourhood directly
- * is the same answer as testing every candidate against every seed, and
- * it costs nothing.
- *
- * `nig` alone opens out to twelve: the nasals `m n q`, the vowels `i e`
- * and the velars `g k`. Several of those are refused by other rules
- * anyway, which is fine. A rule saying the same thing twice is not a
- * bug.
- */
-function spread(seed: string): Array<string> {
-  let forms: Array<string> = ['']
-
-  for (const sound of seed) {
-    const swaps = isVowel(sound)
-      ? VOWELS.filter(v => vowelsClose(sound, v))
-      : [...(similarTo.get(sound) ?? new Set([sound]))]
-
-    const next: Array<string> = []
-    for (const form of forms) {
-      for (const swap of swaps) {
-        next.push(form + swap)
-      }
-    }
-    forms = next
-  }
-
-  return forms
-}
-
-const TABOO_SET = new Set<string>(TABOO_CRUDE)
-for (const seed of TABOO_SLUR) {
-  for (const form of spread(seed)) {
-    TABOO_SET.add(form)
-  }
-}
-
-/** Every form v4 refuses outright, seeds and neighbourhoods together. */
-export const TABOO = [...TABOO_SET].sort()
-
-export function isTaboo(word: string): boolean {
-  return TABOO_SET.has(word)
 }
 
 // ─── Sort Order ─────────────────────────────────────────

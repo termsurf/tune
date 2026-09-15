@@ -4,23 +4,27 @@ grin
 griq
 grig
 grid
+grib
+grip
+grit
 grik
 gris
 griz
 griv
 grif
-griC
 grem
 gren
 greq
 greg
 gred
+greb
+grep
+gret
 grek
 gres
 grez
 grev
 gref
-greC
 gram
 gran
 graq
@@ -34,7 +38,6 @@ gras
 graz
 grav
 graf
-graC
 grar
 gral
 grom
@@ -50,7 +53,6 @@ gros
 groz
 grov
 grof
-groC
 gror
 grol
 grum
@@ -66,29 +68,32 @@ grus
 gruz
 gruv
 gruf
-gruC
 glim
 glin
 gliq
 glig
 glid
+glib
+glip
+glit
 glik
 glis
 gliz
 gliv
 glif
-gliC
 glem
 glen
 gleq
 gleg
 gled
+gleb
+glep
+glet
 glek
 gles
 glez
 glev
 glef
-gleC
 glam
 glan
 glaq
@@ -102,7 +107,6 @@ glas
 glaz
 glav
 glaf
-glaC
 glar
 glal
 glom
@@ -118,7 +122,6 @@ glos
 gloz
 glov
 glof
-gloC
 glor
 glol
 glum
@@ -134,7 +137,6 @@ glus
 gluz
 gluv
 gluf
-gluC
 djim
 djin
 djiq
@@ -148,7 +150,6 @@ djis
 djiz
 djiv
 djif
-djiC
 djem
 djen
 djeq
@@ -162,21 +163,18 @@ djes
 djez
 djev
 djef
-djeC
 djam
 djan
 djaq
 djag
 djad
 djab
-djap
 djat
 djak
 djas
 djaz
 djav
 djaf
-djaC
 djar
 djal
 djom
@@ -192,7 +190,6 @@ djos
 djoz
 djov
 djof
-djoC
 djor
 djol
 djum
@@ -208,7 +205,6 @@ djus
 djuz
 djuv
 djuf
-djuC
 drim
 drin
 driq
@@ -222,7 +218,6 @@ dris
 driz
 driv
 drif
-driC
 drem
 dren
 dreq
@@ -236,7 +231,6 @@ dres
 drez
 drev
 dref
-dreC
 dram
 dran
 draq
@@ -250,7 +244,6 @@ dras
 draz
 drav
 draf
-draC
 drar
 dral
 drom
@@ -266,7 +259,6 @@ dros
 droz
 drov
 drof
-droC
 dror
 drol
 drum
@@ -282,7 +274,6 @@ drus
 druz
 druv
 druf
-druC
 brim
 brin
 briq
@@ -296,7 +287,6 @@ bris
 briz
 briv
 brif
-briC
 brem
 bren
 breq
@@ -310,7 +300,6 @@ bres
 brez
 brev
 bref
-breC
 bram
 bran
 braq
@@ -324,7 +313,6 @@ bras
 braz
 brav
 braf
-braC
 brar
 bral
 brom
@@ -340,7 +328,6 @@ bros
 broz
 brov
 brof
-broC
 bror
 brol
 brum
@@ -356,7 +343,6 @@ brus
 bruz
 bruv
 bruf
-bruC
 blim
 blin
 bliq
@@ -370,7 +356,6 @@ blis
 bliz
 bliv
 blif
-bliC
 blem
 blen
 bleq
@@ -384,7 +369,6 @@ bles
 blez
 blev
 blef
-bleC
 blam
 blan
 blaq
@@ -398,7 +382,6 @@ blas
 blaz
 blav
 blaf
-blaC
 blar
 blal
 blom
@@ -414,7 +397,6 @@ blos
 bloz
 blov
 blof
-bloC
 blor
 blol
 blum
@@ -430,7 +412,6 @@ blus
 bluz
 bluv
 bluf
-bluC
 prim
 prin
 priq
@@ -439,11 +420,11 @@ prid
 prib
 prip
 prit
+prik
 pris
 priz
 priv
 prif
-priC
 prem
 pren
 preq
@@ -457,7 +438,6 @@ pres
 prez
 prev
 pref
-preC
 pram
 pran
 praq
@@ -471,7 +451,6 @@ pras
 praz
 prav
 praf
-praC
 prar
 pral
 prom
@@ -487,7 +466,6 @@ pros
 proz
 prov
 prof
-proC
 pror
 prol
 prum
@@ -503,7 +481,6 @@ prus
 pruz
 pruv
 pruf
-pruC
 plim
 plin
 pliq
@@ -517,7 +494,6 @@ plis
 pliz
 pliv
 plif
-pliC
 plem
 plen
 pleq
@@ -531,7 +507,6 @@ ples
 plez
 plev
 plef
-pleC
 plam
 plan
 plaq
@@ -545,7 +520,6 @@ plas
 plaz
 plav
 plaf
-plaC
 plar
 plal
 plom
@@ -561,7 +535,6 @@ plos
 ploz
 plov
 plof
-ploC
 plor
 plol
 plum
@@ -577,7 +550,6 @@ plus
 pluz
 pluv
 pluf
-pluC
 txim
 txin
 txiq
@@ -591,7 +563,6 @@ txis
 txiz
 txiv
 txif
-txiC
 txem
 txen
 txeq
@@ -605,7 +576,6 @@ txes
 txez
 txev
 txef
-txeC
 txam
 txan
 txaq
@@ -619,7 +589,6 @@ txas
 txaz
 txav
 txaf
-txaC
 txar
 txal
 txom
@@ -635,7 +604,6 @@ txos
 txoz
 txov
 txof
-txoC
 txor
 txol
 txum
@@ -651,7 +619,6 @@ txus
 txuz
 txuv
 txuf
-txuC
 trim
 trin
 triq
@@ -665,7 +632,6 @@ tris
 triz
 triv
 trif
-triC
 trem
 tren
 treq
@@ -679,7 +645,6 @@ tres
 trez
 trev
 tref
-treC
 tram
 tran
 traq
@@ -693,7 +658,6 @@ tras
 traz
 trav
 traf
-traC
 trar
 tral
 trom
@@ -709,7 +673,6 @@ tros
 troz
 trov
 trof
-troC
 tror
 trol
 trum
@@ -725,42 +688,44 @@ trus
 truz
 truv
 truf
-truC
 krim
 krin
 kriq
 krig
 krid
+krib
+krit
 krik
 kris
 kriz
 kriv
 krif
-kriC
 krem
 kren
 kreq
 kreg
 kred
+kreb
+krep
+kret
 krek
 kres
 krez
 krev
 kref
-kreC
 kram
 kran
 kraq
 krag
 krad
 krab
+krap
 krat
 krak
 kras
 kraz
 krav
 kraf
-kraC
 krar
 kral
 krom
@@ -776,7 +741,6 @@ kros
 kroz
 krov
 krof
-kroC
 kror
 krol
 krum
@@ -792,29 +756,32 @@ krus
 kruz
 kruv
 kruf
-kruC
 klim
 klin
 kliq
 klig
 klid
+klib
+klip
+klit
 klik
 klis
 kliz
 kliv
 klif
-kliC
 klem
 klen
 kleq
 kleg
 kled
+kleb
+klep
+klet
 klek
 kles
 klez
 klev
 klef
-kleC
 klam
 klan
 klaq
@@ -828,7 +795,6 @@ klas
 klaz
 klav
 klaf
-klaC
 klar
 klal
 klom
@@ -844,7 +810,6 @@ klos
 kloz
 klov
 klof
-kloC
 klor
 klol
 klum
@@ -854,12 +819,12 @@ klug
 klud
 klub
 klup
+klut
 kluk
 klus
 kluz
 kluv
 kluf
-kluC
 smim
 smin
 smiq
@@ -873,7 +838,6 @@ smis
 smiz
 smiv
 smif
-smiC
 smem
 smen
 smeq
@@ -887,7 +851,6 @@ smes
 smez
 smev
 smef
-smeC
 smam
 sman
 smaq
@@ -901,7 +864,6 @@ smas
 smaz
 smav
 smaf
-smaC
 smar
 smal
 smom
@@ -917,7 +879,6 @@ smos
 smoz
 smov
 smof
-smoC
 smor
 smol
 smum
@@ -933,7 +894,6 @@ smus
 smuz
 smuv
 smuf
-smuC
 snim
 snin
 sniq
@@ -947,7 +907,6 @@ snis
 sniz
 sniv
 snif
-sniC
 snem
 snen
 sneq
@@ -961,7 +920,6 @@ snes
 snez
 snev
 snef
-sneC
 snam
 snan
 snaq
@@ -975,7 +933,6 @@ snas
 snaz
 snav
 snaf
-snaC
 snar
 snal
 snom
@@ -991,7 +948,6 @@ snos
 snoz
 snov
 snof
-snoC
 snor
 snol
 snum
@@ -1007,10 +963,10 @@ snus
 snuz
 snuv
 snuf
-snuC
 spim
 spin
 spiq
+spig
 spid
 spib
 spip
@@ -1019,14 +975,17 @@ spis
 spiz
 spiv
 spif
-spiC
 spem
 spen
 speq
+speg
 sped
 speb
 spep
 spet
+spek
+spes
+spez
 spev
 spef
 spam
@@ -1038,6 +997,7 @@ spab
 spap
 spat
 spak
+spas
 spav
 spaf
 spar
@@ -1051,6 +1011,8 @@ spob
 spop
 spot
 spok
+spos
+spoz
 spov
 spof
 spor
@@ -1068,26 +1030,30 @@ spus
 spuz
 spuv
 spuf
-spuC
 stim
 stin
 stiq
+stig
 stid
 stib
 stip
 stit
+stik
 stis
 stiz
 stiv
 stif
-stiC
 stem
 sten
 steq
+steg
 sted
 steb
 step
 stet
+stek
+stes
+stez
 stev
 stef
 stam
@@ -1099,6 +1065,8 @@ stab
 stap
 stat
 stak
+stas
+staz
 stav
 staf
 star
@@ -1112,6 +1080,8 @@ stob
 stop
 stot
 stok
+stos
+stoz
 stov
 stof
 stor
@@ -1129,7 +1099,6 @@ stus
 stuz
 stuv
 stuf
-stuC
 skim
 skin
 skiq
@@ -1143,7 +1112,6 @@ skis
 skiz
 skiv
 skif
-skiC
 skem
 sken
 skeq
@@ -1157,7 +1125,6 @@ skes
 skez
 skev
 skef
-skeC
 skam
 skan
 skaq
@@ -1171,7 +1138,6 @@ skas
 skaz
 skav
 skaf
-skaC
 skar
 skal
 skom
@@ -1187,7 +1153,6 @@ skos
 skoz
 skov
 skof
-skoC
 skor
 skol
 skum
@@ -1203,7 +1168,6 @@ skus
 skuz
 skuv
 skuf
-skuC
 slim
 slin
 sliq
@@ -1217,7 +1181,6 @@ slis
 sliz
 sliv
 slif
-sliC
 slem
 slen
 sleq
@@ -1231,7 +1194,6 @@ sles
 slez
 slev
 slef
-sleC
 slam
 slan
 slaq
@@ -1245,7 +1207,6 @@ slas
 slaz
 slav
 slaf
-slaC
 slar
 slal
 slom
@@ -1261,7 +1222,6 @@ slos
 sloz
 slov
 slof
-sloC
 slor
 slol
 slum
@@ -1271,12 +1231,12 @@ slug
 slud
 slub
 slup
+slut
 sluk
 slus
 sluz
 sluv
 sluf
-sluC
 vrim
 vrin
 vriq
@@ -1290,7 +1250,6 @@ vris
 vriz
 vriv
 vrif
-vriC
 vrem
 vren
 vreq
@@ -1304,7 +1263,6 @@ vres
 vrez
 vrev
 vref
-vreC
 vram
 vran
 vraq
@@ -1318,7 +1276,6 @@ vras
 vraz
 vrav
 vraf
-vraC
 vrar
 vral
 vrom
@@ -1334,7 +1291,6 @@ vros
 vroz
 vrov
 vrof
-vroC
 vror
 vrol
 vrum
@@ -1350,7 +1306,6 @@ vrus
 vruz
 vruv
 vruf
-vruC
 frim
 frin
 friq
@@ -1364,7 +1319,6 @@ fris
 friz
 friv
 frif
-friC
 frem
 fren
 freq
@@ -1378,7 +1332,6 @@ fres
 frez
 frev
 fref
-freC
 fram
 fran
 fraq
@@ -1392,7 +1345,6 @@ fras
 fraz
 frav
 fraf
-fraC
 frar
 fral
 from
@@ -1408,7 +1360,6 @@ fros
 froz
 frov
 frof
-froC
 fror
 frol
 frum
@@ -1424,7 +1375,6 @@ frus
 fruz
 fruv
 fruf
-fruC
 flim
 flin
 fliq
@@ -1438,7 +1388,6 @@ flis
 fliz
 fliv
 flif
-fliC
 flem
 flen
 fleq
@@ -1452,7 +1401,6 @@ fles
 flez
 flev
 flef
-fleC
 flam
 flan
 flaq
@@ -1466,7 +1414,6 @@ flas
 flaz
 flav
 flaf
-flaC
 flar
 flal
 flom
@@ -1482,7 +1429,6 @@ flos
 floz
 flov
 flof
-floC
 flor
 flol
 flum
@@ -1498,4 +1444,3 @@ flus
 fluz
 fluv
 fluf
-fluC

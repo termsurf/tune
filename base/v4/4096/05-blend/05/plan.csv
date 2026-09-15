@@ -1,0 +1,8 @@
+setting,value
+divides_by,256
+cvc,1536
+cvcc,1024
+ccvc,1536
+drift,0.943
+mark,"every shape divides by 256"
+mark,"the two one cluster shapes balance exactly"

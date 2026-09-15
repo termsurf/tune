@@ -42,7 +42,7 @@ import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
 import { SHAPES, compareWords } from './sound'
-import { coverage, run, withPlan, type Plan } from './plan'
+import { coverage, run, tally, withPlan, type Plan } from './plan'
 import { HOUSE, LIQUIDS, MARKED_SOUNDS, opensOnLiquid } from './house'
 
 const here = dirname(fileURLToPath(import.meta.url))
@@ -144,18 +144,28 @@ for (let openSize = 6; openSize <= openPool.length; openSize++) {
       const open = trimSounds(openPool, openSize, 2)
       if (!close || !open) continue
 
+      /**
+       * Counted by `tally`, not by the bare product.
+       *
+       * Every opening being worth the same makes the product right up
+       * until the taboo screen, which refuses a fixed handful of forms
+       * afterwards and is not a product at all. `tally` carries that
+       * subtraction, so asking it is the only way to stay in step with
+       * what actually gets built.
+       */
       const pClose = per(close, isLiquidClose)
-      const cvc = open.length * pClose
+      const cvc = tally(withPlan(HOUSE, { open, close }), 'CVC')
 
       for (let onsetSize = 3; onsetSize <= onsetPool.length; onsetSize++) {
-        const ccvc = onsetSize * pClose
+        const onset = onsetPool.slice(0, onsetSize)
+        const ccvc = tally(withPlan(HOUSE, { onset, close }), 'CCVC')
 
         for (let codaSize = 8; codaSize <= codaPool.length; codaSize++) {
           for (let codaLiquid = 0; codaLiquid <= 20; codaLiquid++) {
             const coda = trimCodas(codaPool, codaSize, codaLiquid)
             if (!coda) continue
 
-            const cvcc = open.length * per(coda, opensOnLiquid)
+            const cvcc = tally(withPlan(HOUSE, { open, coda }), 'CVCC')
             if (cvc + cvcc + ccvc !== TARGET) continue
 
             const sizes = [onsetSize, close.length, open.length, coda.length]
@@ -211,7 +221,7 @@ for (let openSize = 6; openSize <= openPool.length; openSize++) {
 
             if (marks.length === 0) continue
 
-            const onset = onsetPool.slice(0, onsetSize)
+
 
             hits.push({
               family: marks.length >= 3 ? 'rich' : marks.length === 2 ? 'double' : 'single',

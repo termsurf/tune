@@ -1,0 +1,8 @@
+setting,value
+divides_by,256
+cvc,1536
+cvcc,1280
+ccvc,1280
+drift,0.851
+mark,"every shape divides by 256"
+mark,"the three shapes sit within 256 of each other"
