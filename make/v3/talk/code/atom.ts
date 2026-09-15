@@ -37,7 +37,7 @@ import {
   consonantSimilarityAt,
   vowelSimilarity,
 } from '#/code/similarity'
-import { isVowel, testSounding } from '#/make/talk/code/sound'
+import { isVowel, testSounding } from '#/make/v3/talk/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')
@@ -76,7 +76,9 @@ type Draft = {
 }
 
 function readDraft(path: string): Array<Draft> {
-  const lines = readFileSync(path, 'utf-8').split('\n').filter(l => l.trim())
+  const lines = readFileSync(path, 'utf-8')
+    .split('\n')
+    .filter(l => l.trim())
   const header = splitRow(lines[0])
   const at = (name: string) => header.indexOf(name)
   return lines.slice(1).map(row => {
@@ -140,7 +142,8 @@ function score(candidate: string, want: string): number {
     total += consonantSimilarityAt(a[0], b[0], 'onset') * 5
     weight += 500
     total +=
-      consonantSimilarityAt(a[a.length - 1], b[b.length - 1], 'coda') * 4
+      consonantSimilarityAt(a[a.length - 1], b[b.length - 1], 'coda') *
+      4
     weight += 400
   }
   for (let i = 1; i < a.length - 1; i++) {
@@ -190,7 +193,9 @@ for (const item of draft) {
 const free: Record<number, Array<string>> = {}
 for (const length of ATOM_LENGTHS) {
   free[length] = [...tune.keys()]
-    .filter(t => t.length === length && !taken.has(t) && testSounding(t).ok)
+    .filter(
+      t => t.length === length && !taken.has(t) && testSounding(t).ok,
+    )
     .sort()
 }
 
@@ -199,10 +204,14 @@ line(`\n  ${draft.length} concepts in the draft`)
 line(`  ${tune.size.toLocaleString()} terms in tune.tsv`)
 for (const length of ATOM_LENGTHS) {
   const all = [...tune.keys()].filter(t => t.length === length).length
-  line(`  ${all} terms of ${length} letters, ${free[length].length} of them free`)
+  line(
+    `  ${all} terms of ${length} letters, ${free[length].length} of them free`,
+  )
 }
 if (duplicates.length > 0) {
-  line(`\n  ${duplicates.length} concepts had a term already claimed by another, released:`)
+  line(
+    `\n  ${duplicates.length} concepts had a term already claimed by another, released:`,
+  )
   for (const item of duplicates) {
     line(`    ${item.meaning}`)
   }
@@ -221,12 +230,29 @@ if (duplicates.length > 0) {
  * rather than nine.
  */
 const NUMERALS = [
-  'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
-  'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
+  'zero',
+  'one',
+  'two',
+  'three',
+  'four',
+  'five',
+  'six',
+  'seven',
+  'eight',
+  'nine',
+  'ten',
+  'eleven',
+  'twelve',
+  'thirteen',
+  'fourteen',
   'fifteen',
 ]
 
-type Number = { term: string; meaning: string; kind: 'numeral' | 'power' }
+type Number = {
+  term: string
+  meaning: string
+  kind: 'numeral' | 'power'
+}
 
 /**
  * A power of ten, written either as `10^6` or spelled out as `1000`.
@@ -282,8 +308,12 @@ for (const length of ATOM_LENGTHS) {
 
 rule('NUMBERS')
 line(`\n  ${numberByMeaning.size} numbers read from tune.csv`)
-const numerals = [...numberByMeaning.values()].filter(n => n.kind === 'numeral')
-const powers = [...numberByMeaning.values()].filter(n => n.kind === 'power')
+const numerals = [...numberByMeaning.values()].filter(
+  n => n.kind === 'numeral',
+)
+const powers = [...numberByMeaning.values()].filter(
+  n => n.kind === 'power',
+)
 line(`  ${numerals.length} numerals, ${powers.length} powers of ten`)
 
 const wrongLength = [
@@ -299,12 +329,22 @@ line(
 
 const gaps = NUMERALS.filter(n => !numberByMeaning.has(n))
 if (gaps.length > 0) {
-  line(`  ${gaps.length} numerals missing from tune.csv: ${gaps.join(' ')}`)
+  line(
+    `  ${gaps.length} numerals missing from tune.csv: ${gaps.join(
+      ' ',
+    )}`,
+  )
 }
 if (clashes.length > 0) {
-  line(`  ${clashes.length} terms name a value another term already names:`)
+  line(
+    `  ${clashes.length} terms name a value another term already names:`,
+  )
   for (const item of clashes) {
-    line(`    ${item.term} = ${item.meaning}, already ${numberByMeaning.get(item.meaning)!.term}`)
+    line(
+      `    ${item.term} = ${item.meaning}, already ${
+        numberByMeaning.get(item.meaning)!.term
+      }`,
+    )
   }
 }
 
@@ -350,8 +390,14 @@ const draftMeanings = new Set(draft.map(d => d.meaning))
 const kinds: Array<Number> = []
 const unsoundedKinds: Array<Number> = []
 for (const name of KIND_CATEGORIES) {
-  for (const item of readCategory(resolve(PACKAGE_DIR, 'tune.csv'), name)) {
-    if (!ATOM_LENGTHS.includes(item.term.length) || taken.has(item.term)) {
+  for (const item of readCategory(
+    resolve(PACKAGE_DIR, 'tune.csv'),
+    name,
+  )) {
+    if (
+      !ATOM_LENGTHS.includes(item.term.length) ||
+      taken.has(item.term)
+    ) {
       continue
     }
     /** The draft already speaks for this concept, so the category row
@@ -378,7 +424,10 @@ for (const name of KIND_CATEGORIES) {
  * categories say. Add to it rather than editing this file.
  */
 const keepList: Array<Number> = []
-for (const row of readFileSync(resolve(BASE_DIR, 'atom-keep.csv'), 'utf-8')
+for (const row of readFileSync(
+  resolve(BASE_DIR, 'atom-keep.csv'),
+  'utf-8',
+)
   .split('\n')
   .slice(1)) {
   const cell = splitRow(row).map(c => c.trim())
@@ -405,18 +454,28 @@ for (const name of KIND_CATEGORIES) {
   const short = all.filter(i => ATOM_LENGTHS.includes(i.term.length))
   const added = kinds.filter(k => (k.kind as string) === name)
   line(
-    `  ${name.padEnd(8)} ${String(all.length).padStart(3)} in tune.csv, ` +
+    `  ${name.padEnd(8)} ${String(all.length).padStart(
+      3,
+    )} in tune.csv, ` +
       `${String(short.length).padStart(3)} short enough to be atoms, ` +
       `${String(added.length).padStart(3)} added here`,
   )
 }
-line(`  ${'by hand'.padEnd(8)} ${String(keepList.length).padStart(3)} from base/atom-keep.csv: ${keepList.map(k => k.term).join(' ')}`)
+line(
+  `  ${'by hand'.padEnd(8)} ${String(keepList.length).padStart(
+    3,
+  )} from base/atom-keep.csv: ${keepList.map(k => k.term).join(' ')}`,
+)
 if (unsoundedKinds.length > 0) {
   line('')
-  line(`  ${unsoundedKinds.length} broke a syllable rule and took a new word:`)
+  line(
+    `  ${unsoundedKinds.length} broke a syllable rule and took a new word:`,
+  )
   for (const item of unsoundedKinds) {
     const swap = claim(item.term)
-    line(`    ${item.term.padEnd(5)} -> ${swap.padEnd(5)} ${item.meaning}`)
+    line(
+      `    ${item.term.padEnd(5)} -> ${swap.padEnd(5)} ${item.meaning}`,
+    )
     kinds.push({ term: swap, meaning: item.meaning, kind: item.kind })
   }
 }
@@ -425,14 +484,21 @@ line('  Left out, because whether these are atoms is a call to make:')
 for (const name of ['science', 'measurement', 'math', 'code']) {
   const all = readCategory(resolve(PACKAGE_DIR, 'tune.csv'), name)
   const short = all.filter(i => ATOM_LENGTHS.includes(i.term.length))
-  line(`    ${name.padEnd(12)} ${String(short.length).padStart(3)} short terms`)
+  line(
+    `    ${name.padEnd(12)} ${String(short.length).padStart(
+      3,
+    )} short terms`,
+  )
 }
 
 rule('SOUND NAMES')
-line(`\n  ${sounds.length} sound names read from tune.csv, all kept as they are`)
+line(
+  `\n  ${sounds.length} sound names read from tune.csv, all kept as they are`,
+)
 const soundLengths: Record<number, number> = {}
 for (const item of sounds) {
-  soundLengths[item.term.length] = (soundLengths[item.term.length] ?? 0) + 1
+  soundLengths[item.term.length] =
+    (soundLengths[item.term.length] ?? 0) + 1
 }
 for (const length of Object.keys(soundLengths).map(Number).sort()) {
   line(`  ${soundLengths[length]} of ${length} letters`)
@@ -450,7 +516,11 @@ const unsoundedSounds = sounds.filter(s => !testSounding(s.term).ok)
 line(
   unsoundedSounds.length === 0
     ? '  every one obeys the syllable rules'
-    : `  ${unsoundedSounds.length} break a syllable rule and are kept anyway: ${unsoundedSounds.map(s => s.term).join(' ')}`,
+    : `  ${
+        unsoundedSounds.length
+      } break a syllable rule and are kept anyway: ${unsoundedSounds
+        .map(s => s.term)
+        .join(' ')}`,
 )
 
 // ─── Assignment ─────────────────────────────────────────
@@ -563,17 +633,19 @@ for (let i = 0; i < draft.length; i++) {
       atom === ''
         ? 'stuck'
         : unsounded.has(item.meaning)
-          ? 'resounded'
-          : item.term
-            ? 'shortened'
-            : 'filled',
+        ? 'resounded'
+        : item.term
+        ? 'shortened'
+        : 'filled',
     was: item.term,
   })
 }
 
 /** Back into the draft's own order, which runs domain by domain. */
 const order = new Map(draft.map((d, i) => [d.meaning, i]))
-atoms.sort((a, b) => (order.get(a.meaning) ?? 0) - (order.get(b.meaning) ?? 0))
+atoms.sort(
+  (a, b) => (order.get(a.meaning) ?? 0) - (order.get(b.meaning) ?? 0),
+)
 
 /**
  * The numbers go on the end, counting up. A numeral the lexicon does
@@ -612,7 +684,10 @@ for (const meaning of NUMERALS) {
     was: '',
   })
 }
-const allPowers = [...powers, ...clashes.filter(c => c.kind === 'power')]
+const allPowers = [
+  ...powers,
+  ...clashes.filter(c => c.kind === 'power'),
+]
 for (const item of allPowers.sort((a, b) =>
   a.meaning.length === b.meaning.length
     ? a.meaning.localeCompare(b.meaning)
@@ -685,7 +760,9 @@ const rows: Array<string> = ['atom,meaning,state,was,displaced']
 for (const item of atoms) {
   /** Only a word that changed hands displaced anything. A held, a
    * numeral and a sound name all kept their own meaning. */
-  const settled = ['held', 'number', 'sound', 'kind'].includes(item.state)
+  const settled = ['held', 'number', 'sound', 'kind'].includes(
+    item.state,
+  )
   const before = tune.get(item.atom) ?? ''
   const displaced = settled || before === item.meaning ? '' : before
   rows.push(
@@ -707,7 +784,16 @@ for (const item of atoms) {
 
 rule('ATOMS')
 line('')
-for (const name of ['held', 'shortened', 'resounded', 'filled', 'number', 'sound', 'kind', 'stuck']) {
+for (const name of [
+  'held',
+  'shortened',
+  'resounded',
+  'filled',
+  'number',
+  'sound',
+  'kind',
+  'stuck',
+]) {
   line(`  ${name.padEnd(11)} ${String(state[name] ?? 0).padStart(4)}`)
 }
 line('')
@@ -719,47 +805,74 @@ rule('BY DOMAIN')
 line('')
 const domains = new Map<string, Array<Atom>>()
 for (const item of atoms) {
-  domains.set(item.category, [...(domains.get(item.category) ?? []), item])
+  domains.set(item.category, [
+    ...(domains.get(item.category) ?? []),
+    item,
+  ])
 }
 for (const [name, list] of domains) {
   const three = list.filter(a => a.atom.length === 3).length
   line(
     `  ${name.padEnd(24)} ${String(list.length).padStart(3)}  ` +
-      `(${three} of three letters)  ${list.slice(0, 5).map(a => `${a.atom}=${a.meaning}`).join(' ')}`,
+      `(${three} of three letters)  ${list
+        .slice(0, 5)
+        .map(a => `${a.atom}=${a.meaning}`)
+        .join(' ')}`,
   )
 }
 
 rule('SHORTENED')
 line('\n  Concepts that gave up a longer term for a short one.\n')
-for (const item of atoms.filter(a => a.state === 'shortened').slice(0, 25)) {
-  line(`    ${item.was.padEnd(9)} -> ${item.atom.padEnd(5)} ${item.meaning}`)
+for (const item of atoms
+  .filter(a => a.state === 'shortened')
+  .slice(0, 25)) {
+  line(
+    `    ${item.was.padEnd(9)} -> ${item.atom.padEnd(5)} ${
+      item.meaning
+    }`,
+  )
 }
 
 rule('FILLED')
-line('\n  Concepts the draft had no term for. Each took a term close to')
+line(
+  '\n  Concepts the draft had no term for. Each took a term close to',
+)
 line('  the concept it sits beside in the list, so pairs sound like')
 line('  pairs. These are the ones to look over by hand.\n')
 const order2 = new Map(draft.map((d, i) => [d.meaning, i]))
-for (const item of atoms.filter(a => a.state === 'filled').slice(0, 30)) {
+for (const item of atoms
+  .filter(a => a.state === 'filled')
+  .slice(0, 30)) {
   const at = order2.get(item.meaning) ?? 0
   const anchor = anchorFor(at, draft)
   const beside = draft.find(
     d => d.term === anchor && ATOM_LENGTHS.includes(d.term.length),
   )
   line(
-    `    ${item.atom.padEnd(5)} ${item.meaning.padEnd(14)} beside ${anchor.padEnd(5)} ${beside ? beside.meaning : ''}`,
+    `    ${item.atom.padEnd(5)} ${item.meaning.padEnd(
+      14,
+    )} beside ${anchor.padEnd(5)} ${beside ? beside.meaning : ''}`,
   )
 }
 
 rule('DISPLACED')
 const displaced = atoms.filter(
-  a => a.state !== 'held' && tune.get(a.atom) && tune.get(a.atom) !== a.meaning,
+  a =>
+    a.state !== 'held' &&
+    tune.get(a.atom) &&
+    tune.get(a.atom) !== a.meaning,
 )
-line(`\n  ${displaced.length} short terms carried a different meaning in tune.tsv`)
+line(
+  `\n  ${displaced.length} short terms carried a different meaning in tune.tsv`,
+)
 line('  and now carry an atom instead. The old meaning is not lost, it')
 line('  just stops being atomic and gets built from other roots.\n')
 for (const item of displaced.slice(0, 20)) {
-  line(`    ${item.atom.padEnd(5)} ${String(tune.get(item.atom)).padEnd(28)} -> ${item.meaning}`)
+  line(
+    `    ${item.atom.padEnd(5)} ${String(tune.get(item.atom)).padEnd(
+      28,
+    )} -> ${item.meaning}`,
+  )
 }
 
 // ─── What Was Dropped ───────────────────────────────────
@@ -775,7 +888,11 @@ for (const item of displaced.slice(0, 20)) {
 const kept = new Set(atoms.map(a => a.atom))
 const reused = new Map<string, string>()
 for (const item of atoms) {
-  if (item.state === 'shortened' || item.state === 'resounded' || item.state === 'filled') {
+  if (
+    item.state === 'shortened' ||
+    item.state === 'resounded' ||
+    item.state === 'filled'
+  ) {
     const before = tune.get(item.atom)
     if (before && before !== item.meaning) {
       reused.set(item.atom, item.meaning)
@@ -783,13 +900,23 @@ for (const item of atoms) {
   }
 }
 
-const dropped: Array<{ term: string; meaning: string; fate: string; became: string }> = []
+const dropped: Array<{
+  term: string
+  meaning: string
+  fate: string
+  became: string
+}> = []
 for (const [term, meaning] of tune) {
   if (!ATOM_LENGTHS.includes(term.length)) {
     continue
   }
   if (reused.has(term)) {
-    dropped.push({ term, meaning, fate: 'reused', became: reused.get(term)! })
+    dropped.push({
+      term,
+      meaning,
+      fate: 'reused',
+      became: reused.get(term)!,
+    })
     continue
   }
   if (!kept.has(term)) {
@@ -797,7 +924,10 @@ for (const [term, meaning] of tune) {
   }
 }
 
-dropped.sort((a, b) => a.term.length - b.term.length || a.term.localeCompare(b.term))
+dropped.sort(
+  (a, b) =>
+    a.term.length - b.term.length || a.term.localeCompare(b.term),
+)
 
 const droppedRows = ['term,meaning,fate,became']
 for (const item of dropped) {
@@ -811,12 +941,22 @@ const droppedPath = resolve(BASE_DIR, 'atom-removed.csv')
 writeFileSync(droppedPath, droppedRows.join('\n') + '\n')
 
 rule('DROPPED FROM ONE SYLLABLE')
-const shortTotal = [...tune.keys()].filter(t => ATOM_LENGTHS.includes(t.length)).length
+const shortTotal = [...tune.keys()].filter(t =>
+  ATOM_LENGTHS.includes(t.length),
+).length
 const removedOnly = dropped.filter(d => d.fate === 'removed')
 const reusedOnly = dropped.filter(d => d.fate === 'reused')
-line(`\n  ${shortTotal.toLocaleString()} one syllable terms in the lexicon`)
-line(`  ${(shortTotal - dropped.length).toLocaleString()} kept their meaning and are atoms`)
-line(`  ${reusedOnly.length.toLocaleString()} gave their word to a concept that needed one`)
+line(
+  `\n  ${shortTotal.toLocaleString()} one syllable terms in the lexicon`,
+)
+line(
+  `  ${(
+    shortTotal - dropped.length
+  ).toLocaleString()} kept their meaning and are atoms`,
+)
+line(
+  `  ${reusedOnly.length.toLocaleString()} gave their word to a concept that needed one`,
+)
 line(`  ${removedOnly.length.toLocaleString()} are simply free`)
 line('')
 line('  A dropped meaning is not lost. It stops being atomic and gets')
@@ -825,11 +965,20 @@ line('  does not need a root when `water` and `fall` have one.')
 line('')
 line('  gave their word away:')
 for (const item of reusedOnly.slice(0, 14)) {
-  line(`    ${item.term.padEnd(5)} ${item.meaning.padEnd(26)} -> ${item.became}`)
+  line(
+    `    ${item.term.padEnd(5)} ${item.meaning.padEnd(26)} -> ${
+      item.became
+    }`,
+  )
 }
 line('')
 line('  simply free:')
-line(`    ${removedOnly.slice(0, 24).map(d => d.term).join(' ')}`)
+line(
+  `    ${removedOnly
+    .slice(0, 24)
+    .map(d => d.term)
+    .join(' ')}`,
+)
 
 /**
  * The draft is written back with every term short, so it holds only
@@ -837,12 +986,20 @@ line(`    ${removedOnly.slice(0, 24).map(d => d.term).join(' ')}`)
  * in place and holds them, which makes the build settle rather than
  * shuffle.
  */
-const draftRows = ['category,term,meaning,source_meaning,status,language']
+const draftRows = [
+  'category,term,meaning,source_meaning,status,language',
+]
 for (const item of atoms) {
   if (
-    ['number', 'sound', 'animal', 'plant', 'body', 'color', 'keep'].includes(
-      item.category,
-    )
+    [
+      'number',
+      'sound',
+      'animal',
+      'plant',
+      'body',
+      'color',
+      'keep',
+    ].includes(item.category)
   ) {
     continue
   }
@@ -855,7 +1012,7 @@ for (const item of atoms) {
       item.state,
       item.language,
     ]
-      .map(c => ((c ?? '').includes(',') ? `"${c}"` : (c ?? '')))
+      .map(c => ((c ?? '').includes(',') ? `"${c}"` : c ?? ''))
       .join(','),
   )
 }
@@ -864,5 +1021,9 @@ writeFileSync(draftPath, draftRows.join('\n') + '\n')
 
 rule('OUT')
 line(`\n  ${rows.length - 1} atoms -> ${outPath}`)
-line(`  ${draftRows.length - 1} concepts -> ${draftPath}, all three or four letters`)
+line(
+  `  ${
+    draftRows.length - 1
+  } concepts -> ${draftPath}, all three or four letters`,
+)
 line(`  ${dropped.length} dropped -> ${droppedPath}`)

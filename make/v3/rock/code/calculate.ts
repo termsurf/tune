@@ -39,7 +39,7 @@ import {
   compareWords,
   isIntensive,
   toSyllables,
-} from '#/make/rock/code/sound'
+} from '#/make/v3/rock/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const BASE_DIR = resolve(__dirname, '../base')
@@ -165,8 +165,12 @@ line(`vowels:     ${VOWELS.join(' ')}`)
 line(`hum:        ${HUM.join(' ')}`)
 line(`beat:       ${BEAT.join(' ')}`)
 line(`breath:     ${BREATH}`)
-line(`total:      ${SOUNDS.length} sounds, ${CONSONANTS.length} consonants`)
-line(`lexical:    ${ROOT_CONSONANTS.length} consonants, ${ROOT_SYLLABLES.length} syllables`)
+line(
+  `total:      ${SOUNDS.length} sounds, ${CONSONANTS.length} consonants`,
+)
+line(
+  `lexical:    ${ROOT_CONSONANTS.length} consonants, ${ROOT_SYLLABLES.length} syllables`,
+)
 line(`grammar:    ${ROLES.map(r => r.syllable).join(' ')}`)
 line(`all:        ${ALL_SYLLABLES.length} syllables`)
 
@@ -194,13 +198,21 @@ for (let n = 1; n <= MAX_SYLLABLES; n++) {
 
 rule('ROOTS')
 line('')
-line('| syllables | letters | pattern    |   raw |  clear | intensive |')
-line('| :-------- | :------ | :--------- | ----: | -----: | --------: |')
+line(
+  '| syllables | letters | pattern    |   raw |  clear | intensive |',
+)
+line(
+  '| :-------- | :------ | :--------- | ----: | -----: | --------: |',
+)
 for (const report of reports) {
   const pattern = `\`${'CV'.repeat(report.syllables)}\``
   line(
-    `| ${String(report.syllables).padEnd(9)} | ${String(report.syllables * 2).padEnd(7)} | ${pattern.padEnd(10)} | ` +
-      `${report.raw.toLocaleString().padStart(5)} | ${report.clear.toLocaleString().padStart(6)} | ${String(report.intensive).padStart(9)} |`,
+    `| ${String(report.syllables).padEnd(9)} | ${String(
+      report.syllables * 2,
+    ).padEnd(7)} | ${pattern.padEnd(10)} | ` +
+      `${report.raw.toLocaleString().padStart(5)} | ${report.clear
+        .toLocaleString()
+        .padStart(6)} | ${String(report.intensive).padStart(9)} |`,
   )
 }
 const rootTotal = reports.reduce((sum, r) => sum + r.clear, 0)
@@ -209,9 +221,17 @@ line(`| | | **total** | | **${rootTotal.toLocaleString()}** | |`)
 rule('WHAT EACH RULE COSTS')
 line('\nEach rejection is charged to the first rule that catches it.\n')
 for (const report of reports) {
-  line(`  ${report.syllables} syllable, ${report.raw - report.clear} dropped of ${report.raw}`)
+  line(
+    `  ${report.syllables} syllable, ${
+      report.raw - report.clear
+    } dropped of ${report.raw}`,
+  )
   for (const item of ROOT_RULES) {
-    line(`    ${item.name.padEnd(26)} ${String(report.cost[item.name]).padStart(5)}`)
+    line(
+      `    ${item.name.padEnd(26)} ${String(
+        report.cost[item.name],
+      ).padStart(5)}`,
+    )
   }
 }
 
@@ -230,8 +250,12 @@ for (const report of reports) {
   const forms = generateForms(report.words)
   wordTotal += forms.all.length
   line(
-    `| ${String(report.syllables).padEnd(14)} | ${String(forms.bare.length).padStart(4)} | ` +
-      ROLES.map(r => String(forms.byRole[r.name].length).padStart(3)).join(' | ') +
+    `| ${String(report.syllables).padEnd(14)} | ${String(
+      forms.bare.length,
+    ).padStart(4)} | ` +
+      ROLES.map(r =>
+        String(forms.byRole[r.name].length).padStart(3),
+      ).join(' | ') +
       ` | ${forms.all.length.toLocaleString().padStart(6)} |`,
   )
 
@@ -259,7 +283,9 @@ for (const [length, words] of byLength) {
     'word\n' + words.join('\n') + '\n',
   )
 }
-line(`\nwrote base/root/*.csv by root length and base/word/*.csv by word length`)
+line(
+  `\nwrote base/root/*.csv by root length and base/word/*.csv by word length`,
+)
 
 rule('SHAPE OF THE LEXICON')
 const twoSyllable = reports[1].words
@@ -272,8 +298,12 @@ line(`  ${showCounts(countBy(twoSyllable, w => w[2]))}`)
 
 rule('BEATS')
 line('')
-line('Tree is chanted, so what matters is how many beats a word runs to.')
-line('A bare root of n syllables is n beats. The role syllable adds one.')
+line(
+  'Tree is chanted, so what matters is how many beats a word runs to.',
+)
+line(
+  'A bare root of n syllables is n beats. The role syllable adds one.',
+)
 line('')
 line('| beats | shapes            |  count |')
 line('| :---- | :---------------- | -----: |')
@@ -289,17 +319,30 @@ for (const length of [...byLength.keys()].sort((a, b) => a - b)) {
     }
   }
   line(
-    `| ${String(beats).padEnd(5)} | ${shapes.join(', ').padEnd(17)} | ${byLength.get(length)!.length.toLocaleString().padStart(6)} |`,
+    `| ${String(beats).padEnd(5)} | ${shapes
+      .join(', ')
+      .padEnd(17)} | ${byLength
+      .get(length)!
+      .length.toLocaleString()
+      .padStart(6)} |`,
   )
 }
 
 rule('SAMPLE')
 for (const report of reports) {
-  line(`\n${report.syllables} syllable roots (first 24 of ${report.clear.toLocaleString()}):`)
+  line(
+    `\n${
+      report.syllables
+    } syllable roots (first 24 of ${report.clear.toLocaleString()}):`,
+  )
   line(`  ${report.words.slice(0, 24).join(' ')}`)
 }
 
 line(`\nfull sets:`)
 for (const root of reports[1].words.slice(0, 6)) {
-  line(`  ${root.padEnd(8)} ${ROLES.map(r => `${root}${r.syllable}`).join('  ')}`)
+  line(
+    `  ${root.padEnd(8)} ${ROLES.map(r => `${root}${r.syllable}`).join(
+      '  ',
+    )}`,
+  )
 }

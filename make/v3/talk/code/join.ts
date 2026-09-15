@@ -73,7 +73,7 @@ import {
   isVowel,
   toShape,
   vowelsClose,
-} from '#/make/talk/code/sound'
+} from '#/make/v3/talk/code/sound'
 
 /** A single consonant that can open a word. */
 const CAN_OPEN = CONSONANTS.filter(c => c !== 'q')
@@ -253,7 +253,9 @@ for (const shape of ATOMS) {
     distinct[shape] = 0
     continue
   }
-  distinct[shape] = countDistinct(readUnifiedWords(`${shape.length}.csv`))
+  distinct[shape] = countDistinct(
+    readUnifiedWords(`${shape.length}.csv`),
+  )
 }
 
 // ─── Shape Collisions ───────────────────────────────────
@@ -331,23 +333,34 @@ const ambiguous: Array<{ word: string; cuts: Array<string> }> = []
 
 rule('ATOMS')
 line('')
-line('| shape     |     count |  distinct | where it comes from                   |')
-line('| :-------- | --------: | --------: | :------------------------------------ |')
+line(
+  '| shape     |     count |  distinct | where it comes from                   |',
+)
+line(
+  '| :-------- | --------: | --------: | :------------------------------------ |',
+)
 for (const shape of ATOMS) {
   const from =
     shape.length === 3
       ? 'every word the rules allow'
       : shape.length === 4
-        ? 'the rules, then thinned for closeness'
-        : `base/unified/${shape.length}.csv, from calculate.ts`
-  const far = distinct[shape] === 0 ? 'not counted' : distinct[shape].toLocaleString()
+      ? 'the rules, then thinned for closeness'
+      : `base/unified/${shape.length}.csv, from calculate.ts`
+  const far =
+    distinct[shape] === 0
+      ? 'not counted'
+      : distinct[shape].toLocaleString()
   line(
-    `| \`${shape}\`${' '.repeat(9 - shape.length)} | ${size[shape].toLocaleString().padStart(9)} | ${far.padStart(9)} | ${from.padEnd(37)} |`,
+    `| \`${shape}\`${' '.repeat(9 - shape.length)} | ${size[shape]
+      .toLocaleString()
+      .padStart(9)} | ${far.padStart(9)} | ${from.padEnd(37)} |`,
   )
 }
 line('')
 line('  `distinct` is how many are far enough apart to be different')
-line('  words under the same closeness rule the four letter shapes were')
+line(
+  '  words under the same closeness rule the four letter shapes were',
+)
 line('  thinned by. The four letter shapes were already thinned, so')
 line('  their two columns agree. Nothing else was.')
 line('')
@@ -361,17 +374,24 @@ for (const length of [3, 4, 5, 7]) {
   }
 }
 line(
-  `  in all     ${ATOMS.reduce((n, s) => n + size[s], 0).toLocaleString().padStart(11)}`,
+  `  in all     ${ATOMS.reduce((n, s) => n + size[s], 0)
+    .toLocaleString()
+    .padStart(11)}`,
 )
 
 rule('WHICH JOINED SHAPES COLLIDE')
 
 for (const count of PARTS) {
   const shapes = buildShapes(count)
-  const colliding = [...shapes.entries()].filter(([, w]) => w.length > 1)
+  const colliding = [...shapes.entries()].filter(
+    ([, w]) => w.length > 1,
+  )
 
   line(
-    `\n  ${count} atoms: ${Math.pow(ATOMS.length, count).toLocaleString()} pairings, ${shapes.size} distinct shapes\n`,
+    `\n  ${count} atoms: ${Math.pow(
+      ATOMS.length,
+      count,
+    ).toLocaleString()} pairings, ${shapes.size} distinct shapes\n`,
   )
 
   if (count === 2) {
@@ -379,7 +399,9 @@ for (const count of PARTS) {
       (a, b) => a[0].length - b[0].length || a[0].localeCompare(b[0]),
     )) {
       const mark = ways.length > 1 ? `  <- ${ways.length} ways` : ''
-      line(`    ${shape.padEnd(15)} ${ways.join(', ').padEnd(30)}${mark}`)
+      line(
+        `    ${shape.padEnd(15)} ${ways.join(', ').padEnd(30)}${mark}`,
+      )
     }
     line('')
   }
@@ -397,7 +419,9 @@ for (const count of PARTS) {
         settled++
       }
       line(
-        `    ${shape.padEnd(17)} ${ways.join('   or   ')}${apart ? '' : '   <- SAME LINKER SPOTS'}`,
+        `    ${shape.padEnd(17)} ${ways.join('   or   ')}${
+          apart ? '' : '   <- SAME LINKER SPOTS'
+        }`,
       )
     }
     line('')
@@ -421,7 +445,8 @@ for (const count of PARTS) {
   }
 }
 const crossed = [...reach.entries()].filter(
-  ([, ways]) => new Set([...ways].map(w => w.split('-').length)).size > 1,
+  ([, ways]) =>
+    new Set([...ways].map(w => w.split('-').length)).size > 1,
 )
 if (crossed.length === 0) {
   line('  no shape can be read as both two atoms and three')
@@ -443,8 +468,12 @@ if (crossed.length === 0) {
 function joinTable(atoms: Array<string>, title: string): void {
   rule(`HOW MANY JOINS OF EACH, ${title}`)
   line('')
-  line('| join                    | shape              |             count |       distinct |')
-  line('| :---------------------- | :----------------- | ----------------: | -------------: |')
+  line(
+    '| join                    | shape              |             count |       distinct |',
+  )
+  line(
+    '| :---------------------- | :----------------- | ----------------: | -------------: |',
+  )
 
   let total = 0
   let far = 0
@@ -459,11 +488,22 @@ function joinTable(atoms: Array<string>, title: string): void {
       }
       far += d
       line(
-        `| ${`\`${a}\` + \`${b}\``.padEnd(23)} | ${`\`${a}C${b}\``.padEnd(18)} | ${n.toLocaleString().padStart(17)} | ${(d === 0 ? '' : d.toLocaleString()).padStart(14)} |`,
+        `| ${`\`${a}\` + \`${b}\``.padEnd(
+          23,
+        )} | ${`\`${a}C${b}\``.padEnd(18)} | ${n
+          .toLocaleString()
+          .padStart(17)} | ${(d === 0
+          ? ''
+          : d.toLocaleString()
+        ).padStart(14)} |`,
       )
     }
   }
-  line(`| **all** | | **${total.toLocaleString()}** | ${farKnown ? `**${far.toLocaleString()}**` : ''} |`)
+  line(
+    `| **all** | | **${total.toLocaleString()}** | ${
+      farKnown ? `**${far.toLocaleString()}**` : ''
+    } |`,
+  )
 
   /**
    * Nothing is counted twice. Every join carries a linker, and no coda
@@ -474,13 +514,23 @@ function joinTable(atoms: Array<string>, title: string): void {
   const atomTotal = atoms.reduce((n, shape) => n + size[shape], 0)
 
   line('')
-  line(`  atoms alone          ${atomTotal.toLocaleString().padStart(19)}`)
-  line(`  two atom joins       ${(total - doubled).toLocaleString().padStart(19)}`)
   line(
-    `  in all               ${(atomTotal + total - doubled).toLocaleString().padStart(19)}`,
+    `  atoms alone          ${atomTotal.toLocaleString().padStart(19)}`,
+  )
+  line(
+    `  two atom joins       ${(total - doubled)
+      .toLocaleString()
+      .padStart(19)}`,
+  )
+  line(
+    `  in all               ${(atomTotal + total - doubled)
+      .toLocaleString()
+      .padStart(19)}`,
   )
   line('')
-  line('  nothing is subtracted: the linker makes every join readable one')
+  line(
+    '  nothing is subtracted: the linker makes every join readable one',
+  )
   line('  way, so a pairing and a word are the same thing here')
 }
 
@@ -514,7 +564,10 @@ function runTable(atoms: Array<string>, title: string): void {
   rule(`CONSONANTS IN A ROW, ${title}`)
   line('')
 
-  const byRun = new Map<number, { count: number; ways: Array<string> }>()
+  const byRun = new Map<
+    number,
+    { count: number; ways: Array<string> }
+  >()
   for (const a of atoms) {
     for (const b of atoms) {
       /** The linker sits between them, so it counts too. */
@@ -534,15 +587,21 @@ function runTable(atoms: Array<string>, title: string): void {
       run === 3
         ? 'linker only, neither atom brings a cluster'
         : run === 4
-          ? 'linker and one cluster'
-          : 'linker and two clusters'
+        ? 'linker and one cluster'
+        : 'linker and two clusters'
     line(
-      `| ${String(run).padEnd(8)} | ${String(held.ways.length).padStart(8)} | ${held.count.toLocaleString().padStart(17)} | ${what} |`,
+      `| ${String(run).padEnd(8)} | ${String(held.ways.length).padStart(
+        8,
+      )} | ${held.count.toLocaleString().padStart(17)} | ${what} |`,
     )
   }
 
   const total = [...byRun.values()].reduce((n, h) => n + h.count, 0)
-  line(`| **all** | ${atoms.length * atoms.length} | **${total.toLocaleString()}** | |`)
+  line(
+    `| **all** | ${
+      atoms.length * atoms.length
+    } | **${total.toLocaleString()}** | |`,
+  )
 
   line('')
   line('  Five in a row happens one way only:')
@@ -594,14 +653,22 @@ function chainTable(atoms: Array<string>, count: number): void {
   walk([])
 
   line('')
-  line('| chain               | shape                 |       count |  distinct | reads |')
-  line('| :------------------ | :-------------------- | ----------: | --------: | :---- |')
+  line(
+    '| chain               | shape                 |       count |  distinct | reads |',
+  )
+  line(
+    '| :------------------ | :-------------------- | ----------: | --------: | :---- |',
+  )
 
   let total = 0
   let far = 0
   let safe = 0
 
-  const rows: Array<{ way: Array<string>; shape: string; ok: boolean }> = []
+  const rows: Array<{
+    way: Array<string>
+    shape: string
+    ok: boolean
+  }> = []
   for (const [shape, ways] of shapes) {
     const spots = ways.map(w => linkerPositions(w.join('-')).join(','))
     const ok = new Set(spots).size === spots.length
@@ -610,7 +677,10 @@ function chainTable(atoms: Array<string>, count: number): void {
     }
   }
 
-  rows.sort((a, b) => a.shape.length - b.shape.length || a.shape.localeCompare(b.shape))
+  rows.sort(
+    (a, b) =>
+      a.shape.length - b.shape.length || a.shape.localeCompare(b.shape),
+  )
 
   for (const row of rows) {
     const n = row.way.reduce((m, a) => m * size[a], 1)
@@ -621,13 +691,23 @@ function chainTable(atoms: Array<string>, count: number): void {
       safe++
     }
     line(
-      `| ${row.way.join(' + ').padEnd(19)} | \`${row.shape}\`${' '.repeat(Math.max(0, 20 - row.shape.length))} | ${n.toLocaleString().padStart(11)} | ${d.toLocaleString().padStart(9)} | ${row.ok ? 'one way' : 'SHARED'} |`,
+      `| ${row.way.join(' + ').padEnd(19)} | \`${
+        row.shape
+      }\`${' '.repeat(Math.max(0, 20 - row.shape.length))} | ${n
+        .toLocaleString()
+        .padStart(11)} | ${d.toLocaleString().padStart(9)} | ${
+        row.ok ? 'one way' : 'SHARED'
+      } |`,
     )
   }
 
-  line(`| **all** | | **${total.toLocaleString()}** | **${far.toLocaleString()}** | |`)
+  line(
+    `| **all** | | **${total.toLocaleString()}** | **${far.toLocaleString()}** | |`,
+  )
   line('')
-  line(`  ${rows.length} chains, ${shapes.size} distinct shapes, ${safe} of them read one way`)
+  line(
+    `  ${rows.length} chains, ${shapes.size} distinct shapes, ${safe} of them read one way`,
+  )
   if (safe === rows.length) {
     line('  every chain reads one way, so none has to be ruled out')
   }
@@ -645,7 +725,9 @@ if (collidingShapes.length === 0) {
     for (const way of ways) {
       const [a, b] = way.split('-')
       line(
-        `    ${a.padEnd(7)} + ${b.padEnd(7)}   ${(size[a] * size[b]).toLocaleString().padStart(12)} pairings`,
+        `    ${a.padEnd(7)} + ${b.padEnd(7)}   ${(size[a] * size[b])
+          .toLocaleString()
+          .padStart(12)} pairings`,
       )
     }
     line('')
@@ -658,7 +740,9 @@ if (collidingShapes.length === 0) {
         }
         if ((shapeSplits.get(a + b) ?? []).length === 1) {
           line(
-            `      ${a.padEnd(7)} + ${b.padEnd(7)} -> ${(a + b).padEnd(15)} one way only`,
+            `      ${a.padEnd(7)} + ${b.padEnd(7)} -> ${(a + b).padEnd(
+              15,
+            )} one way only`,
           )
         }
       }
@@ -692,13 +776,17 @@ const badWays = new Set(threeBad.flatMap(([, w]) => w))
 
 line(`  ${Math.pow(ATOMS.length, 3)} ways to join three atoms`)
 line(`  ${three.size} distinct shapes`)
-line(`  ${Math.pow(ATOMS.length, 3) - badWays.size} of the ways are safe`)
+line(
+  `  ${Math.pow(ATOMS.length, 3) - badWays.size} of the ways are safe`,
+)
 line(`  ${badWays.size} land on a shape something else also lands on`)
 line('')
 line('  The ones to avoid, all of them a bad seam showing up inside a')
 line('  longer word:')
 line('')
-for (const [shape, ways] of threeBad.sort((x, y) => x[0].length - y[0].length)) {
+for (const [shape, ways] of threeBad.sort(
+  (x, y) => x[0].length - y[0].length,
+)) {
   line(`    ${shape}`)
   for (const way of ways) {
     line(`      ${way}`)
@@ -710,7 +798,9 @@ line('')
 line('    CVC  followed by CCVC')
 line('    CVCC followed by CVC')
 line('')
-line('  A chain of any length is safe when it never puts either of those')
+line(
+  '  A chain of any length is safe when it never puts either of those',
+)
 line('  side by side. Nothing else matters: CVCC followed by CCVC is')
 line('  fine, and so is CCVC followed by anything.')
 line('')
@@ -725,7 +815,9 @@ for (const [, ways] of three) {
 line('  safe three atom chains, by what they open with:')
 for (const atom of ATOMS) {
   line(
-    `    ${atom.padEnd(8)} ${String(safeCount.get(atom) ?? 0).padStart(3)} of ${Math.pow(ATOMS.length, 2)}`,
+    `    ${atom.padEnd(8)} ${String(safeCount.get(atom) ?? 0).padStart(
+      3,
+    )} of ${Math.pow(ATOMS.length, 2)}`,
   )
 }
 
@@ -735,11 +827,14 @@ rule('WHY')
 line('')
 line('  A `CVCCCVC` word is `c1 v1 c2 c3 c4 v2 c5`. Cutting after `c2`')
 line('  needs `c3c4` to be a legal onset. Cutting after `c3` needs')
-line('  `c2c3` to be a legal coda. Both work whenever a coda cluster and')
+line(
+  '  `c2c3` to be a legal coda. Both work whenever a coda cluster and',
+)
 line('  an onset cluster share their middle consonant.')
 line('')
 
-const overlaps: Array<{ coda: string; onset: string; middle: string }> = []
+const overlaps: Array<{ coda: string; onset: string; middle: string }> =
+  []
 for (const coda of CODA_CLUSTERS) {
   for (const onset of ONSET_CLUSTERS) {
     if (coda[1] === onset[0]) {
@@ -756,11 +851,15 @@ for (const item of overlaps) {
 line(`  ${overlaps.length} coda and onset clusters overlap that way.`)
 line('')
 line('  by the shared consonant:')
-for (const [middle, n] of [...byMiddle.entries()].sort((a, b) => b[1] - a[1])) {
+for (const [middle, n] of [...byMiddle.entries()].sort(
+  (a, b) => b[1] - a[1],
+)) {
   const codas = [...CODA_CLUSTERS].filter(c => c[1] === middle)
   const onsets = [...ONSET_CLUSTERS].filter(o => o[0] === middle)
   line(
-    `    ${middle}  ${String(n).padStart(3)}   codas ${codas.join(' ')}  |  onsets ${onsets.join(' ')}`,
+    `    ${middle}  ${String(n).padStart(3)}   codas ${codas.join(
+      ' ',
+    )}  |  onsets ${onsets.join(' ')}`,
   )
 }
 
@@ -768,7 +867,9 @@ rule('HOW MANY WORDS ARE AMBIGUOUS')
 line('')
 line('  None.')
 line('')
-line('  Before joins were marked, 22,746 seven letter words could be cut')
+line(
+  '  Before joins were marked, 22,746 seven letter words could be cut',
+)
 line('  two ways, about one percent of that shape. Every join now')
 line('  carries a linker, no coda ends in one and no onset begins with')
 line('  one, so exactly one position in a run of consonants can be the')
@@ -816,14 +917,17 @@ for (const a of CAN_CLOSE) {
     const why = same
       ? 'same consonant'
       : voice
-        ? 'voice pair'
-        : VOICED.includes(a)
-          ? 'voiced'
-          : 'voiceless'
+      ? 'voice pair'
+      : VOICED.includes(a)
+      ? 'voiced'
+      : 'voiceless'
     linkerRows.push(`${a},${b},${linker},${why}`)
   }
 }
-writeFileSync(resolve(BASE_DIR, 'linker.csv'), linkerRows.join('\n') + '\n')
+writeFileSync(
+  resolve(BASE_DIR, 'linker.csv'),
+  linkerRows.join('\n') + '\n',
+)
 
 /** The atom and join counts. */
 const countRows = ['kind,first,second,shape,count,distinct']
@@ -836,11 +940,16 @@ for (const a of ATOMS) {
   for (const b of ATOMS) {
     const d = distinct[a] * distinct[b]
     countRows.push(
-      `join,${a},${b},${a}C${b},${size[a] * size[b]},${d === 0 ? '' : d}`,
+      `join,${a},${b},${a}C${b},${size[a] * size[b]},${
+        d === 0 ? '' : d
+      }`,
     )
   }
 }
-writeFileSync(resolve(BASE_DIR, 'count.csv'), countRows.join('\n') + '\n')
+writeFileSync(
+  resolve(BASE_DIR, 'count.csv'),
+  countRows.join('\n') + '\n',
+)
 
 // ─── Out ────────────────────────────────────────────────
 

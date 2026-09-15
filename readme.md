@@ -183,7 +183,7 @@ tell apart.
 - **A liquid against a liquid**, `lsl` `lzr` `rzl` `rsr`.
 - Everything else runs straight together.
 
-The full tables are in [make/talk](make/talk).
+The full tables are in [make/v3/talk](make/v3/talk).
 
 ### No join is ambiguous
 
@@ -232,7 +232,7 @@ grammar.
 
 ## Tune Rock
 
-Tune has an older form, **[Tune Rock](make/rock)**, with nine sounds
+Tune has an older form, **[Tune Rock](make/v3/rock)**, with nine sounds
 and one syllable shape.
 
 ```text

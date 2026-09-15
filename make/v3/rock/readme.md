@@ -245,8 +245,8 @@ Generated data:
 | `base/ancestor.csv` | the Moon lexicon carried all the way back |
 
 ```bash
-pnpm --dir deck/tune exec tsx make/rock/code/calculate.ts
-pnpm --dir deck/tune exec tsx make/rock/code/fold.ts
+pnpm --dir deck/tune exec tsx make/v3/rock/code/calculate.ts
+pnpm --dir deck/tune exec tsx make/v3/rock/code/fold.ts
 ```
 
 `fold.ts` reads `../rock/base/ancestor.csv`, so run the Rock fold

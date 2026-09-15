@@ -49,7 +49,7 @@ import {
   linkerFor,
   needsLinker,
   toShape,
-} from '#/make/talk/code/sound'
+} from '#/make/v3/talk/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')
@@ -81,25 +81,44 @@ type Meeting = { a: string; b: string; linker: string | null }
 const meetings: Array<Meeting> = []
 for (const a of CAN_CLOSE) {
   for (const b of CAN_OPEN) {
-    meetings.push({ a, b, linker: needsLinker(a, b) ? linkerFor(a, b) : null })
+    meetings.push({
+      a,
+      b,
+      linker: needsLinker(a, b) ? linkerFor(a, b) : null,
+    })
   }
 }
 
 rule('WHERE A LINKER IS NEEDED')
-line(`\n  ${VOICED.length} voiced consonants, ${VOICELESS.length} voiceless`)
-line(`  ${CAN_CLOSE.length} can close a word, ${CAN_OPEN.length} can open one`)
+line(
+  `\n  ${VOICED.length} voiced consonants, ${VOICELESS.length} voiceless`,
+)
+line(
+  `  ${CAN_CLOSE.length} can close a word, ${CAN_OPEN.length} can open one`,
+)
 line(`  ${meetings.length} ways two words can meet`)
-line(`  ${meetings.filter(m => m.linker).length} need a linker, ${meetings.filter(m => !m.linker).length} run straight together`)
+line(
+  `  ${meetings.filter(m => m.linker).length} need a linker, ${
+    meetings.filter(m => !m.linker).length
+  } run straight together`,
+)
 line('')
 const byLinker = new Map<string, Array<Meeting>>()
 for (const meeting of meetings) {
   if (meeting.linker) {
-    byLinker.set(meeting.linker, [...(byLinker.get(meeting.linker) ?? []), meeting])
+    byLinker.set(meeting.linker, [
+      ...(byLinker.get(meeting.linker) ?? []),
+      meeting,
+    ])
   }
 }
 for (const linker of LINKERS) {
   const held = byLinker.get(linker) ?? []
-  line(`    ${linker}  ${String(held.length).padStart(3)}  ${held.map(m => m.a + m.b).join(' ')}`)
+  line(
+    `    ${linker}  ${String(held.length).padStart(3)}  ${held
+      .map(m => m.a + m.b)
+      .join(' ')}`,
+  )
 }
 
 rule('THE EXAMPLES')
@@ -118,7 +137,12 @@ for (const [first, second] of [
   const b = second[0]
   const linker = needsLinker(a, b) ? linkerFor(a, b) : null
   line(
-    `  ${(first + ' + ' + second).padEnd(13)} -> ${joinWords(first, second).padEnd(9)} ${(linker ? `${linker} joiner` : 'no joiner').padEnd(10)}`,
+    `  ${(first + ' + ' + second).padEnd(13)} -> ${joinWords(
+      first,
+      second,
+    ).padEnd(9)} ${(linker ? `${linker} joiner` : 'no joiner').padEnd(
+      10,
+    )}`,
   )
 }
 
@@ -151,12 +175,20 @@ for (const cluster of ONSET_CLUSTERS) {
 rule('WHAT HAS TO GO')
 line('')
 line(`  No word may end on a consonant plus a linker, and none may`)
-line(`  begin on a linker plus a consonant. Linkers are \`${LINKERS.join('`, `')}\`.`)
+line(
+  `  begin on a linker plus a consonant. Linkers are \`${LINKERS.join(
+    '`, `',
+  )}\`.`,
+)
 line('')
-line(`  coda clusters to drop  (${banCoda.size} of ${CODA_CLUSTERS.size})`)
+line(
+  `  coda clusters to drop  (${banCoda.size} of ${CODA_CLUSTERS.size})`,
+)
 line(`    ${[...banCoda].sort().join(' ')}`)
 line('')
-line(`  onset clusters to drop (${banOnset.size} of ${ONSET_CLUSTERS.size})`)
+line(
+  `  onset clusters to drop (${banOnset.size} of ${ONSET_CLUSTERS.size})`,
+)
 line(`    ${[...banOnset].sort().join(' ')}`)
 line('')
 line('  By linker:')
@@ -168,13 +200,20 @@ for (const linker of LINKERS) {
 }
 line('')
 line('  `l` is nearly free. No onset cluster begins with it and only')
-line('  `rl` ends with it. The sibilants are where the cost is, because')
-line('  `s` opens nine onset clusters and both close a great many codas.')
+line(
+  '  `rl` ends with it. The sibilants are where the cost is, because',
+)
+line(
+  '  `s` opens nine onset clusters and both close a great many codas.',
+)
 
 // ─── What It Costs ──────────────────────────────────────
 
 const lexicon: Array<string> = []
-for (const row of readFileSync(resolve(PACKAGE_DIR, 'tune.csv'), 'utf-8')
+for (const row of readFileSync(
+  resolve(PACKAGE_DIR, 'tune.csv'),
+  'utf-8',
+)
   .split('\n')
   .slice(1)) {
   const term = (row.split(',')[1] ?? '').trim()
@@ -200,17 +239,29 @@ for (const term of lexicon) {
     const pair = term[i] + term[i + 1]
     const isOnset = i + 1 <= firstVowel
     const isCoda = i >= lastVowel
-    if ((isOnset && banOnset.has(pair)) || (isCoda && banCoda.has(pair))) {
+    if (
+      (isOnset && banOnset.has(pair)) ||
+      (isCoda && banCoda.has(pair))
+    ) {
       hit.set(pair, [...(hit.get(pair) ?? []), term])
     }
   }
 }
 
-line(`\n  ${[...hit.values()].reduce((n, w) => n + w.length, 0)} words in tune.csv use a cluster that would go\n`)
+line(
+  `\n  ${[...hit.values()].reduce(
+    (n, w) => n + w.length,
+    0,
+  )} words in tune.csv use a cluster that would go\n`,
+)
 for (const [pair, words] of [...hit.entries()].sort(
   (a, b) => b[1].length - a[1].length,
 )) {
-  line(`    ${pair}  ${String(words.length).padStart(3)}  ${words.slice(0, 10).join(' ')}`)
+  line(
+    `    ${pair}  ${String(words.length).padStart(3)}  ${words
+      .slice(0, 10)
+      .join(' ')}`,
+  )
 }
 const untouched = [...banCoda, ...banOnset].filter(p => !hit.has(p))
 if (untouched.length > 0) {
@@ -222,9 +273,19 @@ if (untouched.length > 0) {
 
 rule('WHAT IS LEFT')
 line('')
-line(`  codas:  ${[...CODA_CLUSTERS].filter(c => !banCoda.has(c)).sort().join(' ')}`)
+line(
+  `  codas:  ${[...CODA_CLUSTERS]
+    .filter(c => !banCoda.has(c))
+    .sort()
+    .join(' ')}`,
+)
 line('')
-line(`  onsets: ${[...ONSET_CLUSTERS].filter(c => !banOnset.has(c)).sort().join(' ')}`)
+line(
+  `  onsets: ${[...ONSET_CLUSTERS]
+    .filter(c => !banOnset.has(c))
+    .sort()
+    .join(' ')}`,
+)
 
 // ─── Everything Together ────────────────────────────────
 
@@ -237,8 +298,16 @@ line('  at the end of a word')
 line('')
 for (const linker of LINKERS) {
   const held = [...CODA_CLUSTERS].filter(c => c[1] === linker).sort()
-  line(`    C${linker}${' '.repeat(6)}a consonant then \`${linker}\`, which is a linker`)
-  line(`${' '.repeat(12)}drops ${held.length === 0 ? 'nothing' : held.join(' ')}`)
+  line(
+    `    C${linker}${' '.repeat(
+      6,
+    )}a consonant then \`${linker}\`, which is a linker`,
+  )
+  line(
+    `${' '.repeat(12)}drops ${
+      held.length === 0 ? 'nothing' : held.join(' ')
+    }`,
+  )
 }
 line(`    y w h${' '.repeat(2)}too weak to close a syllable`)
 line('    il el   a close front vowel then a liquid, which blurs')
@@ -248,15 +317,27 @@ line('  at the start of a word')
 line('')
 for (const linker of LINKERS) {
   const held = [...ONSET_CLUSTERS].filter(c => c[0] === linker).sort()
-  line(`    ${linker}C${' '.repeat(6)}\`${linker}\` then a consonant, which is a linker`)
-  line(`${' '.repeat(12)}drops ${held.length === 0 ? 'nothing' : held.join(' ')}`)
+  line(
+    `    ${linker}C${' '.repeat(
+      6,
+    )}\`${linker}\` then a consonant, which is a linker`,
+  )
+  line(
+    `${' '.repeat(12)}drops ${
+      held.length === 0 ? 'nothing' : held.join(' ')
+    }`,
+  )
 }
 line('    q       cannot open a syllable')
 line('')
-line('  The liquid is easy to miss. `l` is a linker too, so `Cl` at the')
+line(
+  '  The liquid is easy to miss. `l` is a linker too, so `Cl` at the',
+)
 line('  end and `lC` at the start have to go for the same reason `Cs`')
 line('  and `sC` do. It costs almost nothing, because no onset cluster')
-line('  begins with `l` and only `rl` ends with it, but the rule has to')
+line(
+  '  begins with `l` and only `rl` ends with it, but the rule has to',
+)
 line('  be there or `rlr` reads two ways.')
 
 rule('THE RULE, WRITTEN OUT')
@@ -268,5 +349,7 @@ line('    anything else, after a voiced consonant      `z`')
 line('    anything else, after a voiceless consonant   `s`')
 line('')
 line('  For that to be readable, no word may end on a consonant plus a')
-line('  linker, and none may begin on a linker plus a consonant. Then a')
+line(
+  '  linker, and none may begin on a linker plus a consonant. Then a',
+)
 line('  linker in the middle of three consonants can only be a linker.')

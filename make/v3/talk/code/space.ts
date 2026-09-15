@@ -36,7 +36,7 @@ import {
   testSounding,
   tooClose,
   toShape,
-} from '#/make/talk/code/sound'
+} from '#/make/v3/talk/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')
@@ -59,7 +59,10 @@ const meaning = new Map<string, string>()
 const onsets = new Map<string, number>()
 const codas = new Map<string, number>()
 
-for (const row of readFileSync(resolve(PACKAGE_DIR, 'tune.csv'), 'utf-8')
+for (const row of readFileSync(
+  resolve(PACKAGE_DIR, 'tune.csv'),
+  'utf-8',
+)
   .split('\n')
   .slice(1)) {
   const term = (row.split(',')[1] ?? '').trim()
@@ -146,8 +149,8 @@ function count(shape: string): Count {
         i + 1 <= firstVowel
           ? testOnsetCluster(cluster)
           : i >= lastVowel
-            ? testCodaCluster(cluster)
-            : true
+          ? testCodaCluster(cluster)
+          : true
       if (!good) {
         ok = false
         break
@@ -201,7 +204,9 @@ function spread(words: Array<string>): Array<string> {
 const SHORT = SHAPES.filter(s => countSyllables(s) === 1)
 
 rule('SHAPES')
-line(`\n  Moon has ${SHAPES.length} shapes. ${SHORT.length} are three or four letters.`)
+line(
+  `\n  Moon has ${SHAPES.length} shapes. ${SHORT.length} are three or four letters.`,
+)
 line(`  ${SHORT.join(' ')}`)
 line('')
 line(`  ${VOWELS.length} vowels, ${CONSONANTS.length} consonants`)
@@ -222,56 +227,107 @@ for (const item of counts) {
 
 rule('HOW MANY WORDS')
 line('')
-line('| letters | shape  |    all | sayable | clustered | spread |  used |')
-line('| :------ | :----- | -----: | ------: | --------: | -----: | ----: |')
+line(
+  '| letters | shape  |    all | sayable | clustered | spread |  used |',
+)
+line(
+  '| :------ | :----- | -----: | ------: | --------: | -----: | ----: |',
+)
 for (const item of counts) {
   line(
-    `| ${String(item.shape.length).padEnd(7)} | \`${item.shape}\`${' '.repeat(5 - item.shape.length)} | ` +
-      `${item.raw.toLocaleString().padStart(6)} | ${item.sounding.toLocaleString().padStart(7)} | ` +
-      `${item.clustered.toLocaleString().padStart(9)} | ${spreads.get(item.shape)!.length.toLocaleString().padStart(6)} | ` +
+    `| ${String(item.shape.length).padEnd(7)} | \`${
+      item.shape
+    }\`${' '.repeat(5 - item.shape.length)} | ` +
+      `${item.raw.toLocaleString().padStart(6)} | ${item.sounding
+        .toLocaleString()
+        .padStart(7)} | ` +
+      `${item.clustered.toLocaleString().padStart(9)} | ${spreads
+        .get(item.shape)!
+        .length.toLocaleString()
+        .padStart(6)} | ` +
       `${item.used.toLocaleString().padStart(5)} |`,
   )
 }
 
 for (const length of [3, 4]) {
   const group = counts.filter(c => c.shape.length === length)
-  const sum = (pick: (c: Count) => number) => group.reduce((n, c) => n + pick(c), 0)
-  const spreadSum = group.reduce((n, c) => n + spreads.get(c.shape)!.length, 0)
+  const sum = (pick: (c: Count) => number) =>
+    group.reduce((n, c) => n + pick(c), 0)
+  const spreadSum = group.reduce(
+    (n, c) => n + spreads.get(c.shape)!.length,
+    0,
+  )
   line(
-    `| **${length}** | | ${sum(c => c.raw).toLocaleString().padStart(6)} | ` +
-      `${sum(c => c.sounding).toLocaleString().padStart(7)} | ` +
-      `${sum(c => c.clustered).toLocaleString().padStart(9)} | ` +
+    `| **${length}** | | ${sum(c => c.raw)
+      .toLocaleString()
+      .padStart(6)} | ` +
+      `${sum(c => c.sounding)
+        .toLocaleString()
+        .padStart(7)} | ` +
+      `${sum(c => c.clustered)
+        .toLocaleString()
+        .padStart(9)} | ` +
       `${spreadSum.toLocaleString().padStart(6)} | ` +
-      `${sum(c => c.used).toLocaleString().padStart(5)} |`,
+      `${sum(c => c.used)
+        .toLocaleString()
+        .padStart(5)} |`,
   )
 }
 
 rule('WHAT EACH RULE COSTS')
 line('')
 line('  all         every filling of the shape, before any rule')
-line('  sayable     after the syllable rules: no q opening, no y h or w')
+line(
+  '  sayable     after the syllable rules: no q opening, no y h or w',
+)
 line('              closing, no il el ir or er rhyme')
 line('  clustered   after the cluster lists: only the onsets and codas')
 line('              Moon actually allows')
-line('  spread      four letter words only, thinned so no two words are')
-line('              alike all the way through, which is what keeps star')
+line(
+  '  spread      four letter words only, thinned so no two words are',
+)
+line(
+  '              alike all the way through, which is what keeps star',
+)
 line('              and stal from both existing')
 line('')
 const raw = counts.reduce((n, c) => n + c.raw, 0)
 const sounding = counts.reduce((n, c) => n + c.sounding, 0)
 const clustered = counts.reduce((n, c) => n + c.clustered, 0)
-const spreadAll = counts.reduce((n, c) => n + spreads.get(c.shape)!.length, 0)
-line(`  ${raw.toLocaleString()} -> ${sounding.toLocaleString()} -> ${clustered.toLocaleString()} -> ${spreadAll.toLocaleString()}`)
+const spreadAll = counts.reduce(
+  (n, c) => n + spreads.get(c.shape)!.length,
+  0,
+)
+line(
+  `  ${raw.toLocaleString()} -> ${sounding.toLocaleString()} -> ${clustered.toLocaleString()} -> ${spreadAll.toLocaleString()}`,
+)
 line('')
-line(`  syllable rules cut ${(((raw - sounding) / raw) * 100).toFixed(1)}%`)
-line(`  cluster rules cut ${(((sounding - clustered) / sounding) * 100).toFixed(1)}% of what was left`)
-line(`  spreading cuts ${(((clustered - spreadAll) / clustered) * 100).toFixed(1)}% more`)
+line(
+  `  syllable rules cut ${(((raw - sounding) / raw) * 100).toFixed(
+    1,
+  )}%`,
+)
+line(
+  `  cluster rules cut ${(
+    ((sounding - clustered) / sounding) *
+    100
+  ).toFixed(1)}% of what was left`,
+)
+line(
+  `  spreading cuts ${(
+    ((clustered - spreadAll) / clustered) *
+    100
+  ).toFixed(1)}% more`,
+)
 
 rule('ROOM LEFT')
 line('')
 for (const length of [3, 4]) {
   const group = counts.filter(c => c.shape.length === length)
-  const space = group.reduce((n, c) => n + spreads.get(c.shape)!.length, 0)
+  const space = group.reduce(
+    (n, c) => n + spreads.get(c.shape)!.length,
+    0,
+  )
   const used = group.reduce((n, c) => n + c.used, 0)
   line(
     `  ${length} letters: ${used.toLocaleString()} used of ${space.toLocaleString()}, ` +
@@ -297,14 +353,17 @@ line(`  ${spreadAll.toLocaleString()} one syllable words in all.`)
  */
 mkdirSync(resolve(BASE_DIR, 'word'), { recursive: true })
 
-const everyRow: Array<{ word: string; shape: string; far: boolean }> = []
+const everyRow: Array<{ word: string; shape: string; far: boolean }> =
+  []
 for (const item of counts) {
   const far = new Set(spreads.get(item.shape))
   const rows = ['word,shape,distinct,meaning']
   for (const word of item.words) {
     const gloss = meaning.get(word) ?? ''
     rows.push(
-      `${word},${item.shape},${far.has(word) ? 'yes' : 'no'},${gloss.includes(',') ? `"${gloss}"` : gloss}`,
+      `${word},${item.shape},${far.has(word) ? 'yes' : 'no'},${
+        gloss.includes(',') ? `"${gloss}"` : gloss
+      }`,
     )
     everyRow.push({ word, shape: item.shape, far: far.has(word) })
   }
@@ -316,14 +375,17 @@ for (const item of counts) {
 
 /** Three letters first, then four, in Tune's own alphabet within each. */
 everyRow.sort(
-  (a, b) => a.word.length - b.word.length || compareWords(a.word, b.word),
+  (a, b) =>
+    a.word.length - b.word.length || compareWords(a.word, b.word),
 )
 
 const wordRows = ['word,shape,distinct,meaning']
 for (const item of everyRow) {
   const gloss = meaning.get(item.word) ?? ''
   wordRows.push(
-    `${item.word},${item.shape},${item.far ? 'yes' : 'no'},${gloss.includes(',') ? `"${gloss}"` : gloss}`,
+    `${item.word},${item.shape},${item.far ? 'yes' : 'no'},${
+      gloss.includes(',') ? `"${gloss}"` : gloss
+    }`,
   )
 }
 
@@ -336,16 +398,27 @@ line('| shape  | by the rules | of those, distinct |')
 line('| :----- | -----------: | -----------------: |')
 for (const item of counts) {
   line(
-    `| \`${item.shape}\`${' '.repeat(5 - item.shape.length)} | ${item.clustered.toLocaleString().padStart(12)} | ${spreads.get(item.shape)!.length.toLocaleString().padStart(18)} |`,
+    `| \`${item.shape}\`${' '.repeat(
+      5 - item.shape.length,
+    )} | ${item.clustered.toLocaleString().padStart(12)} | ${spreads
+      .get(item.shape)!
+      .length.toLocaleString()
+      .padStart(18)} |`,
   )
 }
 line(
-  `| **all** | **${everyRow.length.toLocaleString()}** | **${everyRow.filter(r => r.far).length.toLocaleString()}** |`,
+  `| **all** | **${everyRow.length.toLocaleString()}** | **${everyRow
+    .filter(r => r.far)
+    .length.toLocaleString()}** |`,
 )
 line('')
 line(`  ${everyRow.length.toLocaleString()} words -> ${wordPath}`)
 for (const item of counts) {
-  line(`  ${item.words.length.toLocaleString().padStart(6)} -> base/word/${item.shape}.csv`)
+  line(
+    `  ${item.words.length.toLocaleString().padStart(6)} -> base/word/${
+      item.shape
+    }.csv`,
+  )
 }
 line('')
 line('  `distinct` says whether the word survives the closeness rule.')
@@ -358,7 +431,9 @@ for (const item of counts) {
   const inUse = [...lexicon].filter(w => toShape(w) === item.shape)
   const outside = inUse.filter(w => !legal.has(w))
   line(
-    `  ${item.shape.padEnd(5)} ${String(inUse.length).padStart(4)} in tune.csv, ` +
+    `  ${item.shape.padEnd(5)} ${String(inUse.length).padStart(
+      4,
+    )} in tune.csv, ` +
       `${String(outside.length).padStart(4)} of them break a rule`,
   )
   if (outside.length > 0) {

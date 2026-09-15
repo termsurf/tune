@@ -27,7 +27,7 @@ import {
   VOWELS,
   compareWords,
   testRoot,
-} from '#/make/rock/code/sound'
+} from '#/make/v3/rock/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const BASE_DIR = resolve(__dirname, '../base')
@@ -54,7 +54,11 @@ export function fold(atom: string): Fold {
   for (const sound of atom) {
     const ancestor = ANCESTOR[sound]
     if (!ancestor) {
-      return { tree: null, certainty: 'held', reason: 'sound is not Rock' }
+      return {
+        tree: null,
+        certainty: 'held',
+        reason: 'sound is not Rock',
+      }
     }
     sounds += ancestor
   }
@@ -143,7 +147,11 @@ for (const tree of Object.keys(DESCENDANTS)) {
     line(`  ${tree} -> lost`)
     continue
   }
-  line(`  ${tree} -> ${kids.map(d => `${d.talk} (${d.change})`).join(', ')}`)
+  line(
+    `  ${tree} -> ${kids
+      .map(d => `${d.talk} (${d.change})`)
+      .join(', ')}`,
+  )
 }
 
 rule('CARRYING ROCK BACK TO TREE')
@@ -221,8 +229,15 @@ for (const row of rows.slice(1)) {
   claimed.set(key, holders)
 
   out.push(
-    [key, worst, String(roots.length), rockWord, cell[iMoon], cell[iEnglish]]
-      .map(c => ((c ?? '').includes(',') ? `"${c}"` : (c ?? '')))
+    [
+      key,
+      worst,
+      String(roots.length),
+      rockWord,
+      cell[iMoon],
+      cell[iEnglish],
+    ]
+      .map(c => ((c ?? '').includes(',') ? `"${c}"` : c ?? ''))
       .join(','),
   )
 }
@@ -235,29 +250,58 @@ const body = out.slice(1).sort((a, b) => {
 })
 
 mkdirSync(BASE_DIR, { recursive: true })
-writeFileSync(resolve(BASE_DIR, 'ancestor.csv'), [head, ...body].join('\n') + '\n')
+writeFileSync(
+  resolve(BASE_DIR, 'ancestor.csv'),
+  [head, ...body].join('\n') + '\n',
+)
 
-line(`\n  ${(out.length - 1).toLocaleString()} Rock words carried back to Tree`)
+line(
+  `\n  ${(
+    out.length - 1
+  ).toLocaleString()} Rock words carried back to Tree`,
+)
 line(`  ${missed.toLocaleString()} could not be carried back`)
-line(`  ${usedRoots.size.toLocaleString()} of ${treeRoots.size.toLocaleString()} two syllable Tree roots are in use (${((usedRoots.size / Math.max(1, treeRoots.size)) * 100).toFixed(0)}%)`)
-line(`  ${[...claimed.values()].filter(v => v.length > 1).length.toLocaleString()} Tree readings carry more than one meaning`)
-line(`  ${offList.toLocaleString()} reconstructed roots are not in base/root/4.csv`)
+line(
+  `  ${usedRoots.size.toLocaleString()} of ${treeRoots.size.toLocaleString()} two syllable Tree roots are in use (${(
+    (usedRoots.size / Math.max(1, treeRoots.size)) *
+    100
+  ).toFixed(0)}%)`,
+)
+line(
+  `  ${[...claimed.values()]
+    .filter(v => v.length > 1)
+    .length.toLocaleString()} Tree readings carry more than one meaning`,
+)
+line(
+  `  ${offList.toLocaleString()} reconstructed roots are not in base/root/4.csv`,
+)
 
 line('\n  how sure the reconstruction is:')
 for (const name of ['held', 'strained']) {
-  line(`    ${name.padEnd(10)} ${String(certainty[name] ?? 0).padStart(5)}`)
+  line(
+    `    ${name.padEnd(10)} ${String(certainty[name] ?? 0).padStart(
+      5,
+    )}`,
+  )
 }
 
 line('\n  how many Tree words the Rock word came back as:')
-for (const n of Object.keys(wordCount).map(Number).sort((a, b) => a - b)) {
-  const note = n > 1 ? '  Tree does not compound, so this is a phrase' : ''
+for (const n of Object.keys(wordCount)
+  .map(Number)
+  .sort((a, b) => a - b)) {
+  const note =
+    n > 1 ? '  Tree does not compound, so this is a phrase' : ''
   line(`    ${n} word  ${String(wordCount[n]).padStart(5)}${note}`)
 }
 
 line('\n  sample:')
 for (const row of body.slice(0, 14)) {
   const cell = splitRow(row)
-  line(`    ${cell[0].padEnd(14)} <- ${cell[3].padEnd(10)} <- ${cell[4].padEnd(9)} ${cell[5]}`)
+  line(
+    `    ${cell[0].padEnd(14)} <- ${cell[3].padEnd(
+      10,
+    )} <- ${cell[4].padEnd(9)} ${cell[5]}`,
+  )
 }
 
 line(`\n  wrote base/ancestor.csv`)

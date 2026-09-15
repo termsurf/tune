@@ -333,8 +333,8 @@ that can sit anywhere. Same sound, different job.
 | `words.md` | the full concept space |
 
 ```bash
-pnpm --dir deck/tune exec tsx make/talk/code/check.ts
-pnpm --dir deck/tune exec tsx make/talk/code/atom.ts
+pnpm --dir deck/tune exec tsx make/v3/talk/code/check.ts
+pnpm --dir deck/tune exec tsx make/v3/talk/code/atom.ts
 ```
 
 ## License
