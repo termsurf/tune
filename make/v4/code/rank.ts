@@ -30,7 +30,11 @@
  * closings and codas ride on a liquid. WHICH sounds they are never
  * enters into it. So the search is over those few numbers, every hit is
  * exact rather than approximate, and naming actual sounds comes after.
- * That is why there are 66 answers and not one.
+ * A taboo form is not a product, so it is subtracted flat: the screen
+ * refuses a fixed handful of forms after the arithmetic is done, and
+ * `refused` in `index.csv` is that count.
+ *
+ * That is why there are dozens of answers and not one.
  *
  * ── Beauty ─────────────────────────────────────────────
  *
@@ -81,6 +85,9 @@ type Row = {
   onset: number
   coda: number
   codaLiquid: number
+  pClose: number
+  pCoda: number
+  refused: number
   dropOpen: Array<string>
   dropClose: Array<string>
   dropOnset: Array<string>
@@ -107,10 +114,13 @@ const rows: Array<Row> = lines.map(line => {
     onset: Number(c[8]),
     coda: Number(c[9]),
     codaLiquid: Number(c[10]),
-    dropOpen: words(c[11]),
-    dropClose: words(c[12]),
-    dropOnset: words(c[13]),
-    dropCoda: words(c[14]),
+    pClose: Number(c[11]),
+    pCoda: Number(c[12]),
+    refused: Number(c[13]),
+    dropOpen: words(c[14]),
+    dropClose: words(c[15]),
+    dropOnset: words(c[16]),
+    dropCoda: words(c[17]),
   }
 })
 
@@ -118,23 +128,22 @@ const rows: Array<Row> = lines.map(line => {
 
 console.log('How each one comes to 4,096')
 console.log('')
-console.log('| n | open | onset | P(close) | coda | P(coda) | the sum |')
-console.log('| ---: | ---: | ---: | ---: | ---: | ---: | :--- |')
+console.log('| n | open | onset | P(close) | coda | P(coda) | refused | the sum |')
+console.log('| ---: | ---: | ---: | ---: | ---: | ---: | ---: | :--- |')
 
 for (const row of rows) {
-  /** P(close) is recovered from CVC, which is open x P(close). */
-  const pClose = row.cvc / row.open
-  const pCoda = row.cvcc / row.open
+  const said =
+    (row.open + row.onset) * row.pClose + row.open * row.pCoda - row.refused
 
-  const said = (row.open + row.onset) * pClose + row.open * pCoda
   if (said !== row.all || said !== 4096) {
     throw new Error(`${row.variant}: closed form gives ${said}`)
   }
 
   console.log(
-    `| ${row.variant} | ${row.open} | ${row.onset} | ${pClose} | ` +
-      `${row.coda} | ${pCoda} | ` +
-      `(${row.open} + ${row.onset}) x ${pClose} + ${row.open} x ${pCoda} = 4,096 |`,
+    `| ${row.variant} | ${row.open} | ${row.onset} | ${row.pClose} | ` +
+      `${row.coda} | ${row.pCoda} | ${row.refused} | ` +
+      `(${row.open} + ${row.onset}) x ${row.pClose} + ` +
+      `${row.open} x ${row.pCoda} - ${row.refused} = 4,096 |`,
   )
 }
 
@@ -236,7 +245,7 @@ console.log('')
 console.log(
   '| rank | n | beauty | even | one rule | marked | family | lean | why |',
 )
-console.log('| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | :--- |')
+console.log('| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | :--- |')
 
 for (let i = 0; i < scored.length; i++) {
   const s = scored[i]

@@ -123,6 +123,8 @@ export type Plan = {
   coda: Array<string>
   rhyme: Array<string>
   ban: Array<string>
+  /** Forms refused outright, whatever the rules allow. */
+  taboo: Array<string>
   shapes: Array<Shape>
   near: Near
   echo: Echo
@@ -161,6 +163,10 @@ function allowed(
   shape: Shape,
   word: string,
 ): boolean {
+  if (plan.taboo.includes(word)) {
+    return false
+  }
+
   for (const sound of word) {
     if (plan.ban.includes(sound)) {
       return false
@@ -286,7 +292,34 @@ export function predict(plan: Plan, shape: Shape): number {
     }
   }
 
-  return liveOnsets * perOnset
+  /**
+   * The taboo list is a flat subtraction, so the closed form survives
+   * it: count the product, then take off the forms this shape would
+   * otherwise have built.
+   */
+  let refused = 0
+  for (const word of plan.taboo) {
+    for (const onset of onsets) {
+      if (!word.startsWith(onset)) {
+        continue
+      }
+      const tail = word.slice(onset.length)
+      const vowel = tail[0]
+      const coda = tail.slice(1)
+      if (!plan.vowel.includes(vowel) || !codas.includes(coda)) {
+        continue
+      }
+      if (plan.rhyme.includes(vowel + coda[0])) {
+        continue
+      }
+      if ([...word].some(s => plan.ban.includes(s))) {
+        continue
+      }
+      refused++
+    }
+  }
+
+  return liveOnsets * perOnset - refused
 }
 
 // ─── Closeness ──────────────────────────────────────────
@@ -538,6 +571,22 @@ export function tally(plan: Plan, shape: Shape): number {
   const onsets = rawOnsets.filter(keepOnset)
   const codas = rawCodas.filter(keepCoda)
 
+  /**
+   * Taboo forms, filed by the opening they start with, so the inner
+   * loop asks a set rather than building a string for every candidate.
+   */
+  const tabooTails = new Map<string, Set<string>>()
+  for (const word of plan.taboo) {
+    for (const onset of onsets) {
+      if (!word.startsWith(onset)) {
+        continue
+      }
+      const tails = tabooTails.get(onset) ?? new Set<string>()
+      tails.add(word.slice(onset.length))
+      tabooTails.set(onset, tails)
+    }
+  }
+
   const vowels = plan.vowel.filter(
     v => !plan.ban.includes(v) && !barsHere.some(b => b.at === vowelAt && b.sounds.includes(v)),
   )
@@ -605,6 +654,8 @@ export function tally(plan: Plan, shape: Shape): number {
       hit.onOnset ? hit.ration.sounds.includes(onset[hit.slot]) : true,
     )
 
+    const banned = tabooTails.get(onset)
+
     for (let ci = 0; ci < codas.length; ci++) {
       if (plan.echo !== 'none') {
         const tail = codaTail[ci]
@@ -620,7 +671,7 @@ export function tally(plan: Plan, shape: Shape): number {
       const ok = codaOk[ci]
       const coda = codas[ci]
 
-      if (!keepSet && live.length === 0) {
+      if (!keepSet && live.length === 0 && !banned) {
         for (let vi = 0; vi < vowels.length; vi++) {
           if (ok[vi]) total++
         }
@@ -636,6 +687,9 @@ export function tally(plan: Plan, shape: Shape): number {
 
       for (let vi = 0; vi < vowels.length; vi++) {
         if (!ok[vi]) {
+          continue
+        }
+        if (banned && banned.has(vowels[vi] + coda)) {
           continue
         }
         const sum = partial + vowelRank[vi]

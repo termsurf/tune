@@ -80,7 +80,17 @@ for (const ratio of RATIOS) {
   }
 }
 
-const ECHOES: Array<Echo> = ['none', 'same', 'similar']
+/**
+ * **No echo.** The echo rule refuses a word that opens and closes on
+ * the same or a similar consonant, which sounds tidy and is wrong:
+ * `mam`, `pap`, `tat`, `dad` are among the most important words any
+ * language has, and a rule that cannot say them has cut into the bone
+ * to save a few hundred words it did not need to save.
+ *
+ * Kept in `plan.ts` because it is a real option, and never reached for
+ * here.
+ */
+const ECHOES: Array<Echo> = ['none']
 
 type Sieve = { mod: number; keep: Array<number> } | null
 
@@ -109,47 +119,40 @@ function keepFrom(pool: Array<string>, dropped: Array<string>): Array<string> {
   return pool.filter(c => !gone.has(c))
 }
 
+/**
+ * A way of reaching a number, and the only things it is allowed to be.
+ *
+ * **No pools are trimmed.** "Three closings go" removes sounds from the
+ * language, which is the thing these ratios exist to avoid. Every
+ * opening, closing and cluster v4 lists stays listed.
+ *
+ * **No bars and no echo.** Both say never.
+ *
+ * What is left is one ration per slot, so several small preferences
+ * work together rather than one big refusal, plus a sieve to close the
+ * last gap.
+ */
 type Way = {
-  openDrop: number
-  closeDrop: number
-  onsetDrop: number
-  liquidDrop: number
-  otherDrop: number
-  rule: Rule | null
-  portion: Portion | null
-  echo: Echo
+  portions: Array<Portion>
   sieve: Sieve
   moved: number
 }
 
 function planOf(shape: Shape, way: Way): Plan {
   return withPlan(HOUSE, {
-    open: keepFrom(HOUSE.open, openOrder.slice(0, way.openDrop)),
-    close: keepFrom(HOUSE.close, closeOrder.slice(0, way.closeDrop)),
-    onset: keepFrom(HOUSE.onset, onsetOrder.slice(0, way.onsetDrop)),
-    coda: keepFrom(HOUSE.coda, [
-      ...liquidOrder.slice(0, way.liquidDrop),
-      ...otherOrder.slice(0, way.otherDrop),
-    ]),
-    bar: way.rule ? [way.rule.bar] : [],
-    ration: way.portion ? [way.portion.ration] : [],
-    echo: way.echo,
+    ration: way.portions.map(p => p.ration),
     sieve: way.sieve ? { ...way.sieve, rank: SOUND_RANK_MAP } : null,
     shapes: [shape],
   })
 }
 
 function says(way: Way): string {
-  const parts: Array<string> = []
-  if (way.openDrop) parts.push(`${way.openDrop} openings go`)
-  if (way.closeDrop) parts.push(`${way.closeDrop} closings go`)
-  if (way.onsetDrop) parts.push(`${way.onsetDrop} onset clusters go`)
-  if (way.liquidDrop) parts.push(`${way.liquidDrop} liquid closings go`)
-  if (way.otherDrop) parts.push(`${way.otherDrop} other closings go`)
-  if (way.rule) parts.push(way.rule.says)
-  if (way.portion) parts.push(way.portion.says)
-  if (way.echo !== 'none') parts.push(`no word opens and closes alike (${way.echo})`)
-  if (way.sieve) parts.push(`an even sieve keeping ${way.sieve.keep.length} of ${way.sieve.mod}`)
+  const parts = way.portions.map(p => p.says)
+  if (way.sieve) {
+    parts.push(
+      `an even sieve keeping ${way.sieve.keep.length} of ${way.sieve.mod}`,
+    )
+  }
   return parts.join('; ') || 'nothing turned'
 }
 
@@ -167,48 +170,59 @@ const reach: Record<Shape, Map<number, Way>> = {
 const started = Date.now()
 
 for (const shape of SHAPES) {
-  const openMax = shape === 'CCVC' ? 0 : 7
-  const closeMax = shape === 'CVCC' ? 0 : 7
-  const onsetMax = shape === 'CCVC' ? HOUSE.onset.length - 3 : 0
-  const liquidMax = shape === 'CVCC' ? liquidCount : 0
-  const otherMax = shape === 'CVCC' ? otherCount : 0
+  const mine = PORTIONS.filter(p => p.ration.shape === shape)
 
   /**
-   * **No bars.** A bar says "never", and never is the wrong thing to
-   * say about a sound the language has. Everything here is a ration:
-   * a family keeps a quarter, a half or three quarters of a slot.
+   * Grouped by slot, so a combination is at most one preference per
+   * slot. That is what "several rules working together" means here:
+   * the opening leans one way and the closing another, rather than a
+   * single rule doing all the work.
    */
-  const rules: Array<Rule | null> = [null]
-  const portions: Array<Portion | null> = [
-    null,
-    ...PORTIONS.filter(p => p.ration.shape === shape),
-  ]
-
-  for (let openDrop = 0; openDrop <= openMax; openDrop++)
-  for (let closeDrop = 0; closeDrop <= closeMax; closeDrop++)
-  for (let onsetDrop = 0; onsetDrop <= onsetMax; onsetDrop++)
-  for (let liquidDrop = 0; liquidDrop <= liquidMax; liquidDrop++)
-  for (let otherDrop = 0; otherDrop <= otherMax; otherDrop++)
-  for (const rule of rules)
-  for (const portion of portions)
-  for (const echo of ECHOES)
-  for (const sieve of SIEVES) {
-    const way: Way = {
-      openDrop, closeDrop, onsetDrop, liquidDrop, otherDrop,
-      rule, portion, echo, sieve,
-      moved:
-        openDrop + closeDrop + onsetDrop + liquidDrop + otherDrop +
-        (rule ? 1 : 0) + (portion ? 1 : 0) +
-        (echo === 'none' ? 0 : 1) + (sieve ? 1 : 0),
-    }
-    const got = tally(planOf(shape, way), shape)
-    const had = reach[shape].get(got)
-    if (!had || way.moved < had.moved) {
-      reach[shape].set(got, way)
+  const bySlot = new Map<number, Array<Portion>>()
+  for (const portion of mine) {
+    const at = portion.ration.at
+    const list = bySlot.get(at)
+    if (list) {
+      list.push(portion)
+    } else {
+      bySlot.set(at, [portion])
     }
   }
 
-  console.log(`${shape} can reach ${reach[shape].size.toLocaleString()} totals`)
+  const slots = [...bySlot.keys()].sort((a, b) => a - b)
+
+  /** Every choice of one portion per slot, or none at that slot. */
+  function choose(at: number, picked: Array<Portion>) {
+    if (at === slots.length) {
+      for (const sieve of SIEVES) {
+        const way: Way = {
+          portions: [...picked],
+          sieve,
+          moved: picked.length + (sieve ? 1 : 0),
+        }
+        const got = tally(planOf(shape, way), shape)
+        const had = reach[shape].get(got)
+        if (!had || way.moved < had.moved) {
+          reach[shape].set(got, way)
+        }
+      }
+      return
+    }
+
+    choose(at + 1, picked)
+    for (const portion of bySlot.get(slots[at]) ?? []) {
+      picked.push(portion)
+      choose(at + 1, picked)
+      picked.pop()
+    }
+  }
+
+  choose(0, [])
+
+  console.log(
+    `${shape} can reach ${reach[shape].size.toLocaleString()} totals ` +
+      `using only ratios, across ${slots.length} slots`,
+  )
 }
 
 console.log('')
@@ -303,6 +317,36 @@ for (let i = 0; i < RATIOS.length; i++) {
       'How each shape reaches its number:',
       '',
       ...SHAPES.map(s => `- **${s}** at ${want[s]}: ${says(ways[s] as Way)}`),
+      '',
+      '## What the words mean',
+      '',
+      '**A ratio, never a ban.** Nothing here says a sound may not stand',
+      'somewhere. A rule like "c or C opens a quarter of the words they',
+      'could" leaves `c` and `C` free everywhere else, and free in that',
+      'slot too, just less often. The whole inventory survives and every',
+      'sound reaches a word.',
+      '',
+      '**A sieve is an even thinning.** Every sound has a fixed number,',
+      'its place in the tone order from `code/phonology.ts`. Add up the',
+      "numbers of a word's sounds and divide by some small number, and",
+      'the remainder is what the sieve reads. "Keeping 4 of 5" means a',
+      'word stays when that remainder is 0, 1, 2 or 3, and goes when it',
+      'is 4, so four words in five survive.',
+      '',
+      'It is there because rules about sounds land on round-ish numbers',
+      'and rarely on the exact one wanted. The sieve closes the last gap',
+      'without favouring any sound, because the remainder has nothing to',
+      'do with which sounds a word holds. Every opening, closing and',
+      'cluster loses the same share.',
+      '',
+      '**Nothing is random.** The remainder is a property of the word',
+      'itself, so the same word is kept or dropped on every run, on any',
+      'machine. Rebuilding gives the identical list.',
+      '',
+      '**No echo rule is used.** That rule refuses a word opening and',
+      'closing on the same or a similar consonant, and it would cost',
+      '`mam`, `pap`, `tat` and `dad`, which are words a language cannot',
+      'do without.',
       '',
       `After the closeness pass, ${lean} words stay distinct.`,
       '',

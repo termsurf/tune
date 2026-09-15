@@ -76,9 +76,10 @@ export type Shape = (typeof SHAPES)[number]
  * closed, which was an asymmetry between two sounds that are a matched
  * voiced and voiceless pair.
  */
-export const ONSET_CLUSTERS = (
-  'br bl dr fr fl gr gl kr kl pr pl tr vr sk sp st sl sm sn tx dj'
-).split(' ')
+export const ONSET_CLUSTERS =
+  'br bl dr fr fl gr gl kr kl pr pl tr vr sk sp st sl sm sn tx dj'.split(
+    ' ',
+  )
 
 /**
  * The clusters v4 may close on, exactly as `4.ts` listed them.
@@ -118,8 +119,12 @@ export function holdsHush(cluster: string): boolean {
   return [...cluster].some(sound => HUSHES.includes(sound))
 }
 
-export const ONSET_CLUSTERS_CLEAR = ONSET_CLUSTERS.filter(c => !holdsHush(c))
-export const CODA_CLUSTERS_CLEAR = CODA_CLUSTERS.filter(c => !holdsHush(c))
+export const ONSET_CLUSTERS_CLEAR = ONSET_CLUSTERS.filter(
+  c => !holdsHush(c),
+)
+export const CODA_CLUSTERS_CLEAR = CODA_CLUSTERS.filter(
+  c => !holdsHush(c),
+)
 
 // ─── Rules ──────────────────────────────────────────────
 
@@ -156,6 +161,60 @@ export const BAD_ANYWHERE: Array<string> = []
  */
 export const BAD_RHYME = ['il', 'el', 'ir', 'er', 'ul', 'ur']
 
+/**
+ * Forms v4 will not use, whatever the rules allow.
+ *
+ * A generated language has no idea what it is saying in anybody else's,
+ * and the shapes here land on English slurs and profanity often enough
+ * that it has to be checked rather than hoped about. Every form below
+ * was produced by the rules and then taken out by hand.
+ *
+ * **The screen is on the SOUND, not the spelling.** `x` is the *sh* of
+ * `ship` here, so `xit` is not an odd looking string, it is the word
+ * said aloud. `j` is the *zh* of `beige`, so `jiz` is likewise. Reading
+ * this list without the sound table makes half of it look arbitrary.
+ *
+ * Two kinds are in it and they are not the same kind of thing. The
+ * slurs are the ones that matter, because a word for something ordinary
+ * that sounds like a slur is a wound the speaker did not choose. The
+ * profanity is a smaller matter and is here because a language that
+ * makes a reader snort is a language nobody uses for serious work.
+ *
+ * This is a starting list, not a finished one. It covers English only,
+ * and v4 will need the same pass for every language it means to be
+ * spoken beside.
+ */
+
+/**
+ * The slurs, and anything that sounds like one.
+ *
+ * `nik` is not on this list and must not be a word either, because
+ * `g` and `k` differ by voicing alone and the ear does not reliably
+ * hold them apart. The same goes for `nek`, and for `mig`, and for a
+ * dozen others nobody would think to write down.
+ *
+ * So these are SEEDS, not the list. The real list is every form within
+ * one step of a seed, worked out by the same closeness test the lexicon
+ * already uses: every consonant similar, every vowel the same or one
+ * notch away. Listing forms by hand would miss exactly the ones that
+ * matter, because the ones that matter are the ones that did not occur
+ * to the person writing the list.
+ */
+export const TABOO_SLUR =
+  'nig neg nug guk fag jap wop spik spaz tard gimp krip xik'.split(' ')
+
+/**
+ * Profanity, refused as written and no wider.
+ *
+ * A near miss here is a near miss, not a wound, so the neighbourhood is
+ * not swept. Widening it would cost a great many ordinary words to
+ * avoid the odd snigger.
+ */
+export const TABOO_CRUDE = (
+  'fuk fak xit xat xut xag pis tit dik kok kuk prik klit kunt kant ' +
+  'slut klut hor kum jiz puk krap bast dam kaf'
+).split(' ')
+
 export type WordRule = {
   name: string
   note: string
@@ -176,7 +235,8 @@ export const WORD_RULES: Array<WordRule> = [
   {
     name: 'no_lost_sound',
     note: 'nothing is refused outright, so every consonant reaches a word',
-    test: word => ![...word].some(sound => BAD_ANYWHERE.includes(sound)),
+    test: word =>
+      ![...word].some(sound => BAD_ANYWHERE.includes(sound)),
   },
   {
     name: 'no_blurred_rhyme',
@@ -211,6 +271,11 @@ export const WORD_RULES: Array<WordRule> = [
     },
   },
   {
+    name: 'no_taboo',
+    note: 'a form that reads as a slur or as profanity is not a word',
+    test: word => !isTaboo(word),
+  },
+  {
     name: 'no_hush_in_cluster',
     note: 'x and j never stand inside a cluster',
     test: word => {
@@ -226,12 +291,17 @@ export const WORD_RULES: Array<WordRule> = [
   },
 ]
 
-export function testWord(word: string): { ok: boolean; broke: Array<string> } {
+export function testWord(word: string): {
+  ok: boolean
+  broke: Array<string>
+} {
   const shape = toShape(word)
   if (shape === null || !SHAPES.includes(shape as Shape)) {
     return { ok: false, broke: ['bad_shape'] }
   }
-  const broke = WORD_RULES.filter(rule => !rule.test(word)).map(r => r.name)
+  const broke = WORD_RULES.filter(rule => !rule.test(word)).map(
+    r => r.name,
+  )
   return { ok: broke.length === 0, broke }
 }
 
@@ -263,7 +333,9 @@ export const SIMILAR_GROUPS: Array<Array<string>> = [
 ]
 
 /** Vowels sitting next to each other on the ladder `i e a o u`. */
-export const ADJACENT_VOWELS = new Set('ie ei ea ae ao oa ou uo'.split(' '))
+export const ADJACENT_VOWELS = new Set(
+  'ie ei ea ae ao oa ou uo'.split(' '),
+)
 
 const similarTo = new Map<string, Set<string>>()
 for (const sound of CONSONANTS) {
@@ -307,12 +379,64 @@ export function tooClose(a: string, b: string): boolean {
   }
   for (let i = 0; i < a.length; i++) {
     const near =
-      shapeA[i] === 'V' ? vowelsClose(a[i], b[i]) : areSimilar(a[i], b[i])
+      shapeA[i] === 'V'
+        ? vowelsClose(a[i], b[i])
+        : areSimilar(a[i], b[i])
     if (!near) {
       return false
     }
   }
   return true
+}
+
+// ─── Taboo, Worked Out ──────────────────────────────────
+
+/**
+ * Every form within one step of a seed.
+ *
+ * A consonant may be swapped for anything in its similarity group and a
+ * vowel for itself or a neighbour on the `i e a o u` ladder, which is
+ * exactly the reach of `tooClose`. Walking the neighbourhood directly
+ * is the same answer as testing every candidate against every seed, and
+ * it costs nothing.
+ *
+ * `nig` alone opens out to twelve: the nasals `m n q`, the vowels `i e`
+ * and the velars `g k`. Several of those are refused by other rules
+ * anyway, which is fine. A rule saying the same thing twice is not a
+ * bug.
+ */
+function spread(seed: string): Array<string> {
+  let forms: Array<string> = ['']
+
+  for (const sound of seed) {
+    const swaps = isVowel(sound)
+      ? VOWELS.filter(v => vowelsClose(sound, v))
+      : [...(similarTo.get(sound) ?? new Set([sound]))]
+
+    const next: Array<string> = []
+    for (const form of forms) {
+      for (const swap of swaps) {
+        next.push(form + swap)
+      }
+    }
+    forms = next
+  }
+
+  return forms
+}
+
+const TABOO_SET = new Set<string>(TABOO_CRUDE)
+for (const seed of TABOO_SLUR) {
+  for (const form of spread(seed)) {
+    TABOO_SET.add(form)
+  }
+}
+
+/** Every form v4 refuses outright, seeds and neighbourhoods together. */
+export const TABOO = [...TABOO_SET].sort()
+
+export function isTaboo(word: string): boolean {
+  return TABOO_SET.has(word)
 }
 
 // ─── Sort Order ─────────────────────────────────────────
@@ -322,7 +446,9 @@ export function tooClose(a: string, b: string): boolean {
  * package's own `code/phonology`. v4 does not keep a second copy of it,
  * because two lists of the same thing disagree eventually.
  */
-export const SOUND_RANK = new Map(SORT_ORDER.map((sound, i) => [sound, i]))
+export const SOUND_RANK = new Map(
+  SORT_ORDER.map((sound, i) => [sound, i]),
+)
 
 export function compareWords(a: string, b: string): number {
   if (a.length !== b.length) {

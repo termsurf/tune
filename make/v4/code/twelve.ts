@@ -160,8 +160,23 @@ function gone(before: Array<string>, after: Array<string>): string {
 
 const index: Array<string> = [
   'variant,cvc,cvcc,ccvc,all,lean,open,close,onset,coda,coda_liquid,' +
+    'p_close,p_coda,refused,' +
     'dropped_openings,dropped_closings,dropped_onset_clusters,dropped_coda_clusters',
 ]
+
+/**
+ * What one opening buys, given a pool of closings.
+ *
+ * A closing on `l` or `r` may follow only `a` and `o`, so it is worth
+ * two vowels where every other closing is worth five.
+ */
+function per(pool: Array<string>, liquidFirst: (c: string) => boolean): number {
+  let n = 0
+  for (const c of pool) {
+    n += liquidFirst(c) ? 2 : 5
+  }
+  return n
+}
 
 console.log('| n | CVC | CVCC | CCVC | all | lean | what it drops |')
 console.log('| ---: | ---: | ---: | ---: | ---: | ---: | :--- |')
@@ -206,6 +221,21 @@ for (let i = 0; i < chosen.length; i++) {
   const dropOnset = gone(HOUSE.onset, plan.onset)
   const dropCoda = gone(HOUSE.coda, plan.coda)
 
+  /**
+   * The closed form, and what the taboo screen takes off it.
+   *
+   * Every opening is worth the same amount, so the three shapes are
+   * products. The taboo list is not a product, it is a flat count of
+   * forms refused after the fact, so it is written down separately
+   * rather than folded in and lost.
+   */
+  const pClose = per(plan.close, c => 'lr'.includes(c))
+  const pCoda = per(plan.coda, opensOnLiquid)
+  const product =
+    (plan.open.length + plan.onset.length) * pClose +
+    plan.open.length * pCoda
+  const refused = product - count.fullAll
+
   index.push(
     [
       nn,
@@ -219,6 +249,9 @@ for (let i = 0; i < chosen.length; i++) {
       plan.onset.length,
       plan.coda.length,
       liquid,
+      pClose,
+      pCoda,
+      refused,
       dropOpen,
       dropClose,
       dropOnset,
