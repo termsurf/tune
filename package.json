@@ -19,7 +19,9 @@
     "v4:number": "tsx make/v4/code/pattern.ts",
     "v4:weight": "tsx make/v4/code/weight.ts",
     "v4:blend": "tsx make/v4/code/blend.ts",
-    "v4:ratio": "tsx make/v4/code/ratio.ts"
+    "v4:ratio": "tsx make/v4/code/ratio.ts",
+    "v4:keep": "tsx make/v4/code/keep.ts",
+    "v4:term": "tsx make/v4/code/term.ts"
   },
   "devDependencies": {
     "compromise": "^14.15.0",

@@ -66,7 +66,14 @@ type Ratio = {
 
 const RATIOS: Array<Ratio> = [
   { name: '5-6-5', cvc: 1280, cvcc: 1536, ccvc: 1280, says: '5:6:5 = 16' },
-  { name: '4-7-5', cvc: 1024, cvcc: 1792, ccvc: 1280, says: '4:7:5 = 16', liked: true },
+  /**
+   * 4:7:5 is not here, and that is deliberate.
+   *
+   * It is the split that was settled on, and `keep.ts` owns it, because
+   * it is built to hold every hand written meaning rather than to be
+   * found by a search. Two generators writing one folder is how a
+   * folder ends up holding whichever ran last.
+   */
   { name: '1-2-1', cvc: 1024, cvcc: 2048, ccvc: 1024, says: '1:2:1 = 4' },
   { name: '6-5-5', cvc: 1536, cvcc: 1280, ccvc: 1280, says: '6:5:5 = 16' },
   { name: '6-7-3', cvc: 1536, cvcc: 1792, ccvc: 768, says: '6:7:3 = 16' },

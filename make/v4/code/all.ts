@@ -94,6 +94,18 @@ const STEPS: Array<Step> = [
     says: '4096/<nn>-<ratio>, the six splits',
   },
   {
+    name: 'keep',
+    script: 'keep.ts',
+    args: [],
+    says: '4096/02-4-7-5, the settled system, meanings kept',
+  },
+  {
+    name: 'term',
+    script: 'term.ts',
+    args: [],
+    says: 'term/base.csv, the lexicon with its meanings',
+  },
+  {
     name: 'favorite',
     script: 'favorite.ts',
     args: ['--cvc', '1024', '--cvcc', '1792', '--ccvc', '1280', '--name', '06-favorite'],

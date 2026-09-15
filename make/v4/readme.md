@@ -218,6 +218,102 @@ evenly across the inventory but meant two runs never agreed on the
 answer. **The shuffle here is seeded**, so the spread is kept and the
 list is the same every time it is built.
 
+## Joining
+
+Two words said as one leave their consonants touching, the last of the
+first word against the first of the second.
+
+**Every join is marked with a consonant between the two words, so a
+word boundary is always heard.** The mark is a sibilant matching the
+voice of the consonant before it.
+
+```text
+man + man  ->  manzman        n is voiced
+dag + man  ->  dagzman        g is voiced
+mat + man  ->  matsman        t is voiceless
+```
+
+|           |                               |
+| :-------- | :---------------------------- |
+| voiced    | `m n q g d b v z j C w l r y` |
+| voiceless | `p t k h s f x c`             |
+
+That will not do when the two consonants meeting are the same, or when
+they differ only by voice. Those are the two cases a listener runs
+together, and a sibilant between them does not pull them apart. `l`
+does.
+
+```text
+s + s  ->  sls        d + d  ->  dld        p + b  ->  plb
+s + z  ->  slz        d + t  ->  dlt
+```
+
+The seven pairs that differ only by voice: `pb` `dt` `gk` `sz` `fv`
+`cC` `xj`.
+
+### The rule, written out
+
+```text
+the same consonant twice, or a voice pair    l
+anything else, after a voiced consonant      z
+anything else, after a voiceless consonant   s
+```
+
+Three joiners, and nothing ever runs straight together.
+
+### How many take what
+
+Nineteen sounds can close a word and twenty one can open one, so there
+are 399 ways two words can meet.
+
+| join | pairs | why |
+| :--- | ---: | :--- |
+| `z` | 234 | after a voiced sound |
+| `s` | 133 | after a voiceless sound |
+| `l` | 32 | 18 the same sound twice, 14 a voice pair |
+
+Every one of the 399 is a row in `base/v4/join.csv`, as
+`close,open,join,rule`. `join.ts` writes it from the rule above and
+refuses to write if the counts drift from this table.
+
+```bash
+pnpm --dir deck/tune exec tsx make/v4/code/join.ts
+```
+
+### What a word cannot do, for the join to read one way
+
+The joiner only works if it cannot be read as anything else. A run of
+three consonants at a seam has three possible readings, coda cluster
+then onset, coda then onset cluster, or coda then joiner then onset,
+and the first two have to be shut off. So **no word may end on a
+consonant plus a joiner, and none may begin on a joiner plus a
+consonant.**
+
+```text
+# end          # start
+Cz             sC
+Cs             zC
+Cl             lC
+```
+
+`l` is the easy one to miss. It is a joiner too, so `Cl` at the end and
+`lC` at the start have to go for the same reason `Cs` and `sC` do, or
+`rlr` reads two ways.
+
+v3 had no clusters inside a word, so this cost it nothing. **v4 has
+clusters, and its lists break the rule as they stand.** Of the
+closings, `ls rs ps ks ts` end in `s` and `lz rz bz gz dz` end in `z`,
+and of the openings `sk sp st sl sm sn` begin with `s`. Ten closings
+and six openings would have to go for every join to read one way, and
+that trade has not been made. Until it is, `bats` + `tal` and `bat` +
+`stal` both come out `batsstal`, and nothing in the string says which.
+
+This system was worked out in v3 on 2026-08-23, and the table is the
+same one v3 wrote as `linker.csv`, row for row. v3 went on to a second
+system that afternoon, with five joiners `m` `n` `l` `s` `z` and most
+joins taking nothing. That one is in `make/v3.3/readme.md` and is not
+this.
+
 ## Where This Came From
 
 v4 is v3's rules stated once instead of twice.
@@ -259,11 +355,13 @@ make/v4/
     sound.ts     the inventory, the clusters, the rules, the closeness test
     calculate.ts builds base/v4/
     check.ts     reads base/v4/ back and proves it
+    join.ts      the joining rules, writes base/v4/join.csv
 
 base/v4/
   count.csv      the table above
   onset.csv      every listed opening, and whether it reached a word
   coda.csv       every listed closing, and whether it reached a word
+  join.csv       all 399 ways two words can meet, and what goes between
   full/          cvc.csv, cvcc.csv, ccvc.csv, base.csv
   lean/          cvc.csv, cvcc.csv, ccvc.csv, base.csv
 ```

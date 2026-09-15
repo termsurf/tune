@@ -73,7 +73,7 @@ import {
   isVowel,
   toShape,
   vowelsClose,
-} from '#/make/moon/code/sound'
+} from '#/make/v3.2/code/sound'
 
 /** A single consonant that can open a word. */
 const CAN_OPEN = CONSONANTS.filter(c => c !== 'q')

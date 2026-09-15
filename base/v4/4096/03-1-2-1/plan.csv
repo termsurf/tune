@@ -1,4 +1,4 @@
 shape,count,how
 CVC,1024,"p, t and k open a quarter of the words they could; a voiceless stop closes a three letter word half the time; an even sieve keeping 4 of 6"
-CVCC,2048,"a voiceless stop stands first in a closing cluster a quarter of the time; a voiced stop stands last in a closing cluster half the time"
-CCVC,1024,"a voiceless stop stands second in an opening cluster half the time; j closes a word opening on a cluster three quarters of the time; an even sieve keeping 3 of 5"
+CVCC,2048,"p, t and k open half the words they could; a voiced stop stands first in a closing cluster a quarter of the time"
+CCVC,1024,"a hush or a tooth sound stands second in an opening cluster a quarter of the time; j closes a word opening on a cluster three quarters of the time; an even sieve keeping 3 of 5"

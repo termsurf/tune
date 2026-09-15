@@ -209,10 +209,14 @@ export const BAD_RHYME = ['il', 'el', 'ir', 'er', 'ul', 'ur']
  * person can read and argue with beats a rule that quietly eats a
  * tenth of the language. Add a form here when one turns up.
  */
-export const TABOO_SLUR =
-  'nig neg nug nik nek kuk guk fag jap djap wop spik spaz tard gimp krip xik'.split(
-    ' ',
-  )
+export const TABOO_SLUR = (
+  /** the three letter forms */
+  'nig neg nug nik nek kuk guk fag jap djap wop spik spaz tard gimp krip xik ' +
+  /** and the same four closed on a sibilant, which is the plural */
+  'nigz negz niks neks ' +
+  /** opening on the s cluster */
+  'snig sneg'
+).split(' ')
 
 /**
  * Profanity, refused as written.

@@ -28,7 +28,7 @@ import {
   countSyllables,
   isMoonShape,
   toShape,
-} from '#/make/moon/code/sound'
+} from '#/make/v3.2/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')

@@ -1979,14 +1979,12 @@ nimp,CVCC,n,i,mp
 nind,CVCC,n,i,nd
 nint,CVCC,n,i,nt
 niqk,CVCC,n,i,qk
-nigz,CVCC,n,i,gz
 nidz,CVCC,n,i,dz
 nidj,CVCC,n,i,dj
 nibz,CVCC,n,i,bz
 nips,CVCC,n,i,ps
 nits,CVCC,n,i,ts
 nitx,CVCC,n,i,tx
-niks,CVCC,n,i,ks
 nisp,CVCC,n,i,sp
 nist,CVCC,n,i,st
 nisk,CVCC,n,i,sk
@@ -1995,14 +1993,12 @@ nemp,CVCC,n,e,mp
 nend,CVCC,n,e,nd
 nent,CVCC,n,e,nt
 neqk,CVCC,n,e,qk
-negz,CVCC,n,e,gz
 nedz,CVCC,n,e,dz
 nedj,CVCC,n,e,dj
 nebz,CVCC,n,e,bz
 neps,CVCC,n,e,ps
 nets,CVCC,n,e,ts
 netx,CVCC,n,e,tx
-neks,CVCC,n,e,ks
 nesp,CVCC,n,e,sp
 nest,CVCC,n,e,st
 nesk,CVCC,n,e,sk
@@ -5531,7 +5527,6 @@ smuc,CCVC,sm,u,c
 snim,CCVC,sn,i,m
 snin,CCVC,sn,i,n
 sniq,CCVC,sn,i,q
-snig,CCVC,sn,i,g
 snid,CCVC,sn,i,d
 snib,CCVC,sn,i,b
 snip,CCVC,sn,i,p
@@ -5548,7 +5543,6 @@ snic,CCVC,sn,i,c
 snem,CCVC,sn,e,m
 snen,CCVC,sn,e,n
 sneq,CCVC,sn,e,q
-sneg,CCVC,sn,e,g
 sned,CCVC,sn,e,d
 sneb,CCVC,sn,e,b
 snep,CCVC,sn,e,p

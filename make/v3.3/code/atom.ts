@@ -37,7 +37,7 @@ import {
   consonantSimilarityAt,
   vowelSimilarity,
 } from '#/code/similarity'
-import { isVowel, testSounding } from '#/make/talk/code/sound'
+import { isVowel, testSounding } from '#/make/v3.3/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')

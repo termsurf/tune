@@ -92,7 +92,11 @@ export type Picked = {
  * deficit score, and where two words score the same the tone order
  * settles it, so the same input gives the same list every time.
  */
-export function pickWeighted(from: Array<Piece>, want: number): Picked {
+export function pickWeighted(
+  from: Array<Piece>,
+  want: number,
+  must: Set<string> = new Set(),
+): Picked {
   if (want > from.length) {
     throw new Error(`asked for ${want} of only ${from.length}`)
   }
@@ -119,6 +123,30 @@ export function pickWeighted(from: Array<Piece>, want: number): Picked {
   const used = new Map(sounds.map(s => [s, 0]))
 
   let slotsTaken = 0
+
+  /**
+   * Words that have to be in, taken before anything is chosen.
+   *
+   * A word somebody has already given a meaning to is worth more than
+   * any profile, so those go in first and the greedy fills what is left
+   * around them. Their sounds count toward the running totals, so the
+   * fill corrects for whatever they happen to be heavy in rather than
+   * doubling down on it.
+   */
+  for (const piece of order) {
+    if (!must.has(piece.word) || held.has(piece.word)) {
+      continue
+    }
+    if (taken.length >= want) {
+      throw new Error(`${must.size} required words exceed the ${want} asked for`)
+    }
+    taken.push(piece)
+    held.add(piece.word)
+    for (const unit of unitsOf.get(piece.word) ?? []) {
+      used.set(unit, (used.get(unit) ?? 0) + 1)
+      slotsTaken++
+    }
+  }
 
   while (taken.length < want) {
     const left = order.filter(p => !held.has(p.word))

@@ -49,7 +49,7 @@ import {
   linkerFor,
   needsLinker,
   toShape,
-} from '#/make/talk/code/sound'
+} from '#/make/v3.3/code/sound'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const PACKAGE_DIR = resolve(__dirname, '../../..')
