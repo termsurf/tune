@@ -1,18 +1,23 @@
 word,meaning
-mim,
 min,not know
 miq,motion
+mig,
 mid,positive
-mib,
+mip,
 mit,meet
-mik,
 mis,miss (longing)
 miv,idea
+mif,
 mix,network
+mem,
 men,main
 meq,mine
+meg,
+met,
 mek,make
 mes,month
+mev,
+mef,
 mej,model
 mam,mother
 man,mind
@@ -36,13 +41,10 @@ mon,
 moq,about/encompass
 mog,meaning
 mod,mode
-mob,
 mop,twelve
 mot,mountain
 mok,align
-mos,
 moz,hash
-mov,
 mox,immutable
 moj,emerge
 mor,the model of the action (e.g. the transform)
@@ -52,8 +54,6 @@ mun,gut sense
 muq,mmm
 mug,(past particle)
 mud,mood
-mub,
-mup,
 mut,mutate
 muk,earth (dirt)
 mus,mercy
@@ -61,18 +61,16 @@ muz,pain
 muv,move
 muj,message
 muc,mouth
-nim,
-nin,
+mur,
+mul,unreal
 niq,omniscient
 nid,need
-nib,
 nip,
-nit,
 nis,
 niz,nest (structure)
-niv,
 nif,a (isolated-element-focus)
 nix,listen
+nem,
 nen,
 neq,
 ned,static
@@ -93,39 +91,32 @@ nak,knock
 nas,nest
 naz,as
 nav,center
+nax,
 nar,person
 nal,neutral
 nom,
 non,not (un- or -im)
-noq,
-nog,
 nob,
 nop,no
 not,note
-nok,
-nos,
 noz,nose
-nov,
 nof,
 nox,notion
 nor,
 nol,toward
 num,know
-nun,
 nuq,bond
 nub,separate
-nup,
-nut,
-nuk,
-nus,
 nuz,distribute
 nuv,empty
-nuf,
 nuj,hell
 nuc,long
+nul,forget
 gim,magic
 gin,sync
+giq,
 gig,
+gid,
 gib,guide
 gip,
 git,infinite
@@ -135,6 +126,7 @@ giz,position
 giv,
 gif,give
 gix,
+gic,red
 gem,game
 gen,
 geq,
@@ -142,6 +134,7 @@ geg,
 ged,
 geb,
 gep,
+get,
 gek,
 ges,
 gez,
@@ -156,14 +149,14 @@ gav,how (missing-action-focus)
 gaC,gather
 gar,language
 gal,too
-gom,
-gon,
 goq,job
 gog,
 god,gold
 gob,
 gop,
 got,antenna
+gok,back
+gos,
 goz,
 gov,
 gof,
@@ -179,16 +172,14 @@ gus,back (front)
 guz,lose
 guv,end
 guf,
-gux,
 guj,memory
+gur,
+gul,exponent
 dim,you
-din,
 dig,sine
 did,deed
 dib,connect
 dip,tree
-dit,
-dik,
 dis,number
 div,drive
 dif,define
@@ -211,19 +202,24 @@ daq,
 dag,dog
 dad,content
 dab,
+dap,
 dat,word
 dak,physical
 das,understand
 daz,
 dav,divine
-daf,previous
+daf,orange
+dax,
 dac,death
 dar,
 dal,matter (physics)
 dom,state
+doq,
 dog,
+dod,
 dob,two
 dop,
+dot,down
 doz,here
 dof,
 dor,door
@@ -237,22 +233,25 @@ duk,minute
 dus,reduce
 duz,do
 dux,condition (general state)
+dur,
+dul,delete
 bim,target
-bin,
 biq,being
 big,go
 bid,ignorant
 bib,we
 bip,output
 bit,beat
+bis,
 biz,intense
+biv,
 bif,
 ben,
 beq,bang
 beg,
 bed,bite
 beb,baby
-bep,
+bep,left
 bet,under
 bek,
 bes,base
@@ -274,7 +273,6 @@ bax,bird
 baC,by
 bar,bear (carry)
 bal,
-bom,
 bon,
 boq,
 bog,
@@ -287,28 +285,26 @@ boz,private
 bov,debug
 bof,
 bor,condition (case)
-bol,
 bum,boom
-bun,
 bug,cosine
 bud,awake
 bub,boob
 bup,energy
 but,unstable
-buk,
-bus,
 buz,bosom
-buv,
-buf,
-bux,bundle (matter condensing)
+bux,yellow
+bul,blue
 pim,permeate
 pin,
 piq,request
 pig,
+pid,
 pib,
 pip,individual
 pit,pure
 pik,master
+pis,
+piz,
 piv,
 pif,
 pix,
@@ -319,13 +315,15 @@ peg,
 ped,
 peb,
 pep,
-pes,
+pek,
+pes,green
 pez,
 pev,
 pef,
 pam,pray
 pan,yes
 paq,response
+pad,
 pat,dimension
 pak,package
 pas,space
@@ -337,7 +335,7 @@ pon,
 poq,
 pog,
 pod,free
-pob,
+pob,right
 pop,property (of object)
 pot,honorific (address)
 pos,
@@ -345,32 +343,33 @@ poz,
 pov,
 pof,
 por,poor
-pol,
 pum,time (count)
-pun,
 pug,
-pub,
 pup,
+puk,
+puz,
 puv,
 puf,
-pux,
+pur,
+pul,pull
 tim,team
 tin,between
 tiq,mental experience
 tig,
-tid,
+tib,
 tip,step
+tit,
 tiz,ellipse
 tiv,conscious
 tif,
 tix,tingle
 tic,fourteen
+tem,
 ten,tan (color)
 teq,like (as if)
-ted,
+ted,up
 tet,signal
 tek,take
-tes,
 tef,left
 tam,meditate
 tan,
@@ -383,7 +382,9 @@ tas,test
 taz,
 tav,
 taf,good
+tax,
 taj,down (to be cool with something)
+taC,blue
 tac,set (get)
 tar,tire (sleep)
 tal,tell
@@ -395,21 +396,20 @@ tos,task
 toz,position (cardinal)
 tox,text
 tor,before
-tol,
 tum,
-tun,
 tuq,type
 tug,
 tub,tube
 tup,impure
 tuz,because
 tuv,input (computing)
-tuf,
 tux,intuition
 tuc,emotion
+tur,turf
+tul,tool
 kim,climb
-kin,
 kiq,action
+kig,
 kid,could
 kip,tune
 kik,kick
@@ -418,16 +418,16 @@ kiz,if
 kiv,intent
 kif,
 kix,process
+kem,
 ken,communicate
 keq,
-keg,
+keg,front
 ked,
 keb,
 kep,clone
 ket,but
 kek,agree
 kes,case (situation)
-kez,
 kev,
 kef,
 kam,calm
@@ -435,6 +435,7 @@ kan,aggregate
 kaq,object
 kad,
 kab,receive
+kap,
 kat,focus
 kak,
 kas,
@@ -453,11 +454,9 @@ koz,z-axis
 kov,cover
 kof,default
 kox,cell (biology)
-koj,fool
-kor,
+koj,violet
 kol,all
 kum,back area
-kun,
 kuq,manner
 kud,miss (didn't touch)
 kub,cube
@@ -465,6 +464,8 @@ kup,tone
 kus,constant
 kuv,divide
 kuf,clue
+kur,down
+kul,cool (interjection)
 him,nothing
 hin,hi
 hid,not hidden
@@ -504,10 +505,11 @@ hut,heed
 huk,hook
 huz,duration
 huv,handle
-sim,
 sin,
+siq,
 sig,front
 sid,seed
+sib,
 sip,asleep
 sit,medium
 sik,seek
@@ -524,12 +526,12 @@ seg,
 sed,
 seb,
 sep,swipe
-set,
 sek,percept
 ses,
 sez,sir
 sev,save
 sef,continue
+sex,
 seC,etc.
 sam,sound
 san,sun
@@ -548,7 +550,6 @@ saj,etc
 sar,surf
 sal,like (similar)
 som,drug
-son,
 sog,reason
 sod,mystery
 sob,
@@ -558,22 +559,24 @@ soz,also
 sof,each
 sor,file (computer)
 sol,soul
-sum,
-sun,
-sud,
 sub,I
 sup,above (super)/hover
 sut,store
 suk,top
-sus,
 suv,observe
 suf,self (auto-)
 suC,three
+sur,assert
+sul,still (time)
 zim,pleasure
 zin,decision
 ziq,zing
 zig,gain
+zib,
 zip,graph
+zit,
+ziz,
+ziv,
 zif,
 zem,plasma (matter)
 zen,
@@ -583,7 +586,6 @@ zed,
 zeb,
 zep,
 zet,olive (color)
-zek,
 zes,
 zez,
 zev,
@@ -596,15 +598,15 @@ zab,public
 zap,zap
 zat,
 zak,effect
-zas,
-zaz,
 zav,lie
 zaf,equal (iso-)
 zar,vowel
 zal,
 zom,so/great
 zon,zone
+zoq,
 zog,
+zod,
 zob,
 zop,
 zok,try
@@ -613,22 +615,25 @@ zov,
 zof,
 zox,sense
 zor,
-zol,
 zum,zoom
 zub,absorb
 zut,identity
 zuk,where
 zus,experience
 zuz,converse (talk)
-zuf,
+zur,fall
+zul,animal
 vim,way/style
 vin,fill (-full)
 viq,everything
 vig,start
 vid,veer
+vib,
 vip,six
 vit,information
 vis,see
+viz,
+viv,
 vif,
 vix,preserve
 vic,bit
@@ -644,7 +649,9 @@ vez,
 vev,
 vef,
 vex,reveal
+vam,
 van,having the nature of (-ivity)
+vaq,
 vad,
 vab,vibe
 vat,body
@@ -655,8 +662,8 @@ vav,repeat
 vax,it
 var,variable
 val,value
-vom,
 von,sin
+voq,
 vog,black
 vod,void
 vob,
@@ -666,15 +673,12 @@ voz,voice
 vov,axis
 vof,
 vor,
-vum,
 vun,on
 vuq,data
-vug,
-vub,
-vup,
+vut,
 vus,flex
-vuf,
 vuc,catch
+vul,via
 fim,female
 fin,
 fiq,
@@ -684,6 +688,7 @@ fib,
 fip,
 fit,
 fik,
+fis,
 fiz,
 fiv,
 fif,
@@ -704,7 +709,10 @@ fex,
 feC,
 fam,family
 fan,find
+fad,
 faz,green
+far,
+fal,
 fon,device
 foq,
 fog,
@@ -717,20 +725,19 @@ fos,else
 foz,
 fov,
 fof,
+fox,
 for,fire
-fol,
 fun,within (endo-)
 fuq,function
 fug,figure (it out)
-fub,
 fup,borrow
 fut,bad
 fus,discontinuous
 fuz,fusion
-fuv,
 fuf,
-fux,
 fuj,refuge
+fur,fail
+ful,fuel
 xim,speech
 xin,machine
 xiq,will
@@ -743,24 +750,28 @@ xif,
 xic,eye
 xen,result
 xed,should
+xes,
 xef,
 xam,chime
+xan,
+xad,
 xab,seven
 xat,or
+xak,
 xax,eternal
 xar,
 xal,share
 xom,now
 xok,copy
+xof,
 xol,show
 xum,sky
 xun,change
-xug,
 xud,quiet
 xup,ship
 xut,shout
 xuv,return
-xuf,
+xul,subtract
 jin,paradise
 jit,digit
 jet,throw
@@ -769,6 +780,7 @@ jaq,count
 jak,wisdom
 jas,just (close-focus)
 jom,pattern
+jul,universe
 Ciz,kaledoscope
 Cev,without
 Cef,
@@ -790,10 +802,12 @@ cub,torture
 cuk,eleven
 cuv,field (ether)
 cux,key
+yin,north
 yiq,impermanent
 yig,
 yip,
 yit,night
+yis,
 yif,
 yix,something
 yem,yum (food)
@@ -812,27 +826,26 @@ yam,day
 yan,vehicle
 yaq,permanent
 yad,away
+yab,
 yap,yep
 yat,way
+yak,
 yaj,measure
 yar,year
 yal,turquoise
 yog,practice of focusing on x (-ism)
 yob,
 yop,
-yoz,
 yov,of
 yof,
 yor,
 yol,yell
-yun,
-yug,
-yup,
 yut,yet
+yuk,black
 yuz,use
 yuv,view
-yuf,
 yuc,with (con-)
+yul,polynomial
 rim,
 rin,run
 riq,
@@ -849,6 +862,7 @@ rif,close (near)
 rix,
 riC,algorithm
 ric,straight
+rem,
 ren,rain
 req,
 reg,edit
@@ -884,12 +898,11 @@ ral,raw
 rom,
 ron,environment
 roq,
-rog,thirteen
+rog,east
 rod,
 rob,
 rop,
 rot,FALSE
-rok,
 ros,force
 roz,rose
 rov,copper
@@ -898,19 +911,17 @@ ror,
 rol,cycle
 rum,realm
 run,glyph
-ruq,
 rug,this
 rud,update
 rub,logarithm
 rup,right (time)
 rut,
 ruk,location
-rus,
 ruz,consonant
 ruv,local
 ruf,
-rux,
-lim,
+rur,
+rul,rule (in system)
 lin,learn
 liq,simulate
 lig,square root
@@ -919,23 +930,15 @@ lib,
 lip,chain
 lit,light
 lik,link
-lis,
 liz,
 liv,
 lif,leaf
 lij,orient
 lem,low
-len,
-leq,
-leg,
 led,
-leb,
 lep,push
-let,
 lek,collect
 les,air
-lez,
-lev,
 lef,
 leC,point
 lam,real
@@ -945,7 +948,7 @@ lag,organ (body)
 lad,yellow
 lab,
 lap,
-lat,
+lat,grey
 lak,like
 las,
 laz,very much of (-some)
@@ -959,12 +962,9 @@ lon,loan
 log,permute
 lod,load
 lob,error
-lop,
 lot,lot (land)
 lok,place (space location)
 los,less of (-less) empty
-loz,
-lof,
 lox,string (computing)
 lor,lord
 lol,
@@ -972,29 +972,26 @@ lum,branch
 lun,moon
 luq,question
 lug,
-lud,
-lub,
 lup,loop
-lut,
+lut,south
 luk,look
-lus,
-luz,
 luf,far (large-distance-focus)
 luj,logic
+lur,
 wim,bounty
 win,when (time location)
 wiq,wing
 wig,kaleidoscope
-wip,
+wip,white
 wis,inverse
 wiz,solve
 wiv,connection network (neighborhood)
 wif,
 wem,warm
 wen,
-weq,
 weg,
 wed,
+web,west
 wep,
 wet,wait
 wek,week
@@ -1002,16 +999,21 @@ wes,
 wez,fifteen
 wev,wave
 wef,
+wam,
 wan,why
 waq,um
+wad,
+wab,
 wat,white
 wak,walk
+was,
+waz,
 wav,exist
 waC,water
 war,wear
 wal,while
 wom,well (good)
-won,
+wob,
 woz,problem
 wof,
 wor,forceful (like hard hit)
@@ -1019,39 +1021,36 @@ wol,wow
 wum,swim
 wun,woo
 wug,emanate
-wup,
 wut,what
-wuf,
 wux,system
 grim,
 grin,
 griq,
+grig,
 grid,
 grib,
 grit,hello
 griz,
 griv,grieve
 grif,
-grix,
 grem,grim
 gren,
 greq,
 greg,
 gred,grade (score)
-greb,
 grep,grape
 gret,
 gres,guess
 grez,
 grev,
+gref,
 grex,
 gram,gram (measure)
 gran,
 graq,
-grag,
 grad,grid
-grab,
 grap,issue
+grat,
 gras,grass
 graz,
 grav,graviton
@@ -1061,7 +1060,9 @@ gral,foot
 grom,
 gron,
 groq,lion
+grog,
 grod,
+grob,
 groz,
 grov,
 grof,
@@ -1071,7 +1072,6 @@ grum,row
 grun,grow
 gruq,
 grud,
-grub,
 grup,group (math)
 grut,grit (strength)
 gruz,
@@ -1130,6 +1130,9 @@ gloz,
 glov,
 glof,
 glox,
+gloj,
+gloC,
+gloc,
 glor,glare
 glum,
 glun,
@@ -1225,20 +1228,19 @@ djux,
 djuj,
 djuC,
 djuc,
+djul,jewel
 drim,dream
 drin,
 driq,
 drig,degree
 drid,
 drib,10^6
-drip,
 drit,
 drik,
 driz,
 driv,fate
 drif,
 drix,direction
-dric,
 drem,
 dren,
 dreq,
@@ -1267,6 +1269,8 @@ draz,
 drav,candela (measurement)
 draf,
 drax,
+draj,
+draC,
 drac,
 dral,dry
 drom,
@@ -1277,12 +1281,10 @@ drod,
 drob,
 drop,
 drot,
-drok,
 droz,enter
 drov,multicellular life
 drof,
 drox,
-droc,
 drum,drum
 drun,
 druq,
@@ -1296,12 +1298,12 @@ druz,
 druv,
 druf,
 drux,
+drul,drool
 brim,
 brin,
 briq,bring
 brig,insecta
 brid,
-brib,
 brip,beep
 brit,orbit
 briz,simple
@@ -1311,29 +1313,28 @@ brix,
 brem,
 bren,brain
 breq,
-breg,
 bred,braid
 breb,
+bret,
 brek,break (pieces)
 brez,
 brev,brave
+bref,
 brex,
 bram,
 bran,
 braq,
-brag,
 brad,
-brab,
 brat,big
 brak,bacteria
 braz,box
 brav,
-braf,
 brax,
 bral,ball
 brom,
 bron,
 broq,membrane
+brog,
 brod,bone
 brob,decimal
 broz,
@@ -1344,7 +1345,6 @@ brol,brow
 brum,
 brun,
 bruq,
-brug,
 brud,
 brub,
 bruk,beak
@@ -1404,7 +1404,9 @@ bloz,boson
 blov,
 blof,blow
 blox,
+bloj,
 bloC,blood
+bloc,
 blor,blur
 blum,bloom
 blun,
@@ -1420,11 +1422,9 @@ bluv,
 bluf,
 blux,
 prim,prime (primative)
-prid,
 prik,opaque
 priz,
 priv,
-pren,
 pred,
 pres,pressure
 prez,
@@ -1444,7 +1444,6 @@ prod,
 prot,proton
 proz,for/purpose
 prov,
-prud,
 pruk,pick
 pruz,
 pruv,prove
@@ -1497,7 +1496,6 @@ plod,implode
 plob,
 plop,
 plot,
-plok,
 ploz,
 plov,
 plof,
@@ -1510,7 +1508,6 @@ plud,pound (measure)
 plub,
 plup,poop
 plut,
-pluk,
 pluz,
 pluv,
 pluf,
@@ -1598,6 +1595,7 @@ txux,
 txuj,
 txuC,
 txuc,
+txul,actual
 trim,
 trin,neutrino
 triq,
@@ -1613,11 +1611,11 @@ tren,
 treq,
 treg,
 tred,trade
+treb,
 tret,trait
 tres,trace
 trez,
 trev,
-tref,
 trex,
 tram,
 tran,
@@ -1637,7 +1635,6 @@ trom,spectrum
 tron,
 troq,
 trod,
-trot,
 troz,
 trov,
 trof,
@@ -1660,6 +1657,7 @@ kret,secret
 krek,cake
 krez,
 krev,crave
+kran,
 kraq,ring (sound)
 krag,node
 krad,
@@ -1670,7 +1668,6 @@ krav,
 kraf,comfort
 krax,crash
 krom,ohm (measurement)
-krod,
 krot,right (vs. wrong)
 krok,croak
 kroz,
@@ -1723,7 +1720,6 @@ kloq,
 klog,
 klod,
 klob,
-klop,
 klot,
 klok,quick
 kloz,close
@@ -1734,13 +1730,13 @@ klor,color
 klum,cue
 klun,community
 kluq,
+klug,
 klud,
 klub,kill
-klup,
 klut,cute
-kluk,
 kluz,
 kluv,
+kluf,
 klux,
 smim,
 smin,meson
@@ -1823,6 +1819,7 @@ smux,
 smuj,
 smuC,
 smuc,
+smul,smile
 snim,
 snin,
 sniq,
@@ -1909,6 +1906,7 @@ spiq,
 spig,
 spid,
 spib,
+spip,
 spit,spit
 spiz,
 spiv,
@@ -1920,6 +1918,7 @@ speq,
 speg,
 sped,
 speb,
+spep,
 spet,
 spek,respect
 spez,
@@ -1945,6 +1944,7 @@ spoq,
 spog,
 spod,
 spob,
+spop,
 spot,
 spok,spoke (wheel)
 spoz,
@@ -1957,6 +1957,7 @@ spuq,
 spug,
 spud,
 spub,
+sput,
 spuz,
 spuv,
 spuf,
@@ -1967,6 +1968,7 @@ stiq,
 stig,
 stid,
 stib,
+stip,
 stit,
 stik,stick (plant)
 stiz,
@@ -1986,8 +1988,6 @@ stez,
 stev,stay
 stef,safe
 stex,
-stej,
-stec,
 stam,
 stan,
 staq,
@@ -2001,8 +2001,6 @@ staz,
 stav,
 staf,stuff
 stax,
-staj,
-stac,
 star,star
 stal,stall
 stom,install
@@ -2027,7 +2025,6 @@ stud,sad
 stub,
 stup,stupid
 stut,
-stuk,
 stuz,
 stuv,
 stuf,
@@ -2038,27 +2035,26 @@ skiq,
 skig,
 skid,
 skib,
+skip,
 skit,sweet
+skik,
 skiz,
 skiv,
-skif,
 skix,
 skem,
 sken,
 skeq,
-skeg,
 sked,
 skeb,
 skep,scape (scenery)
 sket,
+skek,
 skez,
 skev,
-skef,
 skex,
 skam,
 skan,
 skaq,
-skag,
 skad,
 skab,
 skap,skip
@@ -2066,7 +2062,6 @@ skat,
 skak,
 skaz,
 skav,
-skaf,
 skax,squash
 skar,square
 skal,scale
@@ -2076,8 +2071,8 @@ skoq,cease
 skog,
 skod,
 skob,
+skop,
 skot,
-skok,
 skoz,
 skov,
 skof,
@@ -2092,8 +2087,9 @@ skup,scoop
 skut,difficult
 skuz,excuse
 skuv,
-skuf,
 skux,
+skur,scare
+skul,school
 slim,submit
 slid,swing
 slip,sleep
@@ -2112,6 +2108,7 @@ slop,slope
 slok,weak
 slun,soon
 slup,swoop
+slur,my
 vrim,
 vrin,
 vriq,
@@ -2120,13 +2117,12 @@ vrid,
 vrib,
 vrip,
 vrit,
+vrik,
 vriz,
 vriv,
 vrif,
 vrix,
-vrij,
 vriC,wood
-vric,
 vrem,
 vren,
 vreq,
@@ -2141,7 +2137,6 @@ vrev,
 vref,
 vrex,
 vrej,
-vreC,
 vrec,
 vram,insight
 vran,
@@ -2157,6 +2152,7 @@ vrav,
 vraf,
 vrax,
 vraj,average
+vraC,
 vrac,
 vrom,
 vron,
@@ -2171,8 +2167,6 @@ vroz,
 vrov,
 vrof,
 vrox,
-vroj,
-vroc,
 vrum,
 vrun,ocean
 vruq,
@@ -2199,7 +2193,9 @@ frix,fish
 frem,
 fren,danish e vowel sound
 freq,
+freg,
 fred,vowel large E sound
+freb,
 fret,frame
 frez,phrase
 frev,
@@ -2209,7 +2205,6 @@ fram,
 fran,
 fraq,
 frad,
-frab,
 frat,
 fras,sail
 fraz,
@@ -2222,6 +2217,7 @@ froq,
 frog,
 frod,
 frob,
+frot,
 froz,
 frov,
 frof,
@@ -2290,6 +2286,9 @@ floz,
 flov,
 flof,
 flox,
+floj,
+floC,
+floc,
 flor,flower
 flum,fly (action)
 flun,few
@@ -2299,6 +2298,7 @@ flud,fluid
 flub,
 flup,
 flut,
+fluk,
 fluz,complex
 fluv,
 fluf,
@@ -2344,6 +2344,7 @@ madz,
 madj,image
 mabz,
 maps,
+mats,
 matx,symmetry
 maks,maximum
 masp,
@@ -2354,10 +2355,8 @@ marg,old
 mard,
 marb,
 marp,
-mart,
 mark,
 mars,mass
-marz,
 marv,
 marf,
 mald,
@@ -2378,6 +2377,7 @@ modz,
 modj,
 mobz,
 mops,
+mots,
 motx,
 moks,
 mosp,
@@ -2390,6 +2390,7 @@ morb,
 morp,10^36
 mort,
 mork,
+mors,
 morz,
 morv,maybe
 morf,morph
@@ -2398,7 +2399,6 @@ molb,
 molp,
 molt,vowel large O sound
 molk,
-mols,
 molz,mow (grass)
 molv,
 molf,
@@ -2419,6 +2419,24 @@ musp,
 must,
 musk,
 muft,
+murg,
+murd,
+murb,
+murp,
+murt,
+murk,
+murz,
+murv,
+murf,
+muld,
+mulb,
+mulp,
+mult,
+mulk,
+mulz,
+mulv,
+mulf,
+mulc,
 nimp,
 nind,
 nint,
@@ -2456,18 +2474,16 @@ nadz,
 nadj,knowledge
 nabz,
 natx,n sound
+naks,
+nask,
 naft,
 narg,
-nard,
 narb,neighbor
 nart,neutron
 nark,any
 narv,river
 narf,
-nald,
 nalb,
-nalp,
-nalt,
 nalz,analyse
 nalv,
 nalf,
@@ -2488,7 +2504,6 @@ nork,nor
 nors,having some aspects of (-ish)
 norv,
 norf,
-nold,
 nolb,
 nolv,
 nolf,
@@ -2500,14 +2515,18 @@ nugz,
 nudz,
 nudj,
 nubz,
-nups,
-nuts,
 nutx,
-nuks,
-nusp,
 nust,embed
-nusk,
 nuft,
+nurg,
+nurd,
+nurb,
+nurv,nerve
+nurf,vowel large U sound
+nuld,
+nulb,
+nulv,
+nulf,
 gind,
 gint,
 giqk,
@@ -2547,14 +2566,16 @@ gagz,
 gadz,
 gadj,
 gabz,
+gaps,
 gatx,german i vowel sound
+gaks,
+gasp,
+gask,
 gaft,
 garg,
 gard,g sound
 garb,
 garp,
-gart,
-gark,
 garz,again (re-)
 garv,
 garf,
@@ -2562,7 +2583,7 @@ gald,
 galb,
 galp,
 galt,guilt
-galk,
+gals,
 galz,
 galv,
 galf,
@@ -2577,8 +2598,10 @@ godj,
 gobz,
 gops,
 gotx,
+goks,
 gosp,
 gost,ghost
+gosk,
 goft,
 gorg,
 gord,
@@ -2592,8 +2615,6 @@ gorf,
 gold,
 golb,
 golp,
-golt,
-golk,
 golz,
 golv,
 golf,
@@ -2607,13 +2628,23 @@ gudz,
 gudj,
 gubz,
 gups,
-guts,
 gutx,
-guks,
 gusp,
-gust,
-gusk,
 guft,
+gurg,
+gurd,
+gurb,
+gurp,
+gurv,
+gurf,
+guld,
+gulb,
+gulp,
+gulk,
+gulz,
+gulv,
+gulf,
+gulc,
 dimp,
 dind,
 dint,
@@ -2660,7 +2691,6 @@ darg,
 darb,follow
 dart,east
 darv,
-darf,
 dald,
 dalb,
 dalt,dependent
@@ -2671,21 +2701,20 @@ dond,
 dont,
 doqk,
 dogz,
+dodz,
 dodj,
 dobz,
 dotx,
 doft,
 dorg,
+dord,
 dorb,
 dort,dirt
 dors,desert
 dorv,
 dorf,
-dold,
-dolb,
 dolt,doubt
 dolv,deliver
-dolf,
 dump,
 dund,
 dunt,
@@ -2694,12 +2723,17 @@ dugz,
 dudz,
 dudj,
 dubz,
-dups,
 dutx,
-duks,
-dusp,
 dusk,across (trans-)/cross
 duft,
+durg,
+durd,
+durb,
+durv,
+durf,
+dulb,
+dulv,
+dulf,
 bimp,
 bind,
 bint,
@@ -2748,20 +2782,13 @@ baft,
 barg,
 bard,b sound
 barb,barb
-barp,
-bart,
-bark,
 barv,duck (bird)
 barf,
 bald,
 balb,
 balp,
-balt,
-balk,
-balz,
 balv,
 balf,
-balc,
 bomp,
 bond,
 bont,
@@ -2782,11 +2809,8 @@ borv,
 borf,
 bold,10^30
 bolb,
-bolp,
-bolk,
 bolv,
 bolf,
-bolc,
 bump,
 bund,boundary
 bunt,
@@ -2795,14 +2819,22 @@ bugz,
 budz,
 budj,
 bubz,
-bups,
-buts,
 butx,
-buks,
-busp,
 bust,burst
-busk,
 buft,
+burg,
+burd,
+burb,
+burp,
+burv,
+burf,
+buld,
+bulb,
+bulp,
+bulk,
+bulv,
+bulf,
+bulc,
 pimp,
 pind,
 pint,
@@ -2812,9 +2844,11 @@ pidz,
 pidj,
 pibz,
 pips,
+pits,
 pitx,pitch (sound)
 piks,
 pisp,
+pist,
 pisk,
 pift,
 pemp,
@@ -2826,6 +2860,7 @@ pedz,
 pedj,
 pebz,
 peps,
+pets,
 petx,
 peks,
 pesp,
@@ -2834,6 +2869,7 @@ pesk,
 peft,
 pamp,
 pand,upon
+pant,
 paqk,punk
 pagz,
 padj,edge
@@ -2842,42 +2878,46 @@ patx,patch
 paft,
 parg,
 pard,pod
-parb,
 parp,perpendicular
 part,part
 park,park (car)
 parz,p sound
 parv,
-parf,
 palb,
 palv,
 palf,
 pomp,
 pond,
+pont,
 poqk,
 pogz,10^5
 podj,purge
+pobz,
 potx,pi
 post,post (content)
+poft,
 porg,
 porb,
 port,important
 pork,per
 porv,
 porf,puff
-polb,
 polv,
-polf,
 pump,
 pund,
-punt,
 puqk,
 pugz,
-pudz,
 pudj,
 pubz,
 putx,
 puft,
+purg,
+purb,
+purv,
+purf,
+pulb,
+pulv,
+pulf,
 timp,
 tind,
 tint,
@@ -2886,7 +2926,11 @@ tigz,
 tidz,
 tidj,
 tibz,
+tips,
 titx,teach
+tiks,
+tisp,
+tisk,
 tift,
 temp,
 tend,
@@ -2896,31 +2940,28 @@ tegz,
 tedz,
 tedj,
 tebz,
+teps,
 tetx,
+teks,
+tesp,
 test,taste
+tesk,
 teft,
 tamp,temperature
 tand,
 taqk,toy
-tagz,
 tadj,
-tabz,
 tatx,touch
-taft,
-targ,
-tarb,
 tarp,topology
 tarz,reptile
-tarv,
-tarf,
-talb,
 tals,tall
 talv,
-talf,
 tomp,
 tond,
 toqk,
 togz,
+todj,
+tobz,
 totx,attach
 toks,easy
 torg,
@@ -2930,14 +2971,11 @@ told,t sound
 tolv,
 tump,
 tund,
-tunt,
 tuqk,
-tugz,
-tudz,
 tudj,
-tubz,
 tutx,
-tuft,
+turv,
+tulv,
 kimp,
 kind,
 kint,
@@ -2947,9 +2985,11 @@ kidz,
 kidj,
 kibz,
 kips,
+kits,
 kitx,
 kiks,
 kisp,
+kist,
 kisk,
 kift,
 kemp,
@@ -2961,56 +3001,57 @@ kedz,
 kedj,accept
 kebz,
 keps,
+kets,
 ketx,
 keks,
 kesp,
+kest,
 kesk,
 keft,
 kamp,camp
 kand,command
+kant,
 kaqk,
 kagz,
 kadj,
+kabz,
 katx,
 kast,cast
-karg,
+kaft,
 kard,can
-karb,
 karp,keep
 kart,crown
 kark,quark
 karv,
-karf,
-kalb,
 kalt,cult
 kalv,kelvin
-kalf,
 komp,
 kond,
+kont,
 koqk,
 kogz,
 kodj,
+kobz,
 kotx,
+koft,
 korg,encounter
 korb,cone
 kort,court (justice)
 kork,curl
 korv,
-korf,
 kold,cold
-kolb,
 kolv,
-kolf,
 kump,
 kund,kind (good)
-kunt,
 kuqk,
 kugz,
-kudz,
 kudj,
 kubz,
 kutx,
 kuft,
+kurv,curve
+kulb,
+kulv,
 himp,
 hind,
 hint,hint
@@ -3058,7 +3099,6 @@ hard,hard (vs. soft)
 harb,
 hark,arc
 harv,
-harf,
 hald,elm
 halb,
 hals,ice
@@ -3092,17 +3132,17 @@ hund,
 hunt,
 huqk,hunger
 hugz,
-hudz,
 hudj,vowel u sound
 hubz,
-hups,
-huts,
 hutx,itch
-huks,
-husp,
-hust,
-husk,
 huft,
+hurg,
+hurb,
+hurv,
+hurf,
+hulb,
+hulv,
+hulf,
 simp,
 sind,
 sint,
@@ -3112,9 +3152,11 @@ sidz,
 sidj,
 sibz,
 sips,
+sits,
 sitx,second (time)
 siks,
 sisp,
+sist,
 sisk,
 sift,
 semp,
@@ -3125,10 +3167,8 @@ segz,
 sedz,
 sedj,sage (person)
 sebz,
-seps,
 setx,
 seks,
-sesp,
 sesk,
 seft,
 samp,sentence (text)
@@ -3141,28 +3181,21 @@ sard,side
 sart,certain
 sark,discern
 sarz,feature
-sarv,
 salk,circle
 sals,celsius
-salv,
 somp,
 soqk,
+sogz,
 sorg,recent
-sorv,
 sorf,surface
 sold,solid
 solp,swap
-solv,
 sump,
 sund,
-sunt,
 suqk,
-sugz,
-sudz,
 sudj,
-subz,
 sutx,set (math)
-suft,
+surv,
 zimp,
 zind,
 zint,
@@ -3176,7 +3209,6 @@ zitx,
 ziks,
 zisp,
 zist,resist
-zisk,
 zift,
 zemp,
 zend,
@@ -3186,43 +3218,39 @@ zegz,
 zedz,
 zedj,
 zebz,
-zeps,
 zetx,1000
 zeks,
-zesp,
 zesk,
 zeft,
 zamp,
 zand,
 zaqk,
-zagz,
-zaft,
-zarg,
+zadj,
+zabz,
+zatx,
 zart,lizard
 zark,open
-zarv,
 zalb,fermion
 zalv,dissolve
-zalf,
 zomp,
 zond,
 zoqk,
 zogz,
-zorg,
+zodj,
+zotx,
 zord,exit
 zorv,
 zolt,column
 zolv,
 zump,
 zund,
-zunt,
 zuqk,z sound
 zugz,
-zudz,
 zudj,
 zubz,
 zutx,
-zuft,
+zurv,
+zulv,
 vimp,
 vind,
 vint,
@@ -3275,9 +3303,7 @@ varg,
 vard,
 varb,
 varp,
-vart,
 vark,syllable
-vars,
 varz,forest
 varv,
 varf,
@@ -3286,8 +3312,6 @@ valb,
 valp,
 valt,
 valk,
-vals,
-valz,
 valv,evolve
 valf,
 valc,
@@ -3313,7 +3337,6 @@ vorb,ever
 vorp,
 vort,
 vork,electron
-vors,
 vorz,
 vorv,
 vorf,
@@ -3322,7 +3345,6 @@ volb,
 volp,
 volt,volt
 volk,
-vols,
 volz,violent
 volv,
 volf,
@@ -3336,13 +3358,31 @@ vudz,
 vudj,
 vubz,
 vups,
-vuts,
 vutx,entity
 vuks,
 vusp,
 vust,v sound
 vusk,
 vuft,
+vurg,
+vurd,
+vurb,
+vurp,
+vurt,
+vurk,
+vurs,
+vurz,
+vurv,
+vurf,verify
+vuld,
+vulb,
+vulp,
+vult,
+vulk,
+vulz,
+vulv,
+vulf,
+vulc,
 fimp,
 find,
 fint,
@@ -3383,26 +3423,23 @@ fagz,
 fadz,
 fadj,
 fabz,
+faps,
 fatx,
+faks,
+fasp,
 fast,fast
+fask,
 faft,
 farg,fog
-fard,
 farb,
-farp,
 fart,fart
-fark,
 farv,10^24
 farf,
 fald,
 falb,
 falp,
-falt,
-falk,
-falz,
 falv,
 falf,
-falc,
 fomp,
 fond,
 font,
@@ -3416,18 +3453,14 @@ foft,
 forg,
 ford,
 forb,
-forp,
 fort,fort
 fork,ant (animal)
 forv,
 forf,
 fold,fold
 folb,
-folp,
-folk,
 folv,
 folf,
-folc,
 fump,
 fund,
 funt,photon
@@ -3437,13 +3470,20 @@ fudz,
 fudj,
 fubz,
 fups,
-futs,
 futx,
-fuks,
 fusp,
-fust,
-fusk,
 fuft,
+furg,
+furd,
+furb,
+furp,
+furv,
+furf,
+fuld,
+fulb,
+fulp,
+fulv,
+fulf,
 ximp,shrimp (fish)
 xind,
 xint,
@@ -3485,18 +3525,18 @@ xadz,
 xadj,
 xabz,
 xaps,
+xats,
 xatx,
 xaks,
 xasp,
+xast,
 xask,ask
 xaft,
 xarg,
 xard,
 xarb,
 xarp,x sound
-xart,
 xark,society
-xars,
 xarz,opposite (anti)
 xarv,
 xarf,
@@ -3505,6 +3545,7 @@ xalb,
 xalp,
 xalt,
 xalk,
+xals,
 xalz,
 xalv,
 xalf,
@@ -3518,9 +3559,11 @@ xodz,
 xodj,
 xobz,
 xops,
+xots,
 xotx,
 xoks,
 xosp,
+xost,
 xosk,
 xoft,
 xorg,
@@ -3535,7 +3578,6 @@ xorf,
 xold,
 xolb,
 xolp,
-xolt,
 xolk,
 xolz,
 xolv,
@@ -3550,13 +3592,30 @@ xudz,
 xudj,
 xubz,
 xups,
-xuts,
 xutx,
 xuks,
 xusp,
-xust,
 xusk,
 xuft,
+xurg,
+xurd,
+xurb,
+xurp,
+xurt,
+xurk,
+xurs,
+xurz,
+xurv,
+xurf,
+xuld,
+xulb,
+xulp,
+xult,
+xulk,
+xulz,
+xulv,
+xulf,
+xulc,
 jimp,
 jind,
 jint,
@@ -3580,14 +3639,15 @@ jedz,
 jedj,
 jebz,
 jeps,
+jets,
 jetx,
 jeks,
 jesp,
+jest,
 jesk,
 jeft,
 jamp,
 jand,
-jant,
 jaqk,
 jagz,
 jadj,
@@ -3595,9 +3655,7 @@ jabz,
 jatx,
 jaft,
 jarg,
-jarb,
 jarv,
-jarf,
 jalb,
 jalv,
 jalf,j sound
@@ -3606,29 +3664,26 @@ jond,
 joqk,
 jogz,
 jodj,
+jobz,
 jotx,
 joft,
 jorg,
 jorb,
 jorv,
-jorf,
-jolb,
 jolv,
-jolf,
 jump,
 jund,
-junt,
 juqk,
 jugz,
-judz,
 judj,
 jubz,
-jups,
 jutx,
-juks,
-jusp,
-jusk,
 juft,
+jurb,
+jurv,
+julb,
+julv,
+julf,
 Cimp,
 Cind,
 Cint,
@@ -3652,6 +3707,7 @@ Cedz,
 Cedj,
 Cebz,
 Ceps,
+Cets,
 Cetx,
 Ceks,
 Cesp,
@@ -3662,40 +3718,35 @@ Cand,
 Caqk,
 Cagz,
 Cadj,
-Cabz,
 Catx,
 Caft,
-Carg,
-Carb,
 Carv,forever
-Carf,
 Calb,
 Calv,
-Calf,
 Comp,
 Cond,
 Coqk,
 Cogz,
 Codj,
+Cobz,
 Cotx,
+Coft,
 Corg,
 Corb,
 Cork,large C sound
 Corv,
-Corf,
-Colb,
 Colv,
-Colf,
 Cump,
 Cund,
-Cunt,
 Cuqk,
 Cugz,
-Cudz,
 Cudj,
 Cubz,
 Cutx,
 Cuft,
+Curv,
+Culb,
+Culv,
 cimp,
 cind,
 cint,
@@ -3730,14 +3781,11 @@ cand,
 caqk,
 cagz,
 cadj,
-caft,
+cabz,
+catx,
 carg,
-carb,
 carv,
-carf,
-calb,
 calv,
-calf,
 comp,
 cond,
 coqk,
@@ -3747,20 +3795,17 @@ cotx,
 corg,
 corb,distance (tele-)
 corv,
-corf,
-colb,
 colv,
-colf,
 cump,
 cund,
-cunt,
 cuqk,
 cugz,
-cudz,
 cudj,
 cubz,
 cutx,tooth
-cuft,
+curv,
+culb,
+culv,
 yimp,
 yind,
 yint,
@@ -3801,23 +3846,22 @@ yagz,
 yadz,
 yadj,
 yabz,
+yaps,
 yatx,
+yaks,
+yasp,
+yask,
 yaft,
 yarg,
 yard,yard (measurement)
 yarb,
-yarp,
-yark,
 yarv,
 yarf,
 yald,
 yalb,
 yalp,
-yalt,
-yalz,
 yalv,
 yalf,
-yalc,
 yomp,
 yond,
 yont,
@@ -3831,17 +3875,12 @@ yoft,
 yorg,
 yord,
 yorb,
-yorp,
 york,10^2
 yorv,
 yorf,
-yold,
 yolb,
-yolp,
-yolk,
 yolv,
 yolf,
-yolc,
 yump,
 yund,
 yunt,
@@ -3850,14 +3889,19 @@ yugz,
 yudz,
 yudj,
 yubz,
-yups,
-yuts,
 yutx,
-yuks,
-yusp,
 yust,used to
-yusk,
 yuft,
+yurg,
+yurd,
+yurb,
+yurv,
+yurf,
+yuld,
+yulb,
+yulp,
+yulv,
+yulf,
 rimp,
 rind,
 rint,
@@ -3866,9 +3910,7 @@ rigz,
 ridz,
 ridj,
 ribz,
-rips,
 ritx,ring (math)
-risp,
 risk,risk
 rift,
 remp,
@@ -3881,53 +3923,30 @@ redj,
 rebz,
 reps,
 retx,rate (change)
-reks,
 resp,
-resk,
 reft,
 ramp,r sound
-rand,
 rant,rant
 raqk,
-ragz,
-radj,
 ratx,vowel a sound
 rast,rest (remainder)
 rask,reminiscent of (-esque)
 raft,raft
-rarg,
-rarb,
-rarv,
-rarf,
-ralb,
 ralv,
-ralf,
 romp,
 rond,gnaw
 roqk,
-rogz,
 rodj,
 rotx,
 rost,past (distance)
-rorg,
-rorb,
-rorv,
-rorf,
-rolb,
 rolv,
-rolf,
 rump,
 rund,
-runt,
 ruqk,
-rugz,
-rudz,
-rudj,
-rubz,
 rups,10^39
-rutx,
 rusk,vowel english r sound
-ruft,
+rurv,
+rulv,
 limp,limp
 lind,
 lint,lint
@@ -3936,12 +3955,8 @@ ligz,
 lidz,
 lidj,
 libz,
-lips,
 litx,
-liks,
-lisp,
 list,list
-lisk,
 lift,
 lemp,
 lend,
@@ -3951,53 +3966,38 @@ legz,leg
 ledz,
 ledj,theory
 lebz,
-leps,
 letx,
 left,
 lamp,
-land,
-lant,
 laqk,wool
 lagz,
 ladj,l sound
-labz,
 latx,
 laks,lack
 last,last
 laft,laugh
 larg,element
-larb,
 larp,lepton
 lart,let
 larv,larva
-larf,
-lald,
 lalb,
 lalv,
 lalf,
 lomp,
-lond,
 loqk,
 logz,
-lodj,
-lotx,
 lorg,log (diary)
-lorb,
 lorv,
-lorf,
-lolb,
 lolv,
-lolf,
 lump,
 lund,
-lunt,
 luqk,
 lugz,
-ludz,
 ludj,
-lubz,
 lutx,
-luft,
+lurg,
+lurv,leave
+lulv,
 wimp,
 wind,
 wint,
@@ -4038,10 +4038,13 @@ wagz,
 wadz,
 wadj,
 wabz,
+waps,
 watx,watch
+waks,
+wasp,
+wask,
 waft,
 warg,
-ward,
 warb,
 warp,vowel large A sound
 wark,work
@@ -4050,12 +4053,8 @@ warf,
 wald,wild
 walb,
 walp,
-walt,
-walk,
-walz,
 walv,
 walf,
-walc,
 womp,
 wond,
 wont,
@@ -4069,16 +4068,12 @@ woft,
 worg,
 word,
 worb,
-worp,
-work,
 worv,weave
 worf,
 wold,world
 wolb,
-wolk,
 wolv,
 wolf,wolf
-wolc,
 wump,
 wund,
 wunt,
@@ -4088,10 +4083,15 @@ wudz,
 wudj,
 wubz,
 wups,whoops
-wuts,
 wutx,
-wuks,
-wusp,
-wust,
-wusk,
 wuft,
+wurg,
+wurd,
+wurb,
+wurv,
+wurf,
+wuld,
+wulb,
+wulp,
+wulv,
+wulf,

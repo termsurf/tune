@@ -88,6 +88,8 @@ mux
 muj
 muC
 muc
+mur
+mul
 nim
 nin
 niq
@@ -172,6 +174,8 @@ nux
 nuj
 nuC
 nuc
+nur
+nul
 gim
 gin
 giq
@@ -260,6 +264,8 @@ gux
 guj
 guC
 guc
+gur
+gul
 dim
 din
 diq
@@ -349,6 +355,8 @@ dux
 duj
 duC
 duc
+dur
+dul
 bim
 bin
 biq
@@ -438,6 +446,8 @@ bux
 buj
 buC
 buc
+bur
+bul
 pim
 pin
 piq
@@ -526,6 +536,8 @@ pux
 puj
 puC
 puc
+pur
+pul
 tim
 tin
 tiq
@@ -615,6 +627,8 @@ tux
 tuj
 tuC
 tuc
+tur
+tul
 kim
 kin
 kiq
@@ -703,6 +717,8 @@ kux
 kuj
 kuC
 kuc
+kur
+kul
 him
 hin
 hiq
@@ -792,6 +808,8 @@ hux
 huj
 huC
 huc
+hur
+hul
 sim
 sin
 siq
@@ -881,6 +899,8 @@ sux
 suj
 suC
 suc
+sur
+sul
 zim
 zin
 ziq
@@ -970,6 +990,8 @@ zux
 zuj
 zuC
 zuc
+zur
+zul
 vim
 vin
 viq
@@ -1059,6 +1081,8 @@ vux
 vuj
 vuC
 vuc
+vur
+vul
 fim
 fin
 fiq
@@ -1146,6 +1170,8 @@ fux
 fuj
 fuC
 fuc
+fur
+ful
 xim
 xin
 xiq
@@ -1234,6 +1260,8 @@ xux
 xuj
 xuC
 xuc
+xur
+xul
 jim
 jin
 jiq
@@ -1322,6 +1350,8 @@ jux
 juj
 juC
 juc
+jur
+jul
 Cim
 Cin
 Ciq
@@ -1411,6 +1441,8 @@ Cux
 Cuj
 CuC
 Cuc
+Cur
+Cul
 cim
 cin
 ciq
@@ -1500,6 +1532,8 @@ cux
 cuj
 cuC
 cuc
+cur
+cul
 yim
 yin
 yiq
@@ -1589,6 +1623,8 @@ yux
 yuj
 yuC
 yuc
+yur
+yul
 rim
 rin
 riq
@@ -1678,6 +1714,8 @@ rux
 ruj
 ruC
 ruc
+rur
+rul
 lim
 lin
 liq
@@ -1767,6 +1805,8 @@ lux
 luj
 luC
 luc
+lur
+lul
 wim
 win
 wiq
@@ -1855,3 +1895,5 @@ wux
 wuj
 wuC
 wuc
+wur
+wul

@@ -1,0 +1,262 @@
+concept,word,shape,section,note
+experience,zus,CVC,base words,
+exist,wav,CVC,base words,
+thing,,,base words,action or entity or feature
+action,kiq,CVC,base words,
+entity,vutx,4 letters,base words,
+feature,sarz,4 letters,base words,
+positive,mid,CVC,base words,but not implying quality; right
+neutral,nal,CVC,base words,but not implying quality; middle
+negative,dum,CVC,base words,but not implying quality; left
+presence,zaq,CVC,base words,posit
+absense,,,base words,negation (not
+identity,zut,CVC,base words,
+zero,han,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+one,zan,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+two,dob,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+three,suC,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+four,laf,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+five,kom,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+six,vip,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+seven,xab,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+eight,fet,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+nine,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+ten,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+eleven,cuk,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+number,dis,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+this,rug,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+that,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+here,doz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+there,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+past,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+present,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+future,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+back,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+front,sig,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+between,tin,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+among,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+cross,kras,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+attract,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+repel,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+force,ros,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+part,part,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+whole,hol,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+self,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+other,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+me,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+you,dim,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+it,vax,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+more,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+less,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+place,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","location (independent of space, as space is one realization of experience; handles ""at"""
+center,nav,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+edge,padj,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+in,ras,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+out,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+active,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+passive,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+source,mab,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","handles ""from"""
+sink,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","receiver; handles ""to"""
+original,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+image,madj,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",or reflection / copy
+direction,drix,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+orientation,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+problem,woz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+solution,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+touching,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",on
+not touching,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",off
+create,bam,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",birth = create experience
+persist,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",live = persist experience
+destroy,xiv,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",death = destroy experience
+dimension,pat,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",x = dimension 1; y = dimension 2; z = dimension 3; 2d = 3 dimension
+obstacle,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+state,dom,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+variable,var,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+node,krag,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+link,lik,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","handles ""of"""
+path,pac,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+span,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+tree,dip,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+mesh,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+collection,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","handles ""many""; less collection = few?"
+individual,pip,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+sequence,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+order,nord,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+rate,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+relation,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+target,bim,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","focus = target persist; handles ""for"""
+confuse,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+rule,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+code,kod,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",rule system
+flow,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+event,hap,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+form,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",structure
+store,sut,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",memory
+get,cit,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+release,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+send,bak,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+receive,kab,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+pattern,jom,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+instance,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+change,xun,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",transform; move
+model,mej,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",interpret
+move,muv,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+rest,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+different,pom,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+same,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",equal
+distance,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+near,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+far,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+open,zark,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+close,kloz,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+gain,zig,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+lose,guz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+merge,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+separate,nub,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+repeat,vav,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+walk,wak,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+step,tip,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+rise,riz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+fall,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+size,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+intensity,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+density,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+frequency,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+duration,huz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+time (,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",step sequence)
+uniformity,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+diversity,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+reflect,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+absorb,zub,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+convert,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+map,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+union,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",merge; or
+intersection,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",and
+align,mok,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+oppose,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+predictable,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+unpredictable,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+confidence,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+certain,sart,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+uncertain,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+true,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+false,rot,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+boundary,bund,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+inside,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+outside,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+contain,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+enter,droz,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+exit,zord,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+limit,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+border,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+region,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+compare,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+match,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+detect,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+nest,nas,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+recursion,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+select,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",pick
+test,tas,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",if
+constraint,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+result,xen,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",then
+accept,kedj,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+reject,djek,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+position,giz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+aware,dub,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+process,kix,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+general,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+specific,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","handles ""the"""
+before,tor,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+with,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+after,ret,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+start,vig,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+end,guv,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+cause,kaz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+response,paq,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+contact,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+connect,dib,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","handles ""on"""
+disconnect,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","handles ""off"""
+mix,miks,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+clarify,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+hit,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",attend = mind hit
+miss,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",ignore = mind miss
+power,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+will,xiq,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+potential,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+possible,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+real,lam,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+any,nark,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words","handles ""a"""
+all,kol,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+turn,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+return,xuv,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+hold,hoq,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+fill,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+empty,nuv,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+threshold,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+energy,bup,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+amount,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",size?
+discrete,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+continuous,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+continue,sef,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+stop,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+polarity,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+axis,vov,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+space,pas,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",axes
+x,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+y,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+z,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+point,leC,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+line,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+surface,sorf,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+volume,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+perpendicular,parp,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+parallel,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+agent (,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",action source)
+have,haz,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",possess
+lack (,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",not have)
+maximum,maks,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+minimum,skim,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+finite,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+infinite,git,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+leader,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+follower,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+tool,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+risk,risk,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+safe,stef,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+goal,gol,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",todo
+plan,plan,4 letters,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+spec,cok,CVC,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+capacity,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+capability,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+balance,,,"12 numbers, mapping to 12 colors + 12 musical notes, in 5-letter words",
+signal,tet,CVC,derived concepts,changing structure
+information,vit,CVC,derived concepts,interpreted structure
+type,tuq,CVC,derived concepts,structure pattern
+pleasure,zim,CVC,derived concepts,positive experience
+peace,siz,CVC,derived concepts,neutral experience
+pain,muz,CVC,derived concepts,negative experience
+good,taf,CVC,derived concepts,positive effect
+bad,fut,CVC,derived concepts,negative effect
+wisdom,jak,CVC,derived concepts,ultimate
+complex,fluz,4 letters,derived concepts,
+simple,briz,4 letters,derived concepts,
+vague,,,derived concepts,
+teach,titx,4 letters,derived concepts,send knowledge
+learn,lin,CVC,derived concepts,receive knowledge
+emit,,,derived concepts,send out
+up,rik,CVC,derived concepts,positive y
+down,,,derived concepts,negative y
+left,tef,CVC,derived concepts,negative x
+right,,,derived concepts,positive x
+forward,mat,CVC,derived concepts,
+backward,,,derived concepts,
+north,,,derived concepts,
+east,dart,4 letters,derived concepts,
+south,,,derived concepts,
+west,trad,4 letters,derived concepts,
+common,,,derived concepts,high count (within group)
+normal,,,derived concepts,low distance (from center)
+breath,,,derived concepts,flow loop
+silence,,,derived concepts,
+strong,,,derived concepts,more intensity
+weak,slok,4 letters,derived concepts,less intensity

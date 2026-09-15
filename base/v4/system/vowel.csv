@@ -9,4 +9,4 @@ size,vowels,palindrome,path
 9,i e a o u o a e i,yes,the snake out and the snake back
 10,i e a o u u o a e i,yes,the snake out and back turning after the end
 12,i a u u a i i a u u a i,yes,the upright axis down and up twice
-16,i o u e e o u i i o u e e o u i,no,around twice but the second half does not rotate
+16,i o u e e u o i i o u e e u o i,yes,around and back the way it came twice

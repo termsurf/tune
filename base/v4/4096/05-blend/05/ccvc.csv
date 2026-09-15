@@ -5,7 +5,6 @@ griq
 grig
 grid
 grib
-grip
 grit
 grik
 griz
@@ -40,6 +39,7 @@ grav
 graf
 grax
 graj
+graC
 grac
 grar
 grom
@@ -50,6 +50,7 @@ grod
 grob
 grop
 grot
+grok
 groz
 grov
 grof
@@ -61,7 +62,6 @@ grug
 grud
 grub
 grut
-gruk
 gruz
 gruv
 gruf
@@ -232,6 +232,7 @@ djux
 djuj
 djuC
 djuc
+djul
 drim
 drin
 driq
@@ -363,8 +364,8 @@ broq
 brog
 brod
 brob
-brop
 brot
+brok
 broz
 brov
 brof
@@ -376,7 +377,6 @@ brug
 brud
 brub
 brut
-bruk
 bruz
 bruv
 bruf
@@ -464,9 +464,9 @@ bluc
 prim
 prin
 priq
-prig
 prid
 prib
+prip
 prit
 priz
 priv
@@ -503,11 +503,8 @@ pron
 proq
 prog
 prod
-prob
-prot
 proz
 prov
-prof
 prox
 prum
 prun
@@ -594,7 +591,6 @@ pluv
 pluf
 plux
 pluj
-pluC
 pluc
 txim
 txin
@@ -683,6 +679,7 @@ txux
 txuj
 txuC
 txuc
+txul
 trim
 trin
 triq
@@ -732,8 +729,8 @@ troq
 trog
 trod
 trob
-trop
 trot
+trok
 troz
 trov
 trof
@@ -758,7 +755,6 @@ krib
 krit
 kriz
 kriv
-krif
 krix
 krem
 kren
@@ -767,6 +763,7 @@ kreg
 kred
 kreb
 kret
+krek
 krez
 krev
 kref
@@ -785,7 +782,11 @@ krax
 krom
 kron
 kroq
+krog
 krod
+krob
+krot
+krok
 kroz
 krov
 krof
@@ -793,9 +794,7 @@ krox
 krum
 krun
 kruq
-krug
 krud
-krub
 kruz
 kruv
 krux
@@ -879,9 +878,8 @@ kluz
 kluv
 kluf
 klux
-kluj
-kluC
 kluc
+klul
 smim
 smin
 smiq
@@ -891,6 +889,7 @@ smib
 smip
 smit
 smik
+smis
 smiz
 smiv
 smif
@@ -907,6 +906,7 @@ smeb
 smep
 smet
 smek
+smes
 smez
 smev
 smef
@@ -967,12 +967,12 @@ smuc
 snim
 snin
 sniq
-snig
 snid
 snib
 snip
 snit
 snik
+snis
 sniz
 sniv
 snif
@@ -983,12 +983,12 @@ snic
 snem
 snen
 sneq
-sneg
 sned
 sneb
 snep
 snet
 snek
+snes
 snez
 snev
 snef
@@ -1022,6 +1022,7 @@ snob
 snop
 snot
 snok
+snos
 snoz
 snov
 snof
@@ -1307,6 +1308,7 @@ slof
 slox
 slol
 sluz
+slul
 vrim
 vrin
 vriq
@@ -1426,7 +1428,6 @@ frav
 fraf
 frax
 fraj
-fraC
 frac
 from
 fron
@@ -1434,9 +1435,7 @@ froq
 frog
 frod
 frob
-frop
 frot
-frok
 froz
 frov
 frof
@@ -1535,3 +1534,4 @@ flux
 fluj
 fluC
 fluc
+flul

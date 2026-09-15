@@ -1,13 +1,13 @@
 variant,cvc,cvcc,ccvc,all,lean,open,close,onset,coda,coda_liquid,p_close,p_coda,refused,dropped_openings,dropped_closings,dropped_onset_clusters,dropped_coda_clusters
-01,1082,1506,1508,4096,575,13,18,18,34,18,84,116,16,j x c C w l r y,x,vr sl sm,lp lb
-02,1162,2038,896,4096,635,17,15,13,36,20,69,120,14,j x c C,j x c C,vr sp st sl sm sn tx dj,
-03,1249,1423,1424,4096,613,15,18,17,31,20,84,95,17,j x c C r y,x,vr sl sm sn,tx dz sk sp st
-04,1235,1440,1421,4096,562,14,19,16,32,19,89,103,16,j x c C l r y,,vr sl sm sn dj,lp sk sp st
-05,1231,1420,1445,4096,602,18,15,21,26,17,69,79,17,j x c,j x c C,,lp lb lt ts dj tx dz sk sp st
-06,1332,1188,1576,4096,561,17,17,20,26,20,79,70,17,j x c C,j x,vr,ks bz gz ts dj tx dz sk sp st
-07,1128,1766,1202,4096,662,17,14,18,31,17,67,104,17,j x c C,j x c C r,vr sl sm,lp lb lt sp st
-08,1173,1742,1181,4096,619,16,16,16,32,17,74,109,16,j x c C y,j x c,vr sl sm sn dj,lp lb lt st
-09,1541,1153,1402,4096,493,21,16,19,23,20,74,55,19,,j x c,vr sl,qk ft ps ks bz gz ts dj tx dz sk sp st
-10,1262,1632,1202,4096,613,19,14,18,28,18,67,86,17,j x,j x c C r,vr sl sm,lp lb dj tx dz sk sp st
-11,1262,1765,1069,4096,624,19,14,16,30,19,67,93,16,j x,j x c C r,vr sl sm sn dj,lp tx dz sk sp st
-12,1321,1888,887,4096,567,18,16,12,33,20,74,105,14,j x c,j x c,vr sk sp st sl sm sn tx dj,sk sp st
+01,1009,1869,1218,4096,646,15,14,18,33,20,67,105,-310,j x c C r y,j x c C r,vr sl sm,sk sp st
+02,978,1528,1590,4096,579,13,16,21,30,16,74,102,-254,j x c C w l r y,j x c,,lp lb lt ld sp st
+03,924,2187,985,4096,724,17,11,18,33,18,55,111,-284,j x c C,v z j x c C l r,vr sl sm,lp lb st
+04,1123,1842,1131,4096,600,14,17,14,34,19,79,113,-302,j x c C l r y,j x,vr st sl sm sn tx dj,lp st
+05,1054,1839,1203,4096,680,15,15,17,31,16,69,107,-283,j x c C r y,j x c C,vr sl sm sn,lp lb lt ld st
+06,1009,1869,1218,4096,682,15,14,18,31,15,67,110,-235,j x c C r y,j x c C r,vr sl sm,lp lb lt ld rp
+07,1193,1702,1201,4096,594,14,18,14,32,19,84,103,-302,j x c C l r y,x,vr st sl sm sn tx dj,lp sk sp st
+08,1069,2010,1017,4096,656,18,12,17,30,19,60,93,-322,j x c,z j x c C l r,vr sl sm sn,lp tx dz sk sp st
+09,1205,1754,1137,4096,579,16,16,15,30,20,74,90,-362,j x c C y,j x c,vr sl sm sn tx dj,dj tx dz sk sp st
+10,1204,1599,1293,4096,599,15,17,16,29,19,79,88,-327,j x c C r y,j x,vr sl sm sn dj,lp dj tx dz sk sp st
+11,1263,1562,1271,4096,594,14,19,14,30,19,89,93,-302,j x c C l r y,,vr st sl sm sn tx dj,lp tx dz sk sp st
+12,1193,1786,1117,4096,619,14,18,13,32,16,84,112,-260,j x c C l r y,x,vr sp st sl sm sn tx dj,lp lb lt ld

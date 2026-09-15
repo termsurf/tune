@@ -1,0 +1,5 @@
+pool,size,sounds
+open,21,m n g d b p t k h s f v z j x c C w l r y
+close,15,m n q g d b p t k s f v z l r
+onset,13,br bl dr fr fl gr gl kr kl pr pl tr vr
+coda,21,mp nt nd qk lp lb lf lv ls lz lt lc ld lk rp rb ft ps ks bz gz

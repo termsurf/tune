@@ -26,7 +26,7 @@
  */
 
 import { parse } from 'csv-parse/sync'
-import { mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -57,6 +57,62 @@ for (const row of told) {
   const says = (row.meaning ?? '').trim()
   if (term && says && !meaning.has(term)) {
     meaning.set(term, says)
+  }
+}
+
+/**
+ * Words a system has claimed, from the scratchpad.
+ *
+ * A system chooses its words by rule, so the rule decides which word it
+ * wants and the picker does not get a say. Four of the six directions
+ * were legal v4 words that the frequency picker had simply not chosen,
+ * which would have left the rule with holes in it.
+ *
+ * So the scratchpad is read here too, and anything it names is required
+ * exactly as a hand written meaning is.
+ */
+type Claimed = { word: string; meaning: string; system?: string }
+
+/**
+ * Every csv in the scratchpad folder, so a new set is a new file and
+ * nothing here has to be edited to pick it up.
+ */
+const scratch: Array<Claimed> = []
+const scratchDir = resolve(BASE, 'term/scratchpad')
+
+for (const name of readdirSync(scratchDir)) {
+  if (!name.endsWith('.csv')) {
+    continue
+  }
+  const rows: Array<Claimed> = parse(
+    readFileSync(resolve(scratchDir, name), 'utf-8'),
+    { columns: true, skip_empty_lines: true, relax_column_count: true },
+  )
+  for (const row of rows) {
+    scratch.push({ ...row, system: row.system ?? name.replace('.csv', '') })
+  }
+}
+
+const claimed = new Map<string, string>()
+for (const row of scratch) {
+  const word = (row.word ?? '').trim()
+  const says = (row.meaning ?? '').trim()
+  if (!word || !says) {
+    continue
+  }
+  claimed.set(word, says)
+
+  const had = meaning.get(word)
+  if (had !== undefined && had !== says) {
+    console.log(
+      `  ${word} is claimed by ${row.system} for "${says}" ` +
+        `and already means "${had}"`,
+    )
+  }
+  /** The system wins for the purpose of being IN the set. Which
+   * meaning it carries is settled in tune.csv, not here. */
+  if (!meaning.has(word)) {
+    meaning.set(word, says)
   }
 }
 

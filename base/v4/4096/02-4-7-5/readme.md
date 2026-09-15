@@ -9,7 +9,7 @@ CCVC  1280
 
 **Built so that no hand written meaning is lost.** Every legal v4
 word that `tune.csv` gives a meaning to is in this system, all
-1,219 of them. The rest of each shape is filled by
+1,269 of them. The rest of each shape is filled by
 the frequency picker, which leans toward the sounds a language
 actually uses and corrects for whatever the kept words are heavy in.
 
@@ -19,10 +19,10 @@ number; taking exactly the number wanted lands on it directly.
 
 | shape | words | of those, already meant something |
 | :--- | ---: | ---: |
-| `CVC` | 1024 | 648 |
-| `CVCC` | 1792 | 269 |
-| `CCVC` | 1280 | 302 |
+| `CVC` | 1024 | 686 |
+| `CVCC` | 1792 | 274 |
+| `CCVC` | 1280 | 309 |
 
-Sound drift from the wanted frequency shape is 0.841 points.
+Sound drift from the wanted frequency shape is 0.821 points.
 
 Rebuild with `pnpm --dir deck/tune v4:keep`.

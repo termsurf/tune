@@ -21,6 +21,7 @@ nup,CVC,n,u,p
 nus,CVC,n,u,s
 nuv,CVC,n,u,v
 nux,CVC,n,u,x
+nur,CVC,n,u,r
 gim,CVC,g,i,m
 gig,CVC,g,i,g
 gid,CVC,g,i,d
@@ -43,6 +44,7 @@ gup,CVC,g,u,p
 gus,CVC,g,u,s
 guv,CVC,g,u,v
 gux,CVC,g,u,x
+gur,CVC,g,u,r
 dim,CVC,d,i,m
 dig,CVC,d,i,g
 did,CVC,d,i,d
@@ -65,6 +67,7 @@ dup,CVC,d,u,p
 dus,CVC,d,u,s
 duv,CVC,d,u,v
 dux,CVC,d,u,x
+dur,CVC,d,u,r
 pim,CVC,p,i,m
 pig,CVC,p,i,g
 pid,CVC,p,i,d
@@ -87,6 +90,7 @@ pup,CVC,p,u,p
 pus,CVC,p,u,s
 puv,CVC,p,u,v
 pux,CVC,p,u,x
+pur,CVC,p,u,r
 him,CVC,h,i,m
 hig,CVC,h,i,g
 hid,CVC,h,i,d
@@ -109,6 +113,7 @@ hup,CVC,h,u,p
 hus,CVC,h,u,s
 huv,CVC,h,u,v
 hux,CVC,h,u,x
+hur,CVC,h,u,r
 sim,CVC,s,i,m
 sig,CVC,s,i,g
 sid,CVC,s,i,d
@@ -131,6 +136,7 @@ sup,CVC,s,u,p
 sus,CVC,s,u,s
 suv,CVC,s,u,v
 sux,CVC,s,u,x
+sur,CVC,s,u,r
 vim,CVC,v,i,m
 vig,CVC,v,i,g
 vid,CVC,v,i,d
@@ -153,6 +159,7 @@ fup,CVC,f,u,p
 fus,CVC,f,u,s
 fuv,CVC,f,u,v
 fux,CVC,f,u,x
+fur,CVC,f,u,r
 xim,CVC,x,i,m
 xig,CVC,x,i,g
 xid,CVC,x,i,d
@@ -175,6 +182,7 @@ xup,CVC,x,u,p
 xus,CVC,x,u,s
 xuv,CVC,x,u,v
 xux,CVC,x,u,x
+xur,CVC,x,u,r
 Cad,CVC,C,a,d
 Cap,CVC,C,a,p
 Cas,CVC,C,a,s
@@ -188,6 +196,7 @@ Cup,CVC,C,u,p
 Cus,CVC,C,u,s
 Cuv,CVC,C,u,v
 Cux,CVC,C,u,x
+Cur,CVC,C,u,r
 yim,CVC,y,i,m
 yig,CVC,y,i,g
 yid,CVC,y,i,d
@@ -210,6 +219,7 @@ yup,CVC,y,u,p
 yus,CVC,y,u,s
 yuv,CVC,y,u,v
 yux,CVC,y,u,x
+yur,CVC,y,u,r
 rim,CVC,r,i,m
 rig,CVC,r,i,g
 rid,CVC,r,i,d
@@ -232,6 +242,7 @@ rup,CVC,r,u,p
 rus,CVC,r,u,s
 ruv,CVC,r,u,v
 rux,CVC,r,u,x
+rur,CVC,r,u,r
 wim,CVC,w,i,m
 wig,CVC,w,i,g
 wid,CVC,w,i,d
@@ -254,6 +265,7 @@ wup,CVC,w,u,p
 wus,CVC,w,u,s
 wuv,CVC,w,u,v
 wux,CVC,w,u,x
+wur,CVC,w,u,r
 mimp,CVCC,m,i,mp
 mind,CVCC,m,i,nd
 miqk,CVCC,m,i,qk
@@ -289,6 +301,11 @@ nups,CVCC,n,u,ps
 nusp,CVCC,n,u,sp
 nusk,CVCC,n,u,sk
 nuft,CVCC,n,u,ft
+nurg,CVCC,n,u,rg
+nurd,CVCC,n,u,rd
+nurp,CVCC,n,u,rp
+nurs,CVCC,n,u,rs
+nurv,CVCC,n,u,rv
 gind,CVCC,g,i,nd
 giqk,CVCC,g,i,qk
 gigz,CVCC,g,i,gz
@@ -323,6 +340,11 @@ gups,CVCC,g,u,ps
 gusp,CVCC,g,u,sp
 gusk,CVCC,g,u,sk
 guft,CVCC,g,u,ft
+gurg,CVCC,g,u,rg
+gurd,CVCC,g,u,rd
+gurp,CVCC,g,u,rp
+gurs,CVCC,g,u,rs
+gurv,CVCC,g,u,rv
 dimp,CVCC,d,i,mp
 dind,CVCC,d,i,nd
 diqk,CVCC,d,i,qk
@@ -358,6 +380,11 @@ bups,CVCC,b,u,ps
 busp,CVCC,b,u,sp
 busk,CVCC,b,u,sk
 buft,CVCC,b,u,ft
+burg,CVCC,b,u,rg
+burd,CVCC,b,u,rd
+burp,CVCC,b,u,rp
+burs,CVCC,b,u,rs
+burv,CVCC,b,u,rv
 pimp,CVCC,p,i,mp
 pind,CVCC,p,i,nd
 piqk,CVCC,p,i,qk
@@ -393,6 +420,11 @@ tups,CVCC,t,u,ps
 tusp,CVCC,t,u,sp
 tusk,CVCC,t,u,sk
 tuft,CVCC,t,u,ft
+turg,CVCC,t,u,rg
+turd,CVCC,t,u,rd
+turp,CVCC,t,u,rp
+turs,CVCC,t,u,rs
+turv,CVCC,t,u,rv
 kimp,CVCC,k,i,mp
 himp,CVCC,h,i,mp
 hind,CVCC,h,i,nd
@@ -429,6 +461,11 @@ hups,CVCC,h,u,ps
 husp,CVCC,h,u,sp
 husk,CVCC,h,u,sk
 huft,CVCC,h,u,ft
+hurg,CVCC,h,u,rg
+hurd,CVCC,h,u,rd
+hurp,CVCC,h,u,rp
+hurs,CVCC,h,u,rs
+hurv,CVCC,h,u,rv
 simp,CVCC,s,i,mp
 sind,CVCC,s,i,nd
 siqk,CVCC,s,i,qk
@@ -464,6 +501,11 @@ sups,CVCC,s,u,ps
 susp,CVCC,s,u,sp
 susk,CVCC,s,u,sk
 suft,CVCC,s,u,ft
+surg,CVCC,s,u,rg
+surd,CVCC,s,u,rd
+surp,CVCC,s,u,rp
+surs,CVCC,s,u,rs
+surv,CVCC,s,u,rv
 vimp,CVCC,v,i,mp
 vind,CVCC,v,i,nd
 viqk,CVCC,v,i,qk
@@ -499,6 +541,11 @@ vups,CVCC,v,u,ps
 vusp,CVCC,v,u,sp
 vusk,CVCC,v,u,sk
 vuft,CVCC,v,u,ft
+vurg,CVCC,v,u,rg
+vurd,CVCC,v,u,rd
+vurp,CVCC,v,u,rp
+vurs,CVCC,v,u,rs
+vurv,CVCC,v,u,rv
 ximp,CVCC,x,i,mp
 xind,CVCC,x,i,nd
 xiqk,CVCC,x,i,qk
@@ -534,6 +581,11 @@ xups,CVCC,x,u,ps
 xusp,CVCC,x,u,sp
 xusk,CVCC,x,u,sk
 xuft,CVCC,x,u,ft
+xurg,CVCC,x,u,rg
+xurd,CVCC,x,u,rd
+xurp,CVCC,x,u,rp
+xurs,CVCC,x,u,rs
+xurv,CVCC,x,u,rv
 yimp,CVCC,y,i,mp
 yind,CVCC,y,i,nd
 yiqk,CVCC,y,i,qk
@@ -569,6 +621,11 @@ yups,CVCC,y,u,ps
 yusp,CVCC,y,u,sp
 yusk,CVCC,y,u,sk
 yuft,CVCC,y,u,ft
+yurg,CVCC,y,u,rg
+yurd,CVCC,y,u,rd
+yurp,CVCC,y,u,rp
+yurs,CVCC,y,u,rs
+yurv,CVCC,y,u,rv
 rimp,CVCC,r,i,mp
 rind,CVCC,r,i,nd
 riqk,CVCC,r,i,qk
@@ -604,6 +661,11 @@ rups,CVCC,r,u,ps
 rusp,CVCC,r,u,sp
 rusk,CVCC,r,u,sk
 ruft,CVCC,r,u,ft
+rurg,CVCC,r,u,rg
+rurd,CVCC,r,u,rd
+rurp,CVCC,r,u,rp
+rurs,CVCC,r,u,rs
+rurv,CVCC,r,u,rv
 wimp,CVCC,w,i,mp
 wind,CVCC,w,i,nd
 wiqk,CVCC,w,i,qk
@@ -639,6 +701,11 @@ wups,CVCC,w,u,ps
 wusp,CVCC,w,u,sp
 wusk,CVCC,w,u,sk
 wuft,CVCC,w,u,ft
+wurg,CVCC,w,u,rg
+wurd,CVCC,w,u,rd
+wurp,CVCC,w,u,rp
+wurs,CVCC,w,u,rs
+wurv,CVCC,w,u,rv
 grim,CCVC,gr,i,m
 grig,CCVC,gr,i,g
 grid,CCVC,gr,i,d
@@ -664,6 +731,7 @@ djup,CCVC,dj,u,p
 djus,CCVC,dj,u,s
 djuv,CCVC,dj,u,v
 djux,CCVC,dj,u,x
+djur,CCVC,dj,u,r
 drim,CCVC,dr,i,m
 drig,CCVC,dr,i,g
 drid,CCVC,dr,i,d
@@ -686,6 +754,7 @@ drup,CCVC,dr,u,p
 drus,CCVC,dr,u,s
 druv,CCVC,dr,u,v
 drux,CCVC,dr,u,x
+drur,CCVC,dr,u,r
 prim,CCVC,pr,i,m
 prig,CCVC,pr,i,g
 prid,CCVC,pr,i,d
@@ -708,6 +777,7 @@ prup,CCVC,pr,u,p
 prus,CCVC,pr,u,s
 pruv,CCVC,pr,u,v
 prux,CCVC,pr,u,x
+prur,CCVC,pr,u,r
 txap,CCVC,tx,a,p
 kris,CCVC,kr,i,s
 kriv,CCVC,kr,i,v
@@ -727,6 +797,7 @@ krup,CCVC,kr,u,p
 krus,CCVC,kr,u,s
 kruv,CCVC,kr,u,v
 krux,CCVC,kr,u,x
+krur,CCVC,kr,u,r
 smim,CCVC,sm,i,m
 smig,CCVC,sm,i,g
 snid,CCVC,sn,i,d
@@ -749,6 +820,7 @@ snup,CCVC,sn,u,p
 snus,CCVC,sn,u,s
 snuv,CCVC,sn,u,v
 snux,CCVC,sn,u,x
+snur,CCVC,sn,u,r
 spim,CCVC,sp,i,m
 spig,CCVC,sp,i,g
 spid,CCVC,sp,i,d
@@ -771,6 +843,7 @@ spup,CCVC,sp,u,p
 spus,CCVC,sp,u,s
 spuv,CCVC,sp,u,v
 spux,CCVC,sp,u,x
+spur,CCVC,sp,u,r
 skim,CCVC,sk,i,m
 skig,CCVC,sk,i,g
 skid,CCVC,sk,i,d
@@ -793,6 +866,7 @@ skup,CCVC,sk,u,p
 skus,CCVC,sk,u,s
 skuv,CCVC,sk,u,v
 skux,CCVC,sk,u,x
+skur,CCVC,sk,u,r
 slim,CCVC,sl,i,m
 slig,CCVC,sl,i,g
 slid,CCVC,sl,i,d
@@ -815,6 +889,7 @@ slup,CCVC,sl,u,p
 slus,CCVC,sl,u,s
 sluv,CCVC,sl,u,v
 slux,CCVC,sl,u,x
+slur,CCVC,sl,u,r
 vrim,CCVC,vr,i,m
 vrig,CCVC,vr,i,g
 vrid,CCVC,vr,i,d
@@ -837,3 +912,4 @@ vrup,CCVC,vr,u,p
 vrus,CCVC,vr,u,s
 vruv,CCVC,vr,u,v
 vrux,CCVC,vr,u,x
+vrur,CCVC,vr,u,r

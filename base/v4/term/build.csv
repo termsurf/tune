@@ -1,0 +1,108 @@
+word,letters,meaning,job,status
+yod,3,"past tense, ""created""",tense and aspect,"legal, not picked"
+pot,3,"complete state, the `-ed` you enter into",tense and aspect,taken by honorific (address)
+reC,3,progressive `-ing`,tense and aspect,taken by progress
+gut,3,"gerund, the state of an action",tense and aspect,taken by gut
+kif,3,"future tense, ""will create""",tense and aspect,"in system, free"
+bak,3,"possessive, ""the bird's food""",possession and number,taken by send
+byas,4,"possessive plural, ""the birds' food""",possession and number,not legal in v4
+yas,3,"plural marker, placed before the noun",possession and number,"legal, not picked"
+hap,3,x event,nominalizers,taken by event
+gem,3,x game,nominalizers,taken by game
+kix,3,x process,nominalizers,taken by process
+wux,3,x system,nominalizers,taken by system
+fos,3,x force,nominalizers,taken by else
+ses,3,x essence,nominalizers,"in system, free"
+van,3,"x nature, `-ivity` `-ity` `-ance`",nominalizers,taken by having the nature of (-ivity)
+dom,3,"state of being, `-dom`",nominalizers,taken by state
+dax,3,"the state of being x, `-acy` `-ness` `-ship`",nominalizers,"legal, not picked"
+nal,3,"period of x, `-hood`",nominalizers,taken by neutral
+gin,3,"the nature of doing x, `-ence`",nominalizers,taken by sync
+mox,3,"the model of the action, ""the transform""",nominalizers,taken by immutable
+kos,3,"disease, `-osis`",nominalizers,"in system, free"
+sox,3,x society,nominalizers,"legal, not picked"
+gar,3,"language, `-ese`",nominalizers,taken by language
+ciq,3,"thing, as in ""hatchling""",nominalizers,taken by thing (hatchling)
+tak,3,"result, from `/rule/object`",nominalizers,taken by talk
+zek,3,"one who does x, `-er` `-or`",person and role,"legal, not picked"
+koz,3,one who receives x,person and role,taken by z-axis
+vol,3,"the one, used for figures",person and role,"in system, free"
+dik,3,maker,person and role,"legal, not picked"
+nar,3,person,person and role,taken by person
+tul,3,"it is a tool, as in ""zipper""",person and role,not legal in v4
+lak,3,x like,resemblance and orientation,taken by like
+hip,3,emanating x,resemblance and orientation,taken by group
+lij,3,x oriented,resemblance and orientation,taken by orient
+yip,3,"resembling, `-istic`",resemblance and orientation,"legal, not picked"
+rav,3,"reminiscent of, `-esque`",resemblance and orientation,taken by particle
+nix,3,"having some aspects of, `-ish`",resemblance and orientation,taken by listen
+xit,3,shaped,resemblance and orientation,taken by provide
+mon,3,featuring x,resemblance and orientation,"in system, free"
+tof,3,"relates to, ""affectional""",resemblance and orientation,"legal, not picked"
+fom,3,formal x,resemblance and orientation,"legal, not picked"
+yog,3,"practice of focusing on x, `-ism`",belief and study,taken by practice of focusing on x (-ism)
+fin,3,belief in x,belief and study,"legal, not picked"
+ved,3,"study or science of, `-ology`",belief and study,taken by study or science of (-ology)
+zir,3,pertaining to x,belief and study,not legal in v4
+fol,3,"full of, `-ful`",quantity and degree,"in system, free"
+lef,3,"less of, `-less`",quantity and degree,"in system, free"
+taz,3,"very much of, `-some`",quantity and degree,"in system, free"
+leg,3,containing,quantity and degree,"in system, free"
+mor,3,"more, `-er`",quantity and degree,taken by the model of the action (e.g. the transform)
+mis,3,"most, `-est`",quantity and degree,taken by miss (longing)
+tub,3,"over, ""overburden""",quantity and degree,taken by tube
+kan,3,"capable of being, `-able`",ability,taken by aggregate
+kin,3,"ability, `-ability`",ability,"legal, not picked"
+kun,3,`-ableness`,ability,"legal, not picked"
+huf,3,"opposite, `anti-`",operators,"legal, not picked"
+baq,3,"self, `auto-`",operators,taken by be
+pak,3,undo,operators,taken by package
+sup,3,"exceed, `super-`",operators,taken by above (super)/hover
+mex,3,"mesh, `inter-`",operators,"legal, not picked"
+sem,3,"same, `sym-`",operators,taken by same (sym-)
+vav,3,repeat,operators,taken by repeat
+zig,3,"equal, `iso-`",operators,taken by gain
+dit,3,"distance, `tele-`",operators,"in system, free"
+gen,3,"again, `re-`",operators,"in system, free"
+rup,3,"partial, `semi-`",operators,taken by right (time)
+sud,3,"somewhat, `pseudo-`",operators,"legal, not picked"
+mad,3,"thing about the thing, `meta-`",operators,taken by middle
+djen,4,x generating,operators,"in system, free"
+len,3,"general, the infinitive ""to""",operators,"in system, free"
+laz,3,`-ize`,operators,taken by very much of (-some)
+fir,3,"hating or fearing or resisting, `-phobia`",operators,not legal in v4
+fut,3,there,deixis and stance,taken by bad
+dav,3,here,deixis and stance,taken by divine
+vak,3,ever,deixis and stance,taken by multiply
+ples,4,place x,deixis and stance,"legal, not picked"
+land,4,land x,deixis and stance,"in system, free"
+drit,4,"right, as in ""right now""",deixis and stance,"in system, free"
+fit,3,"right, as in correct",deixis and stance,"legal, not picked"
+yov,3,consequence,deixis and stance,taken by of
+did,3,indeed,deixis and stance,taken by deed
+prab,4,probable,deixis and stance,taken by probable
+brat,4,large,size,taken by big
+smal,4,small,size,taken by small
+nuc,3,long,size,taken by long
+txab,4,little,size,"in system, free"
+har,3,early,size,taken by era
+xant,4,ancient,size,taken by ancient
+gum,3,new,size,taken by come
+mig,3,old,size,"legal, not picked"
+veg,3,black,size,"in system, free"
+kol,3,all,determiners,taken by all
+dan,3,the,determiners,taken by the
+nif,3,a,determiners,taken by a (isolated-element-focus)
+lig,3,this,determiners,taken by square root
+gul,3,that,determiners,not legal in v4
+yas lig,7,these,determiners,not legal in v4
+yas gul,7,those,determiners,not legal in v4
+haj vol,7,everyone,determiners,not legal in v4
+fid,3,next,determiners,taken by next
+daf,3,previous,determiners,taken by previous
+lam,3,low,determiners,taken by real
+mol,3,high,determiners,taken by high
+ven,3,even,determiners,"in system, free"
+sin,3,soon,determiners,"in system, free"
+marC,4,quite,determiners,not legal in v4
+hej,3,"every, each",determiners,"legal, not picked"

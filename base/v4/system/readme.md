@@ -32,6 +32,35 @@ the cross**, and the shape of that path is what the size means.
 | `e o` | the left and right axis |
 | `a` | the centre, on both |
 
+## What the arms mean
+
+The cross is not only a shape. **The upright axis carries meaning**, and
+that meaning decides which member of a set goes at which end.
+
+| | |
+| :--- | :--- |
+| `i` | up, high, hot, light, outer, open, seen |
+| `a` | the centre, the middle, the mixture, the neutral |
+| `u` | down, low, cold, dark, inner, closed, hidden |
+
+So `i` is the top of anything: the bright end, the surface, the outside,
+the visible. `u` is the bottom: the dark end, the depth, the inside, the
+hidden. `a` is between, and is where the neutral, the zero, the
+boundary and the mixture all land.
+
+**This is why white takes `i` and black takes `u`**, and not the
+reverse. A set whose members run from bright to dark, hot to cold, or
+outer to inner should be ordered so the vowel agrees with the word. Put
+them the other way round and the sound says the opposite of the sense.
+
+The flat axis `e o` carries less. It is left and right, and in a size
+two the convention is that `e` is the absence and `o` the presence,
+which is the same direction a line is read in.
+
+**Order a set to the arms before choosing its consonants.** The vowels
+are fixed by the size, so the only freedom is which member goes where,
+and this is what should decide it.
+
 ## The patterns
 
 | size | vowels | the path |
@@ -46,7 +75,7 @@ the cross**, and the shape of that path is what the size means.
 | 9 | `i e a o u o a e i` | the snake out and the snake back |
 | 10 | `i e a o u u o a e i` | the snake out and back, turning after the end |
 | 12 | `i a u u a i i a u u a i` | the upright axis, down and up, twice |
-| 16 | `i o u e e o u i i o u e e o u i` | around, and around again, twice |
+| 16 | `i o u e e u o i i o u e e u o i` | around and back the way it came, twice |
 
 ## What each path is
 
@@ -86,26 +115,22 @@ back turning on the bottom. Ten is the same turning after it, so the
 bottom is said twice. Twelve is the upright axis run down and up, twice
 over.
 
-## The sixteen does not close
-
-Every other path is a shape you could draw without lifting the pen. The
-sixteen is `i o u e` then `e o u i`, and the second half is not a
-rotation: going around from the left arm would be `e u o i`, which is
-left, bottom, right, top, the way round backwards.
-
-What is written instead exchanges the top and the left and leaves the
-other two, which is not a motion on the cross at all.
-
-**So the sixteen is the one path that does not trace.** If it was meant
-to go around and back, the way the seven does, it would be
+## The sixteen goes around and back, twice
 
 ```text
 i o u e e u o i        around, then around the other way
+i o u e e u o i        and again
 ```
 
-doubled. That is a true palindrome and one vowel differs in each half
-from what is written. Left as it stands rather than tidied, because it
-may be deliberate.
+**The unit is the mirror of the four.** `i o u e` goes up, right, down,
+left, and `e u o i` comes back left, down, right, up. Joined, the eight
+is a palindrome, and the sixteen is that eight said twice.
+
+This was written as `i o u e e o u i` until 2026-09-15, which exchanged
+the top and the left and left the other two alone. That is not a motion
+on the cross, so the sixteen was the one path that could not be drawn
+without lifting the pen. It was a typo, and the corrected path traces
+like every other.
 
 ## Which sizes have no pattern
 
@@ -167,3 +192,14 @@ be said yet is visible rather than assumed.
 
 The patterns are also in [`vowel.csv`](vowel.csv) for anything that
 needs to read them rather than be told them.
+
+## What each sound means
+
+[`sound.md`](sound.md) gives the sense behind every one of the 27: the
+body the inventory is laid out as, what `m` and `n` and `q` are for,
+what the snake of rubs runs through, and why the feet `w l r y` are the
+row the compass is built on.
+
+**Read it before choosing consonants for a set.** The vowels are fixed
+by the size, but the consonants are free, and that file is what stops
+them being arbitrary.

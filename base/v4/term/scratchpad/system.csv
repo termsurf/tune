@@ -1,0 +1,20 @@
+system,size,position,vowel,word,meaning,status
+direction,6,1,e,bep,left,free
+direction,6,2,o,pob,right,free
+direction,6,3,e,ted,up,free
+direction,6,4,o,dot,down,add to system
+direction,6,5,e,keg,front,free
+direction,6,6,o,gok,back,add to system
+compass,4,1,i,yin,north,add to system
+compass,4,2,o,rog,east,displaces thirteen
+compass,4,3,u,lut,south,free
+compass,4,4,e,web,west,add to system
+colour,6,1,i,gic,red,wanted
+colour,6,2,a,daf,orange,wanted
+colour,6,3,u,bux,yellow,wanted
+colour,6,4,e,pes,green,wanted
+colour,6,5,a,taC,blue,wanted
+colour,6,6,o,koj,violet,wanted
+shade,3,1,i,wip,white,wanted
+shade,3,2,a,lat,grey,wanted
+shade,3,3,u,yuk,black,wanted

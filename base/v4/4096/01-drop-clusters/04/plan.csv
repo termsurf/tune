@@ -1,5 +1,5 @@
 pool,size,sounds
 open,14,m n g d b p t k h s f v z w
-close,19,m n q g d b p t k s f v z j x c C l r
-onset,16,br bl dr fr fl gr gl kr kl pr pl tr sk sp st tx
-coda,32,mp nt nd qk lb lf lv ls lz lt lc ld lk rp rb rf rv rs rz rt rd rk rg ft ps ks bz gz ts dj tx dz
+close,17,m n q g d b p t k s f v z c C l r
+onset,14,br bl dr fr fl gr gl kr kl pr pl tr sk sp
+coda,34,mp nt nd qk lb lf lv ls lz lt lc ld lk rp rb rf rv rs rz rt rd rk rg ft ps ks bz gz ts dj tx dz sk sp

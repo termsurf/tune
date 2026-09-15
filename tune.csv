@@ -138,7 +138,7 @@ animal,dag,dog,,,english
 ,dat,word,,,english
 ,dak,physical,,,
 ,das,understand,,,
-,daf,previous,,,
+,daf,orange,,,
 ,dav,divine,,,
 ,dac,death,,,
 ,dal,matter (physics),,,
@@ -194,7 +194,7 @@ math,bug,cosine,,,
 ,bup,energy,,,
 ,but,unstable,,,
 ,buz,bosom,,,
-,bux,bundle (matter condensing),,,
+,bux,yellow,,,
 color,bul,blue,,,
 ,pim,permeate,,,english
 ,piq,request,,,
@@ -293,7 +293,7 @@ code,kop,scope,,,english
 ,kof,default,,,
 ,kov,cover,,,english
 ,koz,z-axis,,,
-,koj,fool,,,
+,koj,violet,,,
 ,kox,cell (biology),koshA,कोशा,sanskrit
 ,kol,all,kol,כֹּל,hebrew
 ,kum,back area,,,
@@ -661,7 +661,7 @@ science,rav,particle,ravā,रवा,
 ,rar,rare,,,english
 ,raC,rhythm,,,
 ,ron,environment,,,english
-number,rog,thirteen,,,
+number,rog,east,,,
 ,rot,FALSE,,,
 ,ros,force,,,english
 color,rov,copper,,,
@@ -6189,3 +6189,19 @@ animal,fentxad,finch,,,english
 ,sobstants,substance,,,english
 ,fregrants,fragrance,,,
 ,strindjant,stringent,,,english
+
+,bep,left,,,
+,pob,right,,,
+,ted,up,,,
+,dot,down,,,
+,keg,front,,,
+,gok,back,,,
+,yin,north,,,
+,lut,south,,,
+,web,west,,,
+,gic,red,,,
+,pes,green,,,
+,taC,blue,,,
+,wip,white,,,
+,lat,grey,,,
+,yuk,black,,,

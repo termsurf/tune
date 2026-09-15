@@ -35,6 +35,163 @@ c C
 y l r w
 ```
 
+### The layout
+
+Laid out the way the sounds actually sit, rather than as a list. The
+columns are places in the mouth and the rows are manners, and the
+halves are offset where a sound sits between two places.
+
+```text
+      i
+  e   a   o
+      u
+  m   n   q
+  b   d   g
+  p   t   k
+      h
+    f   s
+    v   z
+    x   j
+    c   C
+w   l   r   y
+```
+
+**The vowels are a cross.** `a` in the middle, `i` above, `u` below,
+`e` left and `o` right. That is the same cross the system patterns are
+traced on, and it is why a five walks all of it and a three only walks
+the upright.
+
+**The three stop rows line up under the vowels.** The left column is
+the lips, the middle is the tongue tip, the right is the back of the
+mouth.
+
+```text
+       lips      tip      back
+nasal   m         n        q
+voiced  b         d        g
+plain   p         t        k
+```
+
+So `m b p` are one place and three manners, and `p t k` are one manner
+and three places. The block reads both ways.
+
+**`h` sits alone under the middle column**, which is right: it is made
+at the throat and has no partner at any other place.
+
+**The rubs are offset half a step**, because they fall between the
+three stop columns rather than on them. Four pairs, and the voicing
+runs two different ways through them:
+
+```text
+    f   s        f/v and s/z pair DOWN the columns
+    v   z
+    x   j        x/j and c/C pair ACROSS the rows
+    c   C
+```
+
+Worth knowing before reading the block: `f v` and `s z` are voice pairs
+read vertically, `x j` and `c C` are voice pairs read horizontally. The
+same four relationships, drawn two ways.
+
+**The glides are the widest row**, spilling past the columns on both
+sides. They are the most open sounds and they sit at the bottom edge,
+which is where the mouth is least closed.
+
+### Consonants
+
+| tone | IPA | as in |
+| :--- | :--- | :--- |
+| `m` | `m` | mark |
+| `n` | `n` | note |
+| `q` | `ŋ` | sing, the `-ng` sound |
+| `g` | `ɡ` | gift |
+| `d` | `d` | deed |
+| `b` | `b` | band |
+| `p` | `p` | play |
+| `t` | `t` | time |
+| `k` | `k` | king |
+| `h` | `h` | heal |
+| `s` | `s` | soul |
+| `f` | `f` | fire |
+| `v` | `v` | vibe |
+| `z` | `z` | zone |
+| `j` | `ʒ` | measure, the `zh` sound |
+| `x` | `ʃ` | ship, the `sh` sound |
+| `c` | `θ` | thor, voiceless `th` |
+| `C` | `ð` | this, voiced `th` |
+| `w` | `w` | wave |
+| `l` | `l` | love |
+| `r` | `r` | rise, with a Spanish, Arabic or Indian accent |
+| `y` | `j` | yard |
+
+### Vowels
+
+| tone | IPA | as in |
+| :--- | :--- | :--- |
+| `i` | `i` | seat |
+| `e` | `e` | make |
+| `a` | `a` | call |
+| `o` | `o` | hold |
+| `u` | `u` | tool |
+
+Note `j` and `y` cross over: the tone `j` is IPA `ʒ` and the tone `y`
+is IPA `j`. That trips people reading the two alphabets side by side,
+and it is why `dj` and `tx` are digraphs for single sounds rather than
+clusters.
+
+### Gematria
+
+Twenty seven sounds, counted the way the Hebrew alphabet is: ones,
+then tens, then hundreds.
+
+| | | | | | | | | |
+| :--- | ---: | :--- | ---: | :--- | ---: | :--- | ---: | :--- |
+| `i` | 1 | `d` | 10 | `z` | 100 |
+| `e` | 2 | `b` | 20 | `j` | 200 |
+| `a` | 3 | `p` | 30 | `x` | 300 |
+| `o` | 4 | `t` | 40 | `c` | 400 |
+| `u` | 5 | `k` | 50 | `C` | 500 |
+| `m` | 6 | `h` | 60 | `w` | 600 |
+| `n` | 7 | `s` | 70 | `l` | 700 |
+| `q` | 8 | `f` | 80 | `r` | 800 |
+| `g` | 9 | `v` | 90 | `y` | 900 |
+
+The five vowels take 1 through 5, so a word's vowel contributes a
+single digit and its consonants contribute the rest. The largest base
+word is `ryC` at 800 + 900 + 500, and the smallest is `dii` if it were
+legal, which it is not.
+
+**The gematria order is the cube.** The 27 sounds lay into a 3 by 3 by
+3, three layers of nine, and reading the cube front to back gives the
+gematria numbering exactly.
+
+```text
+front       middle      back
+i  e  a     d  b  p     z  j  x
+o  u  m     t  k  h     c  C  w
+n  q  g     s  f  v     l  r  y
+
+1..9        10..90      100..900
+```
+
+So the numbers are not assigned to the sounds, they are **where each
+sound sits in the cube**. The front layer holds the vowels and the
+nasals, the middle the stops and the breath, the back the rubs and the
+glides.
+
+**It is not the tone sort order.** They agree on the first sixteen and
+part company after `s`:
+
+```text
+sort       ... s z v f x j C c y r l w
+gematria   ... s f v z j x c C w l r y
+```
+
+`code/phonology.ts` holds the sort order and is what every word list
+here is sorted by. The cube order is the meaningful one and the sort
+order is a convention, so **if the two are ever reconciled the sort
+order is the one that should move.**
+
 Five vowels and twenty two consonants, the same inventory v3 had.
 **Two of them never turn up in a base word.** `w` is refused
 everywhere, and `y` can neither open a word nor close one nor stand in

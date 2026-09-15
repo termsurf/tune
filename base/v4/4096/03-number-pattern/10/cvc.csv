@@ -50,6 +50,7 @@ max
 maj
 maC
 mac
+mar
 mal
 mom
 mon
@@ -68,6 +69,7 @@ mox
 moj
 moC
 moc
+mor
 mol
 mum
 mun
@@ -86,6 +88,8 @@ mux
 muj
 muC
 muc
+mur
+mul
 nim
 nin
 niq
@@ -133,6 +137,7 @@ nax
 naj
 naC
 nac
+nar
 nal
 nom
 non
@@ -151,6 +156,7 @@ nox
 noj
 noC
 noc
+nor
 nol
 num
 nun
@@ -168,6 +174,8 @@ nux
 nuj
 nuC
 nuc
+nur
+nul
 gim
 gin
 giq
@@ -219,6 +227,7 @@ gax
 gaj
 gaC
 gac
+gar
 gal
 gom
 gon
@@ -237,6 +246,7 @@ gox
 goj
 goC
 goc
+gor
 gol
 gum
 gun
@@ -254,6 +264,8 @@ gux
 guj
 guC
 guc
+gur
+gul
 dim
 din
 diq
@@ -305,6 +317,7 @@ dax
 daj
 daC
 dac
+dar
 dal
 dom
 don
@@ -323,6 +336,7 @@ dox
 doj
 doC
 doc
+dor
 dol
 dum
 dun
@@ -341,6 +355,8 @@ dux
 duj
 duC
 duc
+dur
+dul
 bim
 bin
 biq
@@ -392,6 +408,7 @@ bax
 baj
 baC
 bac
+bar
 bal
 bom
 bon
@@ -410,6 +427,7 @@ box
 boj
 boC
 boc
+bor
 bol
 bum
 bun
@@ -428,6 +446,8 @@ bux
 buj
 buC
 buc
+bur
+bul
 pim
 pin
 piq
@@ -479,6 +499,7 @@ pax
 paj
 paC
 pac
+par
 pal
 pom
 pon
@@ -497,6 +518,7 @@ pox
 poj
 poC
 poc
+por
 pol
 pum
 pun
@@ -514,6 +536,8 @@ pux
 puj
 puC
 puc
+pur
+pul
 tim
 tin
 tiq
@@ -565,6 +589,7 @@ tax
 taj
 taC
 tac
+tar
 tal
 tom
 ton
@@ -583,6 +608,7 @@ tox
 toj
 toC
 toc
+tor
 tol
 tum
 tun
@@ -601,6 +627,8 @@ tux
 tuj
 tuC
 tuc
+tur
+tul
 kim
 kin
 kiq
@@ -652,6 +680,7 @@ kax
 kaj
 kaC
 kac
+kar
 kal
 kom
 kon
@@ -670,6 +699,7 @@ kox
 koj
 koC
 koc
+kor
 kol
 kum
 kun
@@ -687,6 +717,8 @@ kux
 kuj
 kuC
 kuc
+kur
+kul
 him
 hin
 hiq
@@ -738,6 +770,7 @@ hax
 haj
 haC
 hac
+har
 hal
 hom
 hon
@@ -756,6 +789,7 @@ hox
 hoj
 hoC
 hoc
+hor
 hol
 hum
 hun
@@ -774,6 +808,8 @@ hux
 huj
 huC
 huc
+hur
+hul
 sim
 sin
 siq
@@ -825,6 +861,7 @@ sax
 saj
 saC
 sac
+sar
 sal
 som
 son
@@ -843,6 +880,7 @@ sox
 soj
 soC
 soc
+sor
 sol
 sum
 sun
@@ -861,6 +899,8 @@ sux
 suj
 suC
 suc
+sur
+sul
 zim
 zin
 ziq
@@ -912,6 +952,7 @@ zax
 zaj
 zaC
 zac
+zar
 zal
 zom
 zon
@@ -930,6 +971,7 @@ zox
 zoj
 zoC
 zoc
+zor
 zol
 zum
 zun
@@ -948,6 +990,8 @@ zux
 zuj
 zuC
 zuc
+zur
+zul
 vim
 vin
 viq
@@ -999,6 +1043,7 @@ vax
 vaj
 vaC
 vac
+var
 val
 vom
 von
@@ -1017,6 +1062,7 @@ vox
 voj
 voC
 voc
+vor
 vol
 vum
 vun
@@ -1035,6 +1081,8 @@ vux
 vuj
 vuC
 vuc
+vur
+vul
 fim
 fin
 fiq
@@ -1084,6 +1132,7 @@ fax
 faj
 faC
 fac
+far
 fal
 fom
 fon
@@ -1102,6 +1151,7 @@ fox
 foj
 foC
 foc
+for
 fol
 fum
 fun
@@ -1120,6 +1170,8 @@ fux
 fuj
 fuC
 fuc
+fur
+ful
 rim
 rin
 riq
@@ -1171,6 +1223,7 @@ rax
 raj
 raC
 rac
+rar
 ral
 rom
 ron
@@ -1189,6 +1242,7 @@ rox
 roj
 roC
 roc
+ror
 rol
 rum
 run
@@ -1207,6 +1261,8 @@ rux
 ruj
 ruC
 ruc
+rur
+rul
 lim
 lin
 liq
@@ -1258,6 +1314,7 @@ lax
 laj
 laC
 lac
+lar
 lal
 lom
 lon
@@ -1276,6 +1333,7 @@ lox
 loj
 loC
 loc
+lor
 lol
 lum
 lun
@@ -1294,6 +1352,8 @@ lux
 luj
 luC
 luc
+lur
+lul
 wim
 win
 wiq
@@ -1345,6 +1405,7 @@ wax
 waj
 waC
 wac
+war
 wal
 wom
 won
@@ -1362,6 +1423,7 @@ wox
 woj
 woC
 woc
+wor
 wol
 wum
 wun
@@ -1380,3 +1442,5 @@ wux
 wuj
 wuC
 wuc
+wur
+wul

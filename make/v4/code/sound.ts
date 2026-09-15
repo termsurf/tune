@@ -164,12 +164,15 @@ export const BAD_ANYWHERE: Array<string> = []
  * A vowel followed by a liquid blurs into the liquid, so `bil` cannot
  * be held apart from `bi`.
  *
- * v3 named the two front vowels. `u` belongs with them: `bul` and `bur`
- * blur the same way, because a rounded back vowel and a following
- * liquid share the same tongue gesture. That leaves `a` and `o` as the
- * only vowels a liquid may close on.
+ * v3 named the two front vowels, and only they blur. `u` was added here
+ * on an argument about tongue gesture and taken back out on 2026-09-15:
+ * `bul` and `bur` are held apart from `bu` fine, and the ban cost 252
+ * words including `tul`, `gul` and `jul`, which were wanted.
+ *
+ * So the rule is about the FRONT vowels. `a`, `o` and `u` may all close
+ * on a liquid.
  */
-export const BAD_RHYME = ['il', 'el', 'ir', 'er', 'ul', 'ur']
+export const BAD_RHYME = ['il', 'el', 'ir', 'er']
 
 /**
  * Forms v4 will not use, whatever the rules allow.

@@ -1,0 +1,4 @@
+shape,count,how
+CVC,1536,"j opens half the words it could; j closes a three letter word three quarters of the time; an even sieve keeping 5 of 6"
+CVCC,1536,"a nasal stands first in a closing cluster a quarter of the time; j stands last in a closing cluster half the time; an even sieve keeping 3 of 5"
+CCVC,1024,"a hush or a tooth sound stands second in an opening cluster three quarters of the time; a nasal closes a word opening on a cluster half the time; an even sieve keeping 3 of 5"

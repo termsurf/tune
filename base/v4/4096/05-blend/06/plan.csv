@@ -3,6 +3,6 @@ divides_by,256
 cvc,768
 cvcc,2048
 ccvc,1280
-drift,0.894
+drift,0.852
 mark,"every shape divides by 256"
 mark,"the cluster closing shape equals the other two together"
