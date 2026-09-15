@@ -47,6 +47,7 @@ export const HOUSE: Plan = {
   near: { groups: SIMILAR_GROUPS, reach: 1, slack: 0, seed: 20260914 },
   echo: 'none',
   sieve: null,
+  bar: [],
 }
 
 /** Ranks every sound, for a plan that thins by an even sieve. */
