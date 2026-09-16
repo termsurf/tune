@@ -27,6 +27,8 @@ import { parse } from 'csv-parse/sync'
 import { Board, Move, TERM, shapeOf, touched } from './board'
 import { ECHO_STRONG, echoScore } from './echo'
 import { heardGap, readGap } from './tone'
+import { speaks, vibeLoss } from './vibe'
+import { enactOf } from './enact'
 
 // ─── Weights ────────────────────────────────────────────
 
@@ -38,18 +40,125 @@ import { heardGap, readGap } from './tone'
  */
 export type Weights = {
   echo: number
+  /**
+   * Whether the sounds agree with the sense. The second half of the
+   * ordering rule, and for most concepts the only half that applies.
+   */
+  vibe: number
+  /**
+   * Whether the word performs its meaning across its own length: a
+   * breath opening from a stop into air, a stop shutting into one.
+   * Unlike `vibe` this reads the ORDER of the sounds, which is the whole
+   * of what it measures.
+   */
+  enact: number
   spread: number
   script: number
   length: number
   drift: number
+  /**
+   * What covering a concept is worth.
+   *
+   * **Without this the objective is all penalties, so the empty lexicon
+   * is optimal and every placement is uphill.** The first run of the
+   * search kept zero of eighteen thousand moves for exactly that reason:
+   * it was correctly minimising a function that wanted nothing said.
+   *
+   * A word earns its place when the cost of saying it is less than the
+   * worth of being able to say it, which is what this number sets.
+   */
+  cover: number
 }
 
+/**
+ * Set so that ECHO DECIDES, which is the ordering rule.
+ *
+ * The first set of weights had `echo: 1` and `spread: 2.5`, and the
+ * search used them exactly as written: a form has on the order of 200
+ * neighbours, so the pair term came to about 60 per word while echo
+ * could contribute at most 2. Echo was 3% of the signal, and the search
+ * placed words on whatever form had the fewest neighbours. It produced
+ * `giq`, `geq` and `gef` for `thing`, `mesh` and `affectional`, which is
+ * rarity-seeking and the exact inverse of what was asked for.
+ *
+ * So the pair terms are divided down to the scale of ONE word rather
+ * than summed raw, and echo is given the weight that makes it the thing
+ * being optimised. Crowding is a real constraint and a secondary one.
+ */
+/**
+ * `vibe` is a TIEBREAKER, which is why it is small rather than zero.
+ *
+ * The readings in `sound.md` are real. With the concepts hand-tagged in
+ * `term/tag.csv`, `v4:pipe claim` confirms twelve of them at proper
+ * sample size, including every central one: `m` is positive (+0.48),
+ * `u` is dark (-0.61) and inner (-0.38), `s` is rest (-0.40, n=17), `k`
+ * is the real rather than the abstract (-0.34, n=29), `b` is
+ * manifestation (+0.41, n=18).
+ *
+ * **But they are population tendencies, not per-word predictions.** The
+ * composite still cannot separate the hand-made lexicon from a shuffle
+ * of itself, because a word averages three or four sounds whose readings
+ * partly cancel, and what survives is far smaller than the gap between
+ * two candidate words.
+ *
+ * So it gets the weight that role deserves: enough to break a tie
+ * between otherwise equal candidates, not enough to overrule an echo or
+ * to move a word by itself. **Raising it further optimises noise.**
+ */
+/**
+ * `echo` is ZERO for placement, and that is deliberate.
+ *
+ * `echoScore` measures ARTICULATORY FEATURE DISTANCE, which is not
+ * recognizability. It rates `deq` against `ten` at 0.88 because `d` and
+ * `t` differ only in voicing and `q` and `n` only in place. Those are
+ * small numbers in a feature table and total identity changes to an ear.
+ * Nobody hearing `deq` recovers `ten`.
+ *
+ * The measure has decent RECALL on echoes that already exist: it finds
+ * `mit` meet, `nam` name, `nid` need, `gol` goal, and it separates the
+ * hand-made lexicon from a shuffle by 37%. It has terrible PRECISION at
+ * the threshold a generator needs, which is the wrong direction for
+ * something proposing new words.
+ *
+ * So it stays as a REPORT, in `rank` and `ceiling`, and it does not
+ * place anything. **The echo constraint is the author's**, and the
+ * machine's job is to hand over legal, uncrowded, well-fitting
+ * candidates for a person to choose the sound of. That is what
+ * `v4:pipe short` is for.
+ */
+/**
+ * `vibe` is back to ZERO, and the order-aware rewrite is why.
+ *
+ * The order-blind version scored 0.479 against a shuffle's 0.483, which
+ * is noise slightly on the right side. Making it order-aware, by reading
+ * directional axes as a trajectory and weighting the coda above the
+ * onset on classifying axes, moved it to **0.473 against 0.461, which is
+ * worse than chance**.
+ *
+ * The order-blindness it fixed was real: `kaz` and `zak` are opposites
+ * and the old version gave them identical vectors. But the specific
+ * model replacing it is empirically wrong, and a term that is
+ * anti-correlated with the hand-made lexicon must not be in the score at
+ * any weight.
+ *
+ * What the data does support is POSITION-SPECIFIC READINGS, which
+ * `v4:pipe claim` shows directly: `n` separates at the opening (-0.45)
+ * and connects at the closing (+0.73), and `t` reads mental at the
+ * opening and physical at the closing. Those are measurements. The
+ * trajectory formula was an invention on top of them and it did not
+ * survive contact.
+ */
 export const DEFAULT_WEIGHTS: Weights = {
-  echo: 1,
-  spread: 2.5,
-  script: 0.8,
-  length: 0.6,
+  echo: 0,
+  vibe: 0,
+  // Weighted well above `vibe`, because it applies to far fewer concepts
+  // and says something much sharper when it applies at all.
+  enact: 25,
+  spread: 0.12,
+  script: 0.05,
+  length: 8,
   drift: 1.2,
+  cover: 60,
 }
 
 export function readWeights(): Weights {
@@ -193,11 +302,40 @@ function ownLoss(bench: Bench, at: number): number {
   const echo = echoScore(word, meaning)
   const echoLoss = echo >= ECHO_STRONG ? (1 - echo) * 0.15 : 1 - echo
 
+  /**
+   * The ordering rule, as an ordering.
+   *
+   * Echo first. Where a strong echo exists the vibe is nearly free,
+   * because a word that already sounds like its meaning should not be
+   * moved for a symbolism gain. Where no echo is available the vibe
+   * carries the whole judgment, which is the case for 76 of the 93
+   * base words still wanting a form.
+   */
+  const lean = echo >= ECHO_STRONG ? 0.1 : 1 - echo
+  const vibe = vibeLoss(word, meaning) * lean
+
+  /**
+   * Does the word enact the thing, across its own length.
+   *
+   * Unlike `vibe`, this is NOT scaled down where an echo exists. A word
+   * that both sounds like its English and performs the act in the mouth
+   * is better than one that only sounds like it, and there is no reason
+   * to stop asking once an echo is found.
+   */
+  const enact = enactOf(word, meaning)
+
   // A word carrying more weight wants to be shorter. CVC is scarce.
   const shape = bench.tables.shape[at]
   const lengthLoss = weight > 1 && shape !== 'CVC' ? 1 : 0
 
-  return w.echo * echoLoss * weight + w.length * lengthLoss
+  // Saying the concept at all is worth something. See `cover` above.
+  return (
+    w.echo * echoLoss * weight +
+    w.vibe * vibe * weight +
+    w.enact * enact * weight +
+    w.length * lengthLoss -
+    w.cover * weight
+  )
 }
 
 /**
@@ -256,7 +394,7 @@ function driftLoss(bench: Bench): number {
   return bench.weights.drift * (off / used)
 }
 
-function countWord(bench: Bench, word: string, by: number): void {
+export function countWord(bench: Bench, word: string, by: number): void {
   for (const sound of word.split('')) {
     bench.count.set(sound, (bench.count.get(sound) ?? 0) + by)
   }
@@ -433,11 +571,32 @@ function applyQuiet(board: Board, move: Move): void {
  * notices.
  */
 export function checkDelta(bench: Bench, move: Move): void {
+  const board = bench.board
+  const at = touched(move)
+  const before = at.map(i => board.meaning[i])
+
+  // Measure the truth before, not the running total, which is exactly
+  // the mistake this check is meant to expose rather than inherit.
+  const was = refresh(bench)
   const predicted = deltaOf(bench, move)
-  const before = bench.total
-  applyQuiet(bench.board, move)
-  const after = refresh(bench)
-  const actual = after - before
+
+  applyQuiet(board, move)
+  const now = refresh(bench)
+  const actual = now - was
+
+  // Put the board back. An audit must not change what it audits.
+  for (let k = 0; k < at.length; k++) {
+    const had = board.meaning[at[k]]
+    if (had) board.at.delete(had)
+    board.meaning[at[k]] = before[k]
+  }
+  for (let k = 0; k < at.length; k++) {
+    if (board.meaning[at[k]]) {
+      board.at.set(board.meaning[at[k]], at[k])
+    }
+  }
+  refresh(bench)
+
   const slack = Math.max(1e-6, Math.abs(actual) * 1e-9)
   if (Math.abs(predicted - actual) > slack) {
     throw new Error(
@@ -454,12 +613,36 @@ export type Card = {
   tier: number
   shape: string
   echo: number
+  /** Disagreement between sounds and sense, 0 to 1. Lower is better. */
+  vibe: number
+  /** Whether the concept says anything the vibe term can read. */
+  speaks: boolean
   own: number
   pair: number
+  /** `pair` divided by how crowded the FORM is, so shapes compare. */
+  crowd: number
   loss: number
 }
 
-/** What each assigned word costs, for sorting the lexicon by suspicion. */
+/**
+ * What each assigned word costs.
+ *
+ * **`own` and `pair` answer different questions and must not be summed
+ * for ranking.**
+ *
+ *   own     is this the wrong word for this meaning
+ *   pair    is this form sitting in a crowded part of the space
+ *
+ * `pair` scales with how many neighbours a form has, which is a fact
+ * about the INVENTORY rather than about the choice. CVC is the densest
+ * region, so ranking on the sum puts every three-letter word at the top
+ * and every rare four-letter word at the bottom, which says nothing.
+ * The first version of this did exactly that.
+ *
+ * `crowd` divides the pair loss by the form's neighbour count, so a
+ * crowded form is only blamed for being worse than its neighbourhood
+ * forces it to be.
+ */
 export function cardsOf(bench: Bench): Array<Card> {
   const out: Array<Card> = []
   for (let at = 0; at < bench.board.forms.length; at++) {
@@ -467,14 +650,19 @@ export function cardsOf(bench: Bench): Array<Card> {
     if (!meaning) continue
     const own = ownLoss(bench, at)
     const pair = pairLoss(bench, at) / 2
+    const near =
+      bench.tables.heard[at].length + bench.tables.read[at].length
     out.push({
       word: bench.board.forms[at],
       meaning,
       tier: bench.board.tier[at],
       shape: bench.tables.shape[at],
       echo: echoScore(bench.board.forms[at], meaning),
+      vibe: vibeLoss(bench.board.forms[at], meaning),
+      speaks: speaks(meaning),
       own,
       pair,
+      crowd: pair / Math.max(1, near),
       loss: own + pair,
     })
   }

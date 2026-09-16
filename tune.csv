@@ -662,7 +662,7 @@ science,rav,particle,ravā,रवा,
 ,raC,rhythm,,,
 ,ron,environment,,,english
 number,rog,east,,,
-,rot,FALSE,,,
+,rot,false,,,
 ,ros,force,,,english
 color,rov,copper,,,
 color,roz,rose,,,english

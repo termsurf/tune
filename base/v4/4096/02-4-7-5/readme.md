@@ -23,6 +23,6 @@ number; taking exactly the number wanted lands on it directly.
 | `CVCC` | 1792 | 274 |
 | `CCVC` | 1280 | 309 |
 
-Sound drift from the wanted frequency shape is 0.821 points.
+Sound drift from the wanted frequency shape is 0.825 points.
 
 Rebuild with `pnpm --dir deck/tune v4:keep`.

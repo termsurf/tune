@@ -1,0 +1,208 @@
+term          why
+------------  ----------------------------------------
+chemistry     a discipline, which is a field plus study
+ecology       a discipline, which is a field plus study
+geometry      a discipline, which is a field plus study
+grammar       a discipline, which is a field plus study
+history       a discipline, which is a field plus study
+medicine      a discipline, which is a field plus study
+surgery       a discipline, which is a field plus study
+carbon        chemical element
+hydrogen      chemical element
+lead          chemical element
+nitrogen      chemical element
+silver        chemical element
+sulfur        chemical element
+tin           chemical element
+artery        clinical or taxonomic jargon
+atom          clinical or taxonomic jargon
+cell          clinical or taxonomic jargon
+fungus        clinical or taxonomic jargon
+gene          clinical or taxonomic jargon
+mammal        clinical or taxonomic jargon
+molecule      clinical or taxonomic jargon
+nucleus       clinical or taxonomic jargon
+organ         clinical or taxonomic jargon
+reptile       clinical or taxonomic jargon
+testis        clinical or taxonomic jargon
+tissue        clinical or taxonomic jargon
+vein          clinical or taxonomic jargon
+virus         clinical or taxonomic jargon
+algorithm     modern technology, may not last
+battery       modern technology, may not last
+camera        modern technology, may not last
+engine        modern technology, may not last
+film          modern technology, may not last
+motor         modern technology, may not last
+radio         modern technology, may not last
+robot         modern technology, may not last
+rocket        modern technology, may not last
+television    modern technology, may not last
+video         modern technology, may not last
+march         named after a person or place
+may           named after a person or place
+sandwich      named after a person or place
+vulcanise     named after a person or place
+acid          named molecule or drug
+alcohol       named molecule or drug
+acetone       not a candidate, parked for the record
+acre          not a candidate, parked for the record
+adrenaline    not a candidate, parked for the record
+advil         not a candidate, parked for the record
+aids          not a candidate, parked for the record
+aldehyde      not a candidate, parked for the record
+alkali        not a candidate, parked for the record
+alkane        not a candidate, parked for the record
+alkene        not a candidate, parked for the record
+alkyne        not a candidate, parked for the record
+aluminum      not a candidate, parked for the record
+amide         not a candidate, parked for the record
+amine         not a candidate, parked for the record
+ammonia       not a candidate, parked for the record
+ampere        not a candidate, parked for the record
+antibody      not a candidate, parked for the record
+antigen       not a candidate, parked for the record
+antimony      not a candidate, parked for the record
+api           not a candidate, parked for the record
+argon         not a candidate, parked for the record
+arsenic       not a candidate, parked for the record
+aspirin       not a candidate, parked for the record
+atp           not a candidate, parked for the record
+band-aid      not a candidate, parked for the record
+barium        not a candidate, parked for the record
+benzene       not a candidate, parked for the record
+beryllium     not a candidate, parked for the record
+bismuth       not a candidate, parked for the record
+boron         not a candidate, parked for the record
+bromine       not a candidate, parked for the record
+byte          not a candidate, parked for the record
+cadmium       not a candidate, parked for the record
+caffeine      not a candidate, parked for the record
+calcium       not a candidate, parked for the record
+calorie       not a candidate, parked for the record
+carbohydrate  not a candidate, parked for the record
+carbonate     not a candidate, parked for the record
+cellulose     not a candidate, parked for the record
+celsius       not a candidate, parked for the record
+chloride      not a candidate, parked for the record
+chlorine      not a candidate, parked for the record
+chlorophyll   not a candidate, parked for the record
+cholesterol   not a candidate, parked for the record
+chromium      not a candidate, parked for the record
+cobalt        not a candidate, parked for the record
+codeine       not a candidate, parked for the record
+collagen      not a candidate, parked for the record
+cpu           not a candidate, parked for the record
+css           not a candidate, parked for the record
+decibel       not a candidate, parked for the record
+dna           not a candidate, parked for the record
+dopamine      not a candidate, parked for the record
+enzyme        not a candidate, parked for the record
+escalator     not a candidate, parked for the record
+ester         not a candidate, parked for the record
+ethanol       not a candidate, parked for the record
+ether         not a candidate, parked for the record
+fahrenheit    not a candidate, parked for the record
+fluorine      not a candidate, parked for the record
+formaldehyde  not a candidate, parked for the record
+fructose      not a candidate, parked for the record
+gallium       not a candidate, parked for the record
+gallon        not a candidate, parked for the record
+gigabyte      not a candidate, parked for the record
+glucose       not a candidate, parked for the record
+gps           not a candidate, parked for the record
+helium        not a candidate, parked for the record
+hemoglobin    not a candidate, parked for the record
+heroin        not a candidate, parked for the record
+hertz         not a candidate, parked for the record
+histamine     not a candidate, parked for the record
+hiv           not a candidate, parked for the record
+hormone       not a candidate, parked for the record
+html          not a candidate, parked for the record
+inch          not a candidate, parked for the record
+insulin       not a candidate, parked for the record
+iodine        not a candidate, parked for the record
+joule         not a candidate, parked for the record
+kelvin        not a candidate, parked for the record
+keratin       not a candidate, parked for the record
+ketone        not a candidate, parked for the record
+kilogram      not a candidate, parked for the record
+kilometer     not a candidate, parked for the record
+kleenex       not a candidate, parked for the record
+krypton       not a candidate, parked for the record
+lactose       not a candidate, parked for the record
+laser         not a candidate, parked for the record
+led           not a candidate, parked for the record
+lipid         not a candidate, parked for the record
+liter         not a candidate, parked for the record
+lithium       not a candidate, parked for the record
+litre         not a candidate, parked for the record
+magnesium     not a candidate, parked for the record
+manganese     not a candidate, parked for the record
+megabyte      not a candidate, parked for the record
+melatonin     not a candidate, parked for the record
+mercury       not a candidate, parked for the record
+methane       not a candidate, parked for the record
+metre         not a candidate, parked for the record
+millimeter    not a candidate, parked for the record
+morphine      not a candidate, parked for the record
+nasa          not a candidate, parked for the record
+neon          not a candidate, parked for the record
+newton        not a candidate, parked for the record
+nickel        not a candidate, parked for the record
+nicotine      not a candidate, parked for the record
+nitrate       not a candidate, parked for the record
+ohm           not a candidate, parked for the record
+ounce         not a candidate, parked for the record
+oxygen        not a candidate, parked for the record
+pascal        not a candidate, parked for the record
+pdf           not a candidate, parked for the record
+peptide       not a candidate, parked for the record
+percent       not a candidate, parked for the record
+ph            not a candidate, parked for the record
+phenol        not a candidate, parked for the record
+phosphorus    not a candidate, parked for the record
+pint          not a candidate, parked for the record
+platinum      not a candidate, parked for the record
+plutonium     not a candidate, parked for the record
+potassium     not a candidate, parked for the record
+protein       not a candidate, parked for the record
+quart         not a candidate, parked for the record
+quinine       not a candidate, parked for the record
+radar         not a candidate, parked for the record
+radium        not a candidate, parked for the record
+ram           not a candidate, parked for the record
+rna           not a candidate, parked for the record
+scuba         not a candidate, parked for the record
+selenium      not a candidate, parked for the record
+serotonin     not a candidate, parked for the record
+silicon       not a candidate, parked for the record
+sodium        not a candidate, parked for the record
+sonar         not a candidate, parked for the record
+steroid       not a candidate, parked for the record
+sucrose       not a candidate, parked for the record
+sulfate       not a candidate, parked for the record
+thallium      not a candidate, parked for the record
+thermos       not a candidate, parked for the record
+titanium      not a candidate, parked for the record
+tv            not a candidate, parked for the record
+tylenol       not a candidate, parked for the record
+uranium       not a candidate, parked for the record
+url           not a candidate, parked for the record
+usb           not a candidate, parked for the record
+velcro        not a candidate, parked for the record
+volt          not a candidate, parked for the record
+xenon         not a candidate, parked for the record
+xerox         not a candidate, parked for the record
+zinc          not a candidate, parked for the record
+zipper        not a candidate, parked for the record
+centimeter    unit of measure
+degree        unit of measure
+foot          unit of measure
+gram          unit of measure
+meter         unit of measure
+mile          unit of measure
+pound         unit of measure
+ton           unit of measure
+watt          unit of measure
+yard          unit of measure

@@ -167,13 +167,25 @@ function soundEdit(a: Array<string>, b: Array<string>): number {
   return prev[cols - 1] / Math.max(a.length, b.length)
 }
 
-/** The parts of a gloss worth comparing against. */
+/**
+ * The parts of a gloss worth comparing against.
+ *
+ * Stop words are dropped so `one who does it` is compared on `does`
+ * rather than on `one` and `who`. **But a gloss that is ONLY stop words
+ * keeps them**, because `and`, `of`, `in` and `with` are real concepts
+ * with real words, and stripping them left nothing to compare and scored
+ * every function word in the language at zero. They then filled the
+ * worst-words list while never having been measured at all.
+ */
 export function glossWords(meaning: string): Array<string> {
-  return meaning
+  const all = meaning
     .replace(/\([^)]*\)/g, ' ')
     .split(/[^A-Za-z-]+/)
     .map(w => w.trim())
-    .filter(w => w.length > 1 && !STOP.has(w.toLowerCase()))
+    .filter(Boolean)
+
+  const meaty = all.filter(w => w.length > 1 && !STOP.has(w.toLowerCase()))
+  return meaty.length > 0 ? meaty : all
 }
 
 const STOP = new Set([

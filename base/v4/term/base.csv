@@ -3,21 +3,17 @@ min,not know
 miq,motion
 mig,
 mid,positive
+mib,
 mip,
 mit,meet
 mis,miss (longing)
 miv,idea
 mif,
 mix,network
-mem,
 men,main
 meq,mine
-meg,
-met,
 mek,make
 mes,month
-mev,
-mef,
 mej,model
 mam,mother
 man,mind
@@ -41,15 +37,18 @@ mon,
 moq,about/encompass
 mog,meaning
 mod,mode
+mob,
 mop,twelve
 mot,mountain
 mok,align
+mos,
 moz,hash
+mov,
+mof,
 mox,immutable
 moj,emerge
 mor,the model of the action (e.g. the transform)
 mol,high
-mum,
 mun,gut sense
 muq,mmm
 mug,(past particle)
@@ -65,12 +64,11 @@ mur,
 mul,unreal
 niq,omniscient
 nid,need
+nib,
 nip,
-nis,
 niz,nest (structure)
 nif,a (isolated-element-focus)
 nix,listen
-nem,
 nen,
 neq,
 ned,static
@@ -83,22 +81,22 @@ nev,off
 nef,
 nam,name
 nan,negate
-naq,
 nad,
-nab,
+nap,
 nat,
 nak,knock
 nas,nest
 naz,as
 nav,center
-nax,
 nar,person
 nal,neutral
 nom,
 non,not (un- or -im)
+nog,
 nob,
 nop,no
 not,note
+nok,
 noz,nose
 nof,
 nox,notion
@@ -111,6 +109,7 @@ nuz,distribute
 nuv,empty
 nuj,hell
 nuc,long
+nur,
 nul,forget
 gim,magic
 gin,sync
@@ -134,7 +133,6 @@ geg,
 ged,
 geb,
 gep,
-get,
 gek,
 ges,
 gez,
@@ -149,6 +147,8 @@ gav,how (missing-action-focus)
 gaC,gather
 gar,language
 gal,too
+gom,
+gon,
 goq,job
 gog,
 god,gold
@@ -166,7 +166,6 @@ gum,come
 gun,representation
 gug,
 gub,like (filler)
-gup,
 gut,gut
 gus,back (front)
 guz,lose
@@ -201,7 +200,6 @@ dan,the
 daq,
 dag,dog
 dad,content
-dab,
 dap,
 dat,word
 dak,physical
@@ -209,43 +207,46 @@ das,understand
 daz,
 dav,divine
 daf,orange
-dax,
 dac,death
 dar,
 dal,matter (physics)
 dom,state
 doq,
 dog,
-dod,
 dob,two
 dop,
 dot,down
 doz,here
+dov,
 dof,
 dor,door
-dol,
 dum,negative
 dun,join (to one)
 dug,drink
 dud,friend
 dub,aware
+dup,
+dut,
 duk,minute
 dus,reduce
 duz,do
+duv,
 dux,condition (general state)
 dur,
 dul,delete
 bim,target
+bin,
 biq,being
 big,go
 bid,ignorant
 bib,we
 bip,output
 bit,beat
-bis,
+bik,
 biz,intense
 biv,
 bif,
+bix,
 ben,
 beq,bang
 beg,
@@ -266,13 +267,10 @@ bad,tangent (math)
 bab,father
 bat,beauty
 bak,send
-bas,
-baz,
-bav,
 bax,bird
 baC,by
 bar,bear (carry)
-bal,
+bom,
 bon,
 boq,
 bog,
@@ -280,6 +278,7 @@ bod,
 bob,
 bop,
 bot,boat
+bok,
 bos,possessive plural
 boz,private
 bov,debug
@@ -320,13 +319,17 @@ pes,green
 pez,
 pev,
 pef,
+pex,
 pam,pray
 pan,yes
 paq,response
 pad,
+pap,
 pat,dimension
 pak,package
 pas,space
+paz,
+pav,
 pac,path
 par,depart/from
 pal,
@@ -344,11 +347,8 @@ pov,
 pof,
 por,poor
 pum,time (count)
-pug,
-pup,
+pud,
 puk,
-puz,
-puv,
 puf,
 pur,
 pul,pull
@@ -364,25 +364,25 @@ tiv,conscious
 tif,
 tix,tingle
 tic,fourteen
-tem,
 ten,tan (color)
 teq,like (as if)
 ted,up
 tet,signal
 tek,take
+tes,
 tef,left
 tam,meditate
 tan,
 taq,tongue
 tad,tail
 tab,stable
+tap,
 tat,sibling
 tak,talk
 tas,test
 taz,
 tav,
 taf,good
-tax,
 taj,down (to be cool with something)
 taC,blue
 tac,set (get)
@@ -390,15 +390,15 @@ tar,tire (sleep)
 tal,tell
 tom,atom
 ton,agent (one who does x)
+tog,
 tod,term
 tok,structure
 tos,task
 toz,position (cardinal)
 tox,text
 tor,before
-tum,
 tuq,type
-tug,
+tud,
 tub,tube
 tup,impure
 tuz,because
@@ -411,6 +411,7 @@ kim,climb
 kiq,action
 kig,
 kid,could
+kib,
 kip,tune
 kik,kick
 kis,bottom
@@ -418,7 +419,6 @@ kiz,if
 kiv,intent
 kif,
 kix,process
-kem,
 ken,communicate
 keq,
 keg,front
@@ -428,6 +428,7 @@ kep,clone
 ket,but
 kek,agree
 kes,case (situation)
+kez,
 kev,
 kef,
 kam,calm
@@ -435,9 +436,7 @@ kan,aggregate
 kaq,object
 kad,
 kab,receive
-kap,
 kat,focus
-kak,
 kas,
 kaz,cause
 kav,
@@ -447,7 +446,9 @@ kar,call
 kal,time
 kom,five
 kon,and
+kog,
 kod,code
+kob,
 kop,scope
 kok,disagree
 koz,z-axis
@@ -505,11 +506,8 @@ hut,heed
 huk,hook
 huz,duration
 huv,handle
-sin,
-siq,
 sig,front
 sid,seed
-sib,
 sip,asleep
 sit,medium
 sik,seek
@@ -526,6 +524,7 @@ seg,
 sed,
 seb,
 sep,swipe
+set,
 sek,percept
 ses,
 sez,sir
@@ -559,10 +558,12 @@ soz,also
 sof,each
 sor,file (computer)
 sol,soul
+sud,
 sub,I
 sup,above (super)/hover
 sut,store
 suk,top
+suz,
 suv,observe
 suf,self (auto-)
 suC,three
@@ -574,9 +575,7 @@ ziq,zing
 zig,gain
 zib,
 zip,graph
-zit,
-ziz,
-ziv,
+zis,
 zif,
 zem,plasma (matter)
 zen,
@@ -586,11 +585,11 @@ zed,
 zeb,
 zep,
 zet,olive (color)
+zek,
 zes,
 zez,
 zev,
 zef,
-zam,
 zan,one
 zaq,presence
 zad,
@@ -598,6 +597,7 @@ zab,public
 zap,zap
 zat,
 zak,effect
+zas,
 zav,lie
 zaf,equal (iso-)
 zar,vowel
@@ -632,8 +632,6 @@ vib,
 vip,six
 vit,information
 vis,see
-viz,
-viv,
 vif,
 vix,preserve
 vic,bit
@@ -649,11 +647,10 @@ vez,
 vev,
 vef,
 vex,reveal
-vam,
 van,having the nature of (-ivity)
-vaq,
 vad,
 vab,vibe
+vap,
 vat,body
 vak,multiply
 vas,aspect
@@ -675,9 +672,11 @@ vof,
 vor,
 vun,on
 vuq,data
+vud,
 vut,
 vus,flex
 vuc,catch
+vur,
 vul,via
 fim,female
 fin,
@@ -713,6 +712,7 @@ fad,
 faz,green
 far,
 fal,
+fom,
 fon,device
 foq,
 fog,
@@ -725,7 +725,6 @@ fos,else
 foz,
 fov,
 fof,
-fox,
 for,fire
 fun,within (endo-)
 fuq,function
@@ -743,6 +742,7 @@ xin,machine
 xiq,will
 xig,
 xid,grey
+xib,
 xip,imagine
 xit,provide
 xiv,destroy
@@ -750,20 +750,18 @@ xif,
 xic,eye
 xen,result
 xed,should
+xep,
 xes,
+xev,
 xef,
 xam,chime
-xan,
-xad,
 xab,seven
 xat,or
-xak,
 xax,eternal
 xar,
 xal,share
 xom,now
 xok,copy
-xof,
 xol,show
 xum,sky
 xun,change
@@ -805,9 +803,9 @@ cux,key
 yin,north
 yiq,impermanent
 yig,
+yib,
 yip,
 yit,night
-yis,
 yif,
 yix,something
 yem,yum (food)
@@ -826,16 +824,16 @@ yam,day
 yan,vehicle
 yaq,permanent
 yad,away
-yab,
 yap,yep
 yat,way
-yak,
 yaj,measure
 yar,year
 yal,turquoise
+yoq,
 yog,practice of focusing on x (-ism)
 yob,
 yop,
+yoz,
 yov,of
 yof,
 yor,
@@ -845,6 +843,7 @@ yuk,black
 yuz,use
 yuv,view
 yuc,with (con-)
+yur,
 yul,polynomial
 rim,
 rin,run
@@ -862,7 +861,6 @@ rif,close (near)
 rix,
 riC,algorithm
 ric,straight
-rem,
 ren,rain
 req,
 reg,edit
@@ -895,14 +893,13 @@ raj,range
 raC,rhythm
 rar,rare
 ral,raw
-rom,
 ron,environment
 roq,
 rog,east
 rod,
 rob,
 rop,
-rot,FALSE
+rot,false
 ros,force
 roz,rose
 rov,copper
@@ -911,17 +908,20 @@ ror,
 rol,cycle
 rum,realm
 run,glyph
+ruq,
 rug,this
 rud,update
 rub,logarithm
 rup,right (time)
 rut,
 ruk,location
+rus,
 ruz,consonant
 ruv,local
 ruf,
 rur,
 rul,rule (in system)
+lim,
 lin,learn
 liq,simulate
 lig,square root
@@ -935,10 +935,10 @@ liv,
 lif,leaf
 lij,orient
 lem,low
-led,
 lep,push
 lek,collect
 les,air
+lev,
 lef,
 leC,point
 lam,real
@@ -946,7 +946,6 @@ lan,land
 laq,object feature type
 lag,organ (body)
 lad,yellow
-lab,
 lap,
 lat,grey
 lak,like
@@ -967,21 +966,24 @@ lok,place (space location)
 los,less of (-less) empty
 lox,string (computing)
 lor,lord
-lol,
 lum,branch
 lun,moon
 luq,question
-lug,
+lud,
 lup,loop
 lut,south
 luk,look
+lus,
+luv,
 luf,far (large-distance-focus)
 luj,logic
 lur,
+lul,
 wim,bounty
 win,when (time location)
 wiq,wing
 wig,kaleidoscope
+wib,
 wip,white
 wis,inverse
 wiz,solve
@@ -999,15 +1001,12 @@ wes,
 wez,fifteen
 wev,wave
 wef,
-wam,
 wan,why
 waq,um
 wad,
-wab,
 wat,white
 wak,walk
 was,
-waz,
 wav,exist
 waC,water
 war,wear
@@ -1023,6 +1022,7 @@ wun,woo
 wug,emanate
 wut,what
 wux,system
+wur,
 grim,
 grin,
 griq,

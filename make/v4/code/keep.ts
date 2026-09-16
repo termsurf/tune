@@ -30,10 +30,11 @@ import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
-import { SHAPES, compareWords, type Shape } from './sound'
+import { SHAPES, compareWords, testWord, type Shape } from './sound'
 import { run, type Piece } from './plan'
 import { HOUSE } from './house'
 import { WEIGHT, pickWeighted } from './pick'
+import { MIRROR_PAIRS } from './pipe/tone'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const BASE = resolve(here, '../../../base/v4')
@@ -116,6 +117,38 @@ for (const row of scratch) {
   }
 }
 
+// ─── Words Required By Structure, Not By Meaning ────────
+
+/**
+ * The mirror quartets, kept whether or not they mean anything yet.
+ *
+ * A mirror pair makes four words and both diagonals are opposite pairs,
+ * so a quartet is a closed set that has to be settled together. Cutting
+ * one member makes the set unfinishable, and the picker cannot see that,
+ * because it only protects words that ALREADY carry a meaning.
+ *
+ * `suz` and `zis` were cut exactly this way. They are the `s z` partners
+ * of `siz` and `zus`, and losing them left the most important quartet in
+ * the language two words short with no error anywhere.
+ *
+ * **A word can be structurally required and semantically empty at the
+ * same time.** That is the case this set exists for.
+ */
+const structural = new Set<string>()
+for (const [a, b] of MIRROR_PAIRS) {
+  for (const [first, second] of [
+    [a, b],
+    [b, a],
+  ]) {
+    for (const vowel of ['i', 'u']) {
+      const word = `${first}${vowel}${second}`
+      if (testWord(word).ok) {
+        structural.add(word)
+      }
+    }
+  }
+}
+
 // ─── Build, Then Choose ─────────────────────────────────
 
 const { full, count } = run(HOUSE)
@@ -133,7 +166,9 @@ console.log('| :--- | ---: | ---: | ---: |')
 for (const shape of SHAPES) {
   const pool = full[shape]
   const must = new Set(
-    pool.map(p => p.word).filter(word => meaning.has(word)),
+    pool
+      .map(p => p.word)
+      .filter(word => meaning.has(word) || structural.has(word)),
   )
 
   if (must.size > WANT[shape]) {

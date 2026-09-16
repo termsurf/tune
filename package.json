@@ -23,14 +23,21 @@
     "v4:keep": "tsx make/v4/code/keep.ts",
     "v4:term": "tsx make/v4/code/term.ts",
     "v4:list": "tsx make/v4/code/list.ts",
-    "v4:adopt": "tsx make/v4/code/adopt.ts"
+    "v4:adopt": "tsx make/v4/code/adopt.ts",
+    "v4:pipe": "tsx make/v4/code/pipe/run.ts",
+    "v4:english": "tsx make/v4/code/english.ts",
+    "v4:derive": "tsx make/v4/code/derive.ts",
+    "v4:doubt": "tsx make/v4/code/doubt.ts",
+    "v4:gap": "tsx make/v4/code/gap.ts",
+    "v4:words": "pnpm v4:english && pnpm v4:derive && pnpm v4:english && pnpm v4:doubt"
   },
   "devDependencies": {
     "compromise": "^14.15.0",
     "csv-parse": "6.1.0",
     "marked": "17.0.2",
     "puppeteer": "24.37.3",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.0",
+    "yargs": "^18.0.0"
   },
   "dependencies": {
     "@cluesurf/talk": "^1.7.4"
